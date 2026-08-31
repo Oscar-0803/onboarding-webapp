@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Intern Handboek</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">H</div>
+
+        <div>
+          <strong>Intern Handboek</strong>
+          <span>Onboarding</span>
+        </div>
+      </div>
+
+      <nav>
+        <button class="nav-item active" data-view="home">
+          Overzicht
+        </button>
+
+        <button class="nav-item" data-view="favorites">
+          Favorieten
+        </button>
+
+        <div class="nav-label">Categorieën</div>
+
+        <div id="categoryNav"></div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="security-note">
+          <strong>Veiligheid</strong>
+          <span>Geen wachtwoorden in deze app.</span>
+        </div>
+      </div>
+    </aside>
+
+
+    <main>
+
+      <header class="topbar">
+
+        <div class="search-wrap">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Zoek een procedure..."
+          />
+        </div>
+
+        <button id="clearSearch" class="ghost-button hidden">
+          Wissen
+        </button>
+
+      </header>
+
+
+      <section class="content" id="appContent">
+
+        <!-- De inhoud wordt door JavaScript geladen -->
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
