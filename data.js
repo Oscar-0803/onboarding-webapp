@@ -154,35 +154,6 @@ window.HANDBOOK_DATA = {
   ]
 },
     {    
-      category: "dagelijks",
-      title: "HEM giftcards",
-      summary: "Dagelijkse verwerking van de HEM giftcards inbox.",
-      system: "HEM giftcards",
-      frequency: "Dagelijks",
-      duration: "± 5 min",
-      featured: true,
-
-      tags: [
-        "giftcards",
-        "inbox",
-        "dagelijks"
-      ],
-
-      steps: [
-        {
-          title: "Open de HEM giftcards inbox",
-          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
-          screenshot: true
-        },
-        {
-          title: "Controleer de aanvraag",
-          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
-          screenshot: true
-        }
-      ]
-    },
-
-    {
       id: "hema-zakelijk",
       category: "dagelijks",
       title: "HEMA Zakelijk",
