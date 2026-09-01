@@ -63,7 +63,7 @@ window.HANDBOOK_DATA = {
   frequency: "Wanneer nodig",
   duration: "± 5–10 min",
 
-  featured: true,
+  featured: false,
 
   tags: [
     "hem giftcards",
