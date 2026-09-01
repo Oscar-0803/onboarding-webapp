@@ -51,7 +51,110 @@ window.HANDBOOK_DATA = {
 
   procedures: [
     {
-      id: "hem-giftcards",
+      {
+  id: "hem-giftcards",
+  category: "dagelijks",
+
+  title: "HEM Giftcards",
+
+  summary:
+    "Werkwijze voor een online bestelde cadeaukaart die niet is aangekomen.",
+
+  system: "Consumenten Trade",
+  frequency: "Wanneer nodig",
+  duration: "± 5–10 min",
+
+  featured: true,
+
+  tags: [
+    "hem giftcards",
+    "giftcards",
+    "cadeaukaart",
+    "consumenten trade",
+    "blokkeren",
+    "niet aangekomen"
+  ],
+
+  caution:
+    "Controleer altijd eerst of de cadeaukaart is gebruikt voordat je deze blokkeert.",
+
+  steps: [
+    {
+      title: "Ontvang de melding",
+      text:
+        "Je krijgt een mail (vaak) vanuit klantenservice of consumentenservice dat een online bestelde cadeaukaart nog niet is aangekomen.",
+      image: ""
+    },
+
+    {
+      title: "Zoek de order op",
+      text:
+        "Zoek de order op in Consumenten Trade onder 'Orders' → 'Alle orders'.",
+      image: ""
+    },
+
+    {
+      title: "Vul het ordernummer in",
+      text:
+        "Vul het ordernummer in zonder spaties en klik op zoeken.",
+      image: ""
+    },
+
+    {
+      title: "Open de orderdetails",
+      text:
+        "Dubbelklik op de order. Je krijgt vervolgens de details van de order te zien.",
+      image:
+        "images/hem-giftcards/04-orderdetails.png"
+    },
+
+    {
+      title: "Controleer de orderdatum",
+      text:
+        "Check de orderdatum. Is de order meer dan een week geleden geplaatst? Dan is de order waarschijnlijk zoekgeraakt met de post en moet de cadeaukaart worden geblokkeerd.",
+      image: ""
+    },
+
+    {
+      title: "Controleer eerst of de cadeaukaart is gebruikt",
+      text:
+        "Klik één keer op het product onder 'Producten', zodat deze grijs gearceerd is. Klik vervolgens op 'Toon Kaarten'.",
+      image:
+        "images/hem-giftcards/06-toon-kaarten.png"
+    },
+
+    {
+      title: "Controleer de status van de cadeaukaart",
+      text:
+        "Arceer de cadeaukaart grijs en klik vervolgens op 'Kaartinformatie'.",
+      image:
+        "images/hem-giftcards/07-kaartinformatie-openen.png"
+    },
+
+    {
+      title: "Bekijk de kaartinformatie",
+      text:
+        "Vervolgens krijg je de kaartinformatie te zien. Controleer hier onder andere de huidige balans van de cadeaukaart.",
+      image:
+        "images/hem-giftcards/08-kaartinformatie.png"
+    },
+
+    {
+      title: "Blokkeer de cadeaukaart indien deze niet is gebruikt",
+      text:
+        "Is de huidige balans hetzelfde als de originele waarde? Dan is de cadeaukaart niet gebruikt en kan deze worden geblokkeerd. Ga terug naar het vorige venster, arceer de cadeaukaart opnieuw grijs en klik op 'Blokkeer kaart'.",
+      image: ""
+    },
+
+    {
+      title: "Bevestig de afhandeling per mail",
+      text:
+        "Mail terug dat de cadeaukaart is geblokkeerd en dat klantenservice/consumentenservice de klant kan vergoeden. Zet altijd de mailbox in CC, zodat teruggevonden kan worden wat er eerder is gemaild.",
+      image: ""
+    }
+  ]
+},
+
       category: "dagelijks",
       title: "HEM giftcards",
       summary: "Dagelijkse verwerking van de HEM giftcards inbox.",
