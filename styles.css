@@ -95,6 +95,14 @@ button {
 
 /* BRAND */
 
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
 .brand {
   display: flex;
   align-items: center;
