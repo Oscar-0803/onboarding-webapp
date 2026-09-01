@@ -154,7 +154,6 @@ window.HANDBOOK_DATA = {
     }
   ]
 },
-
       category: "dagelijks",
       title: "HEM giftcards",
       summary: "Dagelijkse verwerking van de HEM giftcards inbox.",
