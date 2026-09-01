@@ -101,6 +101,8 @@ button {
   object-fit: contain;
   display: block;
   flex-shrink: 0;
+
+  margin-bottom: 12px;
 }
 
 .brand {
