@@ -1,522 +1,383 @@
 window.HANDBOOK_DATA = {
   meta: {
-    lastUpdated: "31 augustus 2026",
-    sourceStatus:
-      "Conceptversie op basis van de huidige onboarding-informatie."
+    lastUpdated: "1 september 2026",
+    sourceStatus: "Gebaseerd op het interne onboardingdocument."
   },
 
   categories: [
     {
-      id: "cadeaukaarten",
-      label: "Cadeaukaarten",
-      icon: "▣",
-      description: "Orders, blokkeren en CMS-handelingen"
+      id: "dagelijks",
+      label: "Dagelijks",
+      icon: "☀",
+      description: "Dagelijkse inboxen en terugkerende werkzaamheden"
     },
     {
-      id: "trade",
-      label: "Trade & Orders",
+      id: "orders",
+      label: "Orders",
       icon: "⇄",
-      description: "Zakelijke orders, Trade en GDL"
+      description: "GDL-orders en interne Trade-orders"
     },
     {
       id: "betalingen",
       label: "Betalingen",
       icon: "€",
-      description: "Bankbetalingen en controles"
+      description: "Bankbetalingen verwerken"
     },
     {
       id: "klantenservice",
       label: "Klantenservice",
       icon: "✉",
-      description: "Tickets en mailboxprocessen"
+      description: "HEMA Tickets en herroepingen"
     },
     {
-      id: "schermen",
-      label: "Winkelschermen",
+      id: "uitingen",
+      label: "Uitingen",
       icon: "▤",
-      description: "Broadsign, Rcos en DOOH-content"
+      description: "Broadsign en Rcos"
     },
     {
       id: "advertising",
       label: "Advertising",
       icon: "◎",
-      description: "Google Ad Manager campagnes"
+      description: "Google Ad Manager"
     },
     {
       id: "banners",
-      label: "Banners",
+      label: "Online Banners",
       icon: "◇",
-      description: "Adobe Express en bannerproductie"
+      description: "Online banners maken en verwerken"
     }
   ],
 
   procedures: [
     {
-      id: "cadeaukaart-blokkeren",
-      category: "cadeaukaarten",
-
-      title: "Zoekgeraakte cadeaukaart blokkeren",
-
-      summary:
-        "Snelpad voor het veilig afhandelen van een gemelde zoekgeraakte cadeaukaart.",
-
-      system: "Cadeaukaart-CMS",
-      frequency: "Regelmatig",
-      duration: "± 3 min",
-
+      id: "hem-giftcards",
+      category: "dagelijks",
+      title: "HEM giftcards",
+      summary: "Dagelijkse verwerking van de HEM giftcards inbox.",
+      system: "HEM giftcards",
+      frequency: "Dagelijks",
+      duration: "± 5 min",
       featured: true,
 
       tags: [
-        "cadeaukaart",
-        "blokkeren",
-        "klant",
-        "cms"
+        "giftcards",
+        "inbox",
+        "dagelijks"
       ],
-
-      caution:
-        "Controleer altijd eerst of je de juiste kaart en klantcase voor je hebt. Neem geen wachtwoorden op in deze app.",
 
       steps: [
         {
-          title: "Open de juiste klantcase",
-          text:
-            "Controleer de melding en verzamel de gegevens die nodig zijn om de cadeaukaart terug te vinden.",
-          screenshot: false
-        },
-        {
-          title: "Open het cadeaukaart-CMS",
-          text:
-            "Open het interne systeem via de daarvoor bestemde route.",
+          title: "Open de HEM giftcards inbox",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Zoek de cadeaukaart op",
-          text:
-            "Gebruik de relevante kaartgegevens om de juiste cadeaukaart te vinden.",
+          title: "Controleer de aanvraag",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
-        },
-        {
-          title: "Blokkeer de cadeaukaart",
-          text:
-            "Voer de blokkade uit en controleer daarna of de nieuwe status correct is opgeslagen.",
-          screenshot: true
-        },
-        {
-          title: "Werk de klantcase bij",
-          text:
-            "Noteer de uitgevoerde actie in de klantcase en rond de case volgens de interne werkwijze af.",
-          screenshot: false
         }
       ]
     },
 
     {
-      id: "zakelijke-order-annuleren",
-      category: "trade",
+      id: "hema-zakelijk",
+      category: "dagelijks",
+      title: "HEMA Zakelijk",
+      summary: "Dagelijkse verwerking van HEMA Zakelijk.",
+      system: "HEMA Zakelijk",
+      frequency: "Dagelijks",
+      duration: "± 10 min",
+      featured: true,
 
-      title: "Zakelijke order annuleren",
+      tags: [
+        "hema zakelijk",
+        "zakelijk",
+        "inbox"
+      ],
 
-      summary:
-        "Stappenplan voor het controleren en annuleren van een zakelijke order.",
+      steps: [
+        {
+          title: "Open HEMA Zakelijk",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        },
+        {
+          title: "Controleer de aanvraag",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        }
+      ]
+    },
 
-      system: "Trade / HEMA Zakelijk",
+    {
+      id: "gdl-order",
+      category: "orders",
+      title: "Order invoeren Goede Doelen Loterijen (GDL)",
+      summary: "Stappenplan voor het invoeren van een GDL-order.",
+      system: "Orderadministratie",
       frequency: "Regelmatig",
-      duration: "± 5 min",
+      duration: "± 10 min",
+      featured: true,
 
+      tags: [
+        "gdl",
+        "goede doelen loterijen",
+        "order"
+      ],
+
+      steps: [
+        {
+          title: "Open de juiste omgeving",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        },
+        {
+          title: "Voer de ordergegevens in",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        }
+      ]
+    },
+
+    {
+      id: "trade-order",
+      category: "orders",
+      title: "Nieuwe interne order invoeren in Trade",
+      summary: "Stappenplan voor het invoeren van een interne order in Trade.",
+      system: "Trade",
+      frequency: "Regelmatig",
+      duration: "± 10 min",
       featured: true,
 
       tags: [
         "trade",
-        "zakelijk",
-        "order",
-        "annuleren",
-        "b2b"
+        "interne order",
+        "order"
       ],
-
-      caution:
-        "Annuleer pas nadat ordernummer, klant en huidige status overeenkomen met de aanvraag.",
 
       steps: [
         {
-          title: "Controleer de annuleringsaanvraag",
-          text:
-            "Controleer het ordernummer, de klant en de reden van annulering.",
-          screenshot: false
-        },
-        {
           title: "Open Trade",
-          text:
-            "Open het interne Trade-systeem.",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Zoek de order op",
-          text:
-            "Zoek de zakelijke order op met het ordernummer en controleer of je de juiste order hebt.",
-          screenshot: true
-        },
-        {
-          title: "Controleer de orderstatus",
-          text:
-            "Controleer of de order volgens de geldende procedure nog geannuleerd kan worden.",
-          screenshot: false
-        },
-        {
-          title: "Annuleer de order",
-          text:
-            "Voer de annulering uit en controleer daarna of de status correct is aangepast.",
+          title: "Maak een nieuwe order aan",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         }
       ]
     },
 
     {
-      id: "bankbetaling-verwerken",
+      id: "bank-betalingen",
       category: "betalingen",
-
-      title: "Bankbetaling verwerken",
-
-      summary:
-        "Controleer een betaling en leg de verwerking op de juiste manier vast.",
-
+      title: "Bank betalingen",
+      summary: "Stappenplan voor het controleren en verwerken van bankbetalingen.",
       system: "Bank / orderadministratie",
       frequency: "Dagelijks",
-      duration: "± 4 min",
-
+      duration: "± 5 min",
       featured: true,
 
       tags: [
         "bank",
-        "betaling",
-        "order",
-        "controle"
+        "betalingen",
+        "betaling"
       ],
-
-      caution:
-        "Controleer financiële gegevens zorgvuldig voordat je een status aanpast.",
 
       steps: [
         {
           title: "Open het betaaloverzicht",
-          text:
-            "Open de daarvoor bestemde interne omgeving.",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Zoek de betaling",
-          text:
-            "Zoek de betaling op met de relevante betalingsgegevens.",
-          screenshot: false
-        },
-        {
-          title: "Match de betaling met de order",
-          text:
-            "Controleer bedrag, referentie en ordergegevens.",
-          screenshot: false
-        },
-        {
-          title: "Verwerk de betaling",
-          text:
-            "Pas de juiste order- of betaalstatus aan.",
+          title: "Controleer de betaling",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
-        },
-        {
-          title: "Doe een eindcontrole",
-          text:
-            "Controleer of de betaling en orderstatus correct zijn verwerkt.",
-          screenshot: false
         }
       ]
     },
 
     {
-      id: "klantenservice-ticket-afhandelen",
+      id: "hema-tickets",
       category: "klantenservice",
-
-      title: "Klantenservice-ticket afhandelen",
-
-      summary:
-        "Van nieuw ticket naar duidelijke opvolging en correcte afsluiting.",
-
-      system: "Klantenservice Tickets",
+      title: "Mailbox Klantenservice HEMA Tickets",
+      summary: "Werkwijze voor de mailbox Klantenservice HEMA Tickets.",
+      system: "HEMA Tickets",
       frequency: "Dagelijks",
-      duration: "± 5–10 min",
-
+      duration: "± 10 min",
       featured: true,
 
       tags: [
-        "ticket",
-        "mailbox",
         "klantenservice",
-        "klant"
+        "tickets",
+        "mailbox"
       ],
 
       steps: [
         {
-          title: "Open het ticket",
-          text:
-            "Lees de volledige klantvraag voordat je een actie uitvoert.",
+          title: "Open de mailbox",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Controleer de historie",
-          text:
-            "Bekijk eerdere communicatie en relevante gegevens.",
-          screenshot: false
-        },
-        {
-          title: "Bepaal de juiste procedure",
-          text:
-            "Bepaal welke interne werkinstructie nodig is om het probleem op te lossen.",
-          screenshot: false
-        },
-        {
-          title: "Voer de actie uit",
-          text:
-            "Volg de bijbehorende interne procedure.",
-          screenshot: false
-        },
-        {
-          title: "Reageer op de klant",
-          text:
-            "Geef een duidelijke reactie en leg de uitgevoerde actie intern vast.",
-          screenshot: false
+          title: "Controleer het ticket",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
         }
       ]
     },
 
     {
-      id: "broadsign-content-plannen",
-      category: "schermen",
-
-      title: "Content in Broadsign plannen",
-
-      summary:
-        "Stappenplan voor het klaarzetten en controleren van winkel- of DOOH-content.",
-
-      system: "Broadsign",
-      frequency: "Wekelijks",
-      duration: "± 10 min",
-
+      id: "snowworld",
+      category: "klantenservice",
+      title: "Handleiding herroeping Snowworld",
+      summary: "Stappenplan voor het verwerken van een Snowworld-herroeping.",
+      system: "Klantenservice",
+      frequency: "Wanneer nodig",
+      duration: "± 5 min",
       featured: false,
+
+      tags: [
+        "snowworld",
+        "herroeping",
+        "klantenservice"
+      ],
+
+      steps: [
+        {
+          title: "Open de aanvraag",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        },
+        {
+          title: "Verwerk de herroeping",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        }
+      ]
+    },
+
+    {
+      id: "broadsign",
+      category: "uitingen",
+      title: "Broadsign (DOOH puischermen)",
+      summary: "Stappenplan voor het inregelen van content op DOOH-pu schermen.",
+      system: "Broadsign",
+      frequency: "Wanneer nodig",
+      duration: "± 10 min",
+      featured: true,
 
       tags: [
         "broadsign",
         "dooh",
-        "schermen",
-        "content"
+        "puischermen",
+        "uitingen"
       ],
-
-      caution:
-        "Controleer altijd locatie, periode en creatief materiaal voordat je content publiceert.",
 
       steps: [
         {
-          title: "Controleer het materiaal",
-          text:
-            "Controleer formaat, versie, periode en bestemming.",
-          screenshot: false
-        },
-        {
           title: "Open Broadsign",
-          text:
-            "Open Broadsign via de interne omgeving.",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Selecteer de juiste plaatsing",
-          text:
-            "Controleer welke schermen of locaties gebruikt moeten worden.",
+          title: "Selecteer de juiste schermen",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
-        },
-        {
-          title: "Plan de content",
-          text:
-            "Voer de juiste start- en einddatum in.",
-          screenshot: true
-        },
-        {
-          title: "Controleer de preview",
-          text:
-            "Bekijk de preview voordat je de content definitief publiceert.",
-          screenshot: false
         }
       ]
     },
 
     {
-      id: "gam-campagne-opzetten",
+      id: "rcos",
+      category: "uitingen",
+      title: "Rcos (DOOH kassaschermen)",
+      summary: "Stappenplan voor het inregelen van content op kassaschermen.",
+      system: "Rcos",
+      frequency: "Wanneer nodig",
+      duration: "± 10 min",
+      featured: false,
+
+      tags: [
+        "rcos",
+        "dooh",
+        "kassaschermen",
+        "uitingen"
+      ],
+
+      steps: [
+        {
+          title: "Open Rcos",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        },
+        {
+          title: "Selecteer de juiste kassaschermen",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
+          screenshot: true
+        }
+      ]
+    },
+
+    {
+      id: "google-admanager",
       category: "advertising",
-
-      title: "Google Ad Manager campagne opzetten",
-
-      summary:
-        "Van briefing naar gecontroleerde campagne-inrichting in Google Ad Manager.",
-
+      title: "Google Ad Manager",
+      summary: "Stappenplan voor het opzetten van campagnes in Google Ad Manager.",
       system: "Google Ad Manager",
-      frequency: "Wekelijks",
+      frequency: "Wanneer nodig",
       duration: "± 15 min",
-
       featured: true,
 
       tags: [
         "google ad manager",
-        "gam",
         "advertising",
         "campagne"
       ],
 
-      caution:
-        "Controleer budget, looptijd, targeting en creatives altijd tegen de goedgekeurde briefing.",
-
       steps: [
         {
-          title: "Controleer de briefing",
-          text:
-            "Controleer campagneperiode, doelgroep, plaatsing en materiaal.",
-          screenshot: false
-        },
-        {
           title: "Open Google Ad Manager",
-          text:
-            "Open Google Ad Manager en ga naar de juiste advertiser of order.",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Maak de order aan",
-          text:
-            "Gebruik de juiste naamgeving en campagnegegevens.",
+          title: "Maak de campagne aan",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
-        },
-        {
-          title: "Maak een line item",
-          text:
-            "Vul looptijd, targeting en overige instellingen in.",
-          screenshot: true
-        },
-        {
-          title: "Voeg creatives toe",
-          text:
-            "Upload of koppel het juiste advertentiemateriaal.",
-          screenshot: true
-        },
-        {
-          title: "Voer een finale controle uit",
-          text:
-            "Controleer alle instellingen voordat de campagne actief wordt.",
-          screenshot: false
         }
       ]
     },
 
     {
-      id: "adobe-express-banner",
+      id: "online-banners",
       category: "banners",
-
-      title: "Banner maken in Adobe Express",
-
-      summary:
-        "Consistente werkwijze voor het produceren en controleren van banners.",
-
+      title: "Stappenplan Online Banners",
+      summary: "Stappenplan voor het maken en verwerken van online banners.",
       system: "Adobe Express",
-      frequency: "Wekelijks",
-      duration: "± 10–20 min",
-
-      featured: false,
+      frequency: "Wanneer nodig",
+      duration: "± 15 min",
+      featured: true,
 
       tags: [
-        "adobe express",
+        "online banners",
         "banner",
-        "design",
-        "creative"
+        "adobe express"
       ],
 
       steps: [
         {
           title: "Open het juiste template",
-          text:
-            "Gebruik het actuele en goedgekeurde template.",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
         },
         {
-          title: "Plaats tekst en beeld",
-          text:
-            "Vul het template met de juiste tekst en afbeeldingen.",
+          title: "Maak de banner",
+          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
           screenshot: true
-        },
-        {
-          title: "Controleer de opmaak",
-          text:
-            "Controleer leesbaarheid, uitsnede en positionering.",
-          screenshot: false
-        },
-        {
-          title: "Controleer alle formaten",
-          text:
-            "Controleer of alle benodigde bannerformaten correct zijn.",
-          screenshot: false
-        },
-        {
-          title: "Exporteer de banner",
-          text:
-            "Gebruik de afgesproken exportinstellingen en bestandsnaam.",
-          screenshot: true
-        }
-      ]
-    },
-
-    {
-      id: "gdl-order-controleren",
-      category: "trade",
-
-      title: "GDL-order controleren",
-
-      summary:
-        "Controleflow voor Goede Doelen Loterijen-orders.",
-
-      system: "Orderadministratie",
-      frequency: "Regelmatig",
-      duration: "± 5 min",
-
-      featured: false,
-
-      tags: [
-        "gdl",
-        "goede doelen loterijen",
-        "order",
-        "trade"
-      ],
-
-      steps: [
-        {
-          title: "Open de order",
-          text:
-            "Zoek de juiste GDL-order op.",
-          screenshot: true
-        },
-        {
-          title: "Controleer de ordergegevens",
-          text:
-            "Controleer de belangrijkste gegevens van de order.",
-          screenshot: false
-        },
-        {
-          title: "Controleer op afwijkingen",
-          text:
-            "Vergelijk de order met de informatie uit de aanvraag.",
-          screenshot: false
-        },
-        {
-          title: "Verwerk eventuele afwijkingen",
-          text:
-            "Volg de interne escalatieroute wanneer gegevens niet overeenkomen.",
-          screenshot: false
-        },
-        {
-          title: "Rond de controle af",
-          text:
-            "Markeer de order pas als gecontroleerd wanneer alle controles zijn uitgevoerd.",
-          screenshot: false
         }
       ]
     }
