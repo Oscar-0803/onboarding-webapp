@@ -51,7 +51,6 @@ window.HANDBOOK_DATA = {
 
   procedures: [
     {
-      {
   id: "hem-giftcards",
   category: "dagelijks",
 
