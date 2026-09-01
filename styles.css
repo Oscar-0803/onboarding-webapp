@@ -104,23 +104,15 @@ button {
   padding: 0 8px 26px;
 }
 
-.brand-mark {
+.brand-logo {
   width: 46px;
   height: 46px;
 
-  display: grid;
-  place-items: center;
+  object-fit: contain;
 
-  border-radius: 50%;
+  display: block;
 
-  background: var(--hema-red);
-
-  color: #ffffff;
-
-  font-size: 21px;
-  font-weight: 900;
-
-  letter-spacing: -0.03em;
+  flex-shrink: 0;
 }
 
 .brand strong {
