@@ -1052,7 +1052,21 @@ h2 {
 .search-summary {
   color: var(--muted);
 }
+.step-image-wrapper {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f7f7f7;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
 
+.step-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+}
 /* =========================
    RESPONSIVE
 ========================= */
