@@ -257,30 +257,6 @@ function homeView() {
 
     </div>
 
-
-    <div class="notice warning">
-
-      <div class="notice-icon">
-        !
-      </div>
-
-      <div>
-
-        <strong>
-          Conceptversie
-        </strong>
-
-        <p>
-          Controleer de procedures altijd tegen de
-          officiële interne documentatie voordat
-          deze app in gebruik wordt genomen.
-        </p>
-
-      </div>
-
-    </div>
-
-
     <div class="section-heading">
 
       <div>
