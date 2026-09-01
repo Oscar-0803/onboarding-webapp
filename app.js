@@ -592,21 +592,20 @@ function detailView(procedure) {
                   <p>
                     ${step.text}
                   </p>
-
                   ${
-                    step.screenshot
-                      ? `
-                        <div
-                          class="screenshot-placeholder"
-                        >
-                          Screenshot-placeholder
-                          <br>
-                          Voeg hier later de
-                          officiële screenshot toe.
-                        </div>
-                      `
-                      : ""
-                  }
+  step.image
+    ? `
+      <div class="step-image-wrapper">
+        <img
+          class="step-image"
+          src="${step.image}"
+          alt="${step.title}"
+          loading="lazy"
+        >
+      </div>
+    `
+    : ""
+}
 
                 </div>
 
