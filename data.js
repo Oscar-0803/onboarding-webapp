@@ -153,35 +153,95 @@ window.HANDBOOK_DATA = {
     }
   ]
 },
-    {    
-      id: "hema-zakelijk",
-      category: "dagelijks",
-      title: "HEMA Zakelijk",
-      summary: "Dagelijkse verwerking van HEMA Zakelijk.",
-      system: "HEMA Zakelijk",
-      frequency: "Dagelijks",
-      duration: "± 10 min",
-      featured: true,
+    {
+  id: "hema-zakelijk",
+  category: "dagelijks",
 
-      tags: [
-        "hema zakelijk",
-        "zakelijk",
-        "inbox"
-      ],
+  title: "HEMA Zakelijk",
 
-      steps: [
-        {
-          title: "Open HEMA Zakelijk",
-          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
-          screenshot: true
-        },
-        {
-          title: "Controleer de aanvraag",
-          text: "Voeg hier de officiële uitleg uit het Word-document toe.",
-          screenshot: true
-        }
-      ]
+  summary:
+    "Werkinstructies voor verschillende processen binnen HEMA Zakelijk.",
+
+  system: "HEMA Zakelijk",
+  frequency: "Wanneer nodig",
+  duration: "Meerdere processen",
+
+  featured: true,
+
+  type: "folder",
+
+  tags: [
+    "hema zakelijk",
+    "zakelijk",
+    "orders"
+  ]
+},
+
+{
+  id: "zakelijke-order-annuleren",
+  category: "dagelijks",
+  parent: "hema-zakelijk",
+
+  title: "Annuleren van zakelijke orders",
+
+  summary:
+    "Stappenplan voor het annuleren van een zakelijke cadeaukaartorder.",
+
+  system: "Zakelijk Trade",
+  frequency: "Wanneer nodig",
+  duration: "± 5 min",
+
+  featured: false,
+
+  tags: [
+    "hema zakelijk",
+    "zakelijke order",
+    "annuleren",
+    "cadeaukaart",
+    "trade"
+  ],
+
+  caution:
+    "Controleer zorgvuldig of je het juiste ordernummer hebt geselecteerd voordat je de order annuleert.",
+
+  steps: [
+    {
+      title: "Ontvang de aanvraag",
+      text:
+        "Je krijgt een mail, vaak vanuit klantenservice of consumentenservice, met het verzoek om een cadeaukaart te annuleren die door hen is aangeboden ter compensatie of coulance.",
+      image:
+        "images/hema-zakelijk/annuleren/01-aanvraag.png"
     },
+
+    {
+      title: "Zoek de order op",
+      text:
+        "Zoek de order op in Zakelijk Trade onder 'Orders' → 'Afgehandeld'.",
+      image: ""
+    },
+
+    {
+      title: "Vul het ordernummer in",
+      text:
+        "Vul het ordernummer zonder spaties in en klik op zoeken.",
+      image: ""
+    },
+
+    {
+      title: "Selecteer en annuleer de order",
+      text:
+        "Selecteer de order door er één keer op te klikken zodat deze donkergrijs gearceerd is. Klik vervolgens op 'Order annuleren' en daarna op 'OK'.",
+      image: ""
+    },
+
+    {
+      title: "Bevestig de annulering",
+      text:
+        "De order is nu geannuleerd en de cadeaukaart is geblokkeerd/gerefund. Stuur vervolgens een bevestiging naar de betreffende inbox.",
+      image: ""
+    }
+  ]
+},
 
     {
       id: "gdl-order",
