@@ -449,7 +449,57 @@ function searchView() {
     }
   `;
 }
+function folderView(folder) {
+  const children = data.procedures.filter(
+    (procedure) => procedure.parent === folder.id
+  );
 
+  content.innerHTML = `
+    <div class="breadcrumb">
+      <button data-home>
+        Overzicht
+      </button>
+
+      /
+
+      ${folder.title}
+    </div>
+
+    <div class="page-title-row">
+      <div>
+        <p class="eyebrow">
+          PROCEDUREMAP
+        </p>
+
+        <h1>
+          ${folder.title}
+        </h1>
+
+        <p>
+          ${folder.summary}
+        </p>
+      </div>
+    </div>
+
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">
+          PROCESSEN
+        </p>
+
+        <h2>
+          Kies een werkinstructie
+        </h2>
+      </div>
+    </div>
+
+    <div class="procedure-grid">
+      ${children
+        .map(procedureCard)
+        .join("")}
+    </div>
+  `;
+}
 function detailView(procedure) {
   const category = categoryById(
     procedure.category
