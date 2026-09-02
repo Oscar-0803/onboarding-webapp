@@ -906,11 +906,11 @@ function render() {
     listView(
       category.label,
       category.description,
-      data.procedures.filter(
-        (procedure) =>
-          procedure.category ===
-          category.id
-      )
+data.procedures.filter(
+  (procedure) =>
+    procedure.category === category.id &&
+    !procedure.parent
+)
     );
   }
 
