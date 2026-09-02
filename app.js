@@ -914,15 +914,18 @@ function render() {
     );
   }
 
-  else if (
-    state.view === "detail"
-  ) {
-    detailView(
-      procedureById(
-        state.procedureId
-      )
-    );
+else if (
+  state.view === "detail"
+) {
+  const procedure =
+    procedureById(state.procedureId);
+
+  if (procedure.type === "folder") {
+    folderView(procedure);
+  } else {
+    detailView(procedure);
   }
+}
 
   clearSearch.classList.toggle(
     "hidden",
