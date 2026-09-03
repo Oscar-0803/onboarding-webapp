@@ -345,7 +345,102 @@ window.HANDBOOK_DATA = {
         }
       ]
     },
+{
+  id: "orders-handmatig-invoeren",
+  category: "dagelijks",
+  parent: "hema-zakelijk",
 
+  title: "Orders handmatig invoeren",
+
+  summary:
+    "Stappenplan voor het handmatig invoeren van een zakelijke order in Trade.",
+
+  system: "Zakelijk Trade",
+  frequency: "Wanneer nodig",
+  duration: "± 5–10 min",
+
+  featured: false,
+
+  tags: [
+    "hema zakelijk",
+    "order",
+    "handmatig invoeren",
+    "trade",
+    "zakelijke order"
+  ],
+
+  steps: [
+    {
+      title: "Ga naar Orders",
+      text:
+        "Ga in Trade naar 'Orders'.",
+      image: ""
+    },
+
+    {
+      title: "Maak een nieuwe order aan",
+      text:
+        "Klik op 'Nieuw' en vul de gemarkeerde gegevens in bij 'Klant type' en 'Gewenste leverdatum'. Gebruik bij klanttype 'Zakelijk'.",
+      image: ""
+    },
+
+    {
+      title: "Selecteer de klant",
+      text:
+        "Klik op het pijltje bij 'Klant'. Zoek vervolgens de juiste klant op en selecteer deze.",
+      image: ""
+    },
+
+    {
+      title: "Vul eventuele referenties in",
+      text:
+        "Als er een order- of factuurreferentie is, vul deze direct in bij 'Klant order referentie' en/of 'Klant factuur referentie'.",
+      image: ""
+    },
+
+    {
+      title: "Voeg de cadeaukaarten toe",
+      text:
+        "Klik op 'Voeg toe' om het soort cadeaukaart, het aantal en de waarde van de cadeaukaarten toe te voegen. Kies daarna bij 'Verpakking/sjabloon' of er wel of geen verpakking nodig is.",
+      image: ""
+    },
+
+    {
+      title: "Sla de order op",
+      text:
+        "Klik daarna op 'Opslaan'.",
+      image: ""
+    },
+
+    {
+      title: "Controleer eventuele korting",
+      text:
+        "Is er sprake van korting buiten de kortingsstaffel? Volg dan de aparte instructie voor 'Korting'.",
+      image: ""
+    },
+
+    {
+      title: "Controleer of een PO-nummer nodig is",
+      text:
+        "Is een PO-nummer nodig? Volg dan de aparte instructie voor 'PO-nummer'.",
+      image: ""
+    },
+
+    {
+      title: "Controleer het subtotaal",
+      text:
+        "Controleer aan het einde of het subtotaalbedrag klopt.",
+      image: ""
+    },
+
+    {
+      title: "Sla de gecontroleerde order definitief op",
+      text:
+        "Heb je alles dubbel gecontroleerd? Klik dan opnieuw op 'Opslaan'.",
+      image: ""
+    }
+  ]
+},
     // =========================================================
     // ORDERS
     // =========================================================
