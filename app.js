@@ -15,18 +15,42 @@ let state = {
   procedureId: null
 };
 
+
+// =========================================================
+// HELPERS
+// =========================================================
+
 function categoryById(id) {
-  return data.categories.find((category) => category.id === id);
+  return data.categories.find(
+    (category) => category.id === id
+  );
 }
 
 function procedureById(id) {
-  return data.procedures.find((procedure) => procedure.id === id);
+  return data.procedures.find(
+    (procedure) => procedure.id === id
+  );
+}
+
+function topLevelProcedures() {
+  return data.procedures.filter(
+    (procedure) => !procedure.parent
+  );
 }
 
 function categoryCount(id) {
   return data.procedures.filter(
-    (procedure) => procedure.category === id
+    (procedure) =>
+      procedure.category === id &&
+      !procedure.parent
   ).length;
+}
+
+function childProcedures(parentId) {
+  return data.procedures.filter(
+    (procedure) =>
+      procedure.parent === parentId
+  );
 }
 
 function saveFavorites() {
@@ -47,8 +71,18 @@ function toggleFavorite(id) {
   render();
 }
 
+
+// =========================================================
+// NAVIGATION
+// =========================================================
+
 function buildNavigation() {
-  const categoryNav = document.getElementById("categoryNav");
+  const categoryNav =
+    document.getElementById("categoryNav");
+
+  if (!categoryNav) {
+    return;
+  }
 
   categoryNav.innerHTML = data.categories
     .map(
@@ -57,8 +91,13 @@ function buildNavigation() {
           class="nav-item"
           data-category="${category.id}"
         >
-          <span>${category.icon}</span>
-          <span>${category.label}</span>
+          <span class="nav-icon">
+            ${category.icon}
+          </span>
+
+          <span class="nav-label">
+            ${category.label}
+          </span>
 
           <span class="nav-count">
             ${categoryCount(category.id)}
@@ -71,41 +110,58 @@ function buildNavigation() {
   document
     .querySelectorAll("[data-view]")
     .forEach((button) => {
-      button.addEventListener("click", () => {
-        state = {
-          view: button.dataset.view,
-          category: null,
-          query: "",
-          procedureId: null
-        };
+      button.addEventListener(
+        "click",
+        () => {
+          state = {
+            view: button.dataset.view,
+            category: null,
+            query: "",
+            procedureId: null
+          };
 
-        searchInput.value = "";
+          if (searchInput) {
+            searchInput.value = "";
+          }
 
-        render();
-      });
+          render();
+        }
+      );
     });
 
   document
     .querySelectorAll("[data-category]")
     .forEach((button) => {
-      button.addEventListener("click", () => {
-        state = {
-          view: "category",
-          category: button.dataset.category,
-          query: "",
-          procedureId: null
-        };
+      button.addEventListener(
+        "click",
+        () => {
+          state = {
+            view: "category",
+            category:
+              button.dataset.category,
+            query: "",
+            procedureId: null
+          };
 
-        searchInput.value = "";
+          if (searchInput) {
+            searchInput.value = "";
+          }
 
-        render();
-      });
+          render();
+        }
+      );
     });
 }
 
 function updateNavigation() {
   document
     .querySelectorAll(".nav-item")
+    .forEach((item) => {
+      item.classList.remove("active");
+    });
+
+  document
+    .querySelectorAll("[data-view]")
     .forEach((item) => {
       item.classList.remove("active");
     });
@@ -131,20 +187,31 @@ function updateNavigation() {
   }
 }
 
+
+// =========================================================
+// CARDS
+// =========================================================
+
 function procedureCard(procedure) {
-  const category = categoryById(procedure.category);
+  const category =
+    categoryById(procedure.category);
+
+  const folder =
+    procedure.type === "folder";
 
   return `
     <article
-      class="procedure-card"
+      class="procedure-card ${
+        folder ? "folder-card" : ""
+      }"
       data-procedure-card="${procedure.id}"
     >
 
       <div class="card-top">
 
         <span class="badge">
-          ${category.icon}
-          ${category.label}
+          ${category?.icon || ""}
+          ${category?.label || ""}
         </span>
 
         <button
@@ -155,6 +222,7 @@ function procedureCard(procedure) {
           }"
           data-favorite="${procedure.id}"
           title="Toevoegen aan favorieten"
+          aria-label="Toevoegen aan favorieten"
         >
           ★
         </button>
@@ -166,22 +234,30 @@ function procedureCard(procedure) {
       </h3>
 
       <p>
-        ${procedure.summary}
+        ${procedure.summary || ""}
       </p>
 
       <div class="card-footer">
 
         <span>
-          ${procedure.duration}
-          ·
-          ${procedure.frequency}
+          ${
+            folder
+              ? `${
+                  childProcedures(
+                    procedure.id
+                  ).length
+                } processen`
+              : `${procedure.duration || ""} · ${
+                  procedure.frequency || ""
+                }`
+          }
         </span>
 
         <button
           class="open-button"
           data-open="${procedure.id}"
         >
-          Openen →
+          ${folder ? "Bekijken →" : "Openen →"}
         </button>
 
       </div>
@@ -218,10 +294,19 @@ function categoryCard(category) {
   `;
 }
 
+
+// =========================================================
+// HOME
+// =========================================================
+
 function homeView() {
-  const featured = data.procedures.filter(
-    (procedure) => procedure.featured
-  );
+  const featured =
+    topLevelProcedures().filter(
+      (procedure) => procedure.featured
+    );
+
+  const visibleProcedureCount =
+    topLevelProcedures().length;
 
   content.innerHTML = `
     <div class="hero">
@@ -237,8 +322,9 @@ function homeView() {
         </h1>
 
         <p class="hero-copy">
-          Vind snel de juiste werkinstructie zonder
-          door een lang Word-document te zoeken.
+          Vind snel de juiste werkinstructie
+          zonder door een lang Word-document
+          te zoeken.
         </p>
 
       </div>
@@ -246,16 +332,17 @@ function homeView() {
       <div class="hero-stat">
 
         <strong>
-          ${data.procedures.length}
+          ${visibleProcedureCount}
         </strong>
 
         <span>
-          procedures in dit concept
+          onderdelen in dit concept
         </span>
 
       </div>
 
     </div>
+
 
     <div class="section-heading">
 
@@ -310,6 +397,11 @@ function homeView() {
   `;
 }
 
+
+// =========================================================
+// LIST VIEW
+// =========================================================
+
 function listView(
   title,
   description,
@@ -355,8 +447,8 @@ function listView(
             </h2>
 
             <p>
-              Markeer een procedure met ★
-              om hem hier terug te vinden.
+              Er zijn nog geen procedures
+              toegevoegd.
             </p>
 
           </div>
@@ -365,27 +457,155 @@ function listView(
   `;
 }
 
+
+// =========================================================
+// FOLDER VIEW
+// =========================================================
+
+function folderView(folder) {
+  const children =
+    childProcedures(folder.id);
+
+  content.innerHTML = `
+    <div class="breadcrumb">
+
+      <button data-home>
+        Overzicht
+      </button>
+
+      <span>/</span>
+
+      <span>
+        ${folder.title}
+      </span>
+
+    </div>
+
+
+    <div class="page-title-row folder-title">
+
+      <div>
+
+        <p class="eyebrow">
+          PROCEDUREMAP
+        </p>
+
+        <h1>
+          ${folder.title}
+        </h1>
+
+        <p>
+          ${folder.summary}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="section-heading">
+
+      <div>
+
+        <p class="eyebrow">
+          PROCESSEN
+        </p>
+
+        <h2>
+          Kies een werkinstructie
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    ${
+      children.length
+        ? `
+          <div class="procedure-grid">
+
+            ${children
+              .map(procedureCard)
+              .join("")}
+
+          </div>
+        `
+        : `
+          <div class="empty-state">
+
+            <h2>
+              Nog geen processen
+            </h2>
+
+            <p>
+              Aan deze map zijn nog geen
+              processen toegevoegd.
+            </p>
+
+          </div>
+        `
+    }
+  `;
+}
+
+
+// =========================================================
+// SEARCH
+// =========================================================
+
 function searchView() {
-  const query = state.query
-    .trim()
-    .toLowerCase();
+  const query =
+    state.query
+      .trim()
+      .toLowerCase();
 
   const results =
     data.procedures.filter(
       (procedure) => {
+
+        const steps =
+          procedure.steps || [];
+
+        const bulletText =
+          steps.flatMap(
+            (step) =>
+              step.bullets || []
+          );
+
+        const infoBoxText =
+          procedure.infoBox
+            ? [
+                procedure.infoBox.title,
+                procedure.infoBox.text,
+                ...(procedure.infoBox.items || [])
+                  .flatMap(
+                    (item) => [
+                      item.amount,
+                      item.discount
+                    ]
+                  )
+              ]
+            : [];
+
         const searchableText = [
           procedure.title,
           procedure.summary,
           procedure.system,
           procedure.frequency,
           ...(procedure.tags || []),
-          ...procedure.steps.flatMap(
+
+          ...steps.flatMap(
             (step) => [
               step.title,
               step.text
             ]
-          )
+          ),
+
+          ...bulletText,
+          ...infoBoxText
         ]
+          .filter(Boolean)
           .join(" ")
           .toLowerCase();
 
@@ -410,7 +630,11 @@ function searchView() {
 
         <p class="search-summary">
           ${results.length}
-          resultaat${results.length === 1 ? "" : "en"}
+          resultaat${
+            results.length === 1
+              ? ""
+              : "en"
+          }
           voor “${state.query}”
         </p>
 
@@ -438,10 +662,8 @@ function searchView() {
 
             <p>
               Probeer bijvoorbeeld
-              "Trade",
-              "cadeaukaart",
-              "Google"
-              of "betaling".
+              "Trade", "cadeaukaart",
+              "korting" of "betaling".
             </p>
 
           </div>
@@ -449,71 +671,126 @@ function searchView() {
     }
   `;
 }
-function folderView(folder) {
-  const children = data.procedures.filter(
-    (procedure) => procedure.parent === folder.id
-  );
 
-  content.innerHTML = `
-    <div class="breadcrumb">
-      <button data-home>
-        Overzicht
-      </button>
 
-      /
+// =========================================================
+// INFO BOX
+// =========================================================
 
-      ${folder.title}
-    </div>
+function renderInfoBox(infoBox) {
+  if (!infoBox) {
+    return "";
+  }
 
-    <div class="page-title-row">
-      <div>
-        <p class="eyebrow">
-          PROCEDUREMAP
-        </p>
+  return `
+    <div class="procedure-info-box">
 
-        <h1>
-          ${folder.title}
-        </h1>
+      <div class="info-box-header">
 
-        <p>
-          ${folder.summary}
-        </p>
+        <div class="info-box-icon">
+          i
+        </div>
+
+        <div>
+
+          <h3>
+            ${infoBox.title}
+          </h3>
+
+          ${
+            infoBox.text
+              ? `
+                <p>
+                  ${infoBox.text}
+                </p>
+              `
+              : ""
+          }
+
+        </div>
+
       </div>
-    </div>
 
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">
-          PROCESSEN
-        </p>
+      ${
+        infoBox.items?.length
+          ? `
+            <div class="discount-table">
 
-        <h2>
-          Kies een werkinstructie
-        </h2>
-      </div>
-    </div>
+              ${infoBox.items
+                .map(
+                  (item) => `
+                    <div class="discount-row">
 
-    <div class="procedure-grid">
-      ${children
-        .map(procedureCard)
-        .join("")}
+                      <span>
+                        ${item.amount}
+                      </span>
+
+                      <strong>
+                        ${item.discount}
+                      </strong>
+
+                    </div>
+                  `
+                )
+                .join("")}
+
+            </div>
+          `
+          : ""
+      }
+
     </div>
   `;
 }
+
+
+// =========================================================
+// DETAIL VIEW
+// =========================================================
+
 function detailView(procedure) {
-  const category = categoryById(
-    procedure.category
-  );
+  if (!procedure) {
+    content.innerHTML = `
+      <div class="empty-state">
+        <h2>
+          Procedure niet gevonden
+        </h2>
+      </div>
+    `;
+
+    return;
+  }
+
+  const category =
+    categoryById(procedure.category);
 
   const related =
     data.procedures
       .filter(
         (item) =>
-          item.category ===
-            procedure.category &&
-          item.id !== procedure.id
+          item.id !== procedure.id &&
+          (
+            item.parent ===
+              procedure.parent ||
+            (
+              !procedure.parent &&
+              !item.parent &&
+              item.category ===
+                procedure.category
+            )
+          )
       )
       .slice(0, 4);
+
+  const parent =
+    procedure.parent
+      ? procedureById(
+          procedure.parent
+        )
+      : null;
+
+  const steps =
+    procedure.steps || [];
 
   content.innerHTML = `
     <div class="breadcrumb">
@@ -522,17 +799,33 @@ function detailView(procedure) {
         Overzicht
       </button>
 
-      /
+      <span>/</span>
 
-      <button
-        data-breadcrumb-category="${category.id}"
-      >
-        ${category.label}
-      </button>
+      ${
+        parent
+          ? `
+            <button
+              data-open="${parent.id}"
+            >
+              ${parent.title}
+            </button>
 
-      /
+            <span>/</span>
+          `
+          : `
+            <button
+              data-breadcrumb-category="${category.id}"
+            >
+              ${category.label}
+            </button>
 
-      ${procedure.title}
+            <span>/</span>
+          `
+      }
+
+      <span>
+        ${procedure.title}
+      </span>
 
     </div>
 
@@ -542,7 +835,11 @@ function detailView(procedure) {
       <div>
 
         <p class="eyebrow">
-          ${category.label.toUpperCase()}
+          ${
+            parent
+              ? parent.title.toUpperCase()
+              : category.label.toUpperCase()
+          }
         </p>
 
         <h1>
@@ -550,24 +847,42 @@ function detailView(procedure) {
         </h1>
 
         <p>
-          ${procedure.summary}
+          ${procedure.summary || ""}
         </p>
 
 
         <div class="meta-row">
 
-          <span class="meta-pill">
-            Systeem:
-            ${procedure.system}
-          </span>
+          ${
+            procedure.system
+              ? `
+                <span class="meta-pill">
+                  Systeem:
+                  ${procedure.system}
+                </span>
+              `
+              : ""
+          }
 
-          <span class="meta-pill">
-            ${procedure.frequency}
-          </span>
+          ${
+            procedure.frequency
+              ? `
+                <span class="meta-pill">
+                  ${procedure.frequency}
+                </span>
+              `
+              : ""
+          }
 
-          <span class="meta-pill">
-            ${procedure.duration}
-          </span>
+          ${
+            procedure.duration
+              ? `
+                <span class="meta-pill">
+                  ${procedure.duration}
+                </span>
+              `
+              : ""
+          }
 
           <span class="meta-pill">
             Bijgewerkt:
@@ -580,12 +895,13 @@ function detailView(procedure) {
 
 
       <button
-        class="favorite-button ${
+        class="favorite-button detail-favorite ${
           favorites.has(procedure.id)
             ? "active"
             : ""
         }"
         data-favorite="${procedure.id}"
+        title="Toevoegen aan favorieten"
       >
         ★
       </button>
@@ -624,7 +940,7 @@ function detailView(procedure) {
 
       <section class="steps-panel">
 
-        ${procedure.steps
+        ${steps
           .map(
             (step, index) => `
               <div class="step">
@@ -633,45 +949,58 @@ function detailView(procedure) {
                   ${index + 1}
                 </div>
 
-                <div>
+                <div class="step-content">
 
                   <h3>
                     ${step.title}
                   </h3>
 
-                  <p>
-                    ${step.text}
-                  </p>
-                  
                   ${
-  step.bullets && step.bullets.length
-    ? `
-      <ul class="step-bullets">
-        ${step.bullets
-          .map(
-            (bullet) => `
-              <li>${bullet}</li>
-            `
-          )
-          .join("")}
-      </ul>
-    `
-    : ""
-}
+                    step.text
+                      ? `
+                        <p>
+                          ${step.text}
+                        </p>
+                      `
+                      : ""
+                  }
+
                   ${
-  step.image
-    ? `
-      <div class="step-image-wrapper">
-        <img
-          class="step-image"
-          src="${step.image}"
-          alt="${step.title}"
-          loading="lazy"
-        >
-      </div>
-    `
-    : ""
-}
+                    step.bullets?.length
+                      ? `
+                        <ul class="step-bullets">
+
+                          ${step.bullets
+                            .map(
+                              (bullet) => `
+                                <li>
+                                  ${bullet}
+                                </li>
+                              `
+                            )
+                            .join("")}
+
+                        </ul>
+                      `
+                      : ""
+                  }
+
+                  ${
+                    step.image
+                      ? `
+                        <div class="step-image-wrapper">
+
+                          <img
+                            class="step-image"
+                            src="${step.image}"
+                            alt="${step.title}"
+                            loading="lazy"
+                          >
+
+                        </div>
+                      `
+                      : ""
+                  }
 
                 </div>
 
@@ -679,6 +1008,11 @@ function detailView(procedure) {
             `
           )
           .join("")}
+
+
+        ${renderInfoBox(
+          procedure.infoBox
+        )}
 
       </section>
 
@@ -741,6 +1075,38 @@ function detailView(procedure) {
   `;
 }
 
+
+// =========================================================
+// BUTTON EVENTS
+// =========================================================
+
+function openProcedure(id) {
+  const procedure =
+    procedureById(id);
+
+  if (!procedure) {
+    return;
+  }
+
+  state = {
+    view: "detail",
+    category: null,
+    query: "",
+    procedureId: id
+  };
+
+  if (searchInput) {
+    searchInput.value = "";
+  }
+
+  render();
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
 function bindContentButtons() {
   content
     .querySelectorAll("[data-open]")
@@ -750,25 +1116,13 @@ function bindContentButtons() {
         (event) => {
           event.stopPropagation();
 
-          state = {
-            view: "detail",
-            category: null,
-            query: "",
-            procedureId:
-              button.dataset.open
-          };
-
-          searchInput.value = "";
-
-          render();
-
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+          openProcedure(
+            button.dataset.open
+          );
         }
       );
     });
+
 
   content
     .querySelectorAll(
@@ -790,25 +1144,13 @@ function bindContentButtons() {
             return;
           }
 
-          state = {
-            view: "detail",
-            category: null,
-            query: "",
-            procedureId:
-              card.dataset.procedureCard
-          };
-
-          searchInput.value = "";
-
-          render();
-
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+          openProcedure(
+            card.dataset.procedureCard
+          );
         }
       );
     });
+
 
   content
     .querySelectorAll(
@@ -826,6 +1168,7 @@ function bindContentButtons() {
         }
       );
     });
+
 
   content
     .querySelectorAll(
@@ -847,6 +1190,7 @@ function bindContentButtons() {
         }
       );
     });
+
 
   content
     .querySelectorAll(
@@ -870,6 +1214,7 @@ function bindContentButtons() {
       );
     });
 
+
   content
     .querySelectorAll("[data-home]")
     .forEach((button) => {
@@ -889,6 +1234,11 @@ function bindContentButtons() {
     });
 }
 
+
+// =========================================================
+// RENDER
+// =========================================================
+
 function render() {
   updateNavigation();
 
@@ -896,20 +1246,27 @@ function render() {
     searchView();
   }
 
-  else if (state.view === "home") {
+  else if (
+    state.view === "home"
+  ) {
     homeView();
   }
 
   else if (
     state.view === "favorites"
   ) {
+    const favoriteProcedures =
+      data.procedures.filter(
+        (procedure) =>
+          favorites.has(
+            procedure.id
+          )
+      );
+
     listView(
       "Favorieten",
       "Je meest gebruikte werkinstructies op één plek.",
-      data.procedures.filter(
-        (procedure) =>
-          favorites.has(procedure.id)
-      )
+      favoriteProcedures
     );
   }
 
@@ -917,68 +1274,101 @@ function render() {
     state.view === "category"
   ) {
     const category =
-      categoryById(state.category);
+      categoryById(
+        state.category
+      );
 
-    listView(
-      category.label,
-      category.description,
-data.procedures.filter(
-  (procedure) =>
-    procedure.category === category.id &&
-    !procedure.parent
-)
+    if (!category) {
+      homeView();
+    } else {
+      const procedures =
+        data.procedures.filter(
+          (procedure) =>
+            procedure.category ===
+              category.id &&
+            !procedure.parent
+        );
+
+      listView(
+        category.label,
+        category.description,
+        procedures
+      );
+    }
+  }
+
+  else if (
+    state.view === "detail"
+  ) {
+    const procedure =
+      procedureById(
+        state.procedureId
+      );
+
+    if (!procedure) {
+      homeView();
+    }
+
+    else if (
+      procedure.type === "folder"
+    ) {
+      folderView(procedure);
+    }
+
+    else {
+      detailView(procedure);
+    }
+  }
+
+  if (clearSearch) {
+    clearSearch.classList.toggle(
+      "hidden",
+      !state.query
     );
   }
-
-else if (
-  state.view === "detail"
-) {
-  const procedure =
-    procedureById(state.procedureId);
-
-  if (procedure.type === "folder") {
-    folderView(procedure);
-  } else {
-    detailView(procedure);
-  }
-}
-
-  clearSearch.classList.toggle(
-    "hidden",
-    !state.query
-  );
 
   bindContentButtons();
 }
 
-searchInput.addEventListener(
-  "input",
-  () => {
-    state.query = searchInput.value;
 
-    render();
-  }
-);
+// =========================================================
+// SEARCH EVENTS
+// =========================================================
 
-clearSearch.addEventListener(
-  "click",
-  () => {
-    searchInput.value = "";
+if (searchInput) {
+  searchInput.addEventListener(
+    "input",
+    () => {
+      state.query =
+        searchInput.value;
 
-    state = {
-      view: "home",
-      category: null,
-      query: "",
-      procedureId: null
-    };
+      render();
+    }
+  );
+}
 
-    render();
-  }
-);
+if (clearSearch) {
+  clearSearch.addEventListener(
+    "click",
+    () => {
+      searchInput.value = "";
+
+      state = {
+        view: "home",
+        category: null,
+        query: "",
+        procedureId: null
+      };
+
+      render();
+    }
+  );
+}
 
 document.addEventListener(
   "keydown",
   (event) => {
+
     if (
       event.key === "/" &&
       document.activeElement !==
@@ -986,7 +1376,7 @@ document.addEventListener(
     ) {
       event.preventDefault();
 
-      searchInput.focus();
+      searchInput?.focus();
     }
 
     if (
@@ -998,6 +1388,11 @@ document.addEventListener(
     }
   }
 );
+
+
+// =========================================================
+// START APP
+// =========================================================
 
 buildNavigation();
 render();
