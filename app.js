@@ -643,6 +643,21 @@ function detailView(procedure) {
                     ${step.text}
                   </p>
                   ${
+  step.bullets && step.bullets.length
+    ? `
+      <ul class="step-bullets">
+        ${step.bullets
+          .map(
+            (bullet) => `
+              <li>${bullet}</li>
+            `
+          )
+          .join("")}
+      </ul>
+    `
+    : ""
+}
+                  ${
   step.image
     ? `
       <div class="step-image-wrapper">
