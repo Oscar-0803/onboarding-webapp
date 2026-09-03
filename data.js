@@ -212,7 +212,8 @@ window.HANDBOOK_DATA = {
       image:
         "images/hema-zakelijk/annuleren/01-aanvraag.png"
     },
-{
+
+    {
   id: "nieuwe-relatie-toevoegen",
   category: "dagelijks",
   parent: "hema-zakelijk",
