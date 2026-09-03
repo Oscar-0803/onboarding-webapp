@@ -50,7 +50,6 @@ window.HANDBOOK_DATA = {
   ],
 
   procedures: [
-
     // =========================================================
     // HEM GIFTCARDS
     // =========================================================
@@ -160,7 +159,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // HEMA ZAKELIJK - FOLDER
+    // HEMA ZAKELIJK
     // =========================================================
 
     {
@@ -177,7 +176,6 @@ window.HANDBOOK_DATA = {
       duration: "Meerdere processen",
 
       featured: true,
-
       type: "folder",
 
       tags: [
@@ -188,7 +186,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // HEMA ZAKELIJK - ANNULEREN VAN ZAKELIJKE ORDERS
+    // ANNULEREN VAN ZAKELIJKE ORDERS
     // =========================================================
 
     {
@@ -258,7 +256,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // HEMA ZAKELIJK - NIEUWE RELATIE TOEVOEGEN
+    // NIEUWE RELATIE TOEVOEGEN
     // =========================================================
 
     {
@@ -347,7 +345,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // HEMA ZAKELIJK - ORDERS HANDMATIG INVOEREN
+    // ORDERS HANDMATIG INVOEREN
     // =========================================================
 
     {
@@ -448,7 +446,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // HEMA ZAKELIJK - KORTING
+    // KORTING
     // =========================================================
 
     {
@@ -459,7 +457,7 @@ window.HANDBOOK_DATA = {
       title: "Korting",
 
       summary:
-        "Instructie voor het toevoegen van korting buiten de standaard kortingsstaffel.",
+        "Werkwijze voor het toevoegen van korting buiten de kortingsstaffel.",
 
       system: "Zakelijk Trade",
       frequency: "Wanneer nodig",
@@ -476,9 +474,12 @@ window.HANDBOOK_DATA = {
         "trade"
       ],
 
+      caution:
+        "Gebruik deze werkwijze wanneer korting buiten de normale kortingsstaffel moet worden toegevoegd.",
+
       steps: [
         {
-          title: "Schakel orderwaardekorting uit",
+          title: "Schakel de orderwaardekorting uit",
           text:
             "Vink eerst 'Bereken Orderwaardekorting in deze order' uit.",
           image:
@@ -488,7 +489,7 @@ window.HANDBOOK_DATA = {
         {
           title: "Voeg de korting toe",
           text:
-            "Voeg de korting in euro's toe bij 'Productkorting (incl.)'. Bereken hiervoor eerst het kortingsbedrag. Voorbeeld: 10% korting op €10 is 10 × 0,1 = €1 korting.",
+            "Voeg de korting in euro's toe bij 'Productkorting (incl.)'. Bereken eerst het kortingsbedrag. Voorbeeld: 10% korting van €10 is €10 × 0,1 = €1.",
           image:
             "images/hema-zakelijk/korting/02-productkorting.png"
         }
@@ -496,8 +497,9 @@ window.HANDBOOK_DATA = {
 
       infoBox: {
         title: "Staffelkorting",
+
         text:
-          "Gebruik onderstaande staffel om te bepalen welk kortingspercentage van toepassing is op basis van het orderbedrag.",
+          "Gebruik onderstaande staffel om te controleren welk kortingspercentage van toepassing is op basis van de orderwaarde.",
 
         items: [
           {
@@ -537,14 +539,10 @@ window.HANDBOOK_DATA = {
       category: "orders",
 
       title: "Order invoeren Goede Doelen Loterijen (GDL)",
-
-      summary:
-        "Stappenplan voor het invoeren van een GDL-order.",
-
+      summary: "Stappenplan voor het invoeren van een GDL-order.",
       system: "Orderadministratie",
       frequency: "Regelmatig",
       duration: "± 10 min",
-
       featured: true,
 
       tags: [
@@ -575,14 +573,11 @@ window.HANDBOOK_DATA = {
       category: "orders",
 
       title: "Nieuwe interne order invoeren in Trade",
-
       summary:
         "Stappenplan voor het invoeren van een interne order in Trade.",
-
       system: "Trade",
       frequency: "Regelmatig",
       duration: "± 10 min",
-
       featured: true,
 
       tags: [
@@ -617,14 +612,11 @@ window.HANDBOOK_DATA = {
       category: "betalingen",
 
       title: "Bank betalingen",
-
       summary:
         "Stappenplan voor het controleren en verwerken van bankbetalingen.",
-
       system: "Bank / orderadministratie",
       frequency: "Dagelijks",
       duration: "± 5 min",
-
       featured: true,
 
       tags: [
@@ -659,14 +651,11 @@ window.HANDBOOK_DATA = {
       category: "klantenservice",
 
       title: "Mailbox Klantenservice HEMA Tickets",
-
       summary:
         "Werkwijze voor de mailbox Klantenservice HEMA Tickets.",
-
       system: "HEMA Tickets",
       frequency: "Dagelijks",
       duration: "± 10 min",
-
       featured: true,
 
       tags: [
@@ -697,14 +686,11 @@ window.HANDBOOK_DATA = {
       category: "klantenservice",
 
       title: "Handleiding herroeping Snowworld",
-
       summary:
         "Stappenplan voor het verwerken van een Snowworld-herroeping.",
-
       system: "Klantenservice",
       frequency: "Wanneer nodig",
       duration: "± 5 min",
-
       featured: false,
 
       tags: [
@@ -739,14 +725,11 @@ window.HANDBOOK_DATA = {
       category: "uitingen",
 
       title: "Broadsign (DOOH puischermen)",
-
       summary:
         "Stappenplan voor het inregelen van content op DOOH-pu schermen.",
-
       system: "Broadsign",
       frequency: "Wanneer nodig",
       duration: "± 10 min",
-
       featured: true,
 
       tags: [
@@ -778,14 +761,11 @@ window.HANDBOOK_DATA = {
       category: "uitingen",
 
       title: "Rcos (DOOH kassaschermen)",
-
       summary:
         "Stappenplan voor het inregelen van content op kassaschermen.",
-
       system: "Rcos",
       frequency: "Wanneer nodig",
       duration: "± 10 min",
-
       featured: false,
 
       tags: [
@@ -821,14 +801,11 @@ window.HANDBOOK_DATA = {
       category: "advertising",
 
       title: "Google Ad Manager",
-
       summary:
         "Stappenplan voor het opzetten van campagnes in Google Ad Manager.",
-
       system: "Google Ad Manager",
       frequency: "Wanneer nodig",
       duration: "± 15 min",
-
       featured: true,
 
       tags: [
@@ -863,14 +840,11 @@ window.HANDBOOK_DATA = {
       category: "banners",
 
       title: "Stappenplan Online Banners",
-
       summary:
         "Stappenplan voor het maken en verwerken van online banners.",
-
       system: "Adobe Express",
       frequency: "Wanneer nodig",
       duration: "± 15 min",
-
       featured: true,
 
       tags: [
