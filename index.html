@@ -1,92 +1,157 @@
 <!doctype html>
 <html lang="nl">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Stagiair Handleiding</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
 
-  <link rel="stylesheet" href="styles.css?v=3">
+  <title>
+    Stagiair Handleiding
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css?v=7"
+  >
 </head>
 
+
 <body>
+
   <div class="app-shell">
 
     <aside class="sidebar">
-<div class="brand">
 
-  <div class="brand-row">
+      <div class="brand">
 
-    <img
-  class="brand-logo"
-  src="images/logo.png"
-  alt="Logo"
-/>
+        <div class="brand-row">
 
-    <div>
-      <strong>Stagiair Handleiding</strong>
-      <span>Onboarding</span>
-    </div>
+          <img
+            class="brand-logo"
+            src="images/logo.png"
+            alt="HEMA logo"
+          />
 
-  </div>
+          <div>
 
-</div>
+            <strong class="brand-title">
+              Stagiair Handleiding
+            </strong>
+
+            <span class="brand-subtitle">
+              Onboarding
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
 
       <nav>
-        <button class="nav-item active" data-view="home">
-          Overzicht
+
+        <button
+          class="nav-item active"
+          data-view="home"
+        >
+          <span class="nav-icon">
+            ⌂
+          </span>
+
+          <span class="nav-label">
+            Overzicht
+          </span>
         </button>
 
-        <button class="nav-item" data-view="favorites">
-          Favorieten
+
+        <button
+          class="nav-item"
+          data-view="favorites"
+        >
+          <span class="nav-icon">
+            ★
+          </span>
+
+          <span class="nav-label">
+            Favorieten
+          </span>
         </button>
 
-        <div class="nav-label">Categorieën</div>
+
+        <div class="nav-section-label">
+          Categorieën
+        </div>
+
 
         <div id="categoryNav"></div>
+
       </nav>
 
+
       <div class="sidebar-footer">
-        <div class="security-note">
-          <strong>Veiligheid</strong>
-          <span>Geen wachtwoorden in deze app.</span>
-        </div>
+
+        <strong>
+          Veiligheid
+        </strong>
+
+        <span>
+          Geen wachtwoorden in deze app.
+        </span>
+
       </div>
+
     </aside>
 
 
-    <main>
+    <div class="main-area">
 
       <header class="topbar">
 
         <div class="search-wrap">
+
           <input
             id="searchInput"
             type="search"
             placeholder="Zoek een procedure..."
+            autocomplete="off"
           />
-        </div>
 
-        <button id="clearSearch" class="ghost-button hidden">
-          Wissen
-        </button>
+          <button
+            id="clearSearch"
+            class="hidden"
+            type="button"
+            aria-label="Zoekopdracht wissen"
+          >
+            ×
+          </button>
+
+        </div>
 
       </header>
 
 
-      <section class="content" id="appContent">
+      <main id="appContent">
 
-        <!-- De inhoud wordt door JavaScript geladen -->
+        <!--
+          De inhoud van de webapp
+          wordt hier door app.js geladen.
+        -->
 
-      </section>
+      </main>
 
-    </main>
+    </div>
 
   </div>
 
 
-<script src="data.js?v=5"></script>
-<script src="app.js?v=5"></script>
+  <script src="data.js?v=7"></script>
+  <script src="app.js?v=7"></script>
 
 </body>
+
 </html>
