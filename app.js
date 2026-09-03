@@ -642,6 +642,7 @@ function detailView(procedure) {
                   <p>
                     ${step.text}
                   </p>
+                  
                   ${
   step.bullets && step.bullets.length
     ? `
