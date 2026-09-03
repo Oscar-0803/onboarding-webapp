@@ -448,6 +448,87 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
+    // HEMA ZAKELIJK - KORTING
+    // =========================================================
+
+    {
+      id: "korting",
+      category: "dagelijks",
+      parent: "hema-zakelijk",
+
+      title: "Korting",
+
+      summary:
+        "Instructie voor het toevoegen van korting buiten de standaard kortingsstaffel.",
+
+      system: "Zakelijk Trade",
+      frequency: "Wanneer nodig",
+      duration: "± 2–5 min",
+
+      featured: false,
+
+      tags: [
+        "hema zakelijk",
+        "korting",
+        "staffelkorting",
+        "orderwaardekorting",
+        "productkorting",
+        "trade"
+      ],
+
+      steps: [
+        {
+          title: "Schakel orderwaardekorting uit",
+          text:
+            "Vink eerst 'Bereken Orderwaardekorting in deze order' uit.",
+          image:
+            "images/hema-zakelijk/korting/01-orderwaardekorting.png"
+        },
+
+        {
+          title: "Voeg de korting toe",
+          text:
+            "Voeg de korting in euro's toe bij 'Productkorting (incl.)'. Bereken hiervoor eerst het kortingsbedrag. Voorbeeld: 10% korting op €10 is 10 × 0,1 = €1 korting.",
+          image:
+            "images/hema-zakelijk/korting/02-productkorting.png"
+        }
+      ],
+
+      infoBox: {
+        title: "Staffelkorting",
+        text:
+          "Gebruik onderstaande staffel om te bepalen welk kortingspercentage van toepassing is op basis van het orderbedrag.",
+
+        items: [
+          {
+            amount: "> €5.000",
+            discount: "4%"
+          },
+          {
+            amount: "> €25.000",
+            discount: "5%"
+          },
+          {
+            amount: "> €50.000",
+            discount: "6%"
+          },
+          {
+            amount: "> €100.000",
+            discount: "7%"
+          },
+          {
+            amount: "> €250.000",
+            discount: "8%"
+          },
+          {
+            amount: "> €500.000",
+            discount: "9%"
+          }
+        ]
+      }
+    },
+
+    // =========================================================
     // ORDERS
     // =========================================================
 
