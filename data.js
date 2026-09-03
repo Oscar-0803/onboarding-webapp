@@ -212,7 +212,88 @@ window.HANDBOOK_DATA = {
       image:
         "images/hema-zakelijk/annuleren/01-aanvraag.png"
     },
+{
+  id: "nieuwe-relatie-toevoegen",
+  category: "dagelijks",
+  parent: "hema-zakelijk",
 
+  title: "Nieuwe relatie toevoegen",
+
+  summary:
+    "Stappenplan voor het toevoegen van een nieuwe zakelijke relatie in Trade.",
+
+  system: "Zakelijk Trade",
+  frequency: "Wanneer nodig",
+  duration: "± 5–10 min",
+
+  featured: false,
+
+  tags: [
+    "hema zakelijk",
+    "nieuwe relatie",
+    "trade",
+    "zakelijke klant",
+    "debtor code",
+    "klantnummer"
+  ],
+
+  caution:
+    "Controleer het laatst gebruikte klantnummer zorgvuldig voordat je een nieuwe debtor code aanmaakt.",
+
+  steps: [
+    {
+      title: "Open Relaties in Trade",
+      text:
+        "Ga naar Trade en klik bovenin op 'Relaties'.",
+      image: ""
+    },
+
+    {
+      title: "Zoek de actieve zakelijke relaties",
+      text:
+        "Selecteer bij het veld 'Actief' de waarde 'Ja' en klik op 'Zoeken'.",
+      image:
+        "images/hema-zakelijk/nieuwe-relatie/02-actieve-relaties.png"
+    },
+
+    {
+      title: "Sorteer op klantnummer",
+      text:
+        "Klik op 'Klantnummer'. Alle relaties worden nu op klantnummer gesorteerd. Kopieer het laatste klantnummer; dit nummer heb je nodig voor het aanmaken van een nieuwe relatie.",
+      image:
+        "images/hema-zakelijk/nieuwe-relatie/03-klantnummer.png"
+    },
+
+    {
+      title: "Maak een nieuwe relatie aan",
+      text:
+        "Klik bovenaan op 'Nieuw'. Vul rechtsboven bij 'Debtor code' het gekopieerde klantnummer in en tel hier 1 bij op. Bijvoorbeeld: klantnummer 17654 wordt 17655.",
+      image: ""
+    },
+
+    {
+      title: "Vul de relatiegegevens in",
+      text:
+        "Vul de overige gegevens van de nieuwe relatie in.",
+      bullets: [
+        "Klantnaam",
+        "Emailadres",
+        "KvK nummer",
+        "BTW nummer",
+        "Ga naar het tabje 'Adressen' en klik op 'Nieuw' om een adres toe te voegen",
+        "Ga naar 'Contactpers.' en klik op 'Nieuw' om een contactpersoon toe te voegen"
+      ],
+      image: ""
+    },
+
+    {
+      title: "Sla de nieuwe relatie op",
+      text:
+        "Klik op 'Opslaan'. Je kunt nu een order invoeren en de nieuwe relatie gebruiken.",
+      image: ""
+    }
+  ]
+},
     {
       title: "Zoek de order op",
       text:
