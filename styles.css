@@ -939,7 +939,23 @@ h2 {
   font-size: 13px;
   line-height: 1.65;
 }
+.step-bullets {
+  margin: 14px 0 0;
+  padding-left: 22px;
 
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.step-bullets li {
+  margin-bottom: 7px;
+}
+
+.step-bullets li::marker {
+  color: var(--hema-red);
+}
 /* SCREENSHOT PLACEHOLDER */
 
 .screenshot-placeholder {
