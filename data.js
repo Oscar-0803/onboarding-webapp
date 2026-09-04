@@ -50,6 +50,7 @@ window.HANDBOOK_DATA = {
   ],
 
   procedures: [
+
     // =========================================================
     // HEM GIFTCARDS
     // =========================================================
@@ -159,7 +160,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // HEMA ZAKELIJK
+    // HEMA ZAKELIJK - FOLDER
     // =========================================================
 
     {
@@ -176,6 +177,7 @@ window.HANDBOOK_DATA = {
       duration: "Meerdere processen",
 
       featured: true,
+
       type: "folder",
 
       tags: [
@@ -186,7 +188,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // ANNULEREN VAN ZAKELIJKE ORDERS
+    // HEMA ZAKELIJK - ANNULEREN VAN ZAKELIJKE ORDERS
     // =========================================================
 
     {
@@ -256,7 +258,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // NIEUWE RELATIE TOEVOEGEN
+    // HEMA ZAKELIJK - NIEUWE RELATIE TOEVOEGEN
     // =========================================================
 
     {
@@ -345,7 +347,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // ORDERS HANDMATIG INVOEREN
+    // HEMA ZAKELIJK - ORDERS HANDMATIG INVOEREN
     // =========================================================
 
     {
@@ -446,7 +448,7 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // KORTING
+    // HEMA ZAKELIJK - KORTING
     // =========================================================
 
     {
@@ -531,53 +533,259 @@ window.HANDBOOK_DATA = {
     },
 
     // =========================================================
-    // ORDERS
+    // ORDERS - GOEDE DOELEN LOTERIJEN
     // =========================================================
 
     {
       id: "gdl-order",
       category: "orders",
 
-      title: "Order invoeren Goede Doelen Loterijen (GDL)",
-      summary: "Stappenplan voor het invoeren van een GDL-order.",
-      system: "Orderadministratie",
-      frequency: "Regelmatig",
-      duration: "± 10 min",
+      title:
+        "Order invoeren Goede Doelen Loterijen (GDL)",
+
+      summary:
+        "Stappenplan voor het verwerken en invoeren van orders van de Nationale Postcode Loterij (NPL) en VriendenLoterij (VL).",
+
+      system: "Zakelijk Trade",
+      frequency: "Wanneer een GDL-order binnenkomt",
+      duration: "± 15–20 min",
+
       featured: true,
 
       tags: [
         "gdl",
         "goede doelen loterijen",
-        "order"
+        "npl",
+        "nationale postcode loterij",
+        "vriendenloterij",
+        "vl",
+        "redemptie",
+        "zakelijk trade",
+        "inkooporder",
+        "cadeaukaart",
+        "prisma",
+        "pondres",
+        "sidekix"
       ],
 
+      caution:
+        "Controleer bij GDL-orders zorgvuldig de klant, het PO-nummer, de geldigheidsdatum, de afleverdatum en het afleveradres aan de hand van de ontvangen inkooporder.",
+
       steps: [
+
         {
-          title: "Open de juiste omgeving",
+          title:
+            "Open de ontvangen inkooporder",
+
           text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+            "In de inbox *HEM zakelijk ontvang je regelmatig nieuwe inkooporders van de Goede Doelen Loterijen. Open de inkooporder en gebruik deze tijdens het invoeren van de order als bron voor de ordergegevens.",
+
           image: ""
         },
 
         {
-          title: "Voer de ordergegevens in",
+          title:
+            "Maak een nieuwe zakelijke order aan",
+
           text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+            "Ga naar Zakelijk Trade, klik op 'Orders', vervolgens op 'Nieuw' en daarna op '+ Nieuw'.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Selecteer het juiste klanttype",
+
+          text:
+            "Selecteer bij klanttype 'Zakelijk'.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Selecteer de juiste klant",
+
+          text:
+            "De klant is altijd 'NPL - GDL' of 'VL - GDL'. Kies de klant die overeenkomt met de ontvangen inkooporder.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vul het PO-nummer in",
+
+          text:
+            "Vul bij 'Klant Order Referentie' en 'Klant factuur referentie' het PO-nummer van de inkooporder in.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vul de aanvullende orderinformatie in",
+
+          text:
+            "Open het dropdownmenu 'Meer informatie' en vul bij 'Instructies voor Uitvoerder' de gegevens over de geldigheid en afleverdatum in.",
+
+          bullets: [
+            "Deze kaart is geldig t/m: afleverdatum + 2 dagen + 2 jaar",
+            "Afleverdatum: gebruik de aangegeven leverdatum op de inkooporder / het PO-nummer"
+          ],
+
+          image: ""
+        },
+
+        {
+          title:
+            "Voeg het juiste product toe",
+
+          text:
+            "Ga naar 'Product' en klik op 'Voeg toe'. Selecteer bij product 'NPL/VL - fysieke cadeaukaarten redemptie'. Voor iedere loterij is een apart product op basis van redemptie aangemaakt.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vul aantal en waarde in",
+
+          text:
+            "Vul het aantal cadeaukaarten en de waarde per cadeaukaart in zoals aangegeven op de inkooporder.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vul de expiratiedatum in",
+
+          text:
+            "Ga naar 'Opties' en vul de expiratiedatum in. De expiratiedatum is de datum van geldigheid plus 1 dag. Vink vervolgens het vakje bij 'Afw. Afleveradres' aan en ga naar het tabblad 'Afleveradres'.",
+
+          bullets: [
+            "Expiratiedatum = datum geldigheid + 1 dag",
+            "Controleer het afleveradres op de inkooporder bij 'Ship to'",
+            "Het afleveradres kan van Sidekix of Pondres zijn"
+          ],
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vul het afleveradres in",
+
+          text:
+            "Vul bij 'Afleveradres' de benodigde adresgegevens in. Gebruik hiervoor altijd het afleveradres dat op de inkooporder staat. Dit kan het adres van Pondres of Sidekix zijn.",
+
+          bullets: [
+            "Geslacht",
+            "Voornaam",
+            "Achternaam",
+            "Straat",
+            "Huisnummer",
+            "Postcode",
+            "Plaats",
+            "Bedrijfsnaam",
+            "E-mailadres",
+            "Land"
+          ],
+
+          image: ""
+        },
+
+        {
+          title:
+            "Sla de order op",
+
+          text:
+            "Klik op 'Opslaan'.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Controleer alle gegevens",
+
+          text:
+            "Controleer alle ingevoerde gegevens nogmaals zorgvuldig aan de hand van de inkooporder.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Sla de gecontroleerde order definitief op",
+
+          text:
+            "Ben je er zeker van dat alle gegevens kloppen? Klik dan opnieuw op 'Opslaan'.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Mail de orderinformatie intern",
+
+          text:
+            "Stuur na het invoeren een e-mail met het Trade-ordernummer en de expiratiedatum. Voeg de inkooporder als bijlage toe en zet *HEM zakelijk in de CC.",
+
+          bullets: [
+            "Aan: b2b.cadeaukaarten@hema.nl",
+            "Aan: henneke.velthove@hema.nl",
+            "Vermeld het Trade-ordernummer",
+            "Vermeld de expiratiedatum",
+            "Voeg de inkooporder als bijlage toe",
+            "Zet *HEM zakelijk in de CC"
+          ],
+
+          image: ""
+        },
+
+        {
+          title:
+            "Mail de order naar Prisma",
+
+          text:
+            "Mail Prisma het inkooporderformulier (de PDF uit de ontvangen e-mail). Geef aan dat er een nieuwe GDL-order is ingevoerd en vermeld het Trade-ordernummer, de leverdatum en de geldigheid van de kaart.",
+
+          bullets: [
+            "info@prismadirect.nl",
+            "lizette@prismadirect.nl",
+            "Vermeld dat een nieuwe GDL-order is ingevoerd",
+            "Vermeld het Trade-ordernummer",
+            "Vermeld de leverdatum",
+            "Vermeld de geldigheid van de kaart",
+            "Voeg het inkooporderformulier als PDF toe"
+          ],
+
           image: ""
         }
       ]
     },
 
+    // =========================================================
+    // ORDERS - INTERNE ORDER IN TRADE
+    // =========================================================
+
     {
       id: "trade-order",
       category: "orders",
 
-      title: "Nieuwe interne order invoeren in Trade",
+      title:
+        "Nieuwe interne order invoeren in Trade",
+
       summary:
         "Stappenplan voor het invoeren van een interne order in Trade.",
+
       system: "Trade",
       frequency: "Regelmatig",
       duration: "± 10 min",
+
       featured: true,
 
       tags: [
@@ -588,16 +796,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open Trade",
+          title:
+            "Open Trade",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Maak een nieuwe order aan",
+          title:
+            "Maak een nieuwe order aan",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -612,11 +826,16 @@ window.HANDBOOK_DATA = {
       category: "betalingen",
 
       title: "Bank betalingen",
+
       summary:
         "Stappenplan voor het controleren en verwerken van bankbetalingen.",
-      system: "Bank / orderadministratie",
+
+      system:
+        "Bank / orderadministratie",
+
       frequency: "Dagelijks",
       duration: "± 5 min",
+
       featured: true,
 
       tags: [
@@ -627,16 +846,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open het betaaloverzicht",
+          title:
+            "Open het betaaloverzicht",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Controleer de betaling",
+          title:
+            "Controleer de betaling",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -650,12 +875,16 @@ window.HANDBOOK_DATA = {
       id: "hema-tickets",
       category: "klantenservice",
 
-      title: "Mailbox Klantenservice HEMA Tickets",
+      title:
+        "Mailbox Klantenservice HEMA Tickets",
+
       summary:
         "Werkwijze voor de mailbox Klantenservice HEMA Tickets.",
+
       system: "HEMA Tickets",
       frequency: "Dagelijks",
       duration: "± 10 min",
+
       featured: true,
 
       tags: [
@@ -666,16 +895,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open de mailbox",
+          title:
+            "Open de mailbox",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Controleer het ticket",
+          title:
+            "Controleer het ticket",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -685,12 +920,16 @@ window.HANDBOOK_DATA = {
       id: "snowworld",
       category: "klantenservice",
 
-      title: "Handleiding herroeping Snowworld",
+      title:
+        "Handleiding herroeping Snowworld",
+
       summary:
         "Stappenplan voor het verwerken van een Snowworld-herroeping.",
+
       system: "Klantenservice",
       frequency: "Wanneer nodig",
       duration: "± 5 min",
+
       featured: false,
 
       tags: [
@@ -701,16 +940,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open de aanvraag",
+          title:
+            "Open de aanvraag",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Verwerk de herroeping",
+          title:
+            "Verwerk de herroeping",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -724,12 +969,16 @@ window.HANDBOOK_DATA = {
       id: "broadsign",
       category: "uitingen",
 
-      title: "Broadsign (DOOH puischermen)",
+      title:
+        "Broadsign (DOOH puischermen)",
+
       summary:
         "Stappenplan voor het inregelen van content op DOOH-pu schermen.",
+
       system: "Broadsign",
       frequency: "Wanneer nodig",
       duration: "± 10 min",
+
       featured: true,
 
       tags: [
@@ -741,16 +990,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open Broadsign",
+          title:
+            "Open Broadsign",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Selecteer de juiste schermen",
+          title:
+            "Selecteer de juiste schermen",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -760,12 +1015,16 @@ window.HANDBOOK_DATA = {
       id: "rcos",
       category: "uitingen",
 
-      title: "Rcos (DOOH kassaschermen)",
+      title:
+        "Rcos (DOOH kassaschermen)",
+
       summary:
         "Stappenplan voor het inregelen van content op kassaschermen.",
+
       system: "Rcos",
       frequency: "Wanneer nodig",
       duration: "± 10 min",
+
       featured: false,
 
       tags: [
@@ -777,16 +1036,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open Rcos",
+          title:
+            "Open Rcos",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Selecteer de juiste kassaschermen",
+          title:
+            "Selecteer de juiste kassaschermen",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -801,11 +1066,14 @@ window.HANDBOOK_DATA = {
       category: "advertising",
 
       title: "Google Ad Manager",
+
       summary:
         "Stappenplan voor het opzetten van campagnes in Google Ad Manager.",
+
       system: "Google Ad Manager",
       frequency: "Wanneer nodig",
       duration: "± 15 min",
+
       featured: true,
 
       tags: [
@@ -816,16 +1084,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open Google Ad Manager",
+          title:
+            "Open Google Ad Manager",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Maak de campagne aan",
+          title:
+            "Maak de campagne aan",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
@@ -839,12 +1113,16 @@ window.HANDBOOK_DATA = {
       id: "online-banners",
       category: "banners",
 
-      title: "Stappenplan Online Banners",
+      title:
+        "Stappenplan Online Banners",
+
       summary:
         "Stappenplan voor het maken en verwerken van online banners.",
+
       system: "Adobe Express",
       frequency: "Wanneer nodig",
       duration: "± 15 min",
+
       featured: true,
 
       tags: [
@@ -855,16 +1133,22 @@ window.HANDBOOK_DATA = {
 
       steps: [
         {
-          title: "Open het juiste template",
+          title:
+            "Open het juiste template",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         },
 
         {
-          title: "Maak de banner",
+          title:
+            "Maak de banner",
+
           text:
             "Voeg hier de officiële uitleg uit het Word-document toe.",
+
           image: ""
         }
       ]
