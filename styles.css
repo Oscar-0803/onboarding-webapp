@@ -1886,3 +1886,81 @@ h3 {
     padding: 16px;
   }
 }
+/* =========================================================
+   INFORMATIEKAARTEN BINNEN EEN STAP
+========================================================= */
+
+.step-info-cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(240px, 1fr)
+    );
+
+  gap: 14px;
+
+  margin-top: 20px;
+}
+
+.step-info-card {
+  padding: 18px;
+
+  background: #fff7f7;
+
+  border: 1px solid #f2cccc;
+  border-left: 4px solid var(--hema-red);
+
+  border-radius: 12px;
+}
+
+.step-info-card h4 {
+  margin: 0 0 12px;
+
+  color: var(--text);
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.step-info-card ul {
+  margin: 0;
+
+  padding-left: 20px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.step-info-card li {
+  margin-bottom: 7px;
+}
+
+.step-info-card li:last-child {
+  margin-bottom: 0;
+}
+
+.step-info-card li::marker {
+  color: var(--hema-red);
+}
+
+.step-info-card-note {
+  margin-top: 14px;
+
+  padding: 12px 14px;
+
+  background: white;
+
+  border: 1px solid var(--line);
+
+  border-radius: 9px;
+
+  color: #555;
+
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.55;
+}
