@@ -1043,7 +1043,114 @@ ${
           )
           .join("")}
 
+${
+  procedure.subsections?.length
+    ? procedure.subsections
+        .map(
+          (section) => `
+            <div class="procedure-subsection">
 
+              <div class="procedure-subsection-header">
+                <p class="eyebrow">
+                  AANVULLENDE INSTRUCTIE
+                </p>
+
+                <h2>
+                  ${section.title}
+                </h2>
+
+                ${
+                  section.text
+                    ? `
+                      <p>
+                        ${section.text}
+                      </p>
+                    `
+                    : ""
+                }
+              </div>
+
+              <div class="subsection-steps">
+
+                ${section.steps
+                  .map(
+                    (step, index) => `
+                      <div class="step subsection-step">
+
+                        <div class="step-number">
+                          ${index + 1}
+                        </div>
+
+                        <div class="step-content">
+
+                          <h3>
+                            ${step.title}
+                          </h3>
+
+                          <p>
+                            ${step.text}
+                          </p>
+
+                          ${
+                            step.image
+                              ? `
+                                <div class="step-image-wrapper">
+
+                                  <img
+                                    class="step-image"
+                                    src="${step.image}"
+                                    alt="${step.title}"
+                                    loading="lazy"
+                                  >
+
+                                </div>
+                              `
+                              : ""
+                          }
+
+                        </div>
+
+                      </div>
+                    `
+                  )
+                  .join("")}
+
+              </div>
+
+              ${
+                section.subsection
+                  ? `
+                    <div class="nested-subsection">
+
+                      <h3>
+                        ${section.subsection.title}
+                      </h3>
+
+                      <ol class="step-numbered-list">
+
+                        ${section.subsection.steps
+                          .map(
+                            (substep) => `
+                              <li>
+                                ${substep}
+                              </li>
+                            `
+                          )
+                          .join("")}
+
+                      </ol>
+
+                    </div>
+                  `
+                  : ""
+              }
+
+            </div>
+          `
+        )
+        .join("")
+    : ""
+}
         ${renderInfoBox(
           procedure.infoBox
         )}
