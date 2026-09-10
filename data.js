@@ -537,236 +537,227 @@ window.HANDBOOK_DATA = {
     // =========================================================
 
     {
-      id: "gdl-order",
-      category: "orders",
+  id: "gdl-order",
+  category: "orders",
 
+  title:
+    "Order invoeren Goede Doelen Loterijen (GDL)",
+
+  summary:
+    "Stappenplan voor het verwerken en invoeren van orders van de Nationale Postcode Loterij (NPL) en VriendenLoterij (VL).",
+
+  system: "Zakelijk Trade",
+  frequency: "Wanneer een GDL-order binnenkomt",
+  duration: "± 15–20 min",
+
+  featured: true,
+
+  tags: [
+    "gdl",
+    "goede doelen loterijen",
+    "npl",
+    "nationale postcode loterij",
+    "vriendenloterij",
+    "vl",
+    "redemptie",
+    "zakelijk trade",
+    "inkooporder",
+    "cadeaukaart",
+    "prisma",
+    "pondres",
+    "sidekix"
+  ],
+
+  caution:
+    "Controleer bij GDL-orders zorgvuldig de klant, het PO-nummer, de geldigheidsdatum, de afleverdatum en het afleveradres aan de hand van de ontvangen inkooporder.",
+
+  steps: [
+    {
       title:
-        "Order invoeren Goede Doelen Loterijen (GDL)",
+        "Open de ontvangen inkooporder",
 
-      summary:
-        "Stappenplan voor het verwerken en invoeren van orders van de Nationale Postcode Loterij (NPL) en VriendenLoterij (VL).",
+      text:
+        "In de inbox *HEM zakelijk ontvang je regelmatig nieuwe inkooporders van de Goede Doelen Loterijen. Open de inkooporder en gebruik deze tijdens het invoeren van de order als bron voor de ordergegevens.",
 
-      system: "Zakelijk Trade",
-      frequency: "Wanneer een GDL-order binnenkomt",
-      duration: "± 15–20 min",
+      image:
+        "images/gdl/01-inkooporder.png"
+    },
 
-      featured: true,
+    {
+      title:
+        "Maak een nieuwe zakelijke order aan",
 
-      tags: [
-        "gdl",
-        "goede doelen loterijen",
-        "npl",
-        "nationale postcode loterij",
-        "vriendenloterij",
-        "vl",
-        "redemptie",
-        "zakelijk trade",
-        "inkooporder",
-        "cadeaukaart",
-        "prisma",
-        "pondres",
-        "sidekix"
+      text:
+        "Ga naar Zakelijk Trade, klik op 'Orders', vervolgens op 'Nieuw' en daarna op '+ Nieuw'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Selecteer het juiste klanttype",
+
+      text:
+        "Selecteer bij klanttype 'Zakelijk'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Selecteer de juiste klant",
+
+      text:
+        "De klant is altijd 'NPL - GDL' of 'VL - GDL'. Kies de klant die overeenkomt met de ontvangen inkooporder.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Vul het PO-nummer in",
+
+      text:
+        "Vul bij 'Klant Order Referentie' en 'Klant factuur referentie' het PO-nummer van de inkooporder in.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Vul de aanvullende orderinformatie in",
+
+      text:
+        "Open het dropdownmenu 'Meer informatie' en vul bij 'Instructies voor Uitvoerder' de gegevens over de geldigheid en afleverdatum in.",
+
+      bullets: [
+        "Deze kaart is geldig t/m: afleverdatum + 2 dagen + 2 jaar",
+        "Afleverdatum: gebruik de aangegeven leverdatum op de inkooporder / het PO-nummer"
       ],
 
-      caution:
-        "Controleer bij GDL-orders zorgvuldig de klant, het PO-nummer, de geldigheidsdatum, de afleverdatum en het afleveradres aan de hand van de ontvangen inkooporder.",
-
-      steps: [
-
-        {
-          title:
-            "Open de ontvangen inkooporder",
-
-          text:
-            "In de inbox *HEM zakelijk ontvang je regelmatig nieuwe inkooporders van de Goede Doelen Loterijen. Open de inkooporder en gebruik deze tijdens het invoeren van de order als bron voor de ordergegevens.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Maak een nieuwe zakelijke order aan",
-
-          text:
-            "Ga naar Zakelijk Trade, klik op 'Orders', vervolgens op 'Nieuw' en daarna op '+ Nieuw'.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Selecteer het juiste klanttype",
-
-          text:
-            "Selecteer bij klanttype 'Zakelijk'.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Selecteer de juiste klant",
-
-          text:
-            "De klant is altijd 'NPL - GDL' of 'VL - GDL'. Kies de klant die overeenkomt met de ontvangen inkooporder.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Vul het PO-nummer in",
-
-          text:
-            "Vul bij 'Klant Order Referentie' en 'Klant factuur referentie' het PO-nummer van de inkooporder in.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Vul de aanvullende orderinformatie in",
-
-          text:
-            "Open het dropdownmenu 'Meer informatie' en vul bij 'Instructies voor Uitvoerder' de gegevens over de geldigheid en afleverdatum in.",
-
-          bullets: [
-            "Deze kaart is geldig t/m: afleverdatum + 2 dagen + 2 jaar",
-            "Afleverdatum: gebruik de aangegeven leverdatum op de inkooporder / het PO-nummer"
-          ],
-
-          image: ""
-        },
-
-        {
-          title:
-            "Voeg het juiste product toe",
-
-          text:
-            "Ga naar 'Product' en klik op 'Voeg toe'. Selecteer bij product 'NPL/VL - fysieke cadeaukaarten redemptie'. Voor iedere loterij is een apart product op basis van redemptie aangemaakt.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Vul aantal en waarde in",
-
-          text:
-            "Vul het aantal cadeaukaarten en de waarde per cadeaukaart in zoals aangegeven op de inkooporder.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Vul de expiratiedatum in",
-
-          text:
-            "Ga naar 'Opties' en vul de expiratiedatum in. De expiratiedatum is de datum van geldigheid plus 1 dag. Vink vervolgens het vakje bij 'Afw. Afleveradres' aan en ga naar het tabblad 'Afleveradres'.",
-
-          bullets: [
-            "Expiratiedatum = datum geldigheid + 1 dag",
-            "Controleer het afleveradres op de inkooporder bij 'Ship to'",
-            "Het afleveradres kan van Sidekix of Pondres zijn"
-          ],
-
-          image: ""
-        },
-
-        {
-          title:
-            "Vul het afleveradres in",
-
-          text:
-            "Vul bij 'Afleveradres' de benodigde adresgegevens in. Gebruik hiervoor altijd het afleveradres dat op de inkooporder staat. Dit kan het adres van Pondres of Sidekix zijn.",
-
-          bullets: [
-            "Geslacht",
-            "Voornaam",
-            "Achternaam",
-            "Straat",
-            "Huisnummer",
-            "Postcode",
-            "Plaats",
-            "Bedrijfsnaam",
-            "E-mailadres",
-            "Land"
-          ],
-
-          image: ""
-        },
-
-        {
-          title:
-            "Sla de order op",
-
-          text:
-            "Klik op 'Opslaan'.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Controleer alle gegevens",
-
-          text:
-            "Controleer alle ingevoerde gegevens nogmaals zorgvuldig aan de hand van de inkooporder.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Sla de gecontroleerde order definitief op",
-
-          text:
-            "Ben je er zeker van dat alle gegevens kloppen? Klik dan opnieuw op 'Opslaan'.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Mail de orderinformatie intern",
-
-          text:
-            "Stuur na het invoeren een e-mail met het Trade-ordernummer en de expiratiedatum. Voeg de inkooporder als bijlage toe en zet *HEM zakelijk in de CC.",
-
-          bullets: [
-            "Aan: b2b.cadeaukaarten@hema.nl",
-            "Aan: henneke.velthove@hema.nl",
-            "Vermeld het Trade-ordernummer",
-            "Vermeld de expiratiedatum",
-            "Voeg de inkooporder als bijlage toe",
-            "Zet *HEM zakelijk in de CC"
-          ],
-
-          image: ""
-        },
-
-        {
-          title:
-            "Mail de order naar Prisma",
-
-          text:
-            "Mail Prisma het inkooporderformulier (de PDF uit de ontvangen e-mail). Geef aan dat er een nieuwe GDL-order is ingevoerd en vermeld het Trade-ordernummer, de leverdatum en de geldigheid van de kaart.",
-
-          bullets: [
-            "info@prismadirect.nl",
-            "lizette@prismadirect.nl",
-            "Vermeld dat een nieuwe GDL-order is ingevoerd",
-            "Vermeld het Trade-ordernummer",
-            "Vermeld de leverdatum",
-            "Vermeld de geldigheid van de kaart",
-            "Voeg het inkooporderformulier als PDF toe"
-          ],
-
-          image: ""
-        }
-      ]
+      image: ""
     },
+
+    {
+      title:
+        "Voeg het juiste product toe",
+
+      text:
+        "Ga naar 'Product' en klik op 'Voeg toe'. Selecteer bij product 'NPL/VL - fysieke cadeaukaarten redemptie'. Voor iedere loterij is een apart product op basis van redemptie aangemaakt.",
+
+      image:
+        "images/gdl/07-product-toevoegen.png"
+    },
+
+    {
+      title:
+        "Vul aantal en waarde in",
+
+      text:
+        "Vul het aantal cadeaukaarten en de waarde per cadeaukaart in zoals aangegeven op de inkooporder.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Vul de expiratiedatum in",
+
+      text:
+        "Ga naar 'Opties' en vul de expiratiedatum in. De expiratiedatum is de datum van geldigheid plus 1 dag. Vink vervolgens het vakje bij 'Afw. Afleveradres' aan en ga naar het tabblad 'Afleveradres'.",
+
+      bullets: [
+        "Expiratiedatum = datum geldigheid + 1 dag",
+        "Controleer het afleveradres op de inkooporder bij 'Ship to'",
+        "Het afleveradres kan van Sidekix of Pondres zijn"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Vul het afleveradres in",
+
+      text:
+        "Vul bij 'Afleveradres' de benodigde adresgegevens in. Gebruik hiervoor altijd het afleveradres dat op de inkooporder staat. Dit kan het adres van Pondres of Sidekix zijn.",
+
+      image:
+        "images/gdl/10-afleveradres.png"
+    },
+
+    {
+      title:
+        "Sla de order op",
+
+      text:
+        "Klik op 'Opslaan'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Controleer alle gegevens",
+
+      text:
+        "Controleer alle ingevoerde gegevens nogmaals zorgvuldig aan de hand van de inkooporder.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Sla de gecontroleerde order definitief op",
+
+      text:
+        "Ben je er zeker van dat alle gegevens kloppen? Klik dan opnieuw op 'Opslaan'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Mail de orderinformatie intern",
+
+      text:
+        "Stuur na het invoeren een e-mail met het Trade-ordernummer en de expiratiedatum. Voeg de inkooporder als bijlage toe en zet *HEM zakelijk in de CC.",
+
+      image:
+        "images/gdl/14-interne-mail.png"
+    },
+
+    {
+      title:
+        "Mail de order naar Prisma",
+
+      text:
+        "Mail Prisma het inkooporderformulier (de PDF uit de ontvangen e-mail). Geef aan dat er een nieuwe GDL-order is ingevoerd en vermeld het Trade-ordernummer, de leverdatum en de geldigheid van de kaart.",
+
+      bullets: [
+        "info@prismadirect.nl",
+        "lizette@prismadirect.nl"
+      ],
+
+      subsection: {
+        title:
+          "Activeren van de order:",
+
+        steps: [
+          "Ga naar Trade en vervolgens naar 'Afgehandeld' en vul hier het betreffende ordernummer in.",
+          "Dubbelklik op de order en kopieer vervolgens de activatiecode.",
+          "Sluit vervolgens de order, selecteer de betreffende order en klik op 'Activeer order'.",
+          "Plak hier de gekopieerde activatiecode in en klik op 'Activeren'."
+        ],
+
+        note:
+          "Controleer op geplande leverdatum activatie en activeer de order handmatig."
+      },
+
+      image: ""
+    }
+  ]
+},
 
     // =========================================================
     // ORDERS - INTERNE ORDER IN TRADE
