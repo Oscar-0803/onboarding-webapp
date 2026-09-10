@@ -764,49 +764,214 @@ window.HANDBOOK_DATA = {
     // =========================================================
 
     {
-      id: "trade-order",
-      category: "orders",
+  id: "trade-order",
+  category: "orders",
 
+  title:
+    "Nieuwe interne order invoeren in Trade",
+
+  summary:
+    "Stappenplan voor het invoeren en afhandelen van een interne order in Trade.",
+
+  system: "Zakelijk Trade",
+  frequency: "Wanneer nodig",
+  duration: "± 10–15 min",
+
+  featured: true,
+
+  tags: [
+    "trade",
+    "interne order",
+    "intern bestelformulier",
+    "zakelijke order",
+    "digitale cadeaukaart",
+    "fysieke cadeaukaart",
+    "kostenplaats"
+  ],
+
+  caution:
+    "Controleer altijd of het interne bestelformulier volledig is ingevuld en of toestemming van de kostenplaatsverantwoordelijke aanwezig is.",
+
+  steps: [
+    {
       title:
-        "Nieuwe interne order invoeren in Trade",
+        "Controleer het interne bestelformulier",
 
-      summary:
-        "Stappenplan voor het invoeren van een interne order in Trade.",
+      text:
+        "Je ontvangt van een interne afdeling binnen HEMA een ingevuld 'intern bestelformulier' met daarin toestemming van de kostenplaatsverantwoordelijke.",
 
-      system: "Trade",
-      frequency: "Regelmatig",
-      duration: "± 10 min",
+      image: ""
+    },
 
-      featured: true,
+    {
+      title:
+        "Maak een nieuwe order aan",
 
-      tags: [
-        "trade",
-        "interne order",
-        "order"
+      text:
+        "Ga naar Trade, klik op 'Orders', vervolgens op 'Nieuw' en daarna op '+ Nieuw'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Selecteer klanttype en klant",
+
+      text:
+        "Vul bij klanttype 'Zakelijk' in en selecteer als klant 'HEMA BV New Services - interne orders'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Voeg het gewenste product toe",
+
+      text:
+        "Ga naar het tabblad 'Producten' en klik op 'Voeg toe'. Vul het gewenste product in en eventueel het gewenste afleveradres.",
+
+      bullets: [
+        "Voor digitale cadeaukaarten: E-gift Stippen",
+        "Voor fysieke cadeaukaarten: HEMA cadeaukaart logo"
       ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Verwijder verzend- en handelingskosten",
+
+      text:
+        "Klik op 'Opslaan' en ga vervolgens naar 'Toeslagen'. Zet hier het vinkje bij 'Bereken de toeslagen automatisch' uit. Selecteer daarna de verzend- en handelingskosten en klik op 'Verwijder'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Vul de klant order referentie in",
+
+      text:
+        "Ga terug naar 'Info'. Vul bij 'Klant Order Referentie' de kostenplaats in, bijvoorbeeld 'kostenplaats xxx'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Sla de order op",
+
+      text:
+        "De order kan nu worden opgeslagen.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Mail de orderinformatie",
+
+      text:
+        "Stuur een e-mail met het ordernummer en de kostenplaats en voeg het ingevulde interne bestelformulier als bijlage toe.",
+
+      bullets: [
+        "b2b-cadeaukaarten@hema.nl",
+        "henneke.velthove@hema.nl",
+        "Vermeld het ordernummer",
+        "Vermeld de kostenplaats",
+        "Voeg het ingevulde intern bestelformulier toe"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Controleer de verwerking in Trade",
+
+      text:
+        "De order wordt direct doorgezet in Trade.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Lever digitale cadeaukaarten zelf uit",
+
+      text:
+        "Gaat het om digitale cadeaukaarten? Houd de order dan goed in de gaten in Trade. De digitale cadeaukaarten dien je zelf uit te leveren aan je collega van de betreffende afdeling.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Controleer het afleveradres bij fysieke cadeaukaarten",
+
+      text:
+        "Gaat het om fysieke cadeaukaarten? Dan heb je als het goed is een afleveradres opgegeven. Prisma zal de cadeaukaarten naar dit adres opsturen.",
+
+      image: ""
+    }
+  ],
+
+  subsections: [
+    {
+      title:
+        "Digitale cadeaukaart uitleveren",
+
+      text:
+        "Gebruik onderstaande stappen wanneer de interne order digitale cadeaukaarten bevat.",
 
       steps: [
         {
           title:
-            "Open Trade",
+            "Open de ontvangen e-mail",
 
           text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+            "Je ontvangt een e-mail zoals in onderstaand voorbeeld in de *HEMA zakelijk inbox.",
+
+          image:
+            "images/trade-order/01-digitale-cadeaukaart-mail.png"
+        },
+
+        {
+          title:
+            "Download de digitale cadeaukaartbestanden",
+
+          text:
+            "Download de digitale cadeaukaartbestanden en controleer of het ordernummer overeenkomt met de betreffende order.",
 
           image: ""
         },
 
         {
           title:
-            "Maak een nieuwe order aan",
+            "Deel de cadeaukaarten met de aanvrager",
 
           text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+            "Zet de bestanden in een map en deel deze via de e-mail met de betreffende aanvrager.",
 
           image: ""
         }
-      ]
-    },
+      ],
+
+      subsection: {
+        title:
+          "Activeren van de order",
+
+        steps: [
+          "Ga naar Trade en vervolgens naar 'Afgehandeld' en vul hier het betreffende ordernummer in.",
+          "Dubbelklik op de order en kopieer vervolgens de activatiecode.",
+          "Sluit vervolgens de order, selecteer de betreffende order en klik op 'Activeer order'.",
+          "Plak hier de gekopieerde activatiecode in en klik op 'Activeren'."
+        ]
+      }
+    }
+  ]
+},
 
     // =========================================================
     // BETALINGEN
