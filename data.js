@@ -978,50 +978,105 @@ window.HANDBOOK_DATA = {
     // =========================================================
 
     {
-      id: "bank-betalingen",
-      category: "betalingen",
+  id: "bank-betalingen",
+  category: "betalingen",
 
-      title: "Bank betalingen",
+  title: "Bank betalingen",
 
-      summary:
-        "Stappenplan voor het controleren en verwerken van bankbetalingen.",
+  summary:
+    "Stappenplan voor het controleren en verwerken van binnengekomen betalingen voor zakelijke orders.",
 
-      system:
-        "Bank / orderadministratie",
+  system: "Zakelijk Trade",
+  frequency: "Wanneer betalingen binnenkomen",
+  duration: "± 5 min",
 
-      frequency: "Dagelijks",
-      duration: "± 5 min",
+  featured: true,
 
-      featured: true,
+  tags: [
+    "bank",
+    "betalingen",
+    "betaling",
+    "zakelijke order",
+    "trade",
+    "wacht op betaling",
+    "uitleveren",
+    "order"
+  ],
 
-      tags: [
-        "bank",
-        "betalingen",
-        "betaling"
-      ],
+  caution:
+    "Controleer altijd of het betaalde bedrag overeenkomt met de betreffende order voordat je de order uitlevert.",
 
-      steps: [
-        {
-          title:
-            "Open het betaaloverzicht",
+  steps: [
+    {
+      title:
+        "Open de e-mail met de betaling",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+      text:
+        "Vanuit Henneke of Anita ontvang je de betalingen die zijn binnengekomen van zakelijke orders. Deze moeten worden doorgezet in Trade om vervolgens verwerkt te worden door Prisma. Open het mailtje van Anita of Henneke, vaak met het onderwerp 'Bank'.",
 
-          image: ""
-        },
-
-        {
-          title:
-            "Controleer de betaling",
-
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
-        }
-      ]
+      image:
+        "images/bank-betalingen/01-bankmail.png"
     },
+
+    {
+      title:
+        "Zoek het ordernummer",
+
+      text:
+        "Zoek het betreffende ordernummer in de e-mail. Dit ordernummer heb je nodig om de juiste order in Trade terug te vinden.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Ga naar Orders in Trade",
+
+      text:
+        "Ga naar Trade en klik op 'Orders'.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Zoek de order bij Wacht op betaling",
+
+      text:
+        "Ga naar het tabblad 'Wacht op betaling' en vul hier het betreffende ordernummer in.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Controleer de betaling",
+
+      text:
+        "Controleer of de binnengekomen betaling overeenkomt met het bedrag van de order.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Lever de order uit",
+
+      text:
+        "Selecteer de betreffende order en klik op 'Uitleveren'.",
+
+      image: ""
+    }
+  ],
+
+  infoBox: {
+    title:
+      "Klant zegt betaling te hebben gedaan?",
+
+    text:
+      "Vraag de betaling dan na bij Anita, Henneke, b2b.cadeaukaarten@hema.nl of henneke.velthove@hema.nl. Vermeld hierbij het betreffende ordernummer en vraag de klant om een betaalbewijs."
+  }
+},
 
     // =========================================================
     // KLANTENSERVICE
