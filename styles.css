@@ -1520,3 +1520,70 @@ p {
   font-weight: 400;
   line-height: 1.55;
 }
+/* =========================================================
+   PROCEDURE SUBSECTIES
+========================================================= */
+
+.procedure-subsection {
+  margin: 28px 22px 22px;
+
+  overflow: hidden;
+
+  background: #fafafa;
+
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.procedure-subsection-header {
+  padding: 24px;
+
+  background: #fff5f5;
+
+  border-bottom: 1px solid #f2cccc;
+  border-left: 4px solid var(--hema-red);
+}
+
+.procedure-subsection-header h2 {
+  margin: 0 0 8px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.procedure-subsection-header > p:last-child {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.subsection-steps {
+  background: white;
+}
+
+.subsection-step:last-child {
+  border-bottom: 0;
+}
+
+.nested-subsection {
+  margin: 20px;
+
+  padding: 20px;
+
+  background: white;
+
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--hema-red);
+
+  border-radius: 12px;
+}
+
+.nested-subsection h3 {
+  margin: 0 0 16px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
