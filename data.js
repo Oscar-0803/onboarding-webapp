@@ -1082,95 +1082,238 @@ window.HANDBOOK_DATA = {
     // KLANTENSERVICE
     // =========================================================
 
+   {
+  id: "hema-tickets",
+  category: "klantenservice",
+
+  title:
+    "Mailbox Klantenservice HEMA Tickets",
+
+  summary:
+    "Werkinstructies voor vragen, niet ontvangen tickets, herroepingen en SnowWorld binnen de HEMA Tickets inbox.",
+
+  system:
+    "HEMA Tickets / Tickets CMS",
+
+  frequency:
+    "Dagelijks",
+
+  duration:
+    "Afhankelijk van de aanvraag",
+
+  featured: true,
+
+  tags: [
+    "klantenservice",
+    "tickets",
+    "hema tickets",
+    "tickets cms",
+    "happyflow",
+    "snowworld",
+    "center parcs",
+    "flywise",
+    "gct",
+    "govolta",
+    "herroepen",
+    "herroeping",
+    "enviso"
+  ],
+
+  introBox: {
+    title:
+      "*HEM Tickets CS",
+
+    text:
+      "In de tickets inbox komen er met name vragen vanuit de klantenservice omtrent orders/codes die geblokkeerd dienen te worden of orders die door een typefout niet juist zijn afgeleverd."
+  },
+
+  infoSections: [
     {
-      id: "hema-tickets",
-      category: "klantenservice",
-
       title:
-        "Mailbox Klantenservice HEMA Tickets",
+        "Contactgegevens partners",
 
-      summary:
-        "Werkwijze voor de mailbox Klantenservice HEMA Tickets.",
-
-      system: "HEMA Tickets",
-      frequency: "Dagelijks",
-      duration: "± 10 min",
-
-      featured: true,
-
-      tags: [
-        "klantenservice",
-        "tickets",
-        "mailbox"
-      ],
-
-      steps: [
+      items: [
         {
-          title:
-            "Open de mailbox",
-
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
+          label:
+            "Center Parcs",
+          value:
+            "sales.nl@groupepvcp.com",
+          href:
+            "mailto:sales.nl@groupepvcp.com"
         },
-
         {
-          title:
-            "Controleer het ticket",
-
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
+          label:
+            "SnowWorld",
+          value:
+            "resellers@snowworld.com",
+          href:
+            "mailto:resellers@snowworld.com"
+        },
+        {
+          label:
+            "Flywise / GCT & GoVolta",
+          value:
+            "partners@flywise.nl",
+          href:
+            "mailto:partners@flywise.nl"
         }
       ]
     },
 
     {
-      id: "snowworld",
-      category: "klantenservice",
-
       title:
-        "Handleiding herroeping Snowworld",
+        "Let op",
 
-      summary:
-        "Stappenplan voor het verwerken van een Snowworld-herroeping.",
+      text:
+        "Mail altijd vanuit de inbox en zet de inbox altijd in de CC. Zo blijft de communicatie behouden en kun je deze later terugzoeken in het archief of de inbox wanneer dat noodzakelijk is.",
 
-      system: "Klantenservice",
-      frequency: "Wanneer nodig",
-      duration: "± 5 min",
+      type:
+        "warning"
+    },
 
-      featured: false,
+    {
+      title:
+        "Contactgegevens HappyFlow (tickets website)",
 
-      tags: [
-        "snowworld",
-        "herroeping",
-        "klantenservice"
+      items: [
+        {
+          label:
+            "Edo",
+          value:
+            "Edo@happyflow.io",
+          href:
+            "mailto:Edo@happyflow.io"
+        },
+        {
+          label:
+            "Francis",
+          value:
+            "francis@happyflow.io",
+          href:
+            "mailto:francis@happyflow.io"
+        }
+      ]
+    },
+
+    {
+      title:
+        "Linkjes",
+
+      items: [
+        {
+          label:
+            "Tickets CMS",
+          value:
+            "Open Tickets CMS",
+          href:
+            "https://cms.tickets-shop.ui.hema.digital/admin/auth/login?redirectTo=%2Fcontent-manager%2FcollectionType%2Fapi%3A%3Aproduct.product%2F3"
+        }
+      ]
+    }
+  ],
+
+  subsections: [
+    {
+      title:
+        "Binnenkomende aanvragen Tickets inbox",
+
+      text:
+        "Gebruik onderstaande stappen wanneer een klant aangeeft dat een e-mail met tickets niet is ontvangen.",
+
+      subsection: {
+        title:
+          "E-mail met ticket niet ontvangen",
+
+        steps: [
+          "Ga naar het Tickets CMS, klik op 'Admin' en ga naar 'Order overview'.",
+          "Vul bij Admin het ordernummer zonder spaties in om de status te controleren. Zie je twee groene kruisjes? Dan is de betaling ontvangen en zijn de tickets verzonden.",
+          "Ga naar de inbox '*HEMA Tickets' en zoek hier het ordernummer op.",
+          "Klik op 'Doorsturen' en stuur de e-mail opnieuw door naar het opgegeven e-mailadres."
+        ]
+      }
+    },
+
+    {
+      title:
+        "Tickets herroepen",
+
+      text:
+        "Gebruik onderstaande stappen wanneer een klant tickets wil herroepen binnen de herroepingstermijn.",
+
+      subsection: {
+        title:
+          "Tickets herroepen",
+
+        steps: [
+          "De klant wil tickets herroepen binnen de herroepingstermijn van 14 dagen.",
+          "Zoek het ordernummer op in het Tickets CMS, open de order en controleer of de aanvraag binnen de herroepingstermijn van 14 dagen valt.",
+          "Kopieer de betreffende codes en mail deze door naar de juiste partner.",
+          "Wanneer je akkoord hebt op het annuleren, kan de klantenservice worden geïnstrueerd om de klant te vergoeden."
+        ]
+      }
+    },
+
+    {
+      title:
+        "1.1 Handleiding herroeping SnowWorld",
+
+      text:
+        "Onderstaande samenvatting beschrijft de belangrijkste stappen uit de SnowWorld-partnerhandleiding.",
+
+      links: [
+        {
+          label:
+            "Handleiding Vintia SnowWorld partners_versie1.pdf",
+          href:
+            "https://hemaoffice.sharepoint.com/:b:/r/sites/RetailMedia/Gedeelde%20documenten/General/Stages/Handleiding%20Vintia%20SnowWorld%20partners_versie1.pdf?d=w3f82d46d0ba441a0a344d1ae6e3f1153&csf=1&web=1&e=M7WBu5"
+        }
       ],
 
-      steps: [
+      cards: [
         {
           title:
-            "Open de aanvraag",
+            "1. Account koppelen",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
+          lines: [
+            "Maak een account aan in Enviso.",
+            "Kies 'reseller' en vul je bedrijfsgegevens in.",
+            "Zoek en koppel met SnowWorld.",
+            "Zodra SnowWorld de koppeling goedkeurt, kun je de deals gebruiken."
+          ]
         },
 
         {
           title:
-            "Verwerk de herroeping",
+            "2. Vouchercodes aanvragen",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+          lines: [
+            "Log in op Enviso en ga naar de Trade-omgeving.",
+            "Ga naar Deals en kies de juiste SnowWorld-deal.",
+            "Via het winkelwagen-icoon kun je nieuwe codes bestellen.",
+            "Je kunt maximaal 5.000 codes per bestelling aanvragen.",
+            "De codes verschijnen vervolgens in je account en kun je gebruiken voor je verkoop."
+          ]
+        },
 
-          image: ""
+        {
+          title:
+            "3. Codes annuleren",
+
+          lines: [
+            "Wil een klant een code herroepen? Zoek dan de juiste batch op.",
+            "Selecteer de betreffende code(s).",
+            "Je kunt maximaal 25 codes tegelijk annuleren.",
+            "Daarna worden de geannuleerde codes gecrediteerd.",
+            "Een code die al door een gast is gebruikt, kan niet meer worden geannuleerd."
+          ]
         }
-      ]
-    },
+      ],
+
+      note:
+        "Visuele uitleg is te vinden in de handleiding."
+    }
+  ]
+},
 
     // =========================================================
     // UITINGEN
