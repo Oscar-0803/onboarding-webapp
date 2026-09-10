@@ -1044,7 +1044,57 @@ function renderStep(step, index) {
             `
             : ""
         }
+${
+  step.infoCards?.length
+    ? `
+      <div class="step-info-cards">
 
+        ${step.infoCards
+          .map(
+            (card) => `
+              <div class="step-info-card">
+
+                <h4>
+                  ${card.title}
+                </h4>
+
+                ${
+                  card.items?.length
+                    ? `
+                      <ul>
+                        ${card.items
+                          .map(
+                            (item) => `
+                              <li>
+                                ${item}
+                              </li>
+                            `
+                          )
+                          .join("")}
+                      </ul>
+                    `
+                    : ""
+                }
+
+                ${
+                  card.note
+                    ? `
+                      <div class="step-info-card-note">
+                        ${card.note}
+                      </div>
+                    `
+                    : ""
+                }
+
+              </div>
+            `
+          )
+          .join("")}
+
+      </div>
+    `
+    : ""
+}
         ${renderStepSubsection(
           step.subsection
         )}
