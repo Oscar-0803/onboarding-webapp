@@ -1451,3 +1451,72 @@ p {
     padding: 16px;
   }
 }
+/* =========================================================
+   SUBSECTIE BINNEN EEN STAP
+========================================================= */
+
+.step-subsection {
+  margin-top: 24px;
+  padding-top: 20px;
+
+  border-top: 1px solid var(--line);
+}
+
+.step-subsection h4 {
+  margin: 0 0 14px;
+
+  color: var(--text);
+
+  font-family:
+    "HurmeHEMA",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.step-numbered-list {
+  margin: 0;
+
+  padding-left: 24px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.step-numbered-list li {
+  margin-bottom: 10px;
+
+  padding-left: 4px;
+}
+
+.step-numbered-list li::marker {
+  color: var(--hema-red);
+
+  font-weight: 700;
+}
+
+.step-important-note {
+  margin-top: 18px;
+
+  padding: 14px 16px;
+
+  background: #fff5f5;
+
+  border: 1px solid #f2cccc;
+  border-left: 4px solid var(--hema-red);
+
+  border-radius: 10px;
+
+  color: #555;
+
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.55;
+}
