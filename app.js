@@ -984,7 +984,41 @@ function detailView(procedure) {
                       `
                       : ""
                   }
+${
+  step.subsection
+    ? `
+      <div class="step-subsection">
 
+        <h4>
+          ${step.subsection.title}
+        </h4>
+
+        <ol class="step-numbered-list">
+          ${step.subsection.steps
+            .map(
+              (substep) => `
+                <li>
+                  ${substep}
+                </li>
+              `
+            )
+            .join("")}
+        </ol>
+
+        ${
+          step.subsection.note
+            ? `
+              <div class="step-important-note">
+                ${step.subsection.note}
+              </div>
+            `
+            : ""
+        }
+
+      </div>
+    `
+    : ""
+}
                   ${
                     step.image
                       ? `
