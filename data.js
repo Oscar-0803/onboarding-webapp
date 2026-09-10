@@ -1437,51 +1437,140 @@ window.HANDBOOK_DATA = {
   ]
 },
     {
-      id: "rcos",
-      category: "uitingen",
+  id: "rcos",
+  category: "uitingen",
 
+  title:
+    "Rcos (DOOH kassaschermen)",
+
+  summary:
+    "Stappenplan voor het inregelen en publiceren van uitingen op de kassaschermen via rCOS.",
+
+  system:
+    "rCOS",
+
+  frequency:
+    "Wanneer nodig",
+
+  duration:
+    "± 10–15 min",
+
+  featured: false,
+
+  tags: [
+    "rcos",
+    "rCOS",
+    "dooh",
+    "kassaschermen",
+    "uitingen",
+    "filmschema",
+    "retail media",
+    "cadeaukaart",
+    "azure"
+  ],
+
+  caution:
+    "De keuze van het filmschema wordt altijd afgestemd. Controleer daarnaast of de uiting het juiste formaat van 1024 × 768 pixels heeft.",
+
+  steps: [
+    {
       title:
-        "Rcos (DOOH kassaschermen)",
+        "Log in bij rCOS",
 
-      summary:
-        "Stappenplan voor het inregelen van content op kassaschermen.",
+      text:
+        "Ga naar rCOS en log in met jouw HEMA-account via HEMA Azure AD.",
 
-      system: "Rcos",
-      frequency: "Wanneer nodig",
-      duration: "± 10 min",
+      image:
+        "images/rcos/01-inloggen.png"
+    },
 
-      featured: false,
+    {
+      title:
+        "Open Filmschema's",
 
-      tags: [
-        "rcos",
-        "dooh",
-        "kassaschermen",
-        "uitingen"
-      ],
+      text:
+        "Klik op 'Systeembeheer' en vervolgens op 'Filmschema's'.",
 
-      steps: [
+      image:
+        "images/rcos/02-filmschemas.png"
+    },
+
+    {
+      title:
+        "Kies het juiste filmschema",
+
+      text:
+        "Scroll naar beneden. Hier kun je kiezen uit de filmschema's voor Cadeaukaarten en Retail Media. De keuze van een filmschema wordt altijd in overleg bepaald.",
+
+      infoCards: [
         {
           title:
-            "Open Rcos",
+            "Cadeaukaarten",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+          items: [
+            "Cadeaukaart_NL_05_2025",
+            "Cadeaukaart_BE_NL_04_2025",
+            "Cadeaukaart_BE_FR_04_2024",
+            "Cadeaukaart_BE_NL_FR_04_2024"
+          ],
 
-          image: ""
+          note:
+            "De schema's zijn opgebouwd als: CATEGORIE_LAND_TAAL. Je hoeft niet naar het jaartal te kijken."
         },
 
         {
           title:
-            "Selecteer de juiste kassaschermen",
+            "Retail Media",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
+          items: [
+            "Retail Media EV ONLY — alleen eigen HEMA-filialen",
+            "Retail Media - TIJDELIJK — eigen HEMA-filialen + franchise-filialen"
+          ]
         }
-      ]
+      ],
+
+      image: ""
     },
 
+    {
+      title:
+        "Upload de gewenste uiting",
+
+      text:
+        "Upload de gewenste uiting in het gestippelde uploadvak. Gebruik een bestand met het formaat 1024 × 768 pixels.",
+
+      image:
+        "images/rcos/04-uiting-uploaden.png"
+    },
+
+    {
+      title:
+        "Geef de uiting een naam en sla op",
+
+      text:
+        "Geef de uiting een naam in het systeem en klik rechtsboven op 'Opslaan'. Gebruik hiervoor de afgesproken naamconventie. Kopieer vervolgens de inhoud van het veld 'Naam' en plak deze ook in 'Toelichting kassa'.",
+
+      bullets: [
+        "Gebruik als naam: NAAM UITING-WEEK",
+        "Kopieer de inhoud van 'Naam' naar 'Toelichting kassa'",
+        "Controleer de actieve dagen en tijden voordat je opslaat"
+      ],
+
+      image:
+        "images/rcos/05-uiting-naamgeven.png"
+    },
+
+    {
+      title:
+        "Controleer of de uiting live staat",
+
+      text:
+        "Na het opslaan staat de uiting meteen live. Controleer daarom vooraf nogmaals of je het juiste filmschema, bestand en de juiste instellingen hebt gebruikt.",
+
+      image: ""
+    }
+  ]
+},
     // =========================================================
     // ADVERTISING
     // =========================================================
