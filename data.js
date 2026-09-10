@@ -1320,51 +1320,122 @@ window.HANDBOOK_DATA = {
     // =========================================================
 
     {
-      id: "broadsign",
-      category: "uitingen",
+  id: "broadsign",
+  category: "uitingen",
 
+  title:
+    "Broadsign (DOOH puischermen)",
+
+  summary:
+    "Stappenplan voor het inregelen en publiceren van uitingen op DOOH-pu schermen via Broadsign Publish.",
+
+  system:
+    "Broadsign Publish",
+
+  frequency:
+    "Wanneer nodig",
+
+  duration:
+    "± 10–15 min",
+
+  featured: true,
+
+  tags: [
+    "broadsign",
+    "dooh",
+    "puischermen",
+    "uitingen",
+    "publish",
+    "planning",
+    "schermen",
+    "campagne",
+    "content"
+  ],
+
+  caution:
+    "Stem altijd af welke schermen geselecteerd moeten worden en welke looptijd en frequentie voor de uiting gelden.",
+
+  steps: [
+    {
       title:
-        "Broadsign (DOOH puischermen)",
+        "Open Broadsign Publish",
 
-      summary:
-        "Stappenplan voor het inregelen van content op DOOH-pu schermen.",
+      text:
+        "Ga naar Broadsign Publish en log in met de beschikbare inloggegevens.",
 
-      system: "Broadsign",
-      frequency: "Wanneer nodig",
-      duration: "± 10 min",
-
-      featured: true,
-
-      tags: [
-        "broadsign",
-        "dooh",
-        "puischermen",
-        "uitingen"
-      ],
-
-      steps: [
-        {
-          title:
-            "Open Broadsign",
-
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
-        },
-
-        {
-          title:
-            "Selecteer de juiste schermen",
-
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
-        }
-      ]
+      image: ""
     },
 
+    {
+      title:
+        "Maak een nieuw bericht aan",
+
+      text:
+        "Klik op 'Creëer een nieuw bericht' om een nieuwe uiting aan te maken.",
+
+      image:
+        "images/broadsign/02-nieuw-bericht.png"
+    },
+
+    {
+      title:
+        "Selecteer en upload de uiting",
+
+      text:
+        "Selecteer de juiste uiting en upload deze via de uploadknop. Gebruik hiervoor een bestand met de juiste afmetingen van 1080 × 1920 pixels.",
+
+      image:
+        "images/broadsign/03-uiting-uploaden.png"
+    },
+
+    {
+      title:
+        "Selecteer de juiste schermen",
+
+      text:
+        "Selecteer de schermen door op de map 'Met mij gedeeld' te klikken. Stem altijd af welke schermen wel en niet geselecteerd moeten worden.",
+
+      image:
+        "images/broadsign/04-schermen-selecteren.png"
+    },
+
+    {
+      title:
+        "Stel de looptijd en planning in",
+
+      text:
+        "Klik linksboven op 'Specifiek' en stel de looptijd in via de agenda. Kies eventueel specifieke dagen waarop de uiting moet draaien. Onderaan staat de frequentie van de uiting; ook deze wordt altijd in overleg bepaald.",
+
+      image:
+        "images/broadsign/05-planning-instellen.png"
+    },
+
+    {
+      title:
+        "Geef de uiting een naam",
+
+      text:
+        "Geef de uiting een duidelijke naam volgens de afgesproken naamconventie.",
+
+      bullets: [
+        "Gebruik het formaat: WEEK_NAAM UITING",
+        "Voorbeeld: WK34_Jumbo_Prijzenstorm_Robijn"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Keur goed en publiceer",
+
+      text:
+        "Klik op 'Goedkeuren & publiceren'. De uiting wordt daarna geüpload naar alle geselecteerde schermen.",
+
+      image: ""
+    }
+  ]
+},
     {
       id: "rcos",
       category: "uitingen",
