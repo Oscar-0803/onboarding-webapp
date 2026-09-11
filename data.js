@@ -1918,48 +1918,195 @@ window.HANDBOOK_DATA = {
     // =========================================================
 
     {
-      id: "online-banners",
-      category: "banners",
+  id: "online-banners",
+  category: "banners",
 
+  title:
+    "Stappenplan Online Banners",
+
+  summary:
+    "Stappenplan voor het maken, aanpassen, dupliceren en downloaden van online banners in Adobe Express.",
+
+  system:
+    "Adobe Express",
+
+  frequency:
+    "Wanneer nodig",
+
+  duration:
+    "± 15–20 min",
+
+  featured: true,
+
+  tags: [
+    "online banners",
+    "banner",
+    "adobe express",
+    "sjablonen",
+    "bannerformaten",
+    "appbanner",
+    "tickets",
+    "uitjes",
+    "nachtje weg",
+    "dagje weg"
+  ],
+
+  caution:
+    "Gebruik altijd het juiste sjabloon en stem bij twijfel de categorie, kleur en bannerformaten af.",
+
+  steps: [
+    {
       title:
-        "Stappenplan Online Banners",
+        "Open Adobe Express",
 
-      summary:
-        "Stappenplan voor het maken en verwerken van online banners.",
+      text:
+        "Ga naar Adobe Express via https://new.express.adobe.com/. Gebruik de afgesproken inloggegevens. Vraag bij twijfel naar de actuele inlog bij Neal.",
 
-      system: "Adobe Express",
-      frequency: "Wanneer nodig",
-      duration: "± 15 min",
+      image: ""
+    },
 
-      featured: true,
+    {
+      title:
+        "Open de map Banner Sjablonen",
 
-      tags: [
-        "online banners",
-        "banner",
-        "adobe express"
-      ],
+      text:
+        "Klik in Adobe Express op 'Jouw spullen' en kies daarna de map 'Banner Sjablonen'.",
 
-      steps: [
+      image:
+        "images/online-banners/02-banner-sjablonen.png"
+    },
+
+    {
+      title:
+        "Kies het juiste sjabloon en de juiste categorie",
+
+      text:
+        "In de map staan de sjablonen per categorie. Gebruik alleen de kleur die hoort bij de betreffende actie. Stem de kleur altijd af wanneer je twijfelt.",
+
+      infoCards: [
         {
           title:
-            "Open het juiste template",
+            "Paars",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
-
-          image: ""
+          items: [
+            "Nachtje weg"
+          ]
         },
 
         {
           title:
-            "Maak de banner",
+            "Roze",
 
-          text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+          items: [
+            "Uit eten"
+          ]
+        },
 
-          image: ""
+        {
+          title:
+            "Groen",
+
+          items: [
+            "Dagje weg"
+          ]
         }
-      ]
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Pas de inhoud van de banner aan",
+
+      text:
+        "Open het juiste sjabloon. Op pagina 1 staat de reguliere banner en op pagina 2 staat de laatste-kans-banner. Pas de inhoud aan op basis van de actie.",
+
+      bullets: [
+        "Pas de titel aan",
+        "Pas de subtitel aan",
+        "Pas het prijsblok aan",
+        "Vervang de afbeelding in het witte vlak",
+        "Gebruik hiervoor de aangeleverde beelden van de partner"
+      ],
+
+      subsection: {
+        title:
+          "Locatie van aangeleverde beelden",
+
+        steps: [
+          "De aangeleverde afbeeldingen van partners staan op de I-schijf.",
+          "Ga naar de map van de betreffende actie.",
+          "Open daar de map 'Beelden' en gebruik het geschikte bannerbeeld."
+        ]
+      },
+
+      image:
+        "images/online-banners/04-banner-aanpassen.png"
+    },
+
+    {
+      title:
+        "Dupliceer de banner naar alle benodigde formaten",
+
+      text:
+        "Dupliceer de banner naar de benodigde bannerformaten. Voor drie appformaten bestaat een apart sjabloon in dezelfde map; deze zijn herkenbaar aan '_App' in de naam.",
+
+      bullets: [
+        "Klik op 'Formaat wijzigen'",
+        "Kies het gewenste formaat, bijvoorbeeld 971 × 194",
+        "Klik op 'Dupliceren en formaat wijzigen'",
+        "Het formaat 1240 × 248 hoeft niet opnieuw aangemaakt te worden; het standaard sjabloon staat al in dit formaat"
+      ],
+
+      infoCards: [
+        {
+          title:
+            "Bannerformaten",
+
+          items: [
+            "1240 × 248",
+            "971 × 194",
+            "903 × 180",
+            "806 × 202",
+            "740 × 148",
+            "728 × 182",
+            "720 × 144",
+            "667 × 167",
+            "473 × 118"
+          ],
+
+          note:
+            "Het standaard sjabloon staat al in 1240 × 248."
+        },
+
+        {
+          title:
+            "Appbannerformaten",
+
+          items: [
+            "600 × 500",
+            "450 × 375",
+            "300 × 250"
+          ],
+
+          note:
+            "Gebruik hiervoor de aparte sjablonen met '_App' in de naam."
+        }
+      ],
+
+      image:
+        "images/online-banners/05-formaten-dupliceren.png"
+    },
+
+    {
+      title:
+        "Download alle banners",
+
+      text:
+        "Download alle gemaakte banners en zet deze in de map 'beginactie banners' van de betreffende actie.",
+
+      image: ""
     }
   ]
-};
+},
