@@ -2099,7 +2099,7 @@ window.HANDBOOK_DATA = {
         "images/online-banners/05-formaten-dupliceren.png"
     },
 
-    {
+        {
       title:
         "Download alle banners",
 
@@ -2109,4 +2109,6 @@ window.HANDBOOK_DATA = {
       image: ""
     }
   ]
-},
+}
+  ]
+};
