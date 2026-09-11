@@ -1576,25 +1576,54 @@ window.HANDBOOK_DATA = {
     // =========================================================
 
     {
-      id: "google-admanager",
-      category: "advertising",
+  id: "google-admanager",
+  category: "advertising",
 
-      title: "Google Ad Manager",
+  title:
+    "Google Ad Manager",
 
-      summary:
-        "Stappenplan voor het opzetten van campagnes in Google Ad Manager.",
+  summary:
+    "Stappenplan voor het aanmaken, instellen, vullen en monitoren van campagnes in Google Ad Manager.",
 
-      system: "Google Ad Manager",
-      frequency: "Wanneer nodig",
-      duration: "± 15 min",
+  system:
+    "Google Ad Manager",
 
-      featured: true,
+  frequency:
+    "Wanneer nodig",
 
-      tags: [
-        "google ad manager",
-        "advertising",
-        "campagne"
-      ],
+  duration:
+    "± 20–30 min",
+
+  featured: true,
+
+  tags: [
+    "google ad manager",
+    "advertising",
+    "campagne",
+    "order",
+    "line item",
+    "creatives",
+    "targeting",
+    "impressies",
+    "cpm",
+    "inventory"
+  ],
+
+  caution:
+    "Controleer vóór het goedkeuren altijd de campagneperiode, targeting, impressiedoelstelling, CPM, URL's en creatives.",
+
+  subsections: [
+
+    // =========================================================
+    // 1. ORDER AANMAKEN
+    // =========================================================
+
+    {
+      title:
+        "1. Order aanmaken",
+
+      text:
+        "Begin met het aanmaken van een nieuwe order en vul de algemene campagnegegevens in.",
 
       steps: [
         {
@@ -1602,22 +1631,287 @@ window.HANDBOOK_DATA = {
             "Open Google Ad Manager",
 
           text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+            "Ga naar Google Ad Manager en log in met je account.",
 
           image: ""
         },
 
         {
           title:
-            "Maak de campagne aan",
+            "Ga naar Orders",
 
           text:
-            "Voeg hier de officiële uitleg uit het Word-document toe.",
+            "Ga in de linker kolom naar 'Delivery' en klik vervolgens op 'Orders'.",
+
+          image:
+            "images/google-admanager/02-orders.png"
+        },
+
+        {
+          title:
+            "Maak een nieuwe order aan",
+
+          text:
+            "Klik op 'New order'.",
+
+          image:
+            "images/google-admanager/03-new-order.png"
+        },
+
+        {
+          title:
+            "Vul de General settings in",
+
+          text:
+            "Vul de algemene instellingen van de campagne in.",
+
+          bullets: [
+            "Naam: adverteerder_jaar_weeknummers_typecampagne",
+            "Advertiser: selecteer de juiste adverteerder",
+            "Bij Tickets & Vriendenprijsjes kies je HEMA als adverteerder",
+            "Nieuwe adverteerder? Kies 'Add a new company' en voeg de adverteerder toe",
+            "Labels: leeg laten",
+            "Advanced settings: leeg laten"
+          ],
+
+          image:
+            "images/google-admanager/04-general-settings.png"
+        }
+      ]
+    },
+
+
+    // =========================================================
+    // 2. LINE ITEM INSTELLEN
+    // =========================================================
+
+    {
+      title:
+        "2. Line item instellen",
+
+      text:
+        "Maak voor de campagneperiode of per visual een line item aan. Verschillende formaten kunnen binnen hetzelfde line item worden opgenomen.",
+
+      steps: [
+        {
+          title:
+            "Maak een nieuw line item",
+
+          text:
+            "Voeg vanuit de order een nieuw line item toe en kies het juiste advertentietype.",
+
+          bullets: [
+            "Klik bij New line item op 'Select display ad'",
+            "Line item template: leeg laten",
+            "Name: campagne_periode_type campagne",
+            "Line item type: Standard"
+          ],
+
+          image:
+            "images/google-admanager/05-line-item-basis.png"
+        },
+
+        {
+          title:
+            "Vul Expected creatives in",
+
+          text:
+            "Voeg bij 'Expected creatives' alle formaten toe die je binnen de campagne wilt inzetten.",
+
+          bullets: [
+            "Vul alle benodigde bannerformaten in",
+            "Additional settings: leeg laten"
+          ],
+
+          image:
+            "images/google-admanager/05-expected-creatives.png"
+        },
+
+        {
+          title:
+            "Stel Delivery settings in",
+
+          text:
+            "Vul de leveringsinstellingen van het line item in.",
+
+          bullets: [
+            "Vul startdatum en starttijd in",
+            "Vul einddatum en eindtijd in",
+            "Gebruik Blackouts wanneer de campagne tijdens bepaalde periodes niet live mag zijn",
+            "Quantity: vul het aantal impressies in",
+            "Rate: vul het CPM-tarief in",
+            "Discount: vul de afgesproken korting in"
+          ],
+
+          image:
+            "images/google-admanager/05-delivery-settings.png"
+        },
+
+        {
+          title:
+            "Open Add targeting",
+
+          text:
+            "Ga naar 'Add targeting' en open de targetinginstellingen voor het line item.",
+
+          image:
+            "images/google-admanager/05-targeting.png"
+        },
+
+        {
+          title:
+            "Selecteer de juiste inventory-locaties",
+
+          text:
+            "Kies binnen de targeting de locaties waarop de banner zichtbaar moet zijn.",
+
+          bullets: [
+            "Selecteer de 2PLP-plekken en de Thank You Page indien van toepassing",
+            "Je kunt specifieke locaties op hema.nl selecteren of deselecteren",
+            "Voor alleen de Thank You Page selecteer je TY en deselecteer je de overige locaties"
+          ],
+
+          image:
+            "images/google-admanager/05-targeting-locaties.png"
+        },
+
+        {
+          title:
+            "Stel eventueel categorie-targeting in",
+
+          text:
+            "Indien nodig kun je aanvullende targeting instellen zodat de campagne alleen zichtbaar wordt bij specifieke categorieën.",
+
+          image:
+            "images/google-admanager/05-categorie-targeting.png"
+        },
+
+        {
+          title:
+            "Controleer de inventory",
+
+          text:
+            "Klik op 'Check inventory'. Hiermee controleer je of het ingestelde impressiedoel realistisch en haalbaar is.",
+
+          image:
+            "images/google-admanager/05-check-inventory.png"
+        },
+
+        {
+          title:
+            "Sla het line item op",
+
+          text:
+            "Wanneer alle instellingen en de inventory zijn gecontroleerd, klik je op 'Save'.",
 
           image: ""
         }
       ]
     },
+
+
+    // =========================================================
+    // 3. CREATIVES TOEVOEGEN
+    // =========================================================
+
+    {
+      title:
+        "3. Creatives toevoegen",
+
+      text:
+        "Voeg na het instellen van het line item de daadwerkelijke bannerbeelden toe.",
+
+      steps: [
+        {
+          title:
+            "Ga naar Creatives",
+
+          text:
+            "Open het tabblad 'Creatives' en voeg de creatives toe.",
+
+          bullets: [
+            "Klik op 'Add creative' voor één creative",
+            "Gebruik 'Bulk upload creatives' wanneer je meerdere formaten wilt toevoegen"
+          ],
+
+          image:
+            "images/google-admanager/06-creatives-overzicht.png"
+        },
+
+        {
+          title:
+            "Upload de beelden en gebruik Bulk edit",
+
+          text:
+            "Sleep de beelden in Google Ad Manager. Selecteer vervolgens alle creatives en klik op 'Bulk edit' als je meerdere creatives tegelijk wilt aanpassen.",
+
+          image:
+            "images/google-admanager/06-bulk-edit.png"
+        },
+
+        {
+          title:
+            "Vul de Destination in",
+
+          text:
+            "Vul bij 'Destination' de juiste URL in. Gebruik hiervoor de aangeleverde URL met UTM-parameters.",
+
+          bullets: [
+            "Bij Tickets kan de link bijvoorbeeld de structuur ?linktrid=retail_media_[HEMA afdeling]_[naam campagne] gebruiken",
+            "Bij een externe partner gebruik je de URL van de betreffende partner",
+            "Klik op 'Test' om te controleren of de URL werkt en op de juiste pagina uitkomt",
+            "Kies bij afdeling bijvoorbeeld Tickets of Retail Media",
+            "Laat 'Show ad badging on these creatives' aangevinkt",
+            "Klik daarna op 'Save'"
+          ],
+
+          image:
+            "images/google-admanager/06-destination.png"
+        }
+      ]
+    },
+
+
+    // =========================================================
+    // 4. GOEDKEUREN EN MONITOREN
+    // =========================================================
+
+    {
+      title:
+        "4. Goedkeuren en monitoren",
+
+      text:
+        "Rond de campagne af en controleer daarna de status in Google Ad Manager.",
+
+      steps: [
+        {
+          title:
+            "Approve de campagne",
+
+          text:
+            "Ga terug naar de order en klik op 'Approve'.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "Monitor de campagne",
+
+          text:
+            "Controleer na het goedkeuren de status van de campagne.",
+
+          bullets: [
+            "Ready: de campagne staat klaar om live te gaan tijdens de ingestelde periode",
+            "Delivering: de campagne is live en levert advertenties uit"
+          ],
+
+          image: ""
+        }
+      ]
+    }
+  ]
+},
 
     // =========================================================
     // ONLINE BANNERS
