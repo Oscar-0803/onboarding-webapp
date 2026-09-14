@@ -83,29 +83,58 @@ function buildNavigation() {
     return;
   }
 
-  categoryNav.innerHTML = data.categories
-    .map(
-      (category) => `
-        <button
-          class="nav-item"
-          data-category="${category.id}"
-        >
-          <span class="nav-icon">
-            ${category.icon}
-          </span>
+  categoryNav.innerHTML = `
+    <div class="nav-folder">
 
-          <span class="nav-label">
-            ${category.label}
-          </span>
+      <button
+        class="nav-folder-button open"
+        id="retailMediaToggle"
+        type="button"
+        aria-expanded="true"
+      >
+        <span class="nav-folder-icon">
+          ▾
+        </span>
 
-          <span class="nav-count">
-            ${categoryCount(category.id)}
-          </span>
-        </button>
-      `
-    )
-    .join("");
+        <span class="nav-folder-title">
+          Retail Media
+        </span>
+      </button>
 
+      <div
+        class="nav-folder-content"
+        id="retailMediaCategories"
+      >
+        ${data.categories
+          .map(
+            (category) => `
+              <button
+                class="nav-item category-child"
+                data-category="${category.id}"
+                type="button"
+              >
+                <span class="nav-icon">
+                  ${category.icon}
+                </span>
+
+                <span class="nav-label">
+                  ${category.label}
+                </span>
+
+                <span class="nav-count">
+                  ${categoryCount(category.id)}
+                </span>
+              </button>
+            `
+          )
+          .join("")}
+      </div>
+
+    </div>
+  `;
+
+
+  // Overzicht en Favorieten
   document
     .querySelectorAll("[data-view]")
     .forEach((button) => {
@@ -128,6 +157,8 @@ function buildNavigation() {
       );
     });
 
+
+  // Categorieën
   document
     .querySelectorAll("[data-category]")
     .forEach((button) => {
@@ -149,6 +180,48 @@ function buildNavigation() {
         }
       );
     });
+
+
+  // Retail Media map open/dicht
+  const retailToggle =
+    document.getElementById(
+      "retailMediaToggle"
+    );
+
+  const retailCategories =
+    document.getElementById(
+      "retailMediaCategories"
+    );
+
+  retailToggle?.addEventListener(
+    "click",
+    () => {
+      const isOpen =
+        retailToggle.classList.toggle(
+          "open"
+        );
+
+      retailCategories.classList.toggle(
+        "collapsed",
+        !isOpen
+      );
+
+      retailToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+
+      const icon =
+        retailToggle.querySelector(
+          ".nav-folder-icon"
+        );
+
+      if (icon) {
+        icon.textContent =
+          isOpen ? "▾" : "▸";
+      }
+    }
+  );
 }
 
 function updateNavigation() {
