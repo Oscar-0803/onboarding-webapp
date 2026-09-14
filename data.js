@@ -2117,5 +2117,1316 @@ window.HANDBOOK_DATA = {
     }
   ]
 }
+    // =========================================================
+// ORGANIC SOCIAL MEDIA - BELGIË
+// =========================================================
+
+{
+  id: "organic-be-introductie",
+  category: "organic-social-belgie",
+
+  title:
+    "Introductie & Vrindinnestrategie",
+
+  summary:
+    "Introductie tot de strategie, positionering en rol van sociale media voor HEMA België.",
+
+  system:
+    "Organic Social Media België",
+
+  frequency:
+    "Naslag",
+
+  duration:
+    "± 5 min",
+
+  featured: true,
+
+  tags: [
+    "belgië",
+    "organic social",
+    "social media",
+    "strategie",
+    "vrindinnestrategie"
+  ],
+
+  introBox: {
+    title:
+      "Social Media Handboek België",
+
+    text:
+      "Dit handboek geeft richting en structuur aan het gebruik van sociale media voor HEMA België. Het bevat strategische uitgangspunten, creatieve richtlijnen en praktische werkwijzen voor voornamelijk organische social media."
+  },
+
+  steps: [
+    {
+      title:
+        "De Vrindinnestrategie",
+
+      text:
+        "De overkoepelende strategie is de Vrindinnestrategie. HEMA België presenteert zich op sociale media als een toegankelijke Belgische vriendin die op een informele, vrolijke en herkenbare manier probeert een glimlach op het gezicht van anderen te toveren.",
+
+      bullets: [
+        "Humoristische en toegankelijke content",
+        "Inspireren met leuke HEMA-producten",
+        "Informele en vrolijke communicatie",
+        "Dezelfde herkenbare houding richting kijkers en creators",
+        "Altijd herkenbaar als HEMA"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Doel van het handboek",
+
+      text:
+        "Het handboek dient als strategische leidraad en praktisch handvat voor iedereen die betrokken is bij het creëren, publiceren en optimaliseren van sociale media voor HEMA België.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Werk altijd met de actuele versie",
+
+      text:
+        "Het handboek kan worden bijgewerkt. Controleer daarom altijd of je met de meest actuele versie werkt, zodat alle betrokken collega's vanuit dezelfde afspraken werken.",
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 1. ORGANISCHE SOCIALE MEDIA BINNEN HEMA
+// =========================================================
+
+{
+  id: "organic-be-organische-social-media",
+  category: "organic-social-belgie",
+
+  title:
+    "1. Organische sociale media binnen HEMA",
+
+  summary:
+    "Kanalen, postfrequentie, contentkalender, communicatie met agencies en locaties van assets.",
+
+  system:
+    "Instagram / TikTok / Facebook / Pinterest / YouTube",
+
+  frequency:
+    "Dagelijks",
+
+  duration:
+    "Naslag",
+
+  featured: true,
+
+  tags: [
+    "instagram",
+    "tiktok",
+    "facebook",
+    "pinterest",
+    "youtube shorts",
+    "contentkalender",
+    "paloma",
+    "social sky",
+    "uncool"
+  ],
+
+  steps: [
+    {
+      title:
+        "Actieve sociale mediakanalen",
+
+      text:
+        "HEMA België is voor Organic Social actief op verschillende sociale mediakanalen.",
+
+      bullets: [
+        "Instagram",
+        "TikTok",
+        "Facebook Vlaams",
+        "Facebook Waals",
+        "Pinterest",
+        "YouTube Shorts"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "1.1 Postfrequentie",
+
+      text:
+        "Er wordt gestreefd naar minimaal dagelijks posten op de feed en minimaal zes stories per week op elk platform. Per kanaal kunnen nuances gelden. Facebook heeft momenteel bijvoorbeeld een hogere frequentie en Pinterest een lagere.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "1.2 Contentkalender",
+
+      text:
+        "De contentkalender is de centrale plek voor de dagelijkse planning van Organic Social. Hierin staat de planning voor elk sociaal mediakanaal. Zorg dat je deze gemakkelijk kunt terugvinden en controleer hem dagelijks.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "1.3 Communiceren met de bureaus",
+
+      text:
+        "De communicatie met Social Sky, Paloma en UnCool verloopt via verschillende kanalen.",
+
+      infoCards: [
+        {
+          title:
+            "E-mail",
+
+          items: [
+            "Voor belangrijke zaken",
+            "Afstemming over werkzaamheden",
+            "Overleg over verschillende taken"
+          ]
+        },
+
+        {
+          title:
+            "Meetings",
+
+          items: [
+            "Nieuwe concepten bespreken",
+            "Uitgewerkte concepten bespreken en goedkeuren",
+            "Check-in over belangrijke zaken"
+          ]
+        },
+
+        {
+          title:
+            "WhatsApp-groep",
+
+          items: [
+            "Snelle updates",
+            "Korte vragen",
+            "Informelere communicatie dan e-mail"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "1.4 Waar zijn assets te vinden?",
+
+      text:
+        "Assets worden afhankelijk van de agency op verschillende locaties aangeleverd.",
+
+      bullets: [
+        "Paloma: via de Paloma Notion-clientpagina",
+        "Social Sky: via de Social Sky Content Hub in Notion",
+        "UnCool: concepten en assets worden via Vimeo en e-mail verspreid",
+        "Nederlandse reposts: I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\01 SOCIAL CONTENT\\01 CONTENT"
+      ],
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 2. WORKFLOW & VERANTWOORDELIJKHEDEN
+// =========================================================
+
+{
+  id: "organic-be-workflow",
+  category: "organic-social-belgie",
+
+  title:
+    "2. Workflow & verantwoordelijkheden",
+
+  summary:
+    "Verdeling van kanalen, planning van content, agency-workflow en aanspreekpunten.",
+
+  system:
+    "Organic Social Media België",
+
+  frequency:
+    "Doorlopend",
+
+  duration:
+    "Naslag",
+
+  featured: true,
+
+  tags: [
+    "workflow",
+    "verantwoordelijkheden",
+    "agencies",
+    "contentkalender",
+    "stories",
+    "feed"
+  ],
+
+  steps: [
+    {
+      title:
+        "2.1 Organic Social",
+
+      text:
+        "De contentkalender is de centrale basis voor Organic Social en wordt tweewekelijks besproken en continu bijgewerkt tijdens de Content Meetings.",
+
+      bullets: [
+        "Instagram & TikTok: hoofdverantwoordelijkheid bij Organic Social Marketeer België en deels de Stagiair Online Marketing België & Frankrijk",
+        "Facebook NL-BE en FR-BE, Pinterest en YouTube Shorts: hoofdverantwoordelijkheid bij de Social Media Coördinator België"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "2.1.1 Feed inplannen en creëren",
+
+      text:
+        "De agencies creëren een groot deel van de content. Het Belgische team plant de content vervolgens in.",
+
+      infoCards: [
+        {
+          title:
+            "TikTok",
+
+          items: [
+            "Video's via TikTok Studio",
+            "Carrousels via de TikTok-app"
+          ]
+        },
+
+        {
+          title:
+            "Instagram",
+
+          items: [
+            "Video's via de Instagram-app",
+            "Carrousels via de Instagram-app"
+          ]
+        },
+
+        {
+          title:
+            "Overige kanalen",
+
+          items: [
+            "Facebook via Meta Business Suite",
+            "Pinterest via de Pinterest-app",
+            "YouTube Shorts via de YouTube-app"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "2.1.1.2 Stories",
+
+      text:
+        "Stories worden voornamelijk door de Stagiair Online Marketing België & Frankrijk gemaakt, meestal in Canva. Er is wekelijks afstemming met de Stagiair Visual Creative om te bepalen welke stories tussen Nederland en België gecrosspost kunnen worden. Tijdens deze meeting worden ook cijfers en resultaten besproken en vergeleken.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "2.2 Workflow met agencies",
+
+      text:
+        "De samenwerking met agencies verloopt volgens een vaste workflow.",
+
+      subsection: {
+        title:
+          "Agency workflow",
+
+        steps: [
+          "Agencies pitchen wekelijks of maandelijks concepten voor de daaropvolgende periode.",
+          "Het team geeft feedback op de voorgestelde concepten.",
+          "De agencies werken de concepten uit en leveren deze via Notion of Vimeo aan.",
+          "Het Belgische socialmediateam geeft feedback of keurt het asset goed.",
+          "Goedgekeurde assets worden door het Belgische team in de contentkalender ingepland.",
+          "Na publicatie wordt het asset beoordeeld en wordt waar nodig feedback aan de agency gegeven."
+        ]
+      },
+
+      image: ""
+    },
+
+    {
+      title:
+        "2.2.1 Verdeling en meetings",
+
+      text:
+        "De drie agencies functioneren als contentleveranciers en leveren ieder een afgesproken hoeveelheid content.",
+
+      infoCards: [
+        {
+          title:
+            "PALOMA",
+
+          items: [
+            "22 assets per maand",
+            "Elke 2 weken nieuwe input",
+            "Wekelijkse check-in over shoots, editing en concepten"
+          ]
+        },
+
+        {
+          title:
+            "Social Sky",
+
+          items: [
+            "8 assets per maand",
+            "Elke 2 weken nieuwe input",
+            "Tweewekelijkse check-in"
+          ]
+        },
+
+        {
+          title:
+            "UnCool",
+
+          items: [
+            "4 assets per maand",
+            "Elke 2 weken nieuwe input",
+            "Tweewekelijkse check-in"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "2.3 Rollen & aanspreekpunten",
+
+      text:
+        "De verantwoordelijkheden zijn verdeeld over verschillende rollen binnen HEMA.",
+
+      infoCards: [
+        {
+          title:
+            "Organic Social",
+
+          items: [
+            "Social Media Marketeer België & Frankrijk",
+            "Social Media Coördinator België",
+            "Stagiair Online Marketing België & Frankrijk"
+          ]
+        },
+
+        {
+          title:
+            "Paid Social",
+
+          items: [
+            "Lead Paid Advertising",
+            "Channel Marketeer TikTok",
+            "Online Marketeer Meta"
+          ]
+        },
+
+        {
+          title:
+            "Creatormarketing",
+
+          items: [
+            "Channel Marketeer"
+          ]
+        },
+
+        {
+          title:
+            "Communitymanagement",
+
+          items: [
+            "Comments via de socialmedia-agency",
+            "DM's via de Social Media Coördinator België"
+          ]
+        },
+
+        {
+          title:
+            "Legal & contracten",
+
+          items: [
+            "Projectmanager Marketing België & Frankrijk"
+          ]
+        },
+
+        {
+          title:
+            "Budgettaire zaken",
+
+          items: [
+            "Lead Paid Advertising"
+          ]
+        }
+      ],
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 3. CONTENTRICHTLIJNEN
+// =========================================================
+
+{
+  id: "organic-be-contentrichtlijnen",
+  category: "organic-social-belgie",
+
+  title:
+    "3. Contentrichtlijnen",
+
+  summary:
+    "Vrindinnestrategie, visuele identiteit, technische richtlijnen, captions, hashtags en emoji's.",
+
+  system:
+    "Organic Social Media",
+
+  frequency:
+    "Bij iedere contentcreatie",
+
+  duration:
+    "Naslag",
+
+  featured: true,
+
+  tags: [
+    "contentrichtlijnen",
+    "caption",
+    "hashtags",
+    "emoji",
+    "tone of voice",
+    "vrindinnestrategie"
+  ],
+
+  caution:
+    "Gebruik onder posts altijd rechtenvrije muziek en sounds.",
+
+  steps: [
+    {
+      title:
+        "Vrindinnestrategie",
+
+      text:
+        "Alle content moet aansluiten op de Vrindinnestrategie: toegankelijk, vrolijk, informeel, inspirerend en herkenbaar als HEMA België.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "3.1 Visuele identiteit",
+
+      text:
+        "Voor grafische posts en stories wordt dezelfde visuele HEMA-identiteit gebruikt als in Nederland. Gebruik BeeldBinkie als informatiebron voor beeldgebruik, kleuren en typografie.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "3.2 Algemene contentrichtlijnen",
+
+      text:
+        "Houd bij het maken van content rekening met de vaste technische en juridische uitgangspunten.",
+
+      bullets: [
+        "Gebruik altijd rechtenvrije sounds en muziek",
+        "Reels: formaat 9:16",
+        "Carrousels: formaat 4:5"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "3.3 Caption",
+
+      text:
+        "Houd captions kort, krachtig en slim en houd altijd rekening met de tone of voice. Bij productposts voor Instagram en TikTok is zowel een Vlaamse als een Waalse caption nodig. Benoem een promotie kort wanneer die relevant is voor het afgebeelde product.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "3.3.1 Hashtags",
+
+      text:
+        "Hashtags worden voornamelijk gebruikt op TikTok en nauwelijks op Instagram en Facebook. #HEMA wordt standaard gebruikt op TikTok. Voeg overige hashtags alleen toe wanneer ze relevant zijn voor de content en vindbaarheid.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "3.3.2 Emoji's",
+
+      text:
+        "Gebruik emoji's alleen wanneer ze daadwerkelijk waarde toevoegen. Informatieve of serieuze content kan sterker zijn zonder emoji's. Bij luchtige content, productposts en humoristische sketches kunnen emoji's juist extra sfeer en herkenbaarheid toevoegen.",
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 4. CONTENTFORMATS
+// =========================================================
+
+{
+  id: "organic-be-contentformats",
+  category: "organic-social-belgie",
+
+  title:
+    "4. Contentformats",
+
+  summary:
+    "Richtlijnen voor feedcontent, stories, gamificatie en Instagram Highlights.",
+
+  system:
+    "Organic Social Media",
+
+  frequency:
+    "Doorlopend",
+
+  duration:
+    "Naslag",
+
+  featured: false,
+
+  tags: [
+    "feed",
+    "stories",
+    "contentmix",
+    "gamificatie",
+    "highlights"
+  ],
+
+  steps: [
+    {
+      title:
+        "4.1 Feed",
+
+      text:
+        "Er wordt minimaal één keer per dag op de feed gepost. Zorg voor een gevarieerde contentmix met zowel carrousels als reels.",
+
+      bullets: [
+        "Sketches",
+        "Promoties",
+        "Productposts",
+        "Winkelopeningen",
+        "Content gericht op views",
+        "Content gericht op engagement",
+        "Content die een glimlach oproept"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "4.2 Stories",
+
+      text:
+        "Stories zijn een dagelijks touchpoint voor interactie en worden relatief vaak ingezet voor commerciële communicatie zoals promoties en productposts. Combineer dit met gamificatie zodat stories niet uitsluitend uit koopboodschappen bestaan.",
+
+      infoCards: [
+        {
+          title:
+            "Gamificatie ideeën",
+
+          items: [
+            "Raad het Product",
+            "Dit of Dat",
+            "Woordzoekers",
+            "Woordrebussen",
+            "Geheugenspel",
+            "Zoek de verschillen",
+            "Zoekspel"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Resultaten van stories",
+
+      text:
+        "Houd de views van Instagram en Facebook wekelijks bij via Meta. Andere statistieken, waaronder average completion rate, kunnen via Iconosquare worden bekeken.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Instagram Highlights",
+
+      text:
+        "Blijf de Instagram Highlights actualiseren. Nieuwe promotionele stories gaan bijvoorbeeld in de highlight 'promoties' en vervangen daar de oude promotie. Wallpapers, fanposts, spelletjes en vergelijkbare stories kunnen worden toegevoegd zonder standaard oude content te verwijderen.",
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 5. DATA, ANALYSE & OPTIMALISATIE
+// =========================================================
+
+{
+  id: "organic-be-data-analyse",
+  category: "organic-social-belgie",
+
+  title:
+    "5. Data, Analyse & Optimalisatie",
+
+  summary:
+    "KPI's, kanaaldoelstellingen en wekelijkse rapportage voor HEMA België.",
+
+  system:
+    "Meta / Iconosquare",
+
+  frequency:
+    "Wekelijks",
+
+  duration:
+    "Naslag",
+
+  featured: false,
+
+  tags: [
+    "data",
+    "analyse",
+    "kpi",
+    "iconosquare",
+    "meta",
+    "views",
+    "followers"
+  ],
+
+  steps: [
+    {
+      title:
+        "5.1 Analyse metrics",
+
+      text:
+        "Views zijn de belangrijkste KPI voor Organic Social België. Positieve engagement rate blijft relevant, maar follower growth is daarnaast een belangrijke indicatie of de content aanslaat.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Instagram doelstellingen 2026",
+
+      text:
+        "Doelstellingen voor HEMA België Instagram.",
+
+      infoCards: [
+        {
+          title:
+            "Instagram",
+
+          items: [
+            "Frequentie: minimaal 7x per week",
+            "Volgers: 110.000",
+            "Views: 17,5 miljoen"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "TikTok doelstellingen 2026",
+
+      text:
+        "Doelstellingen voor HEMA België TikTok.",
+
+      infoCards: [
+        {
+          title:
+            "TikTok",
+
+          items: [
+            "Frequentie: minimaal 7x per week",
+            "Volgers: 40.000",
+            "Views: 30 miljoen"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "Facebook doelstellingen 2026",
+
+      text:
+        "Doelstellingen voor HEMA België Facebook.",
+
+      infoCards: [
+        {
+          title:
+            "Facebook",
+
+          items: [
+            "Frequentie: minimaal 5x per week",
+            "Volgers: 160.000",
+            "Views: 37,5 miljoen"
+          ]
+        }
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "5.2 Reporting structuur",
+
+      text:
+        "De prestaties worden wekelijks verzameld via Meta Statistieken en Iconosquare. De resultaten worden vervolgens bijgehouden in het moederbestand waarin ook de contentkalender staat.",
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 6. COMMUNITYMANAGEMENT
+// =========================================================
+
+{
+  id: "organic-be-communitymanagement",
+  category: "organic-social-belgie",
+
+  title:
+    "6. Communitymanagement",
+
+  summary:
+    "Tone of voice en werkwijze voor vragen, klachten en negatieve reacties.",
+
+  system:
+    "Social Media",
+
+  frequency:
+    "Dagelijks",
+
+  duration:
+    "Naslag",
+
+  featured: false,
+
+  tags: [
+    "communitymanagement",
+    "comments",
+    "dm",
+    "negatieve reacties",
+    "klachten"
+  ],
+
+  steps: [
+    {
+      title:
+        "6.1 Tone of voice in reacties",
+
+      text:
+        "Houd in reacties altijd de tone of voice van HEMA aan. Communitymanagement helpt bij relatiemanagement en vergroot tegelijkertijd de zichtbaarheid van het merk.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "6.2 Omgaan met negatieve reacties",
+
+      text:
+        "Niet iedere negatieve reactie of klacht hoeft een reactie te krijgen. Bepaal per situatie wat passend is.",
+
+      infoCards: [
+        {
+          title:
+            "Ernstige klacht",
+
+          items: [
+            "Stuur de klacht door naar klantenservice zodat deze kan worden opgelost"
+          ]
+        },
+
+        {
+          title:
+            "Gezonde discussie",
+
+          items: [
+            "Laat de discussie lopen zolang deze normaal en respectvol blijft"
+          ]
+        },
+
+        {
+          title:
+            "Intimidatie of schelden",
+
+          items: [
+            "Verwijder de comment",
+            "Blokkeer het account",
+            "Rapporteer het account"
+          ]
+        },
+
+        {
+          title:
+            "Veel dezelfde vragen",
+
+          items: [
+            "Plaats een openbare nette reactie zodat meerdere gebruikers direct antwoord krijgen"
+          ]
+        }
+      ],
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 7. (UGC-) CREATORS
+// =========================================================
+
+{
+  id: "organic-be-ugc-creators",
+  category: "organic-social-belgie",
+
+  title:
+    "7. (UGC-) creators",
+
+  summary:
+    "Rol, selectie, briefing, workflow, legal en resultaten van samenwerkingen met creators.",
+
+  system:
+    "Creator Marketing",
+
+  frequency:
+    "Wanneer nodig",
+
+  duration:
+    "Naslag",
+
+  featured: true,
+
+  tags: [
+    "ugc",
+    "creators",
+    "creator marketing",
+    "briefing",
+    "spark ads",
+    "partnership ads",
+    "legal"
+  ],
+
+  steps: [
+    {
+      title:
+        "7.1 Rol van creators",
+
+      text:
+        "(UGC-)creators worden voornamelijk ingezet als verlengstuk van paid advertising. Zij maken video-first content voor formats zoals Reels, TikToks en Shorts. Publicatie via de eigen kanalen van creators maakt versterking via bijvoorbeeld Spark Ads en Partnership Ads mogelijk.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "7.2 Selectiecriteria",
+
+      text:
+        "Let bij het selecteren van creators op meerdere aspecten.",
+
+      bullets: [
+        "Kwaliteit van videocontent",
+        "Effectiviteit van bestaande content",
+        "Ervaring met merkcontent",
+        "Professionaliteit",
+        "Sterk portfolio met verhalende kwaliteit",
+        "Doelgroepgericht kunnen creëren",
+        "Aantoonbare ervaring met sociale media"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "7.3 Briefing & beoordeling",
+
+      text:
+        "Creators krijgen creatieve vrijheid, maar er zijn vaste punten die in de content terug moeten komen.",
+
+      bullets: [
+        "Content moet natuurlijk aanvoelen en niet als advertentie",
+        "Benodigde producten moeten zichtbaar zijn",
+        "De video mag niet te lang duren",
+        "Merkherkenning moet snel zichtbaar zijn"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "7.4 Workflow met creators",
+
+      text:
+        "Gebruik een vaste workflow van selectie tot rapportage.",
+
+      subsection: {
+        title:
+          "Creator workflow",
+
+        steps: [
+          "Opdracht/dropping → selectie creators via formulier of portal",
+          "Briefing → via e-mail",
+          "Sample verzending → tracking delen",
+          "Previews → maximaal 1–2 revisies en feedback binnen 48 uur",
+          "Go-live → post + correcte disclosure",
+          "Asset-download & archief → bestandsnamen en metadata",
+          "Repurposing → paid, e-mail, site of retail waar toegestaan",
+          "Rapportage → KPI's, learnings en tagging in DAM"
+        ],
+
+        note:
+          "SLA's: briefing accepteren binnen 48 uur, feedback op preview binnen 48 uur en publicatie na go/no-go binnen 24 uur."
+      },
+
+      image: ""
+    },
+
+    {
+      title:
+        "7.5 Wetgeving & legal",
+
+      text:
+        "Controleer altijd de juridische vereisten voor samenwerkingen met creators.",
+
+      bullets: [
+        "Geen ongefundeerde claims",
+        "Vermijd gevoelige hoofdboodschappen rond politieke voorkeuren, religie en duurzaamheid",
+        "Gebruik correcte disclosure zoals #ad of 'betaalde samenwerking'",
+        "Controleer muziek en licenties"
+      ],
+
+      image: ""
+    },
+
+    {
+      title:
+        "7.6 Data noteren en verwerken",
+
+      text:
+        "Gebruik de vaste documenten om campagnes en resultaten te registreren.",
+
+      bullets: [
+        "Moederbestand: campagnes en resultaten bijhouden",
+        "Linkbuilding-document: trackinglinks aanmaken wanneer video's worden geboost"
+      ],
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// LOKALE SOCIALE MEDIAKANALEN
+// =========================================================
+
+{
+  id: "organic-be-lokale-kanalen",
+  category: "organic-social-belgie",
+
+  title:
+    "Lokale sociale mediakanalen",
+
+  summary:
+    "Richtlijnen voor socialmediakanalen van lokale HEMA-winkels.",
+
+  system:
+    "Lokale Social Media",
+
+  frequency:
+    "Wanneer nodig",
+
+  duration:
+    "Naslag",
+
+  featured: false,
+
+  tags: [
+    "lokale winkels",
+    "employee generated content",
+    "release datum"
+  ],
+
+  steps: [
+    {
+      title:
+        "Lokale winkels volgen",
+
+      text:
+        "Houd in de gaten wat lokale winkels via hun eigen socialmediakanalen plaatsen. Employee Generated Content is welkom en lokale winkels mogen vooral experimenteren met content die volgens hen goed werkt.",
+
+      image: ""
+    },
+
+    {
+      title:
+        "Let op nieuwe collecties",
+
+      text:
+        "Soms worden nieuwe collecties vóór de officiële releasedatum gedeeld. Neem in dat geval direct contact op met de winkel, vraag of de content offline kan worden gehaald en herinner hen aan de officiële releasedatum.",
+
+      image: ""
+    }
+  ]
+},
+
+
+// =========================================================
+// 8. BIJLAGEN
+// =========================================================
+
+{
+  id: "organic-be-bijlagen",
+  category: "organic-social-belgie",
+
+  title:
+    "8. Bijlagen",
+
+  summary:
+    "Storytemplates, creatorcommunicatie en aanvullende tools voor Organic Social België.",
+
+  system:
+    "Canva / TradeTracker",
+
+  frequency:
+    "Naslag",
+
+  duration:
+    "Naslag",
+
+  featured: false,
+
+  tags: [
+    "bijlagen",
+    "canva",
+    "storytemplates",
+    "tradetracker",
+    "creator",
+    "nl-be",
+    "fr-be"
+  ],
+
+  subsections: [
+    {
+      title:
+        "8.1 Organic Social",
+
+      text:
+        "Aanvullende bestanden en templates voor feeds en stories.",
+
+      steps: [
+        {
+          title:
+            "8.1.1 Feed & data",
+
+          text:
+            "Resultaten van feedposts en stories worden bijgehouden in het moederbestand. Voor stories wordt aanvullend het story-bestand gebruikt. Houd Instagram- en Facebookviews via Meta wekelijks bij en gebruik Iconosquare voor aanvullende cijfers zoals average completion rate.",
+
+          image: ""
+        },
+
+        {
+          title:
+            "8.1.2 Storytemplates",
+
+          text:
+            "Maak voor elke template eerst een kopie naar je eigen Canva-account via 'Bestand → Maak een kopie'.",
+
+          bullets: [
+            "Raad het product",
+            "Raad het product – Stapelgek editie",
+            "Zoek de verschillen",
+            "Dit of Dat",
+            "Dit of Dat – Stapelgek editie",
+            "Fanstories",
+            "Zoekspel",
+            "Woordrebussen & feestdagen",
+            "Geheugenspel"
+          ],
+
+          image: ""
+        }
+      ]
+    },
+
+    {
+      title:
+        "8.2 (UGC-) creators NL-BE",
+
+      text:
+        "Voorbeeldcommunicatie en werkwijze voor Nederlandstalige Belgische creators.",
+
+      steps: [
+        {
+          title:
+            "Aanmelding nieuwe creator NL-BE",
+
+          text:
+            "Nieuwe creators maken eerst een TradeTracker-account aan via het HEMA België affiliateprogramma. Na goedkeuring ontvangen ze een Affiliate-ID. Dit ID is verplicht voor registratie en verwerking van vergoedingen.",
+
+          bullets: [
+            "Affiliateprogramma: https://www.hema.com/nl-be/affiliate",
+            "Wacht tot het TradeTracker-account is goedgekeurd",
+            "Ontvang het Affiliate-ID",
+            "Vul vervolgens het HEMA Creator-aanmeldformulier in",
+            "Voor opdrachten zijn geen affiliate links nodig",
+            "De vergoeding wordt als fixed fee geregistreerd"
+          ],
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vergoedingsproces NL-BE",
+
+          text:
+            "Vergoedingen voor creators lopen via TradeTracker. Na goedkeuring van de content wordt de vergoeding als fixed fee geregistreerd.",
+
+          bullets: [
+            "De creator hoeft geen factuur te sturen",
+            "Betaaltermijn is ongeveer 90 dagen",
+            "Controleer of betaalgegevens volledig zijn",
+            "Controleer de betaalinstellingen in TradeTracker",
+            "Voeg het BTW-nummer toe indien van toepassing"
+          ],
+
+          image: ""
+        }
+      ]
+    },
+
+    {
+      title:
+        "8.3 (UGC-) creators FR-BE",
+
+      text:
+        "Franstalige variant van het creatorproces voor België.",
+
+      steps: [
+        {
+          title:
+            "Aanmelding nieuwe creator FR-BE",
+
+          text:
+            "Franstalige creators maken eerst een TradeTracker-account aan via het Franstalige HEMA België affiliateprogramma en ontvangen na goedkeuring een Affiliate ID.",
+
+          bullets: [
+            "Affiliateprogramma: https://www.hema.com/fr-be/affiliation",
+            "Wacht tot het TradeTracker-account is goedgekeurd",
+            "Affiliate ID is verplicht",
+            "Vul vervolgens het creator-aanmeldformulier in",
+            "Geen affiliate links nodig voor de opdracht",
+            "De vergoeding wordt als fixed fee geregistreerd"
+          ],
+
+          image: ""
+        },
+
+        {
+          title:
+            "Vergoedingsproces FR-BE",
+
+          text:
+            "Betalingen verlopen via TradeTracker. De creator hoeft geen factuur te sturen. Na goedkeuring van de content wordt de vergoeding als vast bedrag geregistreerd.",
+
+          bullets: [
+            "Betaaltermijn is ongeveer 90 dagen",
+            "Bankgegevens volledig invullen",
+            "Betaalinstellingen controleren",
+            "BTW-nummer toevoegen indien van toepassing"
+          ],
+
+          image: ""
+        }
+      ]
+    },
+
+    {
+      title:
+        "8.4 Overig",
+
+      text:
+        "Aanvullende systemen die relevant zijn voor het team.",
+
+      cards: [
+        {
+          title:
+            "Keeper",
+
+          lines: [
+            "Keeper is de veilige wachtwoordkluis voor het opslaan van wachtwoorden.",
+            "Zorg dat je hiervoor een account hebt."
+          ]
+        },
+
+        {
+          title:
+            "Yext",
+
+          lines: [
+            "Yext wordt gebruikt voor het beheren van bedrijfs- en locatiegegevens online.",
+            "Het helpt gegevens zoals openingstijden, adressen en contactinformatie consistent en actueel te houden op verschillende platforms en zoekmachines."
+          ]
+        }
+      ]
+    }
+  ]
+}
   ]
 };
