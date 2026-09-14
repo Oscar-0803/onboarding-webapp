@@ -83,7 +83,24 @@ function buildNavigation() {
     return;
   }
 
+  const organicCategory =
+    data.categories.find(
+      (category) =>
+        category.id ===
+        "organic-social-belgie"
+    );
+
+  const retailCategories =
+    data.categories.filter(
+      (category) =>
+        category.id !==
+        "organic-social-belgie"
+    );
+
   categoryNav.innerHTML = `
+
+    <!-- RETAIL MEDIA -->
+
     <div class="nav-folder">
 
       <button
@@ -101,11 +118,13 @@ function buildNavigation() {
         </span>
       </button>
 
+
       <div
         class="nav-folder-content"
         id="retailMediaCategories"
       >
-        ${data.categories
+
+        ${retailCategories
           .map(
             (category) => `
               <button
@@ -128,10 +147,172 @@ function buildNavigation() {
             `
           )
           .join("")}
+
+      </div>
+
+    </div>
+
+
+    <!-- ORGANIC SOCIAL MEDIA -->
+
+    <div class="nav-folder">
+
+      <button
+        class="nav-folder-button open"
+        id="organicSocialToggle"
+        type="button"
+        aria-expanded="true"
+      >
+        <span class="nav-folder-icon">
+          ▾
+        </span>
+
+        <span class="nav-folder-title">
+          Organic Social Media
+        </span>
+      </button>
+
+
+      <div
+        class="nav-folder-content"
+        id="organicSocialCategories"
+      >
+
+        ${
+          organicCategory
+            ? `
+              <button
+                class="nav-item category-child"
+                data-category="${organicCategory.id}"
+                type="button"
+              >
+                <span class="nav-icon">
+                  ${organicCategory.icon}
+                </span>
+
+                <span class="nav-label">
+                  ${organicCategory.label}
+                </span>
+
+                <span class="nav-count">
+                  ${categoryCount(
+                    organicCategory.id
+                  )}
+                </span>
+              </button>
+            `
+            : ""
+        }
+
       </div>
 
     </div>
   `;
+
+
+  // Overzicht / Favorieten
+  document
+    .querySelectorAll("[data-view]")
+    .forEach((button) => {
+      button.addEventListener(
+        "click",
+        () => {
+          state = {
+            view: button.dataset.view,
+            category: null,
+            query: "",
+            procedureId: null
+          };
+
+          if (searchInput) {
+            searchInput.value = "";
+          }
+
+          render();
+        }
+      );
+    });
+
+
+  // Categorieën
+  document
+    .querySelectorAll("[data-category]")
+    .forEach((button) => {
+      button.addEventListener(
+        "click",
+        () => {
+          state = {
+            view: "category",
+            category:
+              button.dataset.category,
+            query: "",
+            procedureId: null
+          };
+
+          if (searchInput) {
+            searchInput.value = "";
+          }
+
+          render();
+        }
+      );
+    });
+
+
+  setupNavFolder(
+    "retailMediaToggle",
+    "retailMediaCategories"
+  );
+
+  setupNavFolder(
+    "organicSocialToggle",
+    "organicSocialCategories"
+  );
+}
+
+
+function setupNavFolder(
+  buttonId,
+  contentId
+) {
+  const button =
+    document.getElementById(buttonId);
+
+  const folderContent =
+    document.getElementById(contentId);
+
+  if (!button || !folderContent) {
+    return;
+  }
+
+  button.addEventListener(
+    "click",
+    () => {
+      const isOpen =
+        button.classList.toggle("open");
+
+      folderContent.classList.toggle(
+        "collapsed",
+        !isOpen
+      );
+
+      button.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+
+      const icon =
+        button.querySelector(
+          ".nav-folder-icon"
+        );
+
+      if (icon) {
+        icon.textContent =
+          isOpen ? "▾" : "▸";
+      }
+    }
+  );
+}
 
 
   // Overzicht en Favorieten
