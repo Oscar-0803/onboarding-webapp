@@ -46,7 +46,14 @@ window.HANDBOOK_DATA = {
       label: "Online Banners",
       icon: "◇",
       description: "Online banners maken en verwerken"
-    }
+    },
+    {
+  id: "organic-social-belgie",
+  label: "België",
+  icon: "🇧🇪",
+  description:
+    "Strategisch en praktisch handboek voor Organic Social Media België"
+},
   ],
 
   procedures: [
