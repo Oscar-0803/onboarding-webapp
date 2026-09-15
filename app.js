@@ -31,19 +31,22 @@ let state = {
 
 function categoryById(id) {
   return data.categories.find(
-    (category) => category.id === id
+    (category) =>
+      category.id === id
   );
 }
 
 function procedureById(id) {
   return data.procedures.find(
-    (procedure) => procedure.id === id
+    (procedure) =>
+      procedure.id === id
   );
 }
 
 function topLevelProcedures() {
   return data.procedures.filter(
-    (procedure) => !procedure.parent
+    (procedure) =>
+      !procedure.parent
   );
 }
 
@@ -107,15 +110,49 @@ function categoryButton(category) {
   `;
 }
 
+
+function organicHandbookButton(
+  category
+) {
+  if (!category) {
+    return "";
+  }
+
+  return `
+    <button
+      class="nav-item category-child"
+      data-category="${category.id}"
+      type="button"
+    >
+      <span class="nav-icon">
+        ${category.icon}
+      </span>
+
+      <span class="nav-label">
+        Handboek
+      </span>
+
+      <span class="nav-count">
+        ${categoryCount(category.id)}
+      </span>
+    </button>
+  `;
+}
+
+
 function setupNavFolder(
   buttonId,
   contentId
 ) {
   const button =
-    document.getElementById(buttonId);
+    document.getElementById(
+      buttonId
+    );
 
   const folderContent =
-    document.getElementById(contentId);
+    document.getElementById(
+      contentId
+    );
 
   if (!button || !folderContent) {
     return;
@@ -124,17 +161,19 @@ function setupNavFolder(
   button.addEventListener(
     "click",
     () => {
-      const open =
-        button.classList.toggle("open");
+      const isOpen =
+        button.classList.toggle(
+          "open"
+        );
 
       folderContent.classList.toggle(
         "collapsed",
-        !open
+        !isOpen
       );
 
       button.setAttribute(
         "aria-expanded",
-        String(open)
+        String(isOpen)
       );
 
       const icon =
@@ -144,11 +183,12 @@ function setupNavFolder(
 
       if (icon) {
         icon.textContent =
-          open ? "▾" : "▸";
+          isOpen ? "▾" : "▸";
       }
     }
   );
 }
+
 
 function buildNavigation() {
   const categoryNav =
@@ -164,17 +204,20 @@ function buildNavigation() {
     data.categories.find(
       (category) =>
         category.id ===
-        "organic-social-belgie"
+        "organic-social"
     );
 
   const retailCategories =
     data.categories.filter(
       (category) =>
         category.id !==
-        "organic-social-belgie"
+        "organic-social"
     );
 
   categoryNav.innerHTML = `
+
+    <!-- RETAIL MEDIA -->
+
     <div class="nav-folder">
 
       <button
@@ -183,6 +226,7 @@ function buildNavigation() {
         type="button"
         aria-expanded="true"
       >
+
         <span class="nav-folder-icon">
           ▾
         </span>
@@ -190,19 +234,25 @@ function buildNavigation() {
         <span class="nav-folder-title">
           Retail Media
         </span>
+
       </button>
+
 
       <div
         id="retailMediaCategories"
         class="nav-folder-content"
       >
+
         ${retailCategories
           .map(categoryButton)
           .join("")}
+
       </div>
 
     </div>
 
+
+    <!-- ORGANIC SOCIAL MEDIA -->
 
     <div class="nav-folder">
 
@@ -212,6 +262,7 @@ function buildNavigation() {
         type="button"
         aria-expanded="true"
       >
+
         <span class="nav-folder-icon">
           ▾
         </span>
@@ -219,30 +270,35 @@ function buildNavigation() {
         <span class="nav-folder-title">
           Organic Social Media
         </span>
+
       </button>
+
 
       <div
         id="organicSocialCategories"
         class="nav-folder-content"
       >
-        ${
+
+        ${organicHandbookButton(
           organicCategory
-            ? categoryButton(
-                organicCategory
-              )
-            : ""
-        }
+        )}
+
       </div>
 
     </div>
   `;
 
+
   document
-    .querySelectorAll("[data-view]")
+    .querySelectorAll(
+      "[data-view]"
+    )
     .forEach((button) => {
+
       button.addEventListener(
         "click",
         () => {
+
           state = {
             view:
               button.dataset.view,
@@ -251,20 +307,27 @@ function buildNavigation() {
             procedureId: null
           };
 
-          searchInput.value = "";
+          if (searchInput) {
+            searchInput.value = "";
+          }
+
           render();
         }
       );
+
     });
+
 
   document
     .querySelectorAll(
       "[data-category]"
     )
     .forEach((button) => {
+
       button.addEventListener(
         "click",
         () => {
+
           state = {
             view: "category",
             category:
@@ -273,11 +336,16 @@ function buildNavigation() {
             procedureId: null
           };
 
-          searchInput.value = "";
+          if (searchInput) {
+            searchInput.value = "";
+          }
+
           render();
         }
       );
+
     });
+
 
   setupNavFolder(
     "retailMediaToggle",
@@ -290,28 +358,42 @@ function buildNavigation() {
   );
 }
 
+
 function updateNavigation() {
   document
     .querySelectorAll(".nav-item")
-    .forEach((item) =>
-      item.classList.remove("active")
-    );
+    .forEach((item) => {
+      item.classList.remove(
+        "active"
+      );
+    });
 
-  if (state.view === "home") {
+
+  if (
+    state.view === "home"
+  ) {
     document
       .querySelector(
         '[data-view="home"]'
       )
-      ?.classList.add("active");
+      ?.classList.add(
+        "active"
+      );
   }
 
-  if (state.view === "favorites") {
+
+  if (
+    state.view === "favorites"
+  ) {
     document
       .querySelector(
         '[data-view="favorites"]'
       )
-      ?.classList.add("active");
+      ?.classList.add(
+        "active"
+      );
   }
+
 
   if (
     state.view === "category"
@@ -320,13 +402,15 @@ function updateNavigation() {
       .querySelector(
         `[data-category="${state.category}"]`
       )
-      ?.classList.add("active");
+      ?.classList.add(
+        "active"
+      );
   }
 }
 
 
 // =========================================================
-// CARDS
+// PROCEDURE CARDS
 // =========================================================
 
 function procedureCard(procedure) {
@@ -365,19 +449,24 @@ function procedureCard(procedure) {
           }"
           data-favorite="${procedure.id}"
           type="button"
+          title="Toevoegen aan favorieten"
+          aria-label="Toevoegen aan favorieten"
         >
           ★
         </button>
 
       </div>
 
+
       <h3>
         ${procedure.title}
       </h3>
 
+
       <p>
         ${procedure.summary || ""}
       </p>
+
 
       <div class="card-footer">
 
@@ -395,6 +484,7 @@ function procedureCard(procedure) {
                 }${procedure.frequency || ""}`
           }
         </span>
+
 
         <button
           class="open-button"
@@ -414,6 +504,7 @@ function procedureCard(procedure) {
   `;
 }
 
+
 function categoryCard(category) {
   return `
     <button
@@ -421,6 +512,7 @@ function categoryCard(category) {
       data-open-category="${category.id}"
       type="button"
     >
+
       <div class="category-icon">
         ${category.icon}
       </div>
@@ -438,13 +530,14 @@ function categoryCard(category) {
           category.id
         )} procedures
       </small>
+
     </button>
   `;
 }
 
 
 // =========================================================
-// HOME / LIST
+// HOME
 // =========================================================
 
 function homeView() {
@@ -458,6 +551,7 @@ function homeView() {
     <div class="hero">
 
       <div>
+
         <p class="eyebrow">
           ONBOARDING HANDBOEK
         </p>
@@ -471,9 +565,12 @@ function homeView() {
           werkinstructie zonder door
           lange documenten te zoeken.
         </p>
+
       </div>
 
+
       <div class="hero-stat">
+
         <strong>
           ${topLevelProcedures().length}
         </strong>
@@ -481,12 +578,16 @@ function homeView() {
         <span>
           onderdelen in dit concept
         </span>
+
       </div>
 
     </div>
 
+
     <div class="section-heading">
+
       <div>
+
         <p class="eyebrow">
           SNEL STARTEN
         </p>
@@ -494,17 +595,27 @@ function homeView() {
         <h2>
           Veelgebruikte procedures
         </h2>
+
       </div>
+
     </div>
 
+
     <div class="procedure-grid">
+
       ${featured
         .map(procedureCard)
         .join("")}
+
     </div>
 
-    <div class="section-heading categories-heading">
+
+    <div
+      class="section-heading categories-heading"
+    >
+
       <div>
+
         <p class="eyebrow">
           BLADEREN
         </p>
@@ -512,16 +623,26 @@ function homeView() {
         <h2>
           Alle categorieën
         </h2>
+
       </div>
+
     </div>
 
+
     <div class="category-grid">
+
       ${data.categories
         .map(categoryCard)
         .join("")}
+
     </div>
   `;
 }
+
+
+// =========================================================
+// LIST VIEW
+// =========================================================
 
 function listView(
   title,
@@ -530,44 +651,68 @@ function listView(
 ) {
   content.innerHTML = `
     <div class="page-title-row">
+
       <div>
+
         <p class="eyebrow">
           WERKINSTRUCTIES
         </p>
 
-        <h1>${title}</h1>
+        <h1>
+          ${title}
+        </h1>
 
-        <p>${description}</p>
+        <p>
+          ${description || ""}
+        </p>
+
       </div>
+
     </div>
+
 
     ${
       procedures.length
         ? `
           <div class="procedure-grid">
+
             ${procedures
               .map(procedureCard)
               .join("")}
+
           </div>
         `
         : `
           <div class="empty-state">
+
             <h2>
               Nog niets hier
             </h2>
+
           </div>
         `
     }
   `;
 }
 
+
+// =========================================================
+// FOLDER VIEW
+// =========================================================
+
 function folderView(folder) {
   const children =
-    childProcedures(folder.id);
+    childProcedures(
+      folder.id
+    );
 
   content.innerHTML = `
     <div class="breadcrumb">
-      <button data-home>
+
+      <button
+        data-home
+        type="button"
+      >
         Overzicht
       </button>
 
@@ -576,10 +721,14 @@ function folderView(folder) {
       <span>
         ${folder.title}
       </span>
+
     </div>
 
+
     <div class="page-title-row">
+
       <div>
+
         <p class="eyebrow">
           PROCEDUREMAP
         </p>
@@ -591,13 +740,18 @@ function folderView(folder) {
         <p>
           ${folder.summary || ""}
         </p>
+
       </div>
+
     </div>
 
+
     <div class="procedure-grid">
+
       ${children
         .map(procedureCard)
         .join("")}
+
     </div>
   `;
 }
@@ -614,6 +768,7 @@ function searchableText(
     procedure
   ).toLowerCase();
 }
+
 
 function searchView() {
   const query =
@@ -642,7 +797,7 @@ function searchView() {
 
 
 // =========================================================
-// RENDER HELPERS
+// LINKS
 // =========================================================
 
 function renderLinks(links) {
@@ -652,6 +807,7 @@ function renderLinks(links) {
 
   return `
     <div class="resource-links">
+
       ${links
         .map(
           (link) => `
@@ -667,9 +823,15 @@ function renderLinks(links) {
           `
         )
         .join("")}
+
     </div>
   `;
 }
+
+
+// =========================================================
+// INFO CARDS
+// =========================================================
 
 function renderInfoCards(cards) {
   if (!cards?.length) {
@@ -678,10 +840,12 @@ function renderInfoCards(cards) {
 
   return `
     <div class="step-info-cards">
+
       ${cards
         .map(
           (card) => `
             <div class="step-info-card">
+
               <h4>
                 ${card.title}
               </h4>
@@ -690,12 +854,14 @@ function renderInfoCards(cards) {
                 card.items?.length
                   ? `
                     <ul>
+
                       ${card.items
                         .map(
                           (item) =>
                             `<li>${item}</li>`
                         )
                         .join("")}
+
                     </ul>
                   `
                   : ""
@@ -710,13 +876,20 @@ function renderInfoCards(cards) {
                   `
                   : ""
               }
+
             </div>
           `
         )
         .join("")}
+
     </div>
   `;
 }
+
+
+// =========================================================
+// STEP SUBSECTION
+// =========================================================
 
 function renderStepSubsection(
   subsection
@@ -736,12 +909,14 @@ function renderStepSubsection(
         subsection.steps?.length
           ? `
             <ol class="step-numbered-list">
+
               ${subsection.steps
                 .map(
                   (step) =>
                     `<li>${step}</li>`
                 )
                 .join("")}
+
             </ol>
           `
           : ""
@@ -761,6 +936,11 @@ function renderStepSubsection(
   `;
 }
 
+
+// =========================================================
+// NORMAL STEP
+// =========================================================
+
 function renderStep(
   step,
   index
@@ -772,55 +952,70 @@ function renderStep(
         ${index + 1}
       </div>
 
+
       <div class="step-content">
 
         <h3>
           ${step.title}
         </h3>
 
+
         ${
           step.text
-            ? `<p>${step.text}</p>`
+            ? `
+              <p>
+                ${step.text}
+              </p>
+            `
             : ""
         }
+
 
         ${
           step.bullets?.length
             ? `
               <ul class="step-bullets">
+
                 ${step.bullets
                   .map(
                     (bullet) =>
                       `<li>${bullet}</li>`
                   )
                   .join("")}
+
               </ul>
             `
             : ""
         }
 
+
         ${renderLinks(
           step.links
         )}
+
 
         ${renderInfoCards(
           step.infoCards
         )}
 
+
         ${renderStepSubsection(
           step.subsection
         )}
+
 
         ${
           step.image
             ? `
               <div class="step-image-wrapper">
+
                 <img
                   class="step-image"
                   src="${step.image}"
                   alt="${step.title}"
                   loading="lazy"
                 >
+
               </div>
             `
             : ""
@@ -831,6 +1026,11 @@ function renderStep(
     </div>
   `;
 }
+
+
+// =========================================================
+// INTRO BOX
+// =========================================================
 
 function renderIntroBox(box) {
   if (!box) {
@@ -845,6 +1045,7 @@ function renderIntroBox(box) {
       </div>
 
       <div>
+
         <h2>
           ${box.title}
         </h2>
@@ -852,11 +1053,17 @@ function renderIntroBox(box) {
         <p>
           ${box.text || ""}
         </p>
+
       </div>
 
     </div>
   `;
 }
+
+
+// =========================================================
+// INFO SECTIONS
+// =========================================================
 
 function renderInfoSections(
   sections
@@ -879,13 +1086,18 @@ function renderInfoSections(
                   : ""
               }"
             >
+
               <h3>
                 ${section.title}
               </h3>
 
               ${
                 section.text
-                  ? `<p>${section.text}</p>`
+                  ? `
+                    <p>
+                      ${section.text}
+                    </p>
+                  `
                   : ""
               }
 
@@ -898,6 +1110,7 @@ function renderInfoSections(
                         .map(
                           (item) => `
                             <div class="contact-row">
+
                               <strong>
                                 ${item.label}
                               </strong>
@@ -924,6 +1137,7 @@ function renderInfoSections(
                                     </span>
                                   `
                               }
+
                             </div>
                           `
                         )
@@ -943,6 +1157,11 @@ function renderInfoSections(
   `;
 }
 
+
+// =========================================================
+// INFO BOX
+// =========================================================
+
 function renderInfoBox(box) {
   if (!box) {
     return "";
@@ -957,7 +1176,11 @@ function renderInfoBox(box) {
 
       ${
         box.text
-          ? `<p>${box.text}</p>`
+          ? `
+            <p>
+              ${box.text}
+            </p>
+          `
           : ""
       }
 
@@ -965,10 +1188,12 @@ function renderInfoBox(box) {
         box.items?.length
           ? `
             <div class="discount-table">
+
               ${box.items
                 .map(
                   (item) => `
                     <div class="discount-row">
+
                       <span>
                         ${item.amount}
                       </span>
@@ -976,10 +1201,12 @@ function renderInfoBox(box) {
                       <strong>
                         ${item.discount}
                       </strong>
+
                     </div>
                   `
                 )
                 .join("")}
+
             </div>
           `
           : ""
@@ -988,6 +1215,11 @@ function renderInfoBox(box) {
     </div>
   `;
 }
+
+
+// =========================================================
+// PROCEDURE SUBSECTIONS
+// =========================================================
 
 function renderSubsections(
   sections
@@ -1013,7 +1245,11 @@ function renderSubsections(
 
             ${
               section.text
-                ? `<p>${section.text}</p>`
+                ? `
+                  <p>
+                    ${section.text}
+                  </p>
+                `
                 : ""
             }
 
@@ -1023,10 +1259,12 @@ function renderSubsections(
 
           </div>
 
+
           ${
             section.steps?.length
               ? `
                 <div class="subsection-steps">
+
                   ${section.steps
                     .map(
                       (step, index) =>
@@ -1036,10 +1274,12 @@ function renderSubsections(
                         )
                     )
                     .join("")}
+
                 </div>
               `
               : ""
           }
+
 
           ${
             section.subsection
@@ -1050,16 +1290,22 @@ function renderSubsections(
                     ${section.subsection.title}
                   </h3>
 
-                  <ol class="step-numbered-list">
-                    ${
-                      section.subsection.steps
-                        ?.map(
-                          (step) =>
-                            `<li>${step}</li>`
-                        )
-                        .join("") || ""
-                    }
-                  </ol>
+                  ${
+                    section.subsection.steps?.length
+                      ? `
+                        <ol class="step-numbered-list">
+
+                          ${section.subsection.steps
+                            .map(
+                              (step) =>
+                                `<li>${step}</li>`
+                            )
+                            .join("")}
+
+                        </ol>
+                      `
+                      : ""
+                  }
 
                   ${
                     section.subsection.note
@@ -1076,34 +1322,48 @@ function renderSubsections(
               : ""
           }
 
+
           ${
             section.cards?.length
               ? `
                 <div class="summary-cards">
+
                   ${section.cards
                     .map(
                       (card) => `
                         <article class="summary-card">
+
                           <h3>
                             ${card.title}
                           </h3>
 
-                          <ul>
-                            ${card.lines
-                              .map(
-                                (line) =>
-                                  `<li>${line}</li>`
-                              )
-                              .join("")}
-                          </ul>
+                          ${
+                            card.lines?.length
+                              ? `
+                                <ul>
+
+                                  ${card.lines
+                                    .map(
+                                      (line) =>
+                                        `<li>${line}</li>`
+                                    )
+                                    .join("")}
+
+                                </ul>
+                              `
+                              : ""
+                          }
+
                         </article>
                       `
                     )
                     .join("")}
+
                 </div>
               `
               : ""
           }
+
 
           ${
             section.note
@@ -1123,7 +1383,7 @@ function renderSubsections(
 
 
 // =========================================================
-// DETAIL
+// DETAIL VIEW
 // =========================================================
 
 function detailView(procedure) {
@@ -1154,7 +1414,10 @@ function detailView(procedure) {
   content.innerHTML = `
     <div class="breadcrumb">
 
-      <button data-home>
+      <button
+        data-home
+        type="button"
+      >
         Overzicht
       </button>
 
@@ -1165,6 +1428,7 @@ function detailView(procedure) {
           ? `
             <button
               data-open="${parent.id}"
+              type="button"
             >
               ${parent.title}
             </button>
@@ -1184,6 +1448,7 @@ function detailView(procedure) {
     <div class="page-title-row">
 
       <div>
+
         <p class="eyebrow">
           ${
             parent
@@ -1199,6 +1464,7 @@ function detailView(procedure) {
         <p>
           ${procedure.summary || ""}
         </p>
+
 
         <div class="meta-row">
 
@@ -1232,8 +1498,15 @@ function detailView(procedure) {
               : ""
           }
 
+          <span class="meta-pill">
+            Bijgewerkt:
+            ${data.meta.lastUpdated}
+          </span>
+
         </div>
+
       </div>
+
 
       <button
         class="favorite-button detail-favorite ${
@@ -1244,6 +1517,7 @@ function detailView(procedure) {
             : ""
         }"
         data-favorite="${procedure.id}"
+        type="button"
       >
         ★
       </button>
@@ -1255,6 +1529,7 @@ function detailView(procedure) {
       procedure.caution
         ? `
           <div class="notice warning">
+
             <strong>
               Let op
             </strong>
@@ -1262,6 +1537,7 @@ function detailView(procedure) {
             <p>
               ${procedure.caution}
             </p>
+
           </div>
         `
         : ""
@@ -1271,6 +1547,7 @@ function detailView(procedure) {
     ${renderIntroBox(
       procedure.introBox
     )}
+
 
     ${renderInfoSections(
       procedure.infoSections
@@ -1291,9 +1568,11 @@ function detailView(procedure) {
           )
           .join("")}
 
+
         ${renderSubsections(
           procedure.subsections
         )}
+
 
         ${renderInfoBox(
           procedure.infoBox
@@ -1309,28 +1588,51 @@ function detailView(procedure) {
         </h3>
 
         <p>
-          Onderdeel van het digitale
+          Deze pagina is onderdeel
+          van het digitale
           onboarding-handboek.
         </p>
 
         <hr>
 
+
+        <h3>
+          Bronstatus
+        </h3>
+
+        <p>
+          ${data.meta.sourceStatus}
+        </p>
+
+        <hr>
+
+
         <h3>
           Gerelateerde procedures
         </h3>
 
-        ${related
-          .map(
-            (item) => `
-              <button
-                class="related-link"
-                data-open="${item.id}"
-              >
-                → ${item.title}
-              </button>
+        ${
+          related.length
+            ? related
+                .map(
+                  (item) => `
+                    <button
+                      class="related-link"
+                      data-open="${item.id}"
+                      type="button"
+                    >
+                      → ${item.title}
+                    </button>
+                  `
+                )
+                .join("")
+            : `
+              <p>
+                Geen gerelateerde
+                procedures.
+              </p>
             `
-          )
-          .join("")}
+        }
 
       </aside>
 
@@ -1340,7 +1642,7 @@ function detailView(procedure) {
 
 
 // =========================================================
-// EVENTS
+// OPEN PROCEDURE
 // =========================================================
 
 function openProcedure(id) {
@@ -1358,7 +1660,9 @@ function openProcedure(id) {
     procedureId: id
   };
 
-  searchInput.value = "";
+  if (searchInput) {
+    searchInput.value = "";
+  }
 
   render();
 
@@ -1368,30 +1672,45 @@ function openProcedure(id) {
   });
 }
 
+
+// =========================================================
+// CONTENT BUTTON EVENTS
+// =========================================================
+
 function bindContentButtons() {
+
   content
-    .querySelectorAll("[data-open]")
+    .querySelectorAll(
+      "[data-open]"
+    )
     .forEach((button) => {
+
       button.addEventListener(
         "click",
         (event) => {
+
           event.stopPropagation();
 
           openProcedure(
             button.dataset.open
           );
+
         }
       );
+
     });
+
 
   content
     .querySelectorAll(
       "[data-procedure-card]"
     )
     .forEach((card) => {
+
       card.addEventListener(
         "click",
         (event) => {
+
           if (
             event.target.closest(
               "[data-favorite]"
@@ -1407,35 +1726,45 @@ function bindContentButtons() {
             card.dataset
               .procedureCard
           );
+
         }
       );
+
     });
+
 
   content
     .querySelectorAll(
       "[data-favorite]"
     )
     .forEach((button) => {
+
       button.addEventListener(
         "click",
         (event) => {
+
           event.stopPropagation();
 
           toggleFavorite(
             button.dataset.favorite
           );
+
         }
       );
+
     });
+
 
   content
     .querySelectorAll(
       "[data-open-category]"
     )
     .forEach((button) => {
+
       button.addEventListener(
         "click",
         () => {
+
           state = {
             view: "category",
             category:
@@ -1446,18 +1775,23 @@ function bindContentButtons() {
           };
 
           render();
+
         }
       );
+
     });
+
 
   content
     .querySelectorAll(
       "[data-home]"
     )
     .forEach((button) => {
+
       button.addEventListener(
         "click",
         () => {
+
           state = {
             view: "home",
             category: null,
@@ -1466,8 +1800,10 @@ function bindContentButtons() {
           };
 
           render();
+
         }
       );
+
     });
 }
 
@@ -1477,118 +1813,208 @@ function bindContentButtons() {
 // =========================================================
 
 function render() {
+
   updateNavigation();
+
 
   if (
     state.query.trim()
   ) {
+
     searchView();
+
   }
 
   else if (
     state.view === "home"
   ) {
+
     homeView();
+
   }
 
   else if (
     state.view === "favorites"
   ) {
-    listView(
-      "Favorieten",
-      "Je opgeslagen procedures.",
+
+    const favoriteProcedures =
       data.procedures.filter(
         (procedure) =>
           favorites.has(
             procedure.id
           )
-      )
+      );
+
+    listView(
+      "Favorieten",
+      "Je opgeslagen procedures.",
+      favoriteProcedures
     );
+
   }
 
   else if (
     state.view === "category"
   ) {
+
     const category =
       categoryById(
         state.category
       );
 
     if (!category) {
+
       homeView();
+
     } else {
-      listView(
-        category.label,
-        category.description,
+
+      const procedures =
         data.procedures.filter(
           (procedure) =>
             procedure.category ===
               category.id &&
             !procedure.parent
-        )
+        );
+
+      listView(
+        category.label,
+        category.description,
+        procedures
       );
+
     }
+
   }
 
   else if (
     state.view === "detail"
   ) {
+
     const procedure =
       procedureById(
         state.procedureId
       );
 
     if (!procedure) {
+
       homeView();
+
     }
 
     else if (
       procedure.type ===
       "folder"
     ) {
+
       folderView(procedure);
+
     }
 
     else {
+
       detailView(procedure);
+
     }
+
   }
 
-  clearSearch.classList.toggle(
-    "hidden",
-    !state.query
-  );
+
+  if (clearSearch) {
+
+    clearSearch.classList.toggle(
+      "hidden",
+      !state.query
+    );
+
+  }
+
 
   bindContentButtons();
 }
 
 
-searchInput.addEventListener(
-  "input",
-  () => {
-    state.query =
-      searchInput.value;
+// =========================================================
+// SEARCH EVENTS
+// =========================================================
 
-    render();
+if (searchInput) {
+
+  searchInput.addEventListener(
+    "input",
+    () => {
+
+      state.query =
+        searchInput.value;
+
+      render();
+
+    }
+  );
+
+}
+
+
+if (clearSearch) {
+
+  clearSearch.addEventListener(
+    "click",
+    () => {
+
+      searchInput.value = "";
+
+      state = {
+        view: "home",
+        category: null,
+        query: "",
+        procedureId: null
+      };
+
+      render();
+
+    }
+  );
+
+}
+
+
+// =========================================================
+// KEYBOARD
+// =========================================================
+
+document.addEventListener(
+  "keydown",
+  (event) => {
+
+    if (
+      event.key === "/" &&
+      document.activeElement !==
+        searchInput
+    ) {
+
+      event.preventDefault();
+
+      searchInput?.focus();
+
+    }
+
+
+    if (
+      event.key === "Escape" &&
+      document.activeElement ===
+        searchInput
+    ) {
+
+      searchInput.blur();
+
+    }
+
   }
 );
 
-clearSearch.addEventListener(
-  "click",
-  () => {
-    searchInput.value = "";
 
-    state = {
-      view: "home",
-      category: null,
-      query: "",
-      procedureId: null
-    };
-
-    render();
-  }
-);
-
+// =========================================================
+// START
+// =========================================================
 
 buildNavigation();
 render();
