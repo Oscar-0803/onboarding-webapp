@@ -1753,12 +1753,12 @@ h3 {
   background: #1569e8;
   border-radius: 36px;
 
-  padding:
-    28px
-    48px
-    48px;
-
-  margin-top: 64px;
+padding:
+  20px
+  48px
+  48px;
+  
+  margin-top: 36px;
 }
 
 .categories-heading-invert {
