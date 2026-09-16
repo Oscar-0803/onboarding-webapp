@@ -20,6 +20,7 @@ const favorites = new Set(
 let state = {
   view: "home",
   category: null,
+  department: null,
   query: "",
   procedureId: null
 };
@@ -85,6 +86,46 @@ function toggleFavorite(id) {
 
 
 // =========================================================
+// DEPARTMENTS
+// =========================================================
+
+function retailCategories() {
+  return data.categories.filter(
+    (category) =>
+      category.id !== "organic-social"
+  );
+}
+
+function organicCategory() {
+  return data.categories.find(
+    (category) =>
+      category.id === "organic-social"
+  );
+}
+
+function retailProcedureCount() {
+  const ids =
+    retailCategories().map(
+      (category) => category.id
+    );
+
+  return data.procedures.filter(
+    (procedure) =>
+      ids.includes(
+        procedure.category
+      ) &&
+      !procedure.parent
+  ).length;
+}
+
+function organicProcedureCount() {
+  return categoryCount(
+    "organic-social"
+  );
+}
+
+
+// =========================================================
 // NAVIGATION
 // =========================================================
 
@@ -109,7 +150,6 @@ function categoryButton(category) {
     </button>
   `;
 }
-
 
 function organicHandbookButton(
   category
@@ -138,7 +178,6 @@ function organicHandbookButton(
     </button>
   `;
 }
-
 
 function setupNavFolder(
   buttonId,
@@ -189,7 +228,6 @@ function setupNavFolder(
   );
 }
 
-
 function buildNavigation() {
   const categoryNav =
     document.getElementById(
@@ -200,23 +238,13 @@ function buildNavigation() {
     return;
   }
 
-  const organicCategory =
-    data.categories.find(
-      (category) =>
-        category.id ===
-        "organic-social"
-    );
+  const organic =
+    organicCategory();
 
-  const retailCategories =
-    data.categories.filter(
-      (category) =>
-        category.id !==
-        "organic-social"
-    );
+  const retail =
+    retailCategories();
 
   categoryNav.innerHTML = `
-
-    <!-- RETAIL MEDIA -->
 
     <div class="nav-folder">
 
@@ -226,7 +254,6 @@ function buildNavigation() {
         type="button"
         aria-expanded="true"
       >
-
         <span class="nav-folder-icon">
           ▾
         </span>
@@ -234,25 +261,19 @@ function buildNavigation() {
         <span class="nav-folder-title">
           Retail Media
         </span>
-
       </button>
-
 
       <div
         id="retailMediaCategories"
         class="nav-folder-content"
       >
-
-        ${retailCategories
+        ${retail
           .map(categoryButton)
           .join("")}
-
       </div>
 
     </div>
 
-
-    <!-- ORGANIC SOCIAL MEDIA -->
 
     <div class="nav-folder">
 
@@ -262,7 +283,6 @@ function buildNavigation() {
         type="button"
         aria-expanded="true"
       >
-
         <span class="nav-folder-icon">
           ▾
         </span>
@@ -270,19 +290,15 @@ function buildNavigation() {
         <span class="nav-folder-title">
           Organic Social Media
         </span>
-
       </button>
-
 
       <div
         id="organicSocialCategories"
         class="nav-folder-content"
       >
-
         ${organicHandbookButton(
-          organicCategory
+          organic
         )}
-
       </div>
 
     </div>
@@ -303,6 +319,7 @@ function buildNavigation() {
             view:
               button.dataset.view,
             category: null,
+            department: null,
             query: "",
             procedureId: null
           };
@@ -332,6 +349,7 @@ function buildNavigation() {
             view: "category",
             category:
               button.dataset.category,
+            department: null,
             query: "",
             procedureId: null
           };
@@ -505,6 +523,10 @@ function procedureCard(procedure) {
 }
 
 
+// =========================================================
+// CATEGORY CARDS
+// =========================================================
+
 function categoryCard(category) {
   return `
     <button
@@ -529,6 +551,45 @@ function categoryCard(category) {
         ${categoryCount(
           category.id
         )} procedures
+      </small>
+
+    </button>
+  `;
+}
+
+
+// =========================================================
+// DEPARTMENT CARDS
+// =========================================================
+
+function departmentCard(
+  id,
+  title,
+  icon,
+  description,
+  countText
+) {
+  return `
+    <button
+      class="category-card department-card"
+      data-department="${id}"
+      type="button"
+    >
+
+      <div class="category-icon">
+        ${icon}
+      </div>
+
+      <strong>
+        ${title}
+      </strong>
+
+      <span>
+        ${description}
+      </span>
+
+      <small>
+        ${countText}
       </small>
 
     </button>
@@ -631,12 +692,170 @@ function homeView() {
 
     <div class="category-grid">
 
-      ${data.categories
-        .map(categoryCard)
-        .join("")}
+      ${departmentCard(
+        "retail-media",
+        "Retail Media",
+        "▦",
+        "Werkinstructies, systemen en processen voor Retail Media.",
+        `${retailCategories().length} categorieën`
+      )}
+
+      ${departmentCard(
+        "organic-social-media",
+        "Organic Social Media",
+        "●",
+        "Strategisch en praktisch handboek voor het Organic Social Media team.",
+        `${organicProcedureCount()} procedures`
+      )}
 
     </div>
   `;
+}
+
+
+// =========================================================
+// DEPARTMENT VIEW
+// =========================================================
+
+function departmentView(
+  department
+) {
+
+  if (
+    department ===
+    "retail-media"
+  ) {
+
+    content.innerHTML = `
+      <div class="breadcrumb">
+
+        <button
+          data-home
+          type="button"
+        >
+          Overzicht
+        </button>
+
+        <span>/</span>
+
+        <span>
+          Retail Media
+        </span>
+
+      </div>
+
+
+      <div class="page-title-row">
+
+        <div>
+
+          <p class="eyebrow">
+            AFDELING
+          </p>
+
+          <h1>
+            Retail Media
+          </h1>
+
+          <p>
+            Kies een categorie om de
+            bijbehorende werkinstructies
+            te bekijken.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        ${retailCategories()
+          .map(categoryCard)
+          .join("")}
+
+      </div>
+    `;
+
+    return;
+  }
+
+
+  if (
+    department ===
+    "organic-social-media"
+  ) {
+
+    const category =
+      organicCategory();
+
+    if (!category) {
+      homeView();
+      return;
+    }
+
+    const procedures =
+      data.procedures.filter(
+        (procedure) =>
+          procedure.category ===
+            "organic-social" &&
+          !procedure.parent
+      );
+
+    content.innerHTML = `
+      <div class="breadcrumb">
+
+        <button
+          data-home
+          type="button"
+        >
+          Overzicht
+        </button>
+
+        <span>/</span>
+
+        <span>
+          Organic Social Media
+        </span>
+
+      </div>
+
+
+      <div class="page-title-row">
+
+        <div>
+
+          <p class="eyebrow">
+            AFDELING
+          </p>
+
+          <h1>
+            Organic Social Media
+          </h1>
+
+          <p>
+            ${category.description}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="procedure-grid">
+
+        ${procedures
+          .map(procedureCard)
+          .join("")}
+
+      </div>
+    `;
+
+    return;
+  }
+
+
+  homeView();
 }
 
 
@@ -1423,21 +1642,6 @@ function detailView(procedure) {
 
       <span>/</span>
 
-      ${
-        parent
-          ? `
-            <button
-              data-open="${parent.id}"
-              type="button"
-            >
-              ${parent.title}
-            </button>
-
-            <span>/</span>
-          `
-          : ""
-      }
-
       <span>
         ${procedure.title}
       </span>
@@ -1498,10 +1702,16 @@ function detailView(procedure) {
               : ""
           }
 
-          <span class="meta-pill">
-            Bijgewerkt:
-            ${data.meta.lastUpdated}
-          </span>
+          ${
+            data.meta?.lastUpdated
+              ? `
+                <span class="meta-pill">
+                  Bijgewerkt:
+                  ${data.meta.lastUpdated}
+                </span>
+              `
+              : ""
+          }
 
         </div>
 
@@ -1597,17 +1807,6 @@ function detailView(procedure) {
 
 
         <h3>
-          Bronstatus
-        </h3>
-
-        <p>
-          ${data.meta.sourceStatus}
-        </p>
-
-        <hr>
-
-
-        <h3>
           Gerelateerde procedures
         </h3>
 
@@ -1656,6 +1855,7 @@ function openProcedure(id) {
   state = {
     view: "detail",
     category: null,
+    department: null,
     query: "",
     procedureId: id
   };
@@ -1770,11 +1970,49 @@ function bindContentButtons() {
             category:
               button.dataset
                 .openCategory,
+            department: null,
             query: "",
             procedureId: null
           };
 
           render();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        }
+      );
+
+    });
+
+
+  content
+    .querySelectorAll(
+      "[data-department]"
+    )
+    .forEach((button) => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          state = {
+            view: "department",
+            category: null,
+            department:
+              button.dataset.department,
+            query: "",
+            procedureId: null
+          };
+
+          render();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
 
         }
       );
@@ -1795,11 +2033,17 @@ function bindContentButtons() {
           state = {
             view: "home",
             category: null,
+            department: null,
             query: "",
             procedureId: null
           };
 
           render();
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
 
         }
       );
@@ -1825,6 +2069,7 @@ function render() {
 
   }
 
+
   else if (
     state.view === "home"
   ) {
@@ -1832,6 +2077,18 @@ function render() {
     homeView();
 
   }
+
+
+  else if (
+    state.view === "department"
+  ) {
+
+    departmentView(
+      state.department
+    );
+
+  }
+
 
   else if (
     state.view === "favorites"
@@ -1852,6 +2109,7 @@ function render() {
     );
 
   }
+
 
   else if (
     state.view === "category"
@@ -1885,6 +2143,7 @@ function render() {
     }
 
   }
+
 
   else if (
     state.view === "detail"
@@ -1965,6 +2224,7 @@ if (clearSearch) {
       state = {
         view: "home",
         category: null,
+        department: null,
         query: "",
         procedureId: null
       };
