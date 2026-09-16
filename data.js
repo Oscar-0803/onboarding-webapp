@@ -56,13 +56,27 @@ window.HANDBOOK_DATA = {
         "Online banners maken en verwerken"
     },
     {
-      id: "organic-social",
-      label: "Organic Social Media",
-      icon: "●",
-      description:
-        "Strategisch en praktisch handboek voor het Organic Social Media team"
-    }
-  ],
+  id: "organic-social",
+
+  label:
+    "Organic Social Media",
+
+  icon:
+    "●",
+
+  description:
+    "Strategisch en praktisch handboek voor het Organic Social Media team",
+
+  introduction: [
+    "Hey (nieuwe) collega! Dit sociale media handboek is ontwikkeld om richting en structuur te geven aan het gebruik van de sociale media voor HEMA België. Het handboek moet handvaten bieden op het gebied van strategische uitgangspunten, creatieve richtlijnen en praktische werkwijzen, vooral voor organische socials, maar ook een klein deel paid socials, zoals UCG-marketing.",
+
+    "Met bijna 100.000 volgers op Instagram, 35.000 op TikTok en een gecombineerde 140.000 volgers op zowel de Vlaamse als de Waalse Facebook is sociale media een belangrijk mediakanaal voor HEMA België. Met de overname die plaatsvond in maart 2026, waarbij het hoofdkantoor in Amsterdam de sociale media overnam van HEMA België, is het belangrijk om ervoor te zorgen dat alle betrokkenen, zowel intern als extern, consistent, strategisch en herkenbaar communiceren namens HEMA. Voor nu noemen we dit de Vrindinnestrategie. De strategie is hoe HEMA België zich presenteert op sociale media als die toegankelijke Belgische vriendin die altijd probeert een glimlach op het gezicht van anderen te toveren. Het is belangrijk om daarbij te benadrukken dat de Vrindinnestrategie op verschillende niveaus terugkomt. Of ze nou op de sociale mediakanalen is van HEMA België waar zij kijkers laat lachen met haar humoristische content en inspireert met de leuke HEMA-producten, of met de (ugc-)creators waar zij op een informele en vrolijke manier mee communiceert: de Vrindinne zal altijd proberen om een glimlach op jouw gezicht te toveren. De Vrindinnestrategie is daarmee de overkoepelende strategie voor hoe de sociale media fungeert binnen HEMA België.",
+
+    "Dit handboek is daarom ook te gebruiken als strategisch leidraad en praktisch handvat voor iedereen die betrokken is bij het creëren, publiceren en optimaliseren van de sociale media voor HEMA België.",
+
+    "Daarnaast kan dit handboek ter alle tijden worden geüpdatet, dus zorg ervoor dat je de meest up-to-date versie hebt om zo op één lijn te zitten met jouw collega’s."
+  ]
+}
 
   procedures: [
 
