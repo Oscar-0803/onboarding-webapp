@@ -621,7 +621,7 @@ function homeView() {
         </p>
 
         <h2>
-          Alle categorieën
+          Alle afdelingen
         </h2>
 
       </div>
