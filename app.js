@@ -161,7 +161,7 @@ function organicHandbookButton(
   return `
     <button
       class="nav-item category-child"
-      data-category="${category.id}"
+      data-organic-department
       type="button"
     >
       <span class="nav-icon">
@@ -363,7 +363,37 @@ function buildNavigation() {
       );
 
     });
+const organicDepartmentButton =
+  document.querySelector(
+    "[data-organic-department]"
+  );
 
+if (organicDepartmentButton) {
+  organicDepartmentButton.addEventListener(
+    "click",
+    () => {
+      state = {
+        view: "department",
+        category: null,
+        department:
+          "organic-social-media",
+        query: "",
+        procedureId: null
+      };
+
+      if (searchInput) {
+        searchInput.value = "";
+      }
+
+      render();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  );
+}
 
   setupNavFolder(
     "retailMediaToggle",
