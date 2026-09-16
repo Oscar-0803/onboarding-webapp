@@ -811,76 +811,59 @@ function departmentView(
     </div>
 
 
-    <div class="page-title-row">
+<div class="page-title-row">
 
-      <div>
+  <div>
 
-        <p class="eyebrow">
-          WERKINSTRUCTIES
-        </p>
+    <p class="eyebrow">
+      WERKINSTRUCTIES
+    </p>
 
-        <h1>
-          Organic Social Media
-        </h1>
+    <h1>
+      Organic Social Media
+    </h1>
 
-        <p>
-          ${category.description}
-        </p>
+    <p>
+      ${category.description}
+    </p>
 
-      </div>
+  </div>
 
-    </div>
-
-
-    ${
-      category.introduction?.length
-        ? `
-          <section class="organic-introduction">
-
-            <h2>
-              Introductie
-            </h2>
-
-            ${category.introduction
-              .map(
-                (paragraph) => `
-                  <p>
-                    ${paragraph}
-                  </p>
-                `
-              )
-              .join("")}
-
-          </section>
-        `
-        : ""
-    }
+</div>
 
 
-    <div class="section-heading">
-
-      <div>
-
-        <p class="eyebrow">
-          HOOFDSTUKKEN
-        </p>
+${
+  category.introduction?.length
+    ? `
+      <section class="organic-introduction">
 
         <h2>
-          Organic Social Media
+          Introductie
         </h2>
 
-      </div>
+        ${category.introduction
+          .map(
+            (paragraph) => `
+              <p>
+                ${paragraph}
+              </p>
+            `
+          )
+          .join("")}
 
-    </div>
+      </section>
+    `
+    : ""
+}
 
 
-    <div class="procedure-grid">
+<div class="procedure-grid">
 
-      ${procedures
-        .map(procedureCard)
-        .join("")}
+  ${procedures
+    .map(procedureCard)
+    .join("")}
 
-    </div>
+</div>
   `;
 
   return;
