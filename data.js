@@ -1,105 +1,92 @@
 window.HANDBOOK_DATA = {
-  meta: {
-    lastUpdated: "15 september 2026",
-    sourceStatus:
-      "Gebaseerd op interne onboarding- en teamdocumentatie."
+  "meta": {
+    "lastUpdated": "15 september 2026",
+    "sourceStatus": "Gebaseerd op interne onboarding- en teamdocumentatie."
   },
 
-  categories: [
+  "categories": [
     {
-      id: "dagelijks",
-      label: "Dagelijks",
-      icon: "☀",
-      description:
-        "Dagelijkse inboxen en terugkerende werkzaamheden"
+      "id": "dagelijks",
+      "label": "Dagelijks",
+      "icon": "☀",
+      "description": "Dagelijkse inboxen en terugkerende werkzaamheden"
     },
     {
-      id: "orders",
-      label: "Orders",
-      icon: "⇄",
-      description:
-        "GDL-orders en interne Trade-orders"
+      "id": "orders",
+      "label": "Orders",
+      "icon": "⇄",
+      "description": "GDL-orders en interne Trade-orders"
     },
     {
-      id: "betalingen",
-      label: "Betalingen",
-      icon: "€",
-      description:
-        "Bankbetalingen verwerken"
+      "id": "betalingen",
+      "label": "Betalingen",
+      "icon": "€",
+      "description": "Bankbetalingen verwerken"
     },
     {
-      id: "klantenservice",
-      label: "Klantenservice",
-      icon: "✉",
-      description:
-        "HEMA Tickets en herroepingen"
+      "id": "klantenservice",
+      "label": "Klantenservice",
+      "icon": "✉",
+      "description": "HEMA Tickets en herroepingen"
     },
     {
-      id: "uitingen",
-      label: "Uitingen",
-      icon: "▤",
-      description:
-        "Broadsign en rCOS"
+      "id": "uitingen",
+      "label": "Uitingen",
+      "icon": "▤",
+      "description": "Broadsign en rCOS"
     },
     {
-      id: "advertising",
-      label: "Advertising",
-      icon: "◎",
-      description:
-        "Google Ad Manager"
+      "id": "advertising",
+      "label": "Advertising",
+      "icon": "◎",
+      "description": "Google Ad Manager"
     },
     {
-      id: "banners",
-      label: "Online Banners",
-      icon: "◇",
-      description:
-        "Online banners maken en verwerken"
+      "id": "banners",
+      "label": "Online Banners",
+      "icon": "◇",
+      "description": "Online banners maken en verwerken"
     },
     {
-  id: "organic-social",
+      "id": "organic-social",
+      "label": "Organic Social Media",
+      "icon": "●",
+      "description": "Strategisch en praktisch handboek voor het Organic Social Media team",
 
-  label:
-    "Organic Social Media",
+      "introduction": [
+        "Hey (nieuwe) collega! Dit sociale media handboek is ontwikkeld om richting en structuur te geven aan het gebruik van de sociale media voor HEMA België. Het handboek moet handvaten bieden op het gebied van strategische uitgangspunten, creatieve richtlijnen en praktische werkwijzen, vooral voor organische socials, maar ook een klein deel paid socials, zoals UCG-marketing.",
 
-  icon:
-    "●",
+        "Met bijna 100.000 volgers op Instagram, 35.000 op TikTok en een gecombineerde 140.000 volgers op zowel de Vlaamse als de Waalse Facebook is sociale media een belangrijk mediakanaal voor HEMA België. Met de overname die plaatsvond in maart 2026, waarbij het hoofdkantoor in Amsterdam de sociale media overnam van HEMA België, is het belangrijk om ervoor te zorgen dat alle betrokkenen, zowel intern als extern, consistent, strategisch en herkenbaar communiceren namens HEMA. Voor nu noemen we dit de Vrindinnestrategie. De strategie is hoe HEMA België zich presenteert op sociale media als die toegankelijke Belgische vriendin die altijd probeert een glimlach op het gezicht van anderen te toveren. Het is belangrijk om daarbij te benadrukken dat de Vrindinnestrategie op verschillende niveaus terugkomt. Of ze nou op de sociale mediakanalen is van HEMA België waar zij kijkers laat lachen met haar humoristische content en inspireert met de leuke HEMA-producten, of met de (ugc-)creators waar zij op een informele en vrolijke manier mee communiceert: de Vrindinne zal altijd proberen om een glimlach op jouw gezicht te toveren. De Vrindinnestrategie is daarmee de overkoepelende strategie voor hoe de sociale media fungeert binnen HEMA België.",
 
-  description:
-    "Strategisch en praktisch handboek voor het Organic Social Media team",
+        "Dit handboek is daarom ook te gebruiken als strategisch leidraad en praktisch handvat voor iedereen die betrokken is bij het creëren, publiceren en optimaliseren van de sociale media voor HEMA België.",
 
-  introduction: [
-    "Hey (nieuwe) collega! Dit sociale media handboek is ontwikkeld om richting en structuur te geven aan het gebruik van de sociale media voor HEMA België. Het handboek moet handvaten bieden op het gebied van strategische uitgangspunten, creatieve richtlijnen en praktische werkwijzen, vooral voor organische socials, maar ook een klein deel paid socials, zoals UCG-marketing.",
+        "Daarnaast kan dit handboek ter alle tijden worden geüpdatet, dus zorg ervoor dat je de meest up-to-date versie hebt om zo op één lijn te zitten met jouw collega’s."
+      ]
+    }
+  ],
 
-    "Met bijna 100.000 volgers op Instagram, 35.000 op TikTok en een gecombineerde 140.000 volgers op zowel de Vlaamse als de Waalse Facebook is sociale media een belangrijk mediakanaal voor HEMA België. Met de overname die plaatsvond in maart 2026, waarbij het hoofdkantoor in Amsterdam de sociale media overnam van HEMA België, is het belangrijk om ervoor te zorgen dat alle betrokkenen, zowel intern als extern, consistent, strategisch en herkenbaar communiceren namens HEMA. Voor nu noemen we dit de Vrindinnestrategie. De strategie is hoe HEMA België zich presenteert op sociale media als die toegankelijke Belgische vriendin die altijd probeert een glimlach op het gezicht van anderen te toveren. Het is belangrijk om daarbij te benadrukken dat de Vrindinnestrategie op verschillende niveaus terugkomt. Of ze nou op de sociale mediakanalen is van HEMA België waar zij kijkers laat lachen met haar humoristische content en inspireert met de leuke HEMA-producten, of met de (ugc-)creators waar zij op een informele en vrolijke manier mee communiceert: de Vrindinne zal altijd proberen om een glimlach op jouw gezicht te toveren. De Vrindinnestrategie is daarmee de overkoepelende strategie voor hoe de sociale media fungeert binnen HEMA België.",
-
-    "Dit handboek is daarom ook te gebruiken als strategisch leidraad en praktisch handvat voor iedereen die betrokken is bij het creëren, publiceren en optimaliseren van de sociale media voor HEMA België.",
-
-    "Daarnaast kan dit handboek ter alle tijden worden geüpdatet, dus zorg ervoor dat je de meest up-to-date versie hebt om zo op één lijn te zitten met jouw collega’s."
-  ]
-}
-
-  procedures: [
+  "procedures": [
 
     // =====================================================
     // RETAIL MEDIA - HEM GIFTCARDS
     // =====================================================
 
     {
-      id: "hem-giftcards",
-      category: "dagelijks",
+      "id": "hem-giftcards",
+      "category": "dagelijks",
 
-      title: "HEM Giftcards",
+      "title": "HEM Giftcards",
 
-      summary:
+      "summary":
         "Werkwijze voor een online bestelde cadeaukaart die niet is aangekomen.",
 
-      system: "Consumenten Trade",
-      frequency: "Wanneer nodig",
-      duration: "± 5–10 min",
+      "system": "Consumenten Trade",
+      "frequency": "Wanneer nodig",
+      "duration": "± 5–10 min",
 
-      featured: false,
+      "featured": false,
 
-      tags: [
+      "tags": [
         "hem giftcards",
         "giftcards",
         "cadeaukaart",
@@ -107,77 +94,78 @@ window.HANDBOOK_DATA = {
         "blokkeren"
       ],
 
-      caution:
+      "caution":
         "Controleer altijd eerst of de cadeaukaart is gebruikt voordat je deze blokkeert.",
 
-      steps: [
+      "steps": [
         {
-          title: "Ontvang de melding",
-          text:
+          "title": "Ontvang de melding",
+          "text":
             "Je krijgt een mail, vaak vanuit klantenservice of consumentenservice, dat een online bestelde cadeaukaart nog niet is aangekomen.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Zoek de order op",
-          text:
+          "title": "Zoek de order op",
+          "text":
             "Zoek de order op in Consumenten Trade onder 'Orders' → 'Alle orders'.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Vul het ordernummer in",
-          text:
+          "title": "Vul het ordernummer in",
+          "text":
             "Vul het ordernummer zonder spaties in en klik op zoeken.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Open de orderdetails",
-          text:
+          "title": "Open de orderdetails",
+          "text":
             "Dubbelklik op de order. Je krijgt vervolgens de details van de order te zien.",
-          image:
+          "image":
             "images/hem-giftcards/04-orderdetails.png"
         },
         {
-          title: "Controleer de orderdatum",
-          text:
+          "title": "Controleer de orderdatum",
+          "text":
             "Check de orderdatum. Is de order meer dan een week geleden geplaatst? Dan is de order waarschijnlijk zoekgeraakt met de post en moet de cadeaukaart worden geblokkeerd.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer eerst of de cadeaukaart is gebruikt",
-          text:
+          "text":
             "Klik één keer op het product onder 'Producten', zodat deze grijs gearceerd is. Klik vervolgens op 'Toon Kaarten'.",
-          image:
+          "image":
             "images/hem-giftcards/06-toon-kaarten.png"
         },
         {
-          title:
+          "title":
             "Controleer de status van de cadeaukaart",
-          text:
+          "text":
             "Arceer de cadeaukaart grijs en klik vervolgens op 'Kaartinformatie'.",
-          image:
+          "image":
             "images/hem-giftcards/07-kaartinformatie-openen.png"
         },
         {
-          title: "Bekijk de kaartinformatie",
-          text:
+          "title":
+            "Bekijk de kaartinformatie",
+          "text":
             "Controleer in de kaartinformatie onder andere de huidige balans van de cadeaukaart.",
-          image:
+          "image":
             "images/hem-giftcards/08-kaartinformatie.png"
         },
         {
-          title:
+          "title":
             "Blokkeer de cadeaukaart indien deze niet is gebruikt",
-          text:
+          "text":
             "Is de huidige balans hetzelfde als de originele waarde? Dan is de cadeaukaart niet gebruikt en kan deze worden geblokkeerd. Ga terug naar het vorige venster, selecteer de cadeaukaart opnieuw en klik op 'Blokkeer kaart'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Bevestig de afhandeling per mail",
-          text:
+          "text":
             "Mail terug dat de cadeaukaart is geblokkeerd en dat klantenservice of consumentenservice de klant kan vergoeden. Zet altijd de mailbox in CC.",
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -187,22 +175,22 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "hema-zakelijk",
-      category: "dagelijks",
+      "id": "hema-zakelijk",
+      "category": "dagelijks",
 
-      title: "HEMA Zakelijk",
+      "title": "HEMA Zakelijk",
 
-      summary:
+      "summary":
         "Werkinstructies voor verschillende processen binnen HEMA Zakelijk.",
 
-      system: "HEMA Zakelijk",
-      frequency: "Wanneer nodig",
-      duration: "Meerdere processen",
+      "system": "HEMA Zakelijk",
+      "frequency": "Wanneer nodig",
+      "duration": "Meerdere processen",
 
-      featured: true,
-      type: "folder",
+      "featured": true,
+      "type": "folder",
 
-      tags: [
+      "tags": [
         "hema zakelijk",
         "zakelijk",
         "orders"
@@ -210,115 +198,120 @@ window.HANDBOOK_DATA = {
     },
 
     {
-      id: "zakelijke-order-annuleren",
-      category: "dagelijks",
-      parent: "hema-zakelijk",
+      "id": "zakelijke-order-annuleren",
+      "category": "dagelijks",
+      "parent": "hema-zakelijk",
 
-      title:
+      "title":
         "Annuleren van zakelijke orders",
 
-      summary:
+      "summary":
         "Stappenplan voor het annuleren van een zakelijke cadeaukaartorder.",
 
-      system: "Zakelijk Trade",
-      frequency: "Wanneer nodig",
-      duration: "± 5 min",
+      "system": "Zakelijk Trade",
+      "frequency": "Wanneer nodig",
+      "duration": "± 5 min",
 
-      featured: false,
+      "featured": false,
 
-      caution:
+      "caution":
         "Controleer zorgvuldig of je het juiste ordernummer hebt geselecteerd voordat je de order annuleert.",
 
-      steps: [
+      "steps": [
         {
-          title: "Ontvang de aanvraag",
-          text:
+          "title": "Ontvang de aanvraag",
+          "text":
             "Je krijgt een mail, vaak vanuit klantenservice of consumentenservice, met het verzoek om een cadeaukaart te annuleren.",
-          image:
+          "image":
             "images/hema-zakelijk/annuleren/01-aanvraag.png"
         },
         {
-          title: "Zoek de order op",
-          text:
+          "title": "Zoek de order op",
+          "text":
             "Zoek de order op in Zakelijk Trade onder 'Orders' → 'Afgehandeld'.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Vul het ordernummer in",
-          text:
+          "title":
+            "Vul het ordernummer in",
+          "text":
             "Vul het ordernummer zonder spaties in en klik op zoeken.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Selecteer en annuleer de order",
-          text:
+          "text":
             "Selecteer de order zodat deze donkergrijs gearceerd is. Klik vervolgens op 'Order annuleren' en daarna op 'OK'.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Bevestig de annulering",
-          text:
+          "title":
+            "Bevestig de annulering",
+          "text":
             "De order is geannuleerd en de cadeaukaart is geblokkeerd of gerefund. Stuur vervolgens een bevestiging naar de betreffende inbox.",
-          image: ""
+          "image": ""
         }
       ]
     },
 
     {
-      id: "nieuwe-relatie-toevoegen",
-      category: "dagelijks",
-      parent: "hema-zakelijk",
+      "id": "nieuwe-relatie-toevoegen",
+      "category": "dagelijks",
+      "parent": "hema-zakelijk",
 
-      title: "Nieuwe relatie toevoegen",
+      "title":
+        "Nieuwe relatie toevoegen",
 
-      summary:
+      "summary":
         "Stappenplan voor het toevoegen van een nieuwe zakelijke relatie in Trade.",
 
-      system: "Zakelijk Trade",
-      frequency: "Wanneer nodig",
-      duration: "± 5–10 min",
+      "system": "Zakelijk Trade",
+      "frequency": "Wanneer nodig",
+      "duration": "± 5–10 min",
 
-      featured: false,
+      "featured": false,
 
-      caution:
+      "caution":
         "Controleer het laatst gebruikte klantnummer zorgvuldig voordat je een nieuwe debtor code aanmaakt.",
 
-      steps: [
+      "steps": [
         {
-          title: "Open Relaties in Trade",
-          text:
+          "title":
+            "Open Relaties in Trade",
+          "text":
             "Ga naar Trade en klik bovenin op 'Relaties'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Zoek de actieve zakelijke relaties",
-          text:
+          "text":
             "Selecteer bij het veld 'Actief' de waarde 'Ja' en klik op 'Zoeken'.",
-          image:
+          "image":
             "images/hema-zakelijk/nieuwe-relatie/02-actieve-relaties.png"
         },
         {
-          title: "Sorteer op klantnummer",
-          text:
+          "title":
+            "Sorteer op klantnummer",
+          "text":
             "Klik op 'Klantnummer'. Alle relaties worden nu op klantnummer gesorteerd. Kopieer het laatste klantnummer.",
-          image:
+          "image":
             "images/hema-zakelijk/nieuwe-relatie/03-klantnummer.png"
         },
         {
-          title:
+          "title":
             "Maak een nieuwe relatie aan",
-          text:
+          "text":
             "Klik bovenaan op 'Nieuw'. Vul bij 'Debtor code' het gekopieerde klantnummer in en tel hier 1 bij op.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Vul de relatiegegevens in",
-          text:
+          "text":
             "Vul de overige gegevens van de nieuwe relatie in.",
-          bullets: [
+          "bullets": [
             "Klantnaam",
             "E-mailadres",
             "KvK nummer",
@@ -326,166 +319,174 @@ window.HANDBOOK_DATA = {
             "Voeg bij 'Adressen' een adres toe",
             "Voeg bij 'Contactpers.' een contactpersoon toe"
           ],
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Sla de nieuwe relatie op",
-          text:
+          "text":
             "Klik op 'Opslaan'. Je kunt nu een order invoeren en de nieuwe relatie gebruiken.",
-          image: ""
+          "image": ""
         }
       ]
     },
 
     {
-      id: "orders-handmatig-invoeren",
-      category: "dagelijks",
-      parent: "hema-zakelijk",
+      "id": "orders-handmatig-invoeren",
+      "category": "dagelijks",
+      "parent": "hema-zakelijk",
 
-      title: "Orders handmatig invoeren",
+      "title":
+        "Orders handmatig invoeren",
 
-      summary:
+      "summary":
         "Stappenplan voor het handmatig invoeren van een zakelijke order in Trade.",
 
-      system: "Zakelijk Trade",
-      frequency: "Wanneer nodig",
-      duration: "± 5–10 min",
+      "system": "Zakelijk Trade",
+      "frequency": "Wanneer nodig",
+      "duration": "± 5–10 min",
 
-      featured: false,
+      "featured": false,
 
-      steps: [
+      "steps": [
         {
-          title: "Ga naar Orders",
-          text:
+          "title": "Ga naar Orders",
+          "text":
             "Ga in Trade naar 'Orders'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Maak een nieuwe order aan",
-          text:
+          "text":
             "Klik op 'Nieuw' en vul de gemarkeerde gegevens in bij 'Klant type' en 'Gewenste leverdatum'. Gebruik klanttype 'Zakelijk'.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Selecteer de klant",
-          text:
+          "title":
+            "Selecteer de klant",
+          "text":
             "Klik op het pijltje bij 'Klant'. Zoek de juiste klant op en selecteer deze.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Vul eventuele referenties in",
-          text:
+          "text":
             "Vul indien aanwezig de order- of factuurreferentie in bij 'Klant order referentie' en/of 'Klant factuur referentie'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Voeg de cadeaukaarten toe",
-          text:
+          "text":
             "Klik op 'Voeg toe' om soort, aantal en waarde van de cadeaukaarten toe te voegen. Kies daarna bij 'Verpakking/sjabloon' of verpakking nodig is.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Sla de order op",
-          text: "Klik op 'Opslaan'.",
-          image: ""
+          "title":
+            "Sla de order op",
+          "text":
+            "Klik op 'Opslaan'.",
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer eventuele korting",
-          text:
+          "text":
             "Is er sprake van korting buiten de kortingsstaffel? Volg dan de instructie 'Korting'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer of een PO-nummer nodig is",
-          text:
+          "text":
             "Is een PO-nummer nodig? Controleer en verwerk dit voordat de order definitief wordt opgeslagen.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer het subtotaal",
-          text:
+          "text":
             "Controleer of het subtotaalbedrag klopt.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Sla de gecontroleerde order definitief op",
-          text:
+          "text":
             "Alles dubbel gecontroleerd? Klik opnieuw op 'Opslaan'.",
-          image: ""
+          "image": ""
         }
       ]
     },
 
     {
-      id: "korting",
-      category: "dagelijks",
-      parent: "hema-zakelijk",
+      "id": "korting",
+      "category": "dagelijks",
+      "parent": "hema-zakelijk",
 
-      title: "Korting",
+      "title": "Korting",
 
-      summary:
+      "summary":
         "Werkwijze voor het toevoegen van korting buiten de kortingsstaffel.",
 
-      system: "Zakelijk Trade",
-      frequency: "Wanneer nodig",
-      duration: "± 2–5 min",
+      "system": "Zakelijk Trade",
+      "frequency": "Wanneer nodig",
+      "duration": "± 2–5 min",
 
-      featured: false,
+      "featured": false,
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "Schakel de orderwaardekorting uit",
-          text:
+          "text":
             "Vink 'Bereken Orderwaardekorting in deze order' uit.",
-          image:
+          "image":
             "images/hema-zakelijk/korting/01-orderwaardekorting.png"
         },
         {
-          title: "Voeg de korting toe",
-          text:
+          "title":
+            "Voeg de korting toe",
+          "text":
             "Voeg de korting in euro's toe bij 'Productkorting (incl.)'. Bereken eerst het kortingsbedrag.",
-          image:
+          "image":
             "images/hema-zakelijk/korting/02-productkorting.png"
         }
       ],
 
-      infoBox: {
-        title: "Staffelkorting",
-        text:
+      "infoBox": {
+        "title":
+          "Staffelkorting",
+
+        "text":
           "Gebruik onderstaande staffel om het kortingspercentage te controleren.",
-        items: [
+
+        "items": [
           {
-            amount: "> €5.000",
-            discount: "4%"
+            "amount": "> €5.000",
+            "discount": "4%"
           },
           {
-            amount: "> €25.000",
-            discount: "5%"
+            "amount": "> €25.000",
+            "discount": "5%"
           },
           {
-            amount: "> €50.000",
-            discount: "6%"
+            "amount": "> €50.000",
+            "discount": "6%"
           },
           {
-            amount: "> €100.000",
-            discount: "7%"
+            "amount": "> €100.000",
+            "discount": "7%"
           },
           {
-            amount: "> €250.000",
-            discount: "8%"
+            "amount": "> €250.000",
+            "discount": "8%"
           },
           {
-            amount: "> €500.000",
-            discount: "9%"
+            "amount": "> €500.000",
+            "discount": "9%"
           }
         ]
       }
@@ -496,303 +497,319 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "gdl-order",
-      category: "orders",
+      "id": "gdl-order",
+      "category": "orders",
 
-      title:
+      "title":
         "Order invoeren Goede Doelen Loterijen (GDL)",
 
-      summary:
+      "summary":
         "Stappenplan voor het verwerken en invoeren van orders van de Nationale Postcode Loterij en VriendenLoterij.",
 
-      system: "Zakelijk Trade",
-      frequency:
+      "system":
+        "Zakelijk Trade",
+
+      "frequency":
         "Wanneer een GDL-order binnenkomt",
-      duration: "± 15–20 min",
 
-      featured: true,
+      "duration":
+        "± 15–20 min",
 
-      caution:
+      "featured": true,
+
+      "caution":
         "Controleer klant, PO-nummer, geldigheid, afleverdatum en afleveradres zorgvuldig.",
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "Open de ontvangen inkooporder",
-          text:
+          "text":
             "In de inbox *HEM zakelijk ontvang je nieuwe inkooporders van de Goede Doelen Loterijen. Gebruik de inkooporder als bron voor de ordergegevens.",
-          image:
+          "image":
             "images/gdl/01-inkooporder.png"
         },
         {
-          title:
+          "title":
             "Maak een nieuwe zakelijke order aan",
-          text:
+          "text":
             "Ga naar Zakelijk Trade → Orders → Nieuw → + Nieuw.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Selecteer het juiste klanttype",
-          text:
+          "text":
             "Selecteer bij klanttype 'Zakelijk'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Selecteer de juiste klant",
-          text:
+          "text":
             "De klant is altijd 'NPL - GDL' of 'VL - GDL'.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Vul het PO-nummer in",
-          text:
+          "title":
+            "Vul het PO-nummer in",
+          "text":
             "Vul bij 'Klant Order Referentie' en 'Klant factuur referentie' het PO-nummer in.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Vul aanvullende orderinformatie in",
-          text:
+          "text":
             "Open 'Meer informatie' en vul bij 'Instructies voor Uitvoerder' de geldigheid en afleverdatum in.",
-          bullets: [
+          "bullets": [
             "Kaart geldig t/m: afleverdatum + 2 dagen + 2 jaar",
             "Gebruik de leverdatum van de inkooporder"
           ],
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Voeg het juiste product toe",
-          text:
+          "text":
             "Ga naar 'Product' → 'Voeg toe' en selecteer 'NPL/VL - fysieke cadeaukaarten redemptie'.",
-          image:
+          "image":
             "images/gdl/07-product-toevoegen.png"
         },
         {
-          title:
+          "title":
             "Vul aantal en waarde in",
-          text:
+          "text":
             "Vul het aantal cadeaukaarten en de waarde per cadeaukaart in.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Vul de expiratiedatum in",
-          text:
+          "text":
             "Ga naar 'Opties', vul de expiratiedatum in, vink 'Afw. Afleveradres' aan en ga naar 'Afleveradres'.",
-          bullets: [
+          "bullets": [
             "Expiratiedatum = datum geldigheid + 1 dag",
             "Controleer 'Ship to' op de inkooporder",
             "Adres kan van Sidekix of Pondres zijn"
           ],
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Vul het afleveradres in",
-          text:
+          "text":
             "Gebruik altijd het afleveradres dat op de inkooporder staat.",
-          image:
+          "image":
             "images/gdl/10-afleveradres.png"
         },
         {
-          title: "Sla de order op",
-          text: "Klik op 'Opslaan'.",
-          image: ""
+          "title":
+            "Sla de order op",
+          "text":
+            "Klik op 'Opslaan'.",
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer alle gegevens",
-          text:
+          "text":
             "Controleer alle ingevoerde gegevens aan de hand van de inkooporder.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Sla de order definitief op",
-          text:
+          "text":
             "Als alles klopt, klik je opnieuw op 'Opslaan'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Mail de orderinformatie intern",
-          text:
+          "text":
             "Stuur een e-mail met het Trade-ordernummer en de expiratiedatum. Voeg de inkooporder bij en zet *HEM zakelijk in CC.",
-          image:
+          "image":
             "images/gdl/14-interne-mail.png"
         },
         {
-          title:
+          "title":
             "Mail de order naar Prisma",
-          text:
+          "text":
             "Mail Prisma het inkooporderformulier en vermeld het Trade-ordernummer, de leverdatum en geldigheid.",
-          bullets: [
+          "bullets": [
             "info@prismadirect.nl",
             "lizette@prismadirect.nl"
           ],
-          subsection: {
-            title:
+          "subsection": {
+            "title":
               "Activeren van de order",
-            steps: [
+
+            "steps": [
               "Ga naar Trade → Afgehandeld en vul het ordernummer in.",
               "Dubbelklik op de order en kopieer de activatiecode.",
               "Sluit de order, selecteer de order en klik op 'Activeer order'.",
               "Plak de activatiecode en klik op 'Activeren'."
             ],
-            note:
+
+            "note":
               "Controleer op de geplande leverdatum de activatie en activeer de order handmatig."
           },
-          image: ""
+          "image": ""
         }
       ]
     },
 
     {
-      id: "trade-order",
-      category: "orders",
+      "id": "trade-order",
+      "category": "orders",
 
-      title:
+      "title":
         "Nieuwe interne order invoeren in Trade",
 
-      summary:
+      "summary":
         "Stappenplan voor het invoeren en afhandelen van een interne order in Trade.",
 
-      system: "Zakelijk Trade",
-      frequency: "Wanneer nodig",
-      duration: "± 10–15 min",
+      "system":
+        "Zakelijk Trade",
 
-      featured: true,
+      "frequency":
+        "Wanneer nodig",
 
-      caution:
+      "duration":
+        "± 10–15 min",
+
+      "featured": true,
+
+      "caution":
         "Controleer of het interne bestelformulier volledig is ingevuld en toestemming bevat.",
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "Controleer het interne bestelformulier",
-          text:
+          "text":
             "Je ontvangt van een interne afdeling een ingevuld intern bestelformulier met toestemming van de kostenplaatsverantwoordelijke.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Maak een nieuwe order aan",
-          text:
+          "text":
             "Ga naar Trade → Orders → Nieuw → + Nieuw.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Selecteer klanttype en klant",
-          text:
+          "text":
             "Klanttype: Zakelijk. Klant: 'HEMA BV New Services - interne orders'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Voeg het gewenste product toe",
-          text:
+          "text":
             "Ga naar Producten → Voeg toe en vul product en eventueel afleveradres in.",
-          bullets: [
+          "bullets": [
             "Digitaal: E-gift Stippen",
             "Fysiek: HEMA cadeaukaart logo"
           ],
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Verwijder verzend- en handelingskosten",
-          text:
+          "text":
             "Ga na opslaan naar Toeslagen, zet automatische toeslagen uit en verwijder verzend- en handelingskosten.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Vul de klant order referentie in",
-          text:
+          "text":
             "Vul bij 'Klant Order Referentie' de kostenplaats in.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Sla de order op",
-          text:
+          "title":
+            "Sla de order op",
+          "text":
             "De order kan nu worden opgeslagen.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Mail de orderinformatie",
-          text:
+          "text":
             "Stuur het ordernummer en de kostenplaats en voeg het interne bestelformulier bij.",
-          bullets: [
+          "bullets": [
             "b2b-cadeaukaarten@hema.nl",
             "henneke.velthove@hema.nl"
           ],
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer de verwerking in Trade",
-          text:
+          "text":
             "De order wordt direct doorgezet in Trade.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Lever digitale cadeaukaarten zelf uit",
-          text:
+          "text":
             "Houd digitale cadeaukaarten goed in de gaten en lever deze zelf aan de collega van de betreffende afdeling.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer fysiek afleveradres",
-          text:
+          "text":
             "Bij fysieke cadeaukaarten stuurt Prisma de kaarten naar het opgegeven afleveradres.",
-          image: ""
+          "image": ""
         }
       ],
 
-      subsections: [
+      "subsections": [
         {
-          title:
+          "title":
             "Digitale cadeaukaart uitleveren",
 
-          text:
+          "text":
             "Gebruik onderstaande stappen wanneer de interne order digitale cadeaukaarten bevat.",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Open de ontvangen e-mail",
-              text:
+              "text":
                 "Je ontvangt een e-mail in de *HEMA zakelijk inbox.",
-              image:
+              "image":
                 "images/trade-order/01-digitale-cadeaukaart-mail.png"
             },
             {
-              title:
+              "title":
                 "Download de bestanden",
-              text:
+              "text":
                 "Download de digitale cadeaukaartbestanden en controleer het ordernummer.",
-              image: ""
+              "image": ""
             },
             {
-              title:
+              "title":
                 "Deel met de aanvrager",
-              text:
+              "text":
                 "Zet de bestanden in een map en deel deze per e-mail met de aanvrager.",
-              image: ""
+              "image": ""
             }
           ],
 
-          subsection: {
-            title:
+          "subsection": {
+            "title":
               "Activeren van de order",
-            steps: [
+
+            "steps": [
               "Ga naar Trade → Afgehandeld en zoek het ordernummer.",
               "Dubbelklik op de order en kopieer de activatiecode.",
               "Sluit de order, selecteer deze en klik op 'Activeer order'.",
@@ -808,71 +825,80 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "bank-betalingen",
-      category: "betalingen",
+      "id": "bank-betalingen",
+      "category": "betalingen",
 
-      title: "Bank betalingen",
+      "title":
+        "Bank betalingen",
 
-      summary:
+      "summary":
         "Stappenplan voor het controleren en verwerken van binnengekomen betalingen.",
 
-      system: "Zakelijk Trade",
-      frequency:
+      "system":
+        "Zakelijk Trade",
+
+      "frequency":
         "Wanneer betalingen binnenkomen",
-      duration: "± 5 min",
 
-      featured: true,
+      "duration":
+        "± 5 min",
 
-      caution:
+      "featured": true,
+
+      "caution":
         "Controleer altijd of het betaalde bedrag overeenkomt met de order.",
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "Open de e-mail met de betaling",
-          text:
+          "text":
             "Open het mailtje van Anita of Henneke, vaak met onderwerp 'Bank'.",
-          image:
+          "image":
             "images/bank-betalingen/01-bankmail.png"
         },
         {
-          title: "Zoek het ordernummer",
-          text:
+          "title":
+            "Zoek het ordernummer",
+          "text":
             "Zoek het betreffende ordernummer in de e-mail.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Ga naar Orders",
-          text:
+          "title":
+            "Ga naar Orders",
+          "text":
             "Ga in Trade naar 'Orders'.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Zoek bij Wacht op betaling",
-          text:
+          "text":
             "Ga naar 'Wacht op betaling' en vul het ordernummer in.",
-          image: ""
+          "image": ""
         },
         {
-          title:
+          "title":
             "Controleer de betaling",
-          text:
+          "text":
             "Controleer of het betaalde bedrag overeenkomt met de order.",
-          image: ""
+          "image": ""
         },
         {
-          title: "Lever de order uit",
-          text:
+          "title":
+            "Lever de order uit",
+          "text":
             "Selecteer de order en klik op 'Uitleveren'.",
-          image: ""
+          "image": ""
         }
       ],
 
-      infoBox: {
-        title:
+      "infoBox": {
+        "title":
           "Klant zegt betaling te hebben gedaan?",
-        text:
+
+        "text":
           "Vraag dit na bij Anita, Henneke, b2b.cadeaukaarten@hema.nl of henneke.velthove@hema.nl. Vermeld het ordernummer en vraag de klant om een betaalbewijs."
       }
     },
@@ -882,105 +908,127 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "hema-tickets",
-      category: "klantenservice",
+      "id":
+        "hema-tickets",
 
-      title:
+      "category":
+        "klantenservice",
+
+      "title":
         "Mailbox Klantenservice HEMA Tickets",
 
-      summary:
+      "summary":
         "Werkinstructies voor vragen, niet ontvangen tickets, herroepingen en SnowWorld.",
 
-      system:
+      "system":
         "HEMA Tickets / Tickets CMS",
-      frequency: "Dagelijks",
-      duration:
+
+      "frequency":
+        "Dagelijks",
+
+      "duration":
         "Afhankelijk van de aanvraag",
 
-      featured: true,
+      "featured": true,
 
-      introBox: {
-        title: "*HEM Tickets CS",
-        text:
+      "introBox": {
+        "title":
+          "*HEM Tickets CS",
+
+        "text":
           "In de tickets inbox komen met name vragen vanuit klantenservice omtrent orders/codes die geblokkeerd moeten worden of orders die door een typefout niet juist zijn afgeleverd."
       },
 
-      infoSections: [
+      "infoSections": [
         {
-          title:
+          "title":
             "Contactgegevens partners",
-          items: [
+
+          "items": [
             {
-              label: "Center Parcs",
-              value:
+              "label":
+                "Center Parcs",
+              "value":
                 "sales.nl@groupepvcp.com",
-              href:
+              "href":
                 "mailto:sales.nl@groupepvcp.com"
             },
             {
-              label: "SnowWorld",
-              value:
+              "label":
+                "SnowWorld",
+              "value":
                 "resellers@snowworld.com",
-              href:
+              "href":
                 "mailto:resellers@snowworld.com"
             },
             {
-              label:
+              "label":
                 "Flywise / GCT & GoVolta",
-              value:
+              "value":
                 "partners@flywise.nl",
-              href:
+              "href":
                 "mailto:partners@flywise.nl"
             }
           ]
         },
         {
-          title: "Let op",
-          text:
+          "title":
+            "Let op",
+          "text":
             "Mail altijd vanuit de inbox en zet de inbox altijd in CC zodat communicatie teruggevonden kan worden.",
-          type: "warning"
+          "type":
+            "warning"
         },
         {
-          title:
+          "title":
             "Contactgegevens HappyFlow",
-          items: [
+
+          "items": [
             {
-              label: "Edo",
-              value: "Edo@happyflow.io",
-              href:
+              "label":
+                "Edo",
+              "value":
+                "Edo@happyflow.io",
+              "href":
                 "mailto:Edo@happyflow.io"
             },
             {
-              label: "Francis",
-              value:
+              "label":
+                "Francis",
+              "value":
                 "francis@happyflow.io",
-              href:
+              "href":
                 "mailto:francis@happyflow.io"
             }
           ]
         },
         {
-          title: "Linkjes",
-          items: [
+          "title":
+            "Linkjes",
+
+          "items": [
             {
-              label: "Tickets CMS",
-              value: "Open Tickets CMS",
-              href:
+              "label":
+                "Tickets CMS",
+              "value":
+                "Open Tickets CMS",
+              "href":
                 "https://cms.tickets-shop.ui.hema.digital/admin/auth/login?redirectTo=%2Fcontent-manager%2FcollectionType%2Fapi%3A%3Aproduct.product%2F3"
             }
           ]
         }
       ],
 
-      subsections: [
+      "subsections": [
         {
-          title:
+          "title":
             "Binnenkomende aanvragen Tickets inbox",
 
-          subsection: {
-            title:
+          "subsection": {
+            "title":
               "E-mail met ticket niet ontvangen",
-            steps: [
+
+            "steps": [
               "Ga naar Tickets CMS → Admin → Order overview.",
               "Vul het ordernummer zonder spaties in. Twee groene kruisjes betekent dat betaling is ontvangen en tickets zijn verzonden.",
               "Ga naar de inbox *HEMA Tickets en zoek het ordernummer.",
@@ -990,11 +1038,14 @@ window.HANDBOOK_DATA = {
         },
 
         {
-          title: "Tickets herroepen",
+          "title":
+            "Tickets herroepen",
 
-          subsection: {
-            title: "Tickets herroepen",
-            steps: [
+          "subsection": {
+            "title":
+              "Tickets herroepen",
+
+            "steps": [
               "Controleer of de klant binnen de herroepingstermijn van 14 dagen zit.",
               "Zoek het ordernummer in Tickets CMS en open de order.",
               "Kopieer de betreffende codes en mail deze naar de partner.",
@@ -1004,23 +1055,24 @@ window.HANDBOOK_DATA = {
         },
 
         {
-          title:
+          "title":
             "1.1 Handleiding herroeping SnowWorld",
 
-          links: [
+          "links": [
             {
-              label:
+              "label":
                 "Handleiding Vintia SnowWorld partners_versie1.pdf",
-              href:
+              "href":
                 "https://hemaoffice.sharepoint.com/:b:/r/sites/RetailMedia/Gedeelde%20documenten/General/Stages/Handleiding%20Vintia%20SnowWorld%20partners_versie1.pdf?d=w3f82d46d0ba441a0a344d1ae6e3f1153&csf=1&web=1&e=M7WBu5"
             }
           ],
 
-          cards: [
+          "cards": [
             {
-              title:
+              "title":
                 "1. Account koppelen",
-              lines: [
+
+              "lines": [
                 "Maak een account aan in Enviso.",
                 "Kies 'reseller' en vul bedrijfsgegevens in.",
                 "Zoek en koppel met SnowWorld.",
@@ -1028,9 +1080,10 @@ window.HANDBOOK_DATA = {
               ]
             },
             {
-              title:
+              "title":
                 "2. Vouchercodes aanvragen",
-              lines: [
+
+              "lines": [
                 "Ga in Enviso naar de Trade-omgeving.",
                 "Kies de juiste SnowWorld-deal.",
                 "Bestel codes via het winkelwagen-icoon.",
@@ -1038,9 +1091,10 @@ window.HANDBOOK_DATA = {
               ]
             },
             {
-              title:
+              "title":
                 "3. Codes annuleren",
-              lines: [
+
+              "lines": [
                 "Zoek de juiste batch.",
                 "Selecteer de codes.",
                 "Maximaal 25 codes tegelijk annuleren.",
@@ -1049,7 +1103,7 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          note:
+          "note":
             "Visuele uitleg is te vinden in de handleiding."
         }
       ]
@@ -1060,165 +1114,216 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "broadsign",
-      category: "uitingen",
+      "id":
+        "broadsign",
 
-      title:
+      "category":
+        "uitingen",
+
+      "title":
         "Broadsign (DOOH puischermen)",
 
-      summary:
+      "summary":
         "Stappenplan voor het inregelen en publiceren van uitingen op DOOH-pu schermen.",
 
-      system: "Broadsign Publish",
-      frequency: "Wanneer nodig",
-      duration: "± 10–15 min",
+      "system":
+        "Broadsign Publish",
 
-      featured: true,
+      "frequency":
+        "Wanneer nodig",
 
-      steps: [
+      "duration":
+        "± 10–15 min",
+
+      "featured": true,
+
+      "steps": [
         {
-          title:
+          "title":
             "Open Broadsign Publish",
-          text:
+
+          "text":
             "Ga naar Broadsign Publish en log in.",
-          image: ""
+
+          "image": ""
         },
         {
-          title:
+          "title":
             "Maak een nieuw bericht aan",
-          text:
+
+          "text":
             "Klik op 'Creëer een nieuw bericht'.",
-          image:
+
+          "image":
             "images/broadsign/02-nieuw-bericht.png"
         },
         {
-          title:
+          "title":
             "Selecteer en upload de uiting",
-          text:
+
+          "text":
             "Upload de juiste uiting in 1080 × 1920 pixels.",
-          image:
+
+          "image":
             "images/broadsign/03-uiting-uploaden.png"
         },
         {
-          title:
+          "title":
             "Selecteer de juiste schermen",
-          text:
+
+          "text":
             "Selecteer via 'Met mij gedeeld' de juiste schermen. Doe dit altijd in overleg.",
-          image:
+
+          "image":
             "images/broadsign/04-schermen-selecteren.png"
         },
         {
-          title:
+          "title":
             "Stel looptijd en planning in",
-          text:
+
+          "text":
             "Kies 'Specifiek', stel looptijd, dagen en frequentie in.",
-          image:
+
+          "image":
             "images/broadsign/05-planning-instellen.png"
         },
         {
-          title:
+          "title":
             "Geef de uiting een naam",
-          text:
+
+          "text":
             "Gebruik de afgesproken naamconventie.",
-          bullets: [
+
+          "bullets": [
             "Formaat: WEEK_NAAM UITING",
             "Voorbeeld: WK34_Jumbo_Prijzenstorm_Robijn"
           ],
-          image: ""
+
+          "image": ""
         },
         {
-          title:
+          "title":
             "Keur goed en publiceer",
-          text:
+
+          "text":
             "Klik op 'Goedkeuren & publiceren'.",
-          image: ""
+
+          "image": ""
         }
       ]
     },
 
     {
-      id: "rcos",
-      category: "uitingen",
+      "id":
+        "rcos",
 
-      title:
+      "category":
+        "uitingen",
+
+      "title":
         "Rcos (DOOH kassaschermen)",
 
-      summary:
+      "summary":
         "Stappenplan voor het inregelen en publiceren van kassaschermuitingen via rCOS.",
 
-      system: "rCOS",
-      frequency: "Wanneer nodig",
-      duration: "± 10–15 min",
+      "system":
+        "rCOS",
 
-      featured: false,
+      "frequency":
+        "Wanneer nodig",
 
-      caution:
+      "duration":
+        "± 10–15 min",
+
+      "featured": false,
+
+      "caution":
         "De keuze van filmschema wordt altijd afgestemd. Bestand: 1024 × 768 pixels.",
 
-      steps: [
+      "steps": [
         {
-          title: "Log in bij rCOS",
-          text:
+          "title":
+            "Log in bij rCOS",
+
+          "text":
             "Log in met jouw HEMA-account via HEMA Azure AD.",
-          image:
+
+          "image":
             "images/rcos/01-inloggen.png"
         },
         {
-          title: "Open Filmschema's",
-          text:
+          "title":
+            "Open Filmschema's",
+
+          "text":
             "Ga naar Systeembeheer → Filmschema's.",
-          image:
+
+          "image":
             "images/rcos/02-filmschemas.png"
         },
         {
-          title:
+          "title":
             "Kies het juiste filmschema",
-          text:
+
+          "text":
             "Kies het juiste Cadeaukaart- of Retail Media-filmschema. Dit gebeurt altijd in overleg.",
-          infoCards: [
+
+          "infoCards": [
             {
-              title: "Cadeaukaarten",
-              items: [
+              "title":
+                "Cadeaukaarten",
+
+              "items": [
                 "Cadeaukaart_NL_05_2025",
                 "Cadeaukaart_BE_NL_04_2025",
                 "Cadeaukaart_BE_FR_04_2024",
                 "Cadeaukaart_BE_NL_FR_04_2024"
               ],
-              note:
+
+              "note":
                 "Opbouw: CATEGORIE_LAND_TAAL."
             },
             {
-              title: "Retail Media",
-              items: [
+              "title":
+                "Retail Media",
+
+              "items": [
                 "Retail Media EV ONLY — alleen eigen HEMA-filialen",
                 "Retail Media - TIJDELIJK — eigen + franchise-filialen"
               ]
             }
           ],
-          image: ""
+
+          "image": ""
         },
         {
-          title:
+          "title":
             "Upload de gewenste uiting",
-          text:
+
+          "text":
             "Upload de uiting in het gestippelde vak.",
-          image:
+
+          "image":
             "images/rcos/04-uiting-uploaden.png"
         },
         {
-          title:
+          "title":
             "Geef de uiting een naam en sla op",
-          text:
+
+          "text":
             "Gebruik NAAM UITING-WEEK. Kopieer 'Naam' ook naar 'Toelichting kassa'.",
-          image:
+
+          "image":
             "images/rcos/05-uiting-naamgeven.png"
         },
         {
-          title:
+          "title":
             "Controleer of de uiting live staat",
-          text:
+
+          "text":
             "Na opslaan staat de uiting meteen live.",
-          image: ""
+
+          "image": ""
         }
       ]
     },
@@ -1228,184 +1333,196 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "google-admanager",
-      category: "advertising",
+      "id":
+        "google-admanager",
 
-      title: "Google Ad Manager",
+      "category":
+        "advertising",
 
-      summary:
+      "title":
+        "Google Ad Manager",
+
+      "summary":
         "Stappenplan voor het aanmaken, instellen, vullen en monitoren van campagnes.",
 
-      system: "Google Ad Manager",
-      frequency: "Wanneer nodig",
-      duration: "± 20–30 min",
+      "system":
+        "Google Ad Manager",
 
-      featured: true,
+      "frequency":
+        "Wanneer nodig",
 
-      subsections: [
+      "duration":
+        "± 20–30 min",
+
+      "featured": true,
+
+      "subsections": [
         {
-          title: "1. Order aanmaken",
+          "title":
+            "1. Order aanmaken",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Open Google Ad Manager",
-              text:
+              "text":
                 "Ga naar Google Ad Manager en log in.",
-              image: ""
+              "image": ""
             },
             {
-              title: "Ga naar Orders",
-              text:
+              "title":
+                "Ga naar Orders",
+              "text":
                 "Ga naar Delivery → Orders.",
-              image:
+              "image":
                 "images/google-admanager/02-orders.png"
             },
             {
-              title:
+              "title":
                 "Maak een nieuwe order aan",
-              text:
+              "text":
                 "Klik op 'New order'.",
-              image:
+              "image":
                 "images/google-admanager/03-new-order.png"
             },
             {
-              title:
+              "title":
                 "Vul General settings in",
-              text:
+              "text":
                 "Vul de algemene campagnegegevens in.",
-              bullets: [
+              "bullets": [
                 "Naam: adverteerder_jaar_weeknummers_typecampagne",
                 "Selecteer de adverteerder",
                 "Labels leeg laten",
                 "Advanced settings leeg laten"
               ],
-              image:
+              "image":
                 "images/google-admanager/04-general-settings.png"
             }
           ]
         },
 
         {
-          title:
+          "title":
             "2. Line item instellen",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Maak een nieuw line item",
-              text:
+              "text":
                 "Select display ad; template leeg; line item type Standard.",
-              image:
+              "image":
                 "images/google-admanager/05-line-item-basis.png"
             },
             {
-              title:
+              "title":
                 "Vul Expected creatives in",
-              text:
+              "text":
                 "Voeg alle benodigde formaten toe.",
-              image:
+              "image":
                 "images/google-admanager/05-expected-creatives.png"
             },
             {
-              title:
+              "title":
                 "Stel Delivery settings in",
-              text:
+              "text":
                 "Vul start/eind, quantity, CPM en eventueel discount in.",
-              image:
+              "image":
                 "images/google-admanager/05-delivery-settings.png"
             },
             {
-              title:
+              "title":
                 "Open Add targeting",
-              text:
+              "text":
                 "Open de targetinginstellingen.",
-              image:
+              "image":
                 "images/google-admanager/05-targeting.png"
             },
             {
-              title:
+              "title":
                 "Selecteer inventory-locaties",
-              text:
+              "text":
                 "Selecteer de juiste 2PLP-plekken en/of Thank You Page.",
-              image:
+              "image":
                 "images/google-admanager/05-targeting-locaties.png"
             },
             {
-              title:
+              "title":
                 "Stel categorie-targeting in",
-              text:
+              "text":
                 "Gebruik categorie-targeting indien nodig.",
-              image:
+              "image":
                 "images/google-admanager/05-categorie-targeting.png"
             },
             {
-              title:
+              "title":
                 "Controleer inventory",
-              text:
+              "text":
                 "Klik op 'Check inventory' en controleer of het doel haalbaar is.",
-              image:
+              "image":
                 "images/google-admanager/05-check-inventory.png"
             }
           ]
         },
 
         {
-          title:
+          "title":
             "3. Creatives toevoegen",
 
-          steps: [
+          "steps": [
             {
-              title: "Ga naar Creatives",
-              text:
+              "title":
+                "Ga naar Creatives",
+              "text":
                 "Gebruik Add creative of Bulk upload creatives.",
-              image:
+              "image":
                 "images/google-admanager/06-creatives-overzicht.png"
             },
             {
-              title:
+              "title":
                 "Upload en gebruik Bulk edit",
-              text:
+              "text":
                 "Upload de beelden en selecteer alle creatives om instellingen gezamenlijk aan te passen.",
-              image:
+              "image":
                 "images/google-admanager/06-bulk-edit.png"
             },
             {
-              title:
+              "title":
                 "Vul Destination in",
-              text:
+              "text":
                 "Vul de juiste bestemmings-URL/UTM in, test de URL en sla op.",
-              image:
+              "image":
                 "images/google-admanager/06-destination.png"
             }
           ]
         },
 
         {
-          title:
+          "title":
             "4. Goedkeuren en monitoren",
 
-          text:
+          "text":
             "Rond de campagne af en controleer daarna de campagnestatus.",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Approve de campagne",
-              text:
+              "text":
                 "Ga terug naar de order en klik op 'Approve'.",
-              image: ""
+              "image": ""
             },
             {
-              title:
+              "title":
                 "Monitor de campagne",
-              text:
+              "text":
                 "Controleer regelmatig de status.",
-              bullets: [
+              "bullets": [
                 "Ready: campagne staat klaar",
                 "Delivering: campagne is live"
               ],
-              image: ""
+              "image": ""
             }
           ]
         }
@@ -1417,74 +1534,102 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "online-banners",
-      category: "banners",
+      "id":
+        "online-banners",
 
-      title:
+      "category":
+        "banners",
+
+      "title":
         "Stappenplan Online Banners",
 
-      summary:
+      "summary":
         "Stappenplan voor het maken, aanpassen, dupliceren en downloaden van banners in Adobe Express.",
 
-      system: "Adobe Express",
-      frequency: "Wanneer nodig",
-      duration: "± 15–20 min",
+      "system":
+        "Adobe Express",
 
-      featured: true,
+      "frequency":
+        "Wanneer nodig",
 
-      steps: [
+      "duration":
+        "± 15–20 min",
+
+      "featured": true,
+
+      "steps": [
         {
-          title: "Open Adobe Express",
-          text:
+          "title":
+            "Open Adobe Express",
+
+          "text":
             "Ga naar Adobe Express.",
-          image: ""
+
+          "image": ""
         },
         {
-          title:
+          "title":
             "Open Banner Sjablonen",
-          text:
+
+          "text":
             "Klik op 'Jouw spullen' en kies 'Banner Sjablonen'.",
-          image:
+
+          "image":
             "images/online-banners/02-banner-sjablonen.png"
         },
         {
-          title:
+          "title":
             "Kies de juiste categorie",
-          text:
+
+          "text":
             "Gebruik de juiste kleur voor de actie.",
-          infoCards: [
+
+          "infoCards": [
             {
-              title: "Paars",
-              items: ["Nachtje weg"]
+              "title": "Paars",
+              "items": [
+                "Nachtje weg"
+              ]
             },
             {
-              title: "Roze",
-              items: ["Uit eten"]
+              "title": "Roze",
+              "items": [
+                "Uit eten"
+              ]
             },
             {
-              title: "Groen",
-              items: ["Dagje weg"]
+              "title": "Groen",
+              "items": [
+                "Dagje weg"
+              ]
             }
           ],
-          image: ""
+
+          "image": ""
         },
         {
-          title:
+          "title":
             "Pas de banner aan",
-          text:
+
+          "text":
             "Pas titel, subtitel, prijsblok en afbeelding aan. Pagina 1 is reguliere banner; pagina 2 is laatste-kans-banner.",
-          image:
+
+          "image":
             "images/online-banners/04-banner-aanpassen.png"
         },
         {
-          title:
+          "title":
             "Dupliceer naar alle formaten",
-          text:
+
+          "text":
             "Gebruik 'Formaat wijzigen' en 'Dupliceren en formaat wijzigen'.",
-          infoCards: [
+
+          "infoCards": [
             {
-              title: "Bannerformaten",
-              items: [
+              "title":
+                "Bannerformaten",
+
+              "items": [
                 "1240 × 248",
                 "971 × 194",
                 "903 × 180",
@@ -1497,23 +1642,28 @@ window.HANDBOOK_DATA = {
               ]
             },
             {
-              title: "Appformaten",
-              items: [
+              "title":
+                "Appformaten",
+
+              "items": [
                 "600 × 500",
                 "450 × 375",
                 "300 × 250"
               ]
             }
           ],
-          image:
+
+          "image":
             "images/online-banners/05-formaten-dupliceren.png"
         },
         {
-          title:
+          "title":
             "Download alle banners",
-          text:
+
+          "text":
             "Download de banners en zet ze in de map 'beginactie banners' van de betreffende actie.",
-          image: ""
+
+          "image": ""
         }
       ]
     },
@@ -1527,35 +1677,38 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-organische-social-media",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "1. Organische sociale media binnen HEMA",
 
-      summary:
+      "summary":
         "Kanalen, postfrequentie, contentkalender, bureaucommunicatie en assets.",
 
-      system:
+      "system":
         "Social Media",
 
-      frequency: "Dagelijks",
-      duration: "Naslag",
+      "frequency":
+        "Dagelijks",
 
-      featured: true,
+      "duration":
+        "Naslag",
 
-      steps: [
+      "featured": true,
+
+      "steps": [
         {
-          title:
+          "title":
             "Socialmediakanalen",
 
-          text:
+          "text":
             "Binnen Organic Social wordt gebruikgemaakt van verschillende sociale mediaplatformen. De exacte inzet en frequentie kunnen per land en kanaal verschillen.",
 
-          bullets: [
+          "bullets": [
             "Instagram",
             "TikTok",
             "Facebook",
@@ -1563,85 +1716,78 @@ window.HANDBOOK_DATA = {
             "YouTube Shorts"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Specifiek voor België",
 
-          text:
+          "text":
             "In het Belgische Social Media Handboek staat dat HEMA België voor Organic Social actief is op Instagram, TikTok, Facebook Vlaams, Facebook Waals, Pinterest en YouTube Shorts.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "1.1 Postfrequentie",
 
-          text:
+          "text":
             "Werk volgens de actuele contentplanning en afgesproken frequentie per kanaal. Kijk hiervoor altijd in de contentkalender.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Postfrequentie België",
 
-          text:
+          "text":
             "Voor België wordt in het huidige handboek gestreefd naar minimaal dagelijks posten op de feed en minimaal zes stories per week. Facebook heeft momenteel een hogere frequentie en Pinterest een lagere frequentie.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "1.2 Contentkalender",
 
-          text:
+          "text":
             "De contentkalender is de centrale plek voor de dagelijkse planning van Organic Social. Hierin staat welke content wanneer en via welk kanaal wordt gepubliceerd.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "1.3 Communiceren met bureaus",
 
-          text:
+          "text":
             "Voor externe bureaus en contentpartners worden verschillende communicatiekanalen gebruikt.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title:
+              "title":
                 "E-mail",
 
-              items: [
+              "items": [
                 "Belangrijke zaken",
                 "Afstemming",
                 "Feedback en overleg"
               ]
             },
-
             {
-              title:
+              "title":
                 "Meetings",
 
-              items: [
+              "items": [
                 "Nieuwe concepten",
                 "Uitgewerkte content",
                 "Goedkeuringen",
                 "Planning en check-ins"
               ]
             },
-
             {
-              title:
+              "title":
                 "WhatsApp / chat",
 
-              items: [
+              "items": [
                 "Snelle updates",
                 "Korte vragen",
                 "Informele afstemming"
@@ -1649,64 +1795,63 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Bureaus België",
 
-          text:
+          "text":
             "Voor België noemt het huidige handboek specifiek Social Sky, Paloma en UnCool als agencies waarmee wordt samengewerkt.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "1.4 Waar zijn assets te vinden?",
 
-          text:
+          "text":
             "Assets kunnen afhankelijk van bureau, campagne en land op verschillende locaties worden aangeleverd.",
 
-          bullets: [
+          "bullets": [
             "Notion",
             "Vimeo",
             "E-mail",
             "Interne gedeelde mappen"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Assetlocaties België",
 
-          text:
+          "text":
             "Voor het Belgische team worden in het huidige handboek onder andere de Paloma-clientpagina, Social Sky Content Hub, Vimeo via UnCool en de Nederlandse Social Content-map genoemd.",
 
-          links: [
+          "links": [
             {
-              label:
+              "label":
                 "Paloma – Notion Client Page",
-              href:
+
+              "href":
                 "https://www.notion.so/CLIENT-PAGE-HEMA-Social-Content-31364daa31bc80039044e08d77bc22e5"
             },
             {
-              label:
+              "label":
                 "Social Sky – Content Hub",
-              href:
+
+              "href":
                 "https://www.notion.so/Content-Hub-2026-HEMA-30a27acb3a6180bc8b43d7583bd865ba"
             }
           ],
 
-          bullets: [
+          "bullets": [
             "UnCool: concepten en assets via Vimeo en e-mail",
             "Nederlandse reposts: I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\01 SOCIAL CONTENT\\01 CONTENT"
           ],
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -1716,64 +1861,71 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "organic-workflow",
-      category: "organic-social",
+      "id":
+        "organic-workflow",
 
-      title:
+      "category":
+        "organic-social",
+
+      "title":
         "2. Workflow & verantwoordelijkheden",
 
-      summary:
+      "summary":
         "Contentplanning, publicatie, bureaus en verantwoordelijkheden.",
 
-      system:
+      "system":
         "Organic Social Media",
 
-      frequency:
+      "frequency":
         "Doorlopend",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: true,
+      "featured": true,
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "2.1 Organic Social",
 
-          text:
+          "text":
             "De contentkalender vormt de centrale basis voor de dagelijkse werkzaamheden. Planning, prioriteiten en content worden regelmatig met het team afgestemd en bijgewerkt.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "2.1.1 Content inplannen",
 
-          text:
+          "text":
             "Content kan intern of door externe bureaus worden gecreëerd. Na controle en goedkeuring wordt de content via het juiste platform gepubliceerd of ingepland.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title: "TikTok",
-              items: [
+              "title":
+                "TikTok",
+
+              "items": [
                 "Video's via TikTok Studio",
                 "Carrousels via TikTok-app"
               ]
             },
             {
-              title: "Instagram",
-              items: [
+              "title":
+                "Instagram",
+
+              "items": [
                 "Reels",
                 "Carrousels",
                 "Feedposts"
               ]
             },
             {
-              title:
+              "title":
                 "Overige kanalen",
-              items: [
+
+              "items": [
                 "Facebook via Meta Business Suite",
                 "Pinterest via Pinterest",
                 "YouTube Shorts via YouTube"
@@ -1781,51 +1933,47 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Belgische verdeling van kanalen",
 
-          text:
+          "text":
             "Volgens het Belgische handboek ligt de hoofdverantwoordelijkheid voor Instagram en TikTok bij de Organic Social Marketeer België en deels bij de Stagiair Online Marketing België & Frankrijk. Facebook NL-BE en FR-BE, Pinterest en YouTube Shorts vallen voornamelijk onder de Social Media Coördinator België.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Stories",
 
-          text:
+          "text":
             "Stories worden gemaakt op basis van de contentkalender. Kijk ook of succesvolle content tussen teams of landen kan worden hergebruikt, mits de taal, actualiteit en lokale relevantie kloppen.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Stories België",
 
-          text:
+          "text":
             "Binnen het Belgische team worden stories volgens het huidige handboek voornamelijk gemaakt door de Stagiair Online Marketing België & Frankrijk, meestal in Canva. Er is wekelijks afstemming met de Stagiair Visual Creative over mogelijke crossposts tussen Nederland en België en over resultaten.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "2.2 Workflow met agencies",
 
-          text:
+          "text":
             "Gebruik een vaste workflow voor concept, feedback, productie, goedkeuring en publicatie.",
 
-          subsection: {
-            title:
+          "subsection": {
+            "title":
               "Agency workflow",
 
-            steps: [
+            "steps": [
               "Agency presenteert een concept.",
               "Het team geeft feedback.",
               "De agency werkt het concept verder uit.",
@@ -1836,36 +1984,41 @@ window.HANDBOOK_DATA = {
             ]
           },
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Agencyverdeling België",
 
-          text:
+          "text":
             "Voor België zijn in het huidige handboek concrete afspraken opgenomen.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title: "PALOMA",
-              items: [
+              "title":
+                "PALOMA",
+
+              "items": [
                 "22 assets per maand",
                 "Elke 2 weken nieuwe input",
                 "Wekelijkse check-in"
               ]
             },
             {
-              title: "Social Sky",
-              items: [
+              "title":
+                "Social Sky",
+
+              "items": [
                 "8 assets per maand",
                 "Elke 2 weken nieuwe input",
                 "Tweewekelijkse check-in"
               ]
             },
             {
-              title: "UnCool",
-              items: [
+              "title":
+                "UnCool",
+
+              "items": [
                 "4 assets per maand",
                 "Elke 2 weken nieuwe input",
                 "Tweewekelijkse check-in"
@@ -1873,21 +2026,21 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "2.3 Rollen & aanspreekpunten",
 
-          text:
+          "text":
             "De exacte verantwoordelijkheden kunnen verschillen per team, land, kanaal en periode. Controleer daarom altijd de actuele taakverdeling.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title:
+              "title":
                 "Organic Social",
-              items: [
+
+              "items": [
                 "Contentplanning",
                 "Contentcreatie",
                 "Publicatie",
@@ -1895,35 +2048,40 @@ window.HANDBOOK_DATA = {
               ]
             },
             {
-              title:
+              "title":
                 "Paid Social",
-              items: [
+
+              "items": [
                 "Betaalde media",
                 "Campagnes",
                 "Boosting"
               ]
             },
             {
-              title:
+              "title":
                 "Creator Marketing",
-              items: [
+
+              "items": [
                 "Creators selecteren",
                 "Briefings",
                 "Samenwerkingen"
               ]
             },
             {
-              title:
+              "title":
                 "Communitymanagement",
-              items: [
+
+              "items": [
                 "Comments",
                 "DM's",
                 "Escalaties"
               ]
             },
             {
-              title: "Legal",
-              items: [
+              "title":
+                "Legal",
+
+              "items": [
                 "Contracten",
                 "Rechten",
                 "Juridische vragen"
@@ -1931,51 +2089,54 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Belgische aanspreekpunten",
 
-          text:
+          "text":
             "Het Belgische handboek bevat een specifieke rolverdeling voor België. Deze informatie is belangrijk wanneer je werkzaamheden uitvoert voor de Belgische kanalen.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title:
+              "title":
                 "Organic Social België",
-              items: [
+
+              "items": [
                 "Social Media Marketeer België & Frankrijk",
                 "Social Media Coördinator België",
                 "Stagiair Online Marketing België & Frankrijk"
               ]
             },
             {
-              title:
+              "title":
                 "Communitymanagement België",
-              items: [
+
+              "items": [
                 "Comments via de socialmedia-agency",
                 "DM's via de Social Media Coördinator België"
               ]
             },
             {
-              title:
+              "title":
                 "Legal België",
-              items: [
+
+              "items": [
                 "Projectmanager Marketing BE & FR"
               ]
             },
             {
-              title:
+              "title":
                 "Budget",
-              items: [
+
+              "items": [
                 "Lead Paid Advertising"
               ]
             }
           ],
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -1985,126 +2146,119 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-contentrichtlijnen",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "3. Contentrichtlijnen",
 
-      summary:
+      "summary":
         "Visuele identiteit, technische richtlijnen, captions, hashtags en emoji's.",
 
-      system:
+      "system":
         "Organic Social Media",
 
-      frequency:
+      "frequency":
         "Bij iedere contentcreatie",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: true,
+      "featured": true,
 
-      caution:
+      "caution":
         "Gebruik alleen muziek en sounds waarvoor de juiste gebruiksrechten beschikbaar zijn.",
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "HEMA-identiteit",
 
-          text:
+          "text":
             "Content moet herkenbaar zijn als HEMA en passen bij de doelgroep, het kanaal en de lokale context.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Belgische Vrindinnestrategie",
 
-          text:
+          "text":
             "Voor Belgische social content geldt specifiek de Vrindinnestrategie: HEMA België communiceert als een toegankelijke, informele en vrolijke Belgische vriendin die kijkers wil laten lachen en inspireren.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "3.1 Visuele identiteit",
 
-          text:
+          "text":
             "Gebruik voor grafische content en stories de geldende HEMA-richtlijnen voor beeldgebruik, kleuren en typografie.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "3.2 Algemene contentrichtlijnen",
 
-          text:
+          "text":
             "Controleer technische specificaties, contentkwaliteit en rechten voordat je content publiceert.",
 
-          bullets: [
+          "bullets": [
             "Sounds en muziek moeten correct gelicenseerd zijn",
             "Reels: bij voorkeur 9:16",
             "Carrousels: bij voorkeur 4:5"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title: "3.3 Caption",
+          "title":
+            "3.3 Caption",
 
-          text:
+          "text":
             "Houd captions kort, duidelijk en passend bij de HEMA-tone of voice. Houd rekening met de taal en doelgroep van het betreffende account.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Captions België",
 
-          text:
+          "text":
             "Bij Belgische productposts op Instagram en TikTok is volgens het huidige handboek zowel een Vlaamse als een Waalse caption nodig, omdat deze kanalen voor beide doelgroepen worden gebruikt. Benoem daarnaast een relevante promotie kort wanneer een afgebeeld product in promotie is.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "3.3.1 Hashtags",
 
-          text:
+          "text":
             "Gebruik hashtags wanneer ze relevant zijn voor de content en vindbaarheid. Voeg geen hashtags toe alleen omdat het kan.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Hashtags België",
 
-          text:
+          "text":
             "In het Belgische handboek wordt aangegeven dat hashtags voornamelijk op TikTok worden gebruikt en nauwelijks op Instagram en Facebook. #HEMA wordt standaard op TikTok gebruikt.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "3.3.2 Emoji's",
 
-          text:
+          "text":
             "Gebruik emoji's alleen als ze waarde toevoegen. Informatieve of serieuze content kan juist sterker zijn zonder emoji's.",
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -2114,45 +2268,46 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-contentformats",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "4. Contentformats",
 
-      summary:
+      "summary":
         "Feed, stories, gamificatie, resultaten en Instagram Highlights.",
 
-      system:
+      "system":
         "Organic Social Media",
 
-      frequency:
+      "frequency":
         "Doorlopend",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: true,
+      "featured": true,
 
-      introBox: {
-        title:
+      "introBox": {
+        "title":
           "Gebruik een gevarieerde contentmix",
 
-        text:
+        "text":
           "Een sterke Organic Social-aanpak bestaat uit verschillende soorten content. Wissel commerciële content af met inspiratie, entertainment, interactie en merkcontent."
       },
 
-      steps: [
+      "steps": [
         {
-          title: "4.1 Feed",
+          "title":
+            "4.1 Feed",
 
-          text:
+          "text":
             "Zorg voor een goede mix van reels, carrousels en andere relevante formats. Content moet niet uitsluitend verkopen, maar ook bijdragen aan bereik, interactie en merkvoorkeur.",
 
-          bullets: [
+          "bullets": [
             "Sketches",
             "Promoties",
             "Productposts",
@@ -2162,30 +2317,30 @@ window.HANDBOOK_DATA = {
             "Engagementcontent"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Feed België",
 
-          text:
+          "text":
             "Voor België vermeldt het huidige handboek dat minimaal één keer per dag op de feed wordt gepost. Een goede mix van carrousels, reels, sketches, promoties, productposts en winkelopeningen is belangrijk.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title: "4.2 Stories",
+          "title":
+            "4.2 Stories",
 
-          text:
+          "text":
             "Stories zijn geschikt voor snelle communicatie en dagelijkse interactie. Combineer commerciële content met interactieve formats zodat stories niet alleen uit verkoopboodschappen bestaan.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title:
+              "title":
                 "Voorbeelden van gamificatie",
-              items: [
+
+              "items": [
                 "Raad het Product",
                 "Dit of Dat",
                 "Woordzoekers",
@@ -2197,47 +2352,43 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Resultaten van stories",
 
-          text:
+          "text":
             "Houd prestaties structureel bij. Kijk bijvoorbeeld naar views, bereik, interactie en completion rate. Gebruik learnings om toekomstige stories te verbeteren.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Storydata België",
 
-          text:
+          "text":
             "Voor België worden Instagram- en Facebookviews volgens het huidige handboek wekelijks bijgehouden via Meta. Andere cijfers, zoals average completion rate, worden bekeken via Iconosquare.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Instagram Highlights bijhouden",
 
-          text:
+          "text":
             "Zorg dat Instagram Highlights actueel blijven. Verwijder verouderde tijdelijke informatie en voeg relevante blijvende content toe aan de juiste Highlight.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Highlights België",
 
-          text:
+          "text":
             "Het Belgische handboek noemt bijvoorbeeld dat nieuwe promotionele stories in de Highlight 'promoties' worden gezet en daar de oude promotie vervangen. Wallpapers, fanposts en spellen kunnen aan de betreffende Highlight worden toegevoegd zonder dat oudere content altijd verwijderd hoeft te worden.",
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -2247,80 +2398,81 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-data-analyse",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "5. Data, Analyse & Optimalisatie",
 
-      summary:
+      "summary":
         "KPI's, rapportage en optimalisatie van content.",
 
-      system:
+      "system":
         "Meta / Iconosquare",
 
-      frequency:
+      "frequency":
         "Wekelijks",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: false,
+      "featured": false,
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "5.1 Belangrijkste KPI's",
 
-          text:
+          "text":
             "Gebruik de afgesproken KPI's om prestaties te beoordelen. Denk aan views, bereik, engagement en follower growth. De belangrijkste KPI kan per kanaal, land en campagne verschillen.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "KPI's België",
 
-          text:
+          "text":
             "Voor de Belgische Organic Social-kanalen noemt het huidige handboek views als belangrijkste KPI. Positieve engagement rate blijft relevant en follower growth wordt gebruikt als belangrijke indicatie of de content aanslaat.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Belgische doelstellingen 2026",
 
-          text:
+          "text":
             "Onderstaande cijfers gelden specifiek voor de Belgische kanalen en moeten niet automatisch worden toegepast op andere landen.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title:
+              "title":
                 "Instagram België",
-              items: [
+
+              "items": [
                 "Frequentie: minimaal 7x per week",
                 "Volgers: 110.000",
                 "Views: 17,5 miljoen"
               ]
             },
             {
-              title:
+              "title":
                 "TikTok België",
-              items: [
+
+              "items": [
                 "Frequentie: minimaal 7x per week",
                 "Volgers: 40.000",
                 "Views: 30 miljoen"
               ]
             },
             {
-              title:
+              "title":
                 "Facebook België",
-              items: [
+
+              "items": [
                 "Frequentie: minimaal 5x per week",
                 "Volgers: 160.000",
                 "Views: 37,5 miljoen"
@@ -2328,27 +2480,25 @@ window.HANDBOOK_DATA = {
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "5.2 Reporting structuur",
 
-          text:
+          "text":
             "Controleer de performance regelmatig via de beschikbare analytics-tools en leg resultaten centraal vast. Gebruik deze gegevens om learnings te verzamelen en toekomstige content te optimaliseren.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Reporting België",
 
-          text:
+          "text":
             "Voor België wordt performance volgens het huidige handboek wekelijks bekeken via Meta Statistieken en Iconosquare. De resultaten worden vervolgens genoteerd in het moederbestand waarin ook de contentkalender staat.",
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -2358,91 +2508,93 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-communitymanagement",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "6. Communitymanagement",
 
-      summary:
+      "summary":
         "Tone of voice en omgaan met vragen, klachten en negatieve reacties.",
 
-      system:
+      "system":
         "Social Media",
 
-      frequency:
+      "frequency":
         "Dagelijks",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: false,
+      "featured": false,
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "6.1 Tone of voice",
 
-          text:
+          "text":
             "Reageer herkenbaar als HEMA en houd rekening met taal, context en doelgroep. Goede interactie ondersteunt relatiemanagement en zichtbaarheid.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "6.2 Omgaan met negatieve reacties",
 
-          text:
+          "text":
             "Niet iedere negatieve reactie vereist een antwoord. Beoordeel per situatie wat passend is en schaal ernstige situaties waar nodig op.",
 
-          infoCards: [
+          "infoCards": [
             {
-              title:
+              "title":
                 "Ernstige klacht",
-              items: [
+
+              "items": [
                 "Stuur door naar klantenservice of het verantwoordelijke team"
               ]
             },
             {
-              title:
+              "title":
                 "Gezonde discussie",
-              items: [
+
+              "items": [
                 "Laat staan zolang de discussie respectvol blijft"
               ]
             },
             {
-              title:
+              "title":
                 "Intimidatie of schelden",
-              items: [
+
+              "items": [
                 "Verwijder indien nodig",
                 "Blokkeer indien nodig",
                 "Rapporteer volgens de platformrichtlijnen"
               ]
             },
             {
-              title:
+              "title":
                 "Veel dezelfde vragen",
-              items: [
+
+              "items": [
                 "Plaats een duidelijk openbaar antwoord"
               ]
             }
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Communitymanagement België",
 
-          text:
+          "text":
             "In het Belgische handboek wordt aangegeven dat comments via de socialmedia-agency worden afgehandeld en dat DM's door de Social Media Coördinator België worden behandeld. Ernstige klachten worden doorgestuurd naar klantenservice.",
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -2452,48 +2604,47 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-ugc-creators",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "7. (UGC-) creators",
 
-      summary:
+      "summary":
         "Rol, selectie, briefing, workflow, legal en resultaten van creatorsamenwerkingen.",
 
-      system:
+      "system":
         "Creator Marketing",
 
-      frequency:
+      "frequency":
         "Wanneer nodig",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: true,
+      "featured": true,
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "7.1 Rol van creators",
 
-          text:
+          "text":
             "Creators maken platformgerichte content die zowel organisch als binnen paid media kan worden gebruikt. Video-first formats zoals Reels, TikToks en Shorts spelen hierbij een belangrijke rol.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "7.2 Selectiecriteria",
 
-          text:
+          "text":
             "Beoordeel creators op kwaliteit, relevantie en professionaliteit.",
 
-          bullets: [
+          "bullets": [
             "Kwaliteit van videocontent",
             "Effectiviteit van bestaande content",
             "Ervaring met merkcontent",
@@ -2503,38 +2654,36 @@ window.HANDBOOK_DATA = {
             "Ervaring met sociale media"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "7.3 Briefing & beoordeling",
 
-          text:
+          "text":
             "Geef creators voldoende creatieve vrijheid, maar zorg dat de noodzakelijke merk- en campagne-elementen duidelijk zijn.",
 
-          bullets: [
+          "bullets": [
             "Content moet natuurlijk aanvoelen",
             "Belangrijke producten moeten zichtbaar zijn",
             "Video moet passend in lengte zijn",
             "Merkherkenning moet snel zichtbaar zijn"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "7.4 Workflow creators",
 
-          text:
+          "text":
             "Gebruik een vaste workflow van selectie tot rapportage.",
 
-          subsection: {
-            title:
+          "subsection": {
+            "title":
               "Creator workflow",
 
-            steps: [
+            "steps": [
               "Opdracht/dropping → creators selecteren.",
               "Briefing → via e-mail.",
               "Sample verzending → tracking delen.",
@@ -2545,48 +2694,45 @@ window.HANDBOOK_DATA = {
               "Resultaten en learnings rapporteren."
             ],
 
-            note:
+            "note":
               "Het Belgische handboek noemt als huidige SLA's: briefing accepteren binnen 48 uur, feedback op preview binnen 48 uur en publicatie na go/no-go binnen 24 uur."
           },
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "7.5 Wetgeving & legal",
 
-          text:
+          "text":
             "Controleer bij samenwerkingen altijd de juridische afspraken, rechten en platformvereisten.",
 
-          bullets: [
+          "bullets": [
             "Geen ongefundeerde claims",
             "Correcte disclosure zoals #ad of betaalde samenwerking",
             "Muziek- en gebruiksrechten controleren",
             "Controleer afspraken over hergebruik van content"
           ],
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "7.6 Data noteren en verwerken",
 
-          text:
+          "text":
             "Leg creatorcampagnes, resultaten, learnings en tracking centraal vast.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Dataverwerking creators België",
 
-          text:
+          "text":
             "In het Belgische handboek worden het moederbestand voor campagnes en het linkbuilding-document voor trackinglinks genoemd.",
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -2596,58 +2742,56 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id:
+      "id":
         "organic-lokale-kanalen",
 
-      category:
+      "category":
         "organic-social",
 
-      title:
+      "title":
         "Lokale sociale mediakanalen",
 
-      summary:
+      "summary":
         "Richtlijnen voor lokale socialmediakanalen van winkels.",
 
-      system:
+      "system":
         "Lokale Social Media",
 
-      frequency:
+      "frequency":
         "Wanneer nodig",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: false,
+      "featured": false,
 
-      steps: [
+      "steps": [
         {
-          title:
+          "title":
             "Lokale content monitoren",
 
-          text:
+          "text":
             "Lokale teams kunnen waardevolle Employee Generated Content maken. Houd zicht op wat lokale winkels publiceren en ondersteun hen met richtlijnen waar nodig.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Controleer releasedatums",
 
-          text:
+          "text":
             "Nieuwe producten en collecties mogen niet vóór de afgesproken releasedatum worden gepubliceerd. Neem contact op met het lokale team wanneer content te vroeg online staat.",
 
-          image: ""
+          "image": ""
         },
-
         {
-          title:
+          "title":
             "Specifiek voor lokale winkels in België",
 
-          text:
+          "text":
             "Het Belgische handboek benadrukt dat Employee Generated Content vanuit lokale Belgische winkels welkom is. Wanneer een winkel een collectie vóór de officiële releasedatum publiceert, moet contact worden opgenomen met de winkel met het verzoek de content offline te halen en zich aan de officiële releasedatum te houden.",
 
-          image: ""
+          "image": ""
         }
       ]
     },
@@ -2657,203 +2801,203 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      id: "organic-bijlagen",
-      category: "organic-social",
+      "id":
+        "organic-bijlagen",
 
-      title:
+      "category":
+        "organic-social",
+
+      "title":
         "8. Bijlagen",
 
-      summary:
+      "summary":
         "Storytemplates, creatorprocessen en aanvullende tools.",
 
-      system:
+      "system":
         "Canva / TradeTracker",
 
-      frequency:
+      "frequency":
         "Naslag",
 
-      duration:
+      "duration":
         "Naslag",
 
-      featured: false,
+      "featured": false,
 
-      subsections: [
+      "subsections": [
         {
-          title:
+          "title":
             "8.1 Organic Social",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Feed & data",
 
-              text:
+              "text":
                 "Gebruik de centrale rapportagebestanden om prestaties van feedposts en stories vast te leggen en te vergelijken.",
 
-              image: ""
+              "image": ""
             },
-
             {
-              title:
+              "title":
                 "Storytemplates",
 
-              text:
+              "text":
                 "Gebruik de beschikbare Canva-templates als basis. Maak eerst een kopie naar je eigen Canva-account voordat je een template aanpast.",
 
-              links: [
+              "links": [
                 {
-                  label:
+                  "label":
                     "Raad het product",
-                  href:
+                  "href":
                     "https://canva.link/0iyugdfdr06iiho"
                 },
                 {
-                  label:
+                  "label":
                     "Raad het product – Stapelgek editie",
-                  href:
+                  "href":
                     "https://canva.link/gdijsiwt6i8ul75"
                 },
                 {
-                  label:
+                  "label":
                     "Zoek de verschillen",
-                  href:
+                  "href":
                     "https://canva.link/pe5qyw4bqkvxg5m"
                 },
                 {
-                  label:
+                  "label":
                     "Dit of Dat",
-                  href:
+                  "href":
                     "https://canva.link/g2t9k0pvn0emuxq"
                 },
                 {
-                  label:
+                  "label":
                     "Dit of Dat – Stapelgek editie",
-                  href:
+                  "href":
                     "https://canva.link/mojfzjzi29rzzjo"
                 },
                 {
-                  label:
+                  "label":
                     "Fanstories",
-                  href:
+                  "href":
                     "https://canva.link/k7r48mzyv3xi4gf"
                 },
                 {
-                  label:
+                  "label":
                     "Zoekspel",
-                  href:
+                  "href":
                     "https://canva.link/eb8b1xltu8oajrn"
                 },
                 {
-                  label:
+                  "label":
                     "Woordrebussen & feestdagen",
-                  href:
+                  "href":
                     "https://canva.link/fuh7i7um3bmbq5c"
                 },
                 {
-                  label:
+                  "label":
                     "Geheugenspel",
-                  href:
+                  "href":
                     "https://canva.link/xae5kkoz1f6qm8k"
                 }
               ],
 
-              image: ""
+              "image": ""
             }
           ]
         },
 
         {
-          title:
+          "title":
             "8.2 Creatorproces België – NL-BE",
 
-          text:
+          "text":
             "Onderstaande informatie geldt specifiek voor Nederlandstalige Belgische creators.",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Nieuwe creator aanmelden",
 
-              text:
+              "text":
                 "Nieuwe creators maken eerst een TradeTracker-account aan via het HEMA België affiliateprogramma. Na goedkeuring ontvangen zij een Affiliate-ID. Dit ID is nodig voor registratie en verwerking van vergoedingen.",
 
-              links: [
+              "links": [
                 {
-                  label:
+                  "label":
                     "HEMA België affiliateprogramma",
-                  href:
+                  "href":
                     "https://www.hema.com/nl-be/affiliate"
                 }
               ],
 
-              bullets: [
+              "bullets": [
                 "Geen affiliate links nodig voor deze creatoropdrachten",
                 "De vergoeding wordt als fixed fee geregistreerd"
               ],
 
-              image: ""
+              "image": ""
             },
-
             {
-              title:
+              "title":
                 "Vergoedingsproces",
 
-              text:
+              "text":
                 "Betalingen lopen via TradeTracker. De creator hoeft geen factuur te sturen.",
 
-              bullets: [
+              "bullets": [
                 "Betaaltermijn ongeveer 90 dagen",
                 "Betaalgegevens volledig invullen",
                 "Betaalinstellingen controleren",
                 "BTW-nummer toevoegen indien van toepassing"
               ],
 
-              image: ""
+              "image": ""
             }
           ]
         },
 
         {
-          title:
+          "title":
             "8.3 Creatorproces België – FR-BE",
 
-          text:
+          "text":
             "Onderstaande informatie geldt specifiek voor Franstalige Belgische creators.",
 
-          steps: [
+          "steps": [
             {
-              title:
+              "title":
                 "Nieuwe creator aanmelden",
 
-              text:
+              "text":
                 "Franstalige Belgische creators maken eerst een TradeTracker-account aan via het Franstalige HEMA België affiliateprogramma. Na goedkeuring ontvangen zij een Affiliate ID.",
 
-              links: [
+              "links": [
                 {
-                  label:
+                  "label":
                     "Programme d'affiliation HEMA Belgique",
-                  href:
+                  "href":
                     "https://www.hema.com/fr-be/affiliation"
                 }
               ],
 
-              bullets: [
+              "bullets": [
                 "Affiliate ID is verplicht voor verwerking",
                 "Geen affiliate links nodig voor creatoropdrachten",
                 "De vergoeding wordt als fixed fee geregistreerd"
               ],
 
-              image: ""
+              "image": ""
             },
-
             {
-              title:
+              "title":
                 "Vergoedingsproces",
 
-              text:
+              "text":
                 "De vergoeding wordt na goedkeuring van de content als fixed fee in TradeTracker geregistreerd.",
 
-              bullets: [
+              "bullets": [
                 "Geen factuur nodig",
                 "Betaaltermijn ongeveer 90 dagen",
                 "Bankgegevens volledig invullen",
@@ -2861,26 +3005,30 @@ window.HANDBOOK_DATA = {
                 "BTW-nummer toevoegen indien van toepassing"
               ],
 
-              image: ""
+              "image": ""
             }
           ]
         },
 
         {
-          title:
+          "title":
             "8.4 Overige tools",
 
-          cards: [
+          "cards": [
             {
-              title: "Keeper",
-              lines: [
+              "title":
+                "Keeper",
+
+              "lines": [
                 "Veilige wachtwoordkluis voor accountgegevens.",
                 "Deel wachtwoorden niet via deze onboarding-webapp."
               ]
             },
             {
-              title: "Yext",
-              lines: [
+              "title":
+                "Yext",
+
+              "lines": [
                 "Wordt gebruikt voor het beheren van bedrijfs- en locatiegegevens.",
                 "Helpt informatie zoals openingstijden, adressen en contactgegevens actueel te houden op verschillende online platforms."
               ]
