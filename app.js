@@ -609,9 +609,9 @@ function homeView() {
     );
 
   content.innerHTML = `
-    <div class="hero">
+    <section class="hero hero-banner">
 
-      <div>
+      <div class="hero-banner-content">
 
         <p class="eyebrow">
           ONBOARDING HANDBOEK
@@ -622,33 +622,26 @@ function homeView() {
         </h1>
 
         <p class="hero-copy">
-          Vind snel de juiste
-          werkinstructie zonder door
-          lange documenten te zoeken.
+          Vind snel de juiste werkinstructie zonder door lange documenten te zoeken.
         </p>
 
       </div>
 
-
       <div class="hero-stat">
-
         <strong>
           ${topLevelProcedures().length}
         </strong>
-
         <span>
           onderdelen in dit concept
         </span>
-
       </div>
 
-    </div>
+    </section>
 
 
     <div class="section-heading">
 
       <div>
-
         <p class="eyebrow">
           SNEL STARTEN
         </p>
@@ -656,59 +649,56 @@ function homeView() {
         <h2>
           Veelgebruikte procedures
         </h2>
-
       </div>
 
     </div>
 
 
     <div class="procedure-grid">
-
       ${featured
         .map(procedureCard)
         .join("")}
-
     </div>
 
 
-    <div
-      class="section-heading categories-heading"
-    >
+    <section class="departments-banner">
 
-      <div>
+      <div class="section-heading categories-heading categories-heading-invert">
 
-        <p class="eyebrow">
-          BLADEREN
-        </p>
+        <div>
+          <p class="eyebrow">
+            BLADEREN
+          </p>
 
-        <h2>
-          Alle afdelingen
-        </h2>
+          <h2>
+            Alle afdelingen
+          </h2>
+        </div>
 
       </div>
 
-    </div>
 
+      <div class="category-grid category-grid-in-banner">
 
-    <div class="category-grid">
+        ${departmentCard(
+          "retail-media",
+          "Retail Media",
+          "▦",
+          "Werkinstructies, systemen en processen voor Retail Media.",
+          `${retailCategories().length} categorieën`
+        )}
 
-      ${departmentCard(
-        "retail-media",
-        "Retail Media",
-        "▦",
-        "Werkinstructies, systemen en processen voor Retail Media.",
-        `${retailCategories().length} categorieën`
-      )}
+        ${departmentCard(
+          "organic-social-media",
+          "Organic Social Media",
+          "●",
+          "Strategisch en praktisch handboek voor het Organic Social Media team.",
+          `${organicProcedureCount()} procedures`
+        )}
 
-      ${departmentCard(
-        "organic-social-media",
-        "Organic Social Media",
-        "●",
-        "Strategisch en praktisch handboek voor het Organic Social Media team.",
-        `${organicProcedureCount()} procedures`
-      )}
+      </div>
 
-    </div>
+    </section>
   `;
 }
 
