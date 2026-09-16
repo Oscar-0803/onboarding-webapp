@@ -752,9 +752,8 @@ h3 {
 }
 
 .favorite-button.active {
-  color: var(--hema-red);
+  color: #f4c542;
 }
-
 
 /* =========================================================
    CATEGORY CARDS
