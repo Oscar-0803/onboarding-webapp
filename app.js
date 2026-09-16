@@ -771,78 +771,120 @@ function departmentView(
   }
 
 
-  if (
-    department ===
-    "organic-social-media"
-  ) {
+ if (
+  department ===
+  "organic-social-media"
+) {
 
-    const category =
-      organicCategory();
+  const category =
+    organicCategory();
 
-    if (!category) {
-      homeView();
-      return;
-    }
-
-    const procedures =
-      data.procedures.filter(
-        (procedure) =>
-          procedure.category ===
-            "organic-social" &&
-          !procedure.parent
-      );
-
-    content.innerHTML = `
-      <div class="breadcrumb">
-
-        <button
-          data-home
-          type="button"
-        >
-          Overzicht
-        </button>
-
-        <span>/</span>
-
-        <span>
-          Organic Social Media
-        </span>
-
-      </div>
-
-
-      <div class="page-title-row">
-
-        <div>
-
-          <p class="eyebrow">
-            AFDELING
-          </p>
-
-          <h1>
-            Organic Social Media
-          </h1>
-
-          <p>
-            ${category.description}
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="procedure-grid">
-
-        ${procedures
-          .map(procedureCard)
-          .join("")}
-
-      </div>
-    `;
-
+  if (!category) {
+    homeView();
     return;
   }
+
+  const procedures =
+    data.procedures.filter(
+      (procedure) =>
+        procedure.category ===
+          "organic-social" &&
+        !procedure.parent
+    );
+
+  content.innerHTML = `
+    <div class="breadcrumb">
+
+      <button
+        data-home
+        type="button"
+      >
+        Overzicht
+      </button>
+
+      <span>/</span>
+
+      <span>
+        Organic Social Media
+      </span>
+
+    </div>
+
+
+    <div class="page-title-row">
+
+      <div>
+
+        <p class="eyebrow">
+          WERKINSTRUCTIES
+        </p>
+
+        <h1>
+          Organic Social Media
+        </h1>
+
+        <p>
+          ${category.description}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    ${
+      category.introduction?.length
+        ? `
+          <section class="organic-introduction">
+
+            <h2>
+              Introductie
+            </h2>
+
+            ${category.introduction
+              .map(
+                (paragraph) => `
+                  <p>
+                    ${paragraph}
+                  </p>
+                `
+              )
+              .join("")}
+
+          </section>
+        `
+        : ""
+    }
+
+
+    <div class="section-heading">
+
+      <div>
+
+        <p class="eyebrow">
+          HOOFDSTUKKEN
+        </p>
+
+        <h2>
+          Organic Social Media
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="procedure-grid">
+
+      ${procedures
+        .map(procedureCard)
+        .join("")}
+
+    </div>
+  `;
+
+  return;
+}
 
 
   homeView();
