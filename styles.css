@@ -741,20 +741,17 @@ h3 {
   height: 34px;
 
   background: transparent;
-
   border: 0;
 
   color: #ccc;
 
   font-size: 24px;
-
   cursor: pointer;
 }
 
 .favorite-button.active {
-  color: #f4c542;
+  color: #f4c542 !important;
 }
-
 /* =========================================================
    CATEGORY CARDS
 ========================================================= */
