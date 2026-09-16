@@ -1832,3 +1832,65 @@ padding:
     font-size: 1rem;
   }
 }
+/* =========================================
+   ORGANIC SOCIAL MEDIA INTRODUCTIE
+========================================= */
+
+.organic-introduction {
+  max-width: 1050px;
+
+  margin:
+    8px
+    0
+    46px;
+
+  padding:
+    30px
+    34px;
+
+  background: #ffffff;
+
+  border:
+    1px solid var(--line);
+
+  border-left:
+    5px solid var(--hema-red);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 4px 20px
+    rgba(0, 0, 0, 0.04);
+}
+
+.organic-introduction h2 {
+  margin:
+    0
+    0
+    22px;
+
+  color:
+    var(--hema-red);
+
+  font-size: 27px;
+}
+
+.organic-introduction p {
+  margin:
+    0
+    0
+    18px;
+
+  color:
+    #4f4f4f;
+
+  font-size:
+    15px;
+
+  line-height:
+    1.7;
+}
+
+.organic-introduction p:last-child {
+  margin-bottom: 0;
+}
