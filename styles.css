@@ -1894,3 +1894,29 @@ padding:
 .organic-introduction p:last-child {
   margin-bottom: 0;
 }
+.organic-introduction {
+  max-width: 1100px;
+  margin: 10px 0 44px;
+  padding: 28px 32px;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--hema-red);
+  border-radius: 18px;
+}
+
+.organic-introduction h2 {
+  margin: 0 0 20px;
+  color: var(--hema-red);
+  font-size: 28px;
+}
+
+.organic-introduction p {
+  margin: 0 0 18px;
+  color: #4f4f4f;
+  line-height: 1.7;
+}
+
+.organic-introduction p:last-child {
+  margin-bottom: 0;
+}
