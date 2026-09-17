@@ -2126,95 +2126,95 @@ window.HANDBOOK_DATA = {
         },
 
         {
-          "number":
-            "2.3",
+  "number":
+    "2.3",
 
-          "title":
-            "Rollen & aanspreekpunten",
+  "title":
+    "Rollen & aanspreekpunten",
 
-          "text":
-            "De exacte verantwoordelijkheden kunnen veranderen. Controleer daarom altijd de actuele taakverdeling binnen het team.",
+  "text":
+    "De exacte verantwoordelijkheden kunnen veranderen. Controleer daarom altijd de actuele taakverdeling binnen het team.",
 
-          "infoCards": [
-            {
-              "title":
-                "Organic Social België",
+  "infoCards": [
+    {
+      "title":
+        "Organic Social België",
 
-              "items": [
-                "Laurence Audenaert",
-                "Lokale Social Media Coördinator: Amadeo Fleury"
-              ]
-            },
-
-            {
-              "title":
-                "Paid Social",
-
-              "items": [
-                "Blaine Otte",
-                "Emma-Sophie Jonker",
-                "Gabriel van der Zanden"
-              ]
-            },
-
-            {
-              "title":
-                "Creator Marketing",
-
-              "items": [
-                "Emma-Sophie Jonker"
-              ]
-            },
-
-            {
-              "title":
-                "Communitymanagement België",
-
-              "items": [
-                "Comments via de socialmedia-agency",
-                "DM's via de Social Media Coördinator België"
-              ]
-            },
-
-            {
-              "title":
-                "Legal & contracten",
-
-              "items": [
-                "Emily van Waardenburg"
-              ]
-            },
-
-            {
-              "title":
-                "Budget",
-
-              "items": [
-                "Blaine Otte"
-              ]
-            }
-          ],
-
-          "image":
-            ""
-        },
-
-        {
-          "number":
-            "2.3.6",
-
-          "title":
-            "Overige aanspreekpunten",
-
-          "text":
-            "Voor overige aanspreekpunten en verantwoordelijken kun je het onderstaande organigram gebruiken.",
-
-          "image":
-            "images/organic-social/02-rollen-organigram.png"
-        }
-
+      "items": [
+        "Laurence Audenaert",
+        "Lokale Social Media Coördinator: Amadeo Fleury"
       ]
     },
+
+    {
+      "title":
+        "Paid Social",
+
+      "items": [
+        "Blaine Otte",
+        "Emma-Sophie Jonker",
+        "Gabriel van der Zanden"
+      ]
+    },
+
+    {
+      "title":
+        "Creator Marketing",
+
+      "items": [
+        "Emma-Sophie Jonker"
+      ]
+    },
+
+    {
+      "title":
+        "Communitymanagement België",
+
+      "items": [
+        "Comments via de socialmedia-agency",
+        "DM's via de Social Media Coördinator België"
+      ]
+    },
+
+    {
+      "title":
+        "Legal & contracten",
+
+      "items": [
+        "Emily van Waardenburg"
+      ]
+    },
+
+    {
+      "title":
+        "Budget",
+
+      "items": [
+        "Blaine Otte"
+      ]
+    }
+  ],
+
+  "image":
+    ""
+},
+
+{
+  "number":
+    "2.3.6",
+
+  "title":
+    "Overige aanspreekpunten",
+
+  "text":
+    "Voor overige aanspreekpunten en verantwoordelijken kun je het onderstaande organigram gebruiken.",
+
+  "image":
+    "images/organic-social/02-rollen-organigram.png"
+}
+
+  ]
+},
 
     // =====================================================
     // 3. CONTENTRICHTLIJNEN
