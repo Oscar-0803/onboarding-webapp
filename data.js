@@ -1914,940 +1914,1056 @@ window.HANDBOOK_DATA = {
     // =====================================================
 
     {
-      "id":
-        "organic-workflow",
+  "id":
+    "organic-workflow",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "2. Workflow & verantwoordelijkheden",
+
+  "summary":
+    "Contentplanning, publicatie, samenwerking met bureaus en verantwoordelijkheden.",
+
+  "system":
+    "Organic Social Media",
+
+  "frequency":
+    "Doorlopend",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+
+    {
+      "number":
+        "2.1",
 
       "title":
-        "2. Workflow & verantwoordelijkheden",
+        "Organic Social",
 
-      "summary":
-        "Contentplanning, publicatie, bureaus en verantwoordelijkheden.",
+      "text":
+        "De contentkalender vormt de centrale basis voor de dagelijkse werkzaamheden. Planning, prioriteiten en content worden regelmatig met het team afgestemd en bijgewerkt.",
 
-      "system":
-        "Organic Social Media",
-
-      "frequency":
-        "Doorlopend",
-
-      "duration":
-        "Naslag",
-
-      "featured": true,
-
-      "steps": [
+      "infoCards": [
         {
           "title":
-            "2.1 Organic Social",
+            "Verdeling België",
 
-          "text":
-            "De contentkalender vormt de centrale basis voor de dagelijkse werkzaamheden. Planning, prioriteiten en content worden regelmatig met het team afgestemd en bijgewerkt.",
+          "items": [
+            "Instagram en TikTok: voornamelijk Organic Social Marketeer België",
+            "Een deel van Instagram en TikTok kan bij de Stagiair Online Marketing België & Frankrijk liggen",
+            "Facebook NL-BE en FR-BE: voornamelijk Social Media Coördinator België",
+            "Pinterest: voornamelijk Social Media Coördinator België",
+            "YouTube Shorts: voornamelijk Social Media Coördinator België"
+          ]
+        }
+      ],
 
-          "image": ""
-        },
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "2.1.1",
+
+      "title":
+        "Content inplannen en creëren",
+
+      "text":
+        "Content kan intern of door externe bureaus worden gecreëerd. Na controle en goedkeuring wordt de content via het juiste platform gepubliceerd of ingepland.",
+
+      "infoCards": [
         {
           "title":
-            "2.1.1 Content inplannen",
+            "TikTok",
 
-          "text":
-            "Content kan intern of door externe bureaus worden gecreëerd. Na controle en goedkeuring wordt de content via het juiste platform gepubliceerd of ingepland.",
-
-          "infoCards": [
-            {
-              "title":
-                "TikTok",
-
-              "items": [
-                "Video's via TikTok Studio",
-                "Carrousels via TikTok-app"
-              ]
-            },
-            {
-              "title":
-                "Instagram",
-
-              "items": [
-                "Reels",
-                "Carrousels",
-                "Feedposts"
-              ]
-            },
-            {
-              "title":
-                "Overige kanalen",
-
-              "items": [
-                "Facebook via Meta Business Suite",
-                "Pinterest via Pinterest",
-                "YouTube Shorts via YouTube"
-              ]
-            }
-          ],
-
-          "image": ""
+          "items": [
+            "Video's via TikTok Studio",
+            "Carrousels via de TikTok-app"
+          ]
         },
+
         {
           "title":
-            "Belgische verdeling van kanalen",
+            "Instagram",
 
-          "text":
-            "Volgens het Belgische handboek ligt de hoofdverantwoordelijkheid voor Instagram en TikTok bij de Organic Social Marketeer België en deels bij de Stagiair Online Marketing België & Frankrijk. Facebook NL-BE en FR-BE, Pinterest en YouTube Shorts vallen voornamelijk onder de Social Media Coördinator België.",
-
-          "image": ""
+          "items": [
+            "Reels",
+            "Carrousels",
+            "Feedposts via de Instagram-app"
+          ]
         },
+
         {
           "title":
-            "Stories",
+            "Facebook",
 
-          "text":
-            "Stories worden gemaakt op basis van de contentkalender. Kijk ook of succesvolle content tussen teams of landen kan worden hergebruikt, mits de taal, actualiteit en lokale relevantie kloppen.",
-
-          "image": ""
+          "items": [
+            "Inplannen via Meta Business Suite"
+          ]
         },
+
+        {
+          "title":
+            "Pinterest",
+
+          "items": [
+            "Publiceren via Pinterest"
+          ]
+        },
+
+        {
+          "title":
+            "YouTube Shorts",
+
+          "items": [
+            "Publiceren via YouTube"
+          ]
+        },
+
         {
           "title":
             "Stories België",
 
-          "text":
-            "Binnen het Belgische team worden stories volgens het huidige handboek voornamelijk gemaakt door de Stagiair Online Marketing België & Frankrijk, meestal in Canva. Er is wekelijks afstemming met de Stagiair Visual Creative over mogelijke crossposts tussen Nederland en België en over resultaten.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "2.2 Workflow met agencies",
-
-          "text":
-            "Gebruik een vaste workflow voor concept, feedback, productie, goedkeuring en publicatie.",
-
-          "subsection": {
-            "title":
-              "Agency workflow",
-
-            "steps": [
-              "Agency presenteert een concept.",
-              "Het team geeft feedback.",
-              "De agency werkt het concept verder uit.",
-              "De definitieve asset wordt aangeleverd.",
-              "Het team geeft feedback of approval.",
-              "De goedgekeurde asset wordt ingepland.",
-              "Na publicatie worden resultaten en learnings bekeken."
-            ]
-          },
-
-          "image": ""
-        },
-        {
-          "title":
-            "Agencyverdeling België",
-
-          "text":
-            "Voor België zijn in het huidige handboek concrete afspraken opgenomen.",
-
-          "infoCards": [
-            {
-              "title":
-                "PALOMA",
-
-              "items": [
-                "22 assets per maand",
-                "Elke 2 weken nieuwe input",
-                "Wekelijkse check-in"
-              ]
-            },
-            {
-              "title":
-                "Social Sky",
-
-              "items": [
-                "8 assets per maand",
-                "Elke 2 weken nieuwe input",
-                "Tweewekelijkse check-in"
-              ]
-            },
-            {
-              "title":
-                "UnCool",
-
-              "items": [
-                "4 assets per maand",
-                "Elke 2 weken nieuwe input",
-                "Tweewekelijkse check-in"
-              ]
-            }
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "2.3 Rollen & aanspreekpunten",
-
-          "text":
-            "De exacte verantwoordelijkheden kunnen verschillen per team, land, kanaal en periode. Controleer daarom altijd de actuele taakverdeling.",
-
-          "infoCards": [
-            {
-              "title":
-                "Organic Social",
-
-              "items": [
-                "Contentplanning",
-                "Contentcreatie",
-                "Publicatie",
-                "Optimalisatie"
-              ]
-            },
-            {
-              "title":
-                "Paid Social",
-
-              "items": [
-                "Betaalde media",
-                "Campagnes",
-                "Boosting"
-              ]
-            },
-            {
-              "title":
-                "Creator Marketing",
-
-              "items": [
-                "Creators selecteren",
-                "Briefings",
-                "Samenwerkingen"
-              ]
-            },
-            {
-              "title":
-                "Communitymanagement",
-
-              "items": [
-                "Comments",
-                "DM's",
-                "Escalaties"
-              ]
-            },
-            {
-              "title":
-                "Legal",
-
-              "items": [
-                "Contracten",
-                "Rechten",
-                "Juridische vragen"
-              ]
-            }
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "Belgische aanspreekpunten",
-
-          "text":
-            "Het Belgische handboek bevat een specifieke rolverdeling voor België. Deze informatie is belangrijk wanneer je werkzaamheden uitvoert voor de Belgische kanalen.",
-
-          "infoCards": [
-            {
-              "title":
-                "Organic Social België",
-
-              "items": [
-                "Social Media Marketeer België & Frankrijk",
-                "Social Media Coördinator België",
-                "Stagiair Online Marketing België & Frankrijk"
-              ]
-            },
-            {
-              "title":
-                "Communitymanagement België",
-
-              "items": [
-                "Comments via de socialmedia-agency",
-                "DM's via de Social Media Coördinator België"
-              ]
-            },
-            {
-              "title":
-                "Legal België",
-
-              "items": [
-                "Projectmanager Marketing BE & FR"
-              ]
-            },
-            {
-              "title":
-                "Budget",
-
-              "items": [
-                "Lead Paid Advertising"
-              ]
-            }
-          ],
-
-          "image": ""
+          "items": [
+            "Worden voornamelijk gemaakt door de Stagiair Online Marketing België & Frankrijk",
+            "Stories worden meestal gemaakt in Canva",
+            "Wekelijkse afstemming met de Stagiair Visual Creative NL",
+            "Tijdens de afstemming wordt gekeken naar crossposts tussen Nederland en België en naar resultaten"
+          ]
         }
-      ]
+      ],
+
+      "image":
+        ""
     },
+
+    {
+      "number":
+        "2.2",
+
+      "title":
+        "Workflow met agencies",
+
+      "text":
+        "Voor samenwerking met externe bureaus wordt een vaste workflow gebruikt zodat concept, feedback, productie, goedkeuring en publicatie overzichtelijk blijven.",
+
+      "subsection": {
+        "title":
+          "Agency workflow",
+
+        "steps": [
+          "Agency presenteert een pitch of concept.",
+          "Het team geeft feedback.",
+          "De agency werkt het concept verder uit.",
+          "Het concept of de asset wordt via de afgesproken omgeving aangeleverd.",
+          "Het team geeft feedback of approval.",
+          "De definitieve asset wordt door het Belgische team ingepland.",
+          "Na publicatie worden resultaten en learnings bekeken."
+        ]
+      },
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "2.2.1",
+
+      "title":
+        "Verdeling & meetings",
+
+      "text":
+        "Voor de Belgische samenwerking met agencies zijn concrete afspraken gemaakt over aantallen assets, inputmomenten en check-ins.",
+
+      "infoCards": [
+        {
+          "title":
+            "PALOMA",
+
+          "items": [
+            "22 assets per maand",
+            "Elke 2 weken nieuwe input",
+            "Wekelijkse check-in"
+          ]
+        },
+
+        {
+          "title":
+            "Social Sky",
+
+          "items": [
+            "8 assets per maand",
+            "Elke 2 weken nieuwe input",
+            "Tweewekelijkse check-in"
+          ]
+        },
+
+        {
+          "title":
+            "UnCool",
+
+          "items": [
+            "4 assets per maand",
+            "Elke 2 weken nieuwe input",
+            "Tweewekelijkse check-in"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "2.3",
+
+      "title":
+        "Rollen & aanspreekpunten",
+
+      "text":
+        "De exacte verantwoordelijkheden kunnen veranderen. Controleer daarom altijd de actuele taakverdeling binnen het team.",
+
+      "infoCards": [
+        {
+          "title":
+            "Organic Social België",
+
+          "items": [
+            "Laurence Audenaert",
+            "Lokale Social Media Coördinator: Amadeo Fleury"
+          ]
+        },
+
+        {
+          "title":
+            "Paid Social",
+
+          "items": [
+            "Blaine Otte",
+            "Emma-Sophie Jonker",
+            "Gabriel van der Zanden"
+          ]
+        },
+
+        {
+          "title":
+            "Creator Marketing",
+
+          "items": [
+            "Emma-Sophie Jonker"
+          ]
+        },
+
+        {
+          "title":
+            "Communitymanagement België",
+
+          "items": [
+            "Comments via de socialmedia-agency",
+            "DM's via de Social Media Coördinator België"
+          ]
+        },
+
+        {
+          "title":
+            "Legal & contracten",
+
+          "items": [
+            "Emily van Waardenburg"
+          ]
+        },
+
+        {
+          "title":
+            "Budget",
+
+          "items": [
+            "Blaine Otte"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 3. CONTENTRICHTLIJNEN
     // =====================================================
 
     {
-      "id":
-        "organic-contentrichtlijnen",
+  "id":
+    "organic-contentrichtlijnen",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "3. Contentrichtlijnen",
+
+  "summary":
+    "Visuele identiteit, technische richtlijnen, captions, hashtags en emoji's.",
+
+  "system":
+    "Organic Social Media",
+
+  "frequency":
+    "Bij iedere contentcreatie",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "caution":
+    "Gebruik alleen muziek en sounds waarvoor de juiste gebruiksrechten beschikbaar zijn.",
+
+  "steps": [
+
+    {
+      "number":
+        false,
 
       "title":
-        "3. Contentrichtlijnen",
+        "Belgische Vrindinnestrategie",
 
-      "summary":
-        "Visuele identiteit, technische richtlijnen, captions, hashtags en emoji's.",
+      "text":
+        "Voor Belgische social content geldt specifiek de Vrindinnestrategie. HEMA België presenteert zich als een toegankelijke Belgische vriendin die op een informele, vrolijke en herkenbare manier communiceert en probeert een glimlach op het gezicht van anderen te toveren.",
 
-      "system":
-        "Organic Social Media",
-
-      "frequency":
-        "Bij iedere contentcreatie",
-
-      "duration":
-        "Naslag",
-
-      "featured": true,
-
-      "caution":
-        "Gebruik alleen muziek en sounds waarvoor de juiste gebruiksrechten beschikbaar zijn.",
-
-      "steps": [
-        {
-          "title":
-            "HEMA-identiteit",
-
-          "text":
-            "Content moet herkenbaar zijn als HEMA en passen bij de doelgroep, het kanaal en de lokale context.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Belgische Vrindinnestrategie",
-
-          "text":
-            "Voor Belgische social content geldt specifiek de Vrindinnestrategie: HEMA België communiceert als een toegankelijke, informele en vrolijke Belgische vriendin die kijkers wil laten lachen en inspireren.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "3.1 Visuele identiteit",
-
-          "text":
-            "Gebruik voor grafische content en stories de geldende HEMA-richtlijnen voor beeldgebruik, kleuren en typografie.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "3.2 Algemene contentrichtlijnen",
-
-          "text":
-            "Controleer technische specificaties, contentkwaliteit en rechten voordat je content publiceert.",
-
-          "bullets": [
-            "Sounds en muziek moeten correct gelicenseerd zijn",
-            "Reels: bij voorkeur 9:16",
-            "Carrousels: bij voorkeur 4:5"
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "3.3 Caption",
-
-          "text":
-            "Houd captions kort, duidelijk en passend bij de HEMA-tone of voice. Houd rekening met de taal en doelgroep van het betreffende account.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Captions België",
-
-          "text":
-            "Bij Belgische productposts op Instagram en TikTok is volgens het huidige handboek zowel een Vlaamse als een Waalse caption nodig, omdat deze kanalen voor beide doelgroepen worden gebruikt. Benoem daarnaast een relevante promotie kort wanneer een afgebeeld product in promotie is.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "3.3.1 Hashtags",
-
-          "text":
-            "Gebruik hashtags wanneer ze relevant zijn voor de content en vindbaarheid. Voeg geen hashtags toe alleen omdat het kan.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Hashtags België",
-
-          "text":
-            "In het Belgische handboek wordt aangegeven dat hashtags voornamelijk op TikTok worden gebruikt en nauwelijks op Instagram en Facebook. #HEMA wordt standaard op TikTok gebruikt.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "3.3.2 Emoji's",
-
-          "text":
-            "Gebruik emoji's alleen als ze waarde toevoegen. Informatieve of serieuze content kan juist sterker zijn zonder emoji's.",
-
-          "image": ""
-        }
-      ]
+      "image":
+        ""
     },
+
+    {
+      "number":
+        "3.1",
+
+      "title":
+        "Visuele identiteit",
+
+      "text":
+        "Gebruik voor grafische content en stories de geldende HEMA-richtlijnen voor beeldgebruik, kleur en typografie. Gebruik waar nodig BeeldBinkie als leidraad voor de visuele identiteit.",
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "3.2",
+
+      "title":
+        "Contentrichtlijnen",
+
+      "text":
+        "Controleer technische specificaties, contentkwaliteit en gebruiksrechten voordat content wordt gepubliceerd.",
+
+      "bullets": [
+        "Gebruik alleen rechtenvrije of correct gelicenseerde muziek en sounds",
+        "Reels worden bij voorkeur in 9:16 gemaakt",
+        "Carrousels worden bij voorkeur in 4:5 gemaakt",
+        "Content moet herkenbaar blijven als HEMA",
+        "Houd rekening met de doelgroep en lokale context"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "3.3",
+
+      "title":
+        "Caption",
+
+      "text":
+        "Houd captions kort, slim en passend bij de HEMA-tone of voice.",
+
+      "infoCards": [
+        {
+          "title":
+            "Specifiek voor België",
+
+          "items": [
+            "Bij productposts op Instagram en TikTok is zowel een Vlaamse als een Waalse caption nodig",
+            "Wanneer een afgebeeld product in promotie is, kan de promotie kort worden benoemd"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "3.3.1",
+
+      "title":
+        "Hashtags",
+
+      "text":
+        "Gebruik hashtags alleen wanneer ze relevant zijn voor de content en vindbaarheid.",
+
+      "infoCards": [
+        {
+          "title":
+            "België",
+
+          "items": [
+            "Hashtags worden voornamelijk op TikTok gebruikt",
+            "Op Instagram en Facebook worden hashtags nauwelijks gebruikt",
+            "#HEMA wordt standaard op TikTok gebruikt"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "3.3.2",
+
+      "title":
+        "Emoji's",
+
+      "text":
+        "Gebruik emoji's spaarzaam en alleen wanneer ze iets toevoegen aan de toon of boodschap. Informatieve of serieuzere communicatie kan sterker zijn zonder emoji's.",
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 4. CONTENTFORMATS
     // =====================================================
 
     {
-      "id":
-        "organic-contentformats",
+  "id":
+    "organic-contentformats",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "4. Contentformats",
+
+  "summary":
+    "Feed, stories, gamificatie, resultaten en Instagram Highlights.",
+
+  "system":
+    "Organic Social Media",
+
+  "frequency":
+    "Doorlopend",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+
+    {
+      "number":
+        "4.1",
 
       "title":
-        "4. Contentformats",
+        "Feed",
 
-      "summary":
-        "Feed, stories, gamificatie, resultaten en Instagram Highlights.",
+      "text":
+        "Gebruik een gevarieerde mix van verschillende soorten feedcontent. Content moet niet uitsluitend commercieel zijn, maar ook bijdragen aan bereik, interactie en merkvoorkeur.",
 
-      "system":
-        "Organic Social Media",
+      "bullets": [
+        "Carrousels",
+        "Reels",
+        "Sketches",
+        "Promoties",
+        "Productposts",
+        "Winkelopeningen",
+        "Inspirerende content",
+        "Entertainment"
+      ],
 
-      "frequency":
-        "Doorlopend",
-
-      "duration":
-        "Naslag",
-
-      "featured": true,
-
-      "introBox": {
-        "title":
-          "Gebruik een gevarieerde contentmix",
-
-        "text":
-          "Een sterke Organic Social-aanpak bestaat uit verschillende soorten content. Wissel commerciële content af met inspiratie, entertainment, interactie en merkcontent."
-      },
-
-      "steps": [
+      "infoCards": [
         {
           "title":
-            "4.1 Feed",
+            "België",
 
-          "text":
-            "Zorg voor een goede mix van reels, carrousels en andere relevante formats. Content moet niet uitsluitend verkopen, maar ook bijdragen aan bereik, interactie en merkvoorkeur.",
-
-          "bullets": [
-            "Sketches",
-            "Promoties",
-            "Productposts",
-            "Winkelcontent",
-            "Inspiratie",
-            "Entertainment",
-            "Engagementcontent"
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "Feed België",
-
-          "text":
-            "Voor België vermeldt het huidige handboek dat minimaal één keer per dag op de feed wordt gepost. Een goede mix van carrousels, reels, sketches, promoties, productposts en winkelopeningen is belangrijk.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "4.2 Stories",
-
-          "text":
-            "Stories zijn geschikt voor snelle communicatie en dagelijkse interactie. Combineer commerciële content met interactieve formats zodat stories niet alleen uit verkoopboodschappen bestaan.",
-
-          "infoCards": [
-            {
-              "title":
-                "Voorbeelden van gamificatie",
-
-              "items": [
-                "Raad het Product",
-                "Dit of Dat",
-                "Woordzoekers",
-                "Woordrebussen",
-                "Geheugenspel",
-                "Zoek de verschillen",
-                "Zoekspel"
-              ]
-            }
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "Resultaten van stories",
-
-          "text":
-            "Houd prestaties structureel bij. Kijk bijvoorbeeld naar views, bereik, interactie en completion rate. Gebruik learnings om toekomstige stories te verbeteren.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Storydata België",
-
-          "text":
-            "Voor België worden Instagram- en Facebookviews volgens het huidige handboek wekelijks bijgehouden via Meta. Andere cijfers, zoals average completion rate, worden bekeken via Iconosquare.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Instagram Highlights bijhouden",
-
-          "text":
-            "Zorg dat Instagram Highlights actueel blijven. Verwijder verouderde tijdelijke informatie en voeg relevante blijvende content toe aan de juiste Highlight.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Highlights België",
-
-          "text":
-            "Het Belgische handboek noemt bijvoorbeeld dat nieuwe promotionele stories in de Highlight 'promoties' worden gezet en daar de oude promotie vervangen. Wallpapers, fanposts en spellen kunnen aan de betreffende Highlight worden toegevoegd zonder dat oudere content altijd verwijderd hoeft te worden.",
-
-          "image": ""
+          "items": [
+            "Streven naar minimaal één feedpost per dag",
+            "Zorg voor afwisseling tussen verschillende formats",
+            "Kijk bij optimalisatie onder andere naar engagement en views"
+          ]
         }
-      ]
+      ],
+
+      "image":
+        ""
     },
+
+    {
+      "number":
+        "4.2",
+
+      "title":
+        "Stories",
+
+      "text":
+        "Stories combineren commerciële content met interactieve en speelse formats. Hierdoor bestaat de storyplanning niet alleen uit verkoopboodschappen.",
+
+      "infoCards": [
+        {
+          "title":
+            "Gamificatie",
+
+          "items": [
+            "Raad het Product",
+            "Dit of Dat",
+            "Woordzoekers",
+            "Woordrebussen",
+            "Geheugenspel",
+            "Zoek de verschillen",
+            "Zoekspel"
+          ]
+        },
+
+        {
+          "title":
+            "Data België",
+
+          "items": [
+            "Instagram- en Facebookviews worden wekelijks bekeken via Meta",
+            "Andere data, zoals average completion rate, wordt bekeken via Iconosquare"
+          ]
+        },
+
+        {
+          "title":
+            "Instagram Highlights",
+
+          "items": [
+            "Houd Highlights actueel",
+            "Nieuwe promotionele stories vervangen de oude content in de Highlight 'promoties'",
+            "Wallpapers kunnen worden toegevoegd",
+            "Fanposts kunnen worden toegevoegd",
+            "Spellen kunnen worden toegevoegd",
+            "Blijvende content hoeft niet steeds verwijderd te worden"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 5. DATA, ANALYSE & OPTIMALISATIE
     // =====================================================
 
     {
-      "id":
-        "organic-data-analyse",
+  "id":
+    "organic-data-analyse",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "5. Data, Analyse & Optimalisatie",
+
+  "summary":
+    "KPI's, rapportage en optimalisatie van content.",
+
+  "system":
+    "Meta / Iconosquare",
+
+  "frequency":
+    "Wekelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+
+    {
+      "number":
+        "5.1",
 
       "title":
-        "5. Data, Analyse & Optimalisatie",
+        "KPI's & metrics",
 
-      "summary":
-        "KPI's, rapportage en optimalisatie van content.",
+      "text":
+        "Gebruik KPI's om te beoordelen hoe content presteert en om toekomstige content te optimaliseren.",
 
-      "system":
-        "Meta / Iconosquare",
-
-      "frequency":
-        "Wekelijks",
-
-      "duration":
-        "Naslag",
-
-      "featured": false,
-
-      "steps": [
+      "infoCards": [
         {
           "title":
-            "5.1 Belangrijkste KPI's",
+            "Belangrijkste KPI's België",
 
-          "text":
-            "Gebruik de afgesproken KPI's om prestaties te beoordelen. Denk aan views, bereik, engagement en follower growth. De belangrijkste KPI kan per kanaal, land en campagne verschillen.",
-
-          "image": ""
+          "items": [
+            "Views is de belangrijkste KPI",
+            "Engagement rate blijft belangrijk",
+            "Follower growth geeft een belangrijke indicatie of content aanslaat"
+          ]
         },
+
         {
           "title":
-            "KPI's België",
+            "Instagram België – doelstellingen 2026",
 
-          "text":
-            "Voor de Belgische Organic Social-kanalen noemt het huidige handboek views als belangrijkste KPI. Positieve engagement rate blijft relevant en follower growth wordt gebruikt als belangrijke indicatie of de content aanslaat.",
-
-          "image": ""
+          "items": [
+            "Minimaal 7x per week",
+            "110.000 volgers",
+            "17,5 miljoen views"
+          ]
         },
+
         {
           "title":
-            "Belgische doelstellingen 2026",
+            "TikTok België – doelstellingen 2026",
 
-          "text":
-            "Onderstaande cijfers gelden specifiek voor de Belgische kanalen en moeten niet automatisch worden toegepast op andere landen.",
-
-          "infoCards": [
-            {
-              "title":
-                "Instagram België",
-
-              "items": [
-                "Frequentie: minimaal 7x per week",
-                "Volgers: 110.000",
-                "Views: 17,5 miljoen"
-              ]
-            },
-            {
-              "title":
-                "TikTok België",
-
-              "items": [
-                "Frequentie: minimaal 7x per week",
-                "Volgers: 40.000",
-                "Views: 30 miljoen"
-              ]
-            },
-            {
-              "title":
-                "Facebook België",
-
-              "items": [
-                "Frequentie: minimaal 5x per week",
-                "Volgers: 160.000",
-                "Views: 37,5 miljoen"
-              ]
-            }
-          ],
-
-          "image": ""
+          "items": [
+            "Minimaal 7x per week",
+            "40.000 volgers",
+            "30 miljoen views"
+          ]
         },
+
         {
           "title":
-            "5.2 Reporting structuur",
+            "Facebook België – doelstellingen 2026",
 
-          "text":
-            "Controleer de performance regelmatig via de beschikbare analytics-tools en leg resultaten centraal vast. Gebruik deze gegevens om learnings te verzamelen en toekomstige content te optimaliseren.",
+          "items": [
+            "Minimaal 5x per week",
+            "160.000 volgers",
+            "37,5 miljoen views"
+          ]
+        }
+      ],
 
-          "image": ""
-        },
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "5.2",
+
+      "title":
+        "Reporting",
+
+      "text":
+        "Controleer de performance wekelijks en leg resultaten centraal vast zodat ontwikkelingen, learnings en optimalisaties kunnen worden gevolgd.",
+
+      "infoCards": [
         {
           "title":
             "Reporting België",
 
-          "text":
-            "Voor België wordt performance volgens het huidige handboek wekelijks bekeken via Meta Statistieken en Iconosquare. De resultaten worden vervolgens genoteerd in het moederbestand waarin ook de contentkalender staat.",
-
-          "image": ""
+          "items": [
+            "Performance bekijken via Meta Statistieken",
+            "Performance bekijken via Iconosquare",
+            "Resultaten worden in het moederbestand gezet",
+            "De contentkalender staat ook in dit moederbestand"
+          ]
         }
-      ]
-    },
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 6. COMMUNITYMANAGEMENT
     // =====================================================
 
-    {
-      "id":
-        "organic-communitymanagement",
+   {
+  "id":
+    "organic-communitymanagement",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "6. Communitymanagement",
+
+  "summary":
+    "Tone of voice en omgaan met vragen, klachten en negatieve reacties.",
+
+  "system":
+    "Social Media",
+
+  "frequency":
+    "Dagelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+
+    {
+      "number":
+        "6.1",
 
       "title":
-        "6. Communitymanagement",
+        "Tone of voice",
 
-      "summary":
-        "Tone of voice en omgaan met vragen, klachten en negatieve reacties.",
+      "text":
+        "Communitymanagement is belangrijk voor het onderhouden van contact met kijkers en andere accounts. Reageer herkenbaar als HEMA en houd rekening met taal, context en doelgroep. Goede interactie ondersteunt zowel relatiemanagement als zichtbaarheid.",
 
-      "system":
-        "Social Media",
-
-      "frequency":
-        "Dagelijks",
-
-      "duration":
-        "Naslag",
-
-      "featured": false,
-
-      "steps": [
+      "infoCards": [
         {
           "title":
-            "6.1 Tone of voice",
+            "België",
 
-          "text":
-            "Reageer herkenbaar als HEMA en houd rekening met taal, context en doelgroep. Goede interactie ondersteunt relatiemanagement en zichtbaarheid.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "6.2 Omgaan met negatieve reacties",
-
-          "text":
-            "Niet iedere negatieve reactie vereist een antwoord. Beoordeel per situatie wat passend is en schaal ernstige situaties waar nodig op.",
-
-          "infoCards": [
-            {
-              "title":
-                "Ernstige klacht",
-
-              "items": [
-                "Stuur door naar klantenservice of het verantwoordelijke team"
-              ]
-            },
-            {
-              "title":
-                "Gezonde discussie",
-
-              "items": [
-                "Laat staan zolang de discussie respectvol blijft"
-              ]
-            },
-            {
-              "title":
-                "Intimidatie of schelden",
-
-              "items": [
-                "Verwijder indien nodig",
-                "Blokkeer indien nodig",
-                "Rapporteer volgens de platformrichtlijnen"
-              ]
-            },
-            {
-              "title":
-                "Veel dezelfde vragen",
-
-              "items": [
-                "Plaats een duidelijk openbaar antwoord"
-              ]
-            }
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "Communitymanagement België",
-
-          "text":
-            "In het Belgische handboek wordt aangegeven dat comments via de socialmedia-agency worden afgehandeld en dat DM's door de Social Media Coördinator België worden behandeld. Ernstige klachten worden doorgestuurd naar klantenservice.",
-
-          "image": ""
+          "items": [
+            "Comments worden via de socialmedia-agency afgehandeld",
+            "DM's worden behandeld door de Social Media Coördinator België"
+          ]
         }
-      ]
+      ],
+
+      "image":
+        ""
     },
+
+    {
+      "number":
+        "6.2",
+
+      "title":
+        "Omgaan met negatieve reacties",
+
+      "text":
+        "Niet iedere negatieve reactie vereist een antwoord. Beoordeel de context en bepaal vervolgens wat passend is.",
+
+      "infoCards": [
+        {
+          "title":
+            "Negatieve reactie zonder ernstige klacht",
+
+          "items": [
+            "Een reactie is niet altijd nodig"
+          ]
+        },
+
+        {
+          "title":
+            "Ernstige klacht",
+
+          "items": [
+            "Stuur door naar klantenservice"
+          ]
+        },
+
+        {
+          "title":
+            "Gezonde discussie",
+
+          "items": [
+            "Mag blijven staan zolang de discussie respectvol blijft"
+          ]
+        },
+
+        {
+          "title":
+            "Schelden, intimidatie of misbruik",
+
+          "items": [
+            "Verwijder indien nodig",
+            "Blokkeer indien nodig",
+            "Rapporteer indien nodig"
+          ]
+        },
+
+        {
+          "title":
+            "Veel dezelfde klachten of vragen",
+
+          "items": [
+            "Plaats één duidelijk openbaar antwoord"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 7. CREATORS
     // =====================================================
 
-    {
-      "id":
-        "organic-ugc-creators",
+   {
+  "id":
+    "organic-ugc-creators",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "7. (UGC-) creators",
+
+  "summary":
+    "Rol, selectie, briefing, workflow, legal en resultaten van creatorsamenwerkingen.",
+
+  "system":
+    "Creator Marketing",
+
+  "frequency":
+    "Wanneer nodig",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+
+    {
+      "number":
+        "7.1",
 
       "title":
-        "7. (UGC-) creators",
+        "Rol van creators",
 
-      "summary":
-        "Rol, selectie, briefing, workflow, legal en resultaten van creatorsamenwerkingen.",
+      "text":
+        "Creators maken geloofwaardige, platformgerichte content. De focus ligt voornamelijk op video-first content voor Reels, TikTok en Shorts. Creatorcontent kan daarnaast worden ingezet binnen Spark Ads en Partnership Ads.",
 
-      "system":
-        "Creator Marketing",
-
-      "frequency":
-        "Wanneer nodig",
-
-      "duration":
-        "Naslag",
-
-      "featured": true,
-
-      "steps": [
-        {
-          "title":
-            "7.1 Rol van creators",
-
-          "text":
-            "Creators maken platformgerichte content die zowel organisch als binnen paid media kan worden gebruikt. Video-first formats zoals Reels, TikToks en Shorts spelen hierbij een belangrijke rol.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "7.2 Selectiecriteria",
-
-          "text":
-            "Beoordeel creators op kwaliteit, relevantie en professionaliteit.",
-
-          "bullets": [
-            "Kwaliteit van videocontent",
-            "Effectiviteit van bestaande content",
-            "Ervaring met merkcontent",
-            "Professionaliteit",
-            "Sterk portfolio met verhalende kwaliteit",
-            "Relevantie voor de doelgroep",
-            "Ervaring met sociale media"
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "7.3 Briefing & beoordeling",
-
-          "text":
-            "Geef creators voldoende creatieve vrijheid, maar zorg dat de noodzakelijke merk- en campagne-elementen duidelijk zijn.",
-
-          "bullets": [
-            "Content moet natuurlijk aanvoelen",
-            "Belangrijke producten moeten zichtbaar zijn",
-            "Video moet passend in lengte zijn",
-            "Merkherkenning moet snel zichtbaar zijn"
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "7.4 Workflow creators",
-
-          "text":
-            "Gebruik een vaste workflow van selectie tot rapportage.",
-
-          "subsection": {
-            "title":
-              "Creator workflow",
-
-            "steps": [
-              "Opdracht/dropping → creators selecteren.",
-              "Briefing → via e-mail.",
-              "Sample verzending → tracking delen.",
-              "Previews → feedback en revisies.",
-              "Go-live → publicatie en disclosure controleren.",
-              "Assets downloaden en archiveren.",
-              "Content hergebruiken waar toegestaan.",
-              "Resultaten en learnings rapporteren."
-            ],
-
-            "note":
-              "Het Belgische handboek noemt als huidige SLA's: briefing accepteren binnen 48 uur, feedback op preview binnen 48 uur en publicatie na go/no-go binnen 24 uur."
-          },
-
-          "image": ""
-        },
-        {
-          "title":
-            "7.5 Wetgeving & legal",
-
-          "text":
-            "Controleer bij samenwerkingen altijd de juridische afspraken, rechten en platformvereisten.",
-
-          "bullets": [
-            "Geen ongefundeerde claims",
-            "Correcte disclosure zoals #ad of betaalde samenwerking",
-            "Muziek- en gebruiksrechten controleren",
-            "Controleer afspraken over hergebruik van content"
-          ],
-
-          "image": ""
-        },
-        {
-          "title":
-            "7.6 Data noteren en verwerken",
-
-          "text":
-            "Leg creatorcampagnes, resultaten, learnings en tracking centraal vast.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Dataverwerking creators België",
-
-          "text":
-            "In het Belgische handboek worden het moederbestand voor campagnes en het linkbuilding-document voor trackinglinks genoemd.",
-
-          "image": ""
-        }
-      ]
+      "image":
+        ""
     },
+
+    {
+      "number":
+        "7.2",
+
+      "title":
+        "Selectiecriteria",
+
+      "text":
+        "Beoordeel creators op kwaliteit, relevantie en professionaliteit.",
+
+      "bullets": [
+        "Kwaliteit van videocontent",
+        "Effectiviteit van bestaande content",
+        "Ervaring met brand content",
+        "Professionaliteit",
+        "Narratieve kwaliteit van het portfolio",
+        "Match met de doelgroep",
+        "Ervaring met sociale media"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "7.3",
+
+      "title":
+        "Briefing & beoordeling",
+
+      "text":
+        "Creatorcontent moet natuurlijk aanvoelen en niet te veel als een advertentie. Zorg tegelijkertijd dat het product en HEMA voldoende herkenbaar zijn.",
+
+      "bullets": [
+        "Content moet natuurlijk aanvoelen",
+        "Content moet niet te veel als reclame voelen",
+        "Producten moeten goed zichtbaar zijn",
+        "Video's moeten niet onnodig lang zijn",
+        "HEMA moet snel herkenbaar zijn"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "7.4",
+
+      "title":
+        "Workflow creators",
+
+      "text":
+        "Gebruik een vaste workflow vanaf selectie tot publicatie en rapportage.",
+
+      "subsection": {
+        "title":
+          "Creator workflow",
+
+        "steps": [
+          "Creators selecteren.",
+          "Briefing per e-mail versturen.",
+          "Samples versturen en tracking delen.",
+          "Preview ontvangen.",
+          "Feedback geven en waar nodig 1–2 revisies uitvoeren.",
+          "Go-live en disclosure controleren.",
+          "Assets downloaden en archiveren.",
+          "Content waar toegestaan hergebruiken.",
+          "Resultaten rapporteren."
+        ],
+
+        "note":
+          "Huidige Belgische SLA's: brief accepteren binnen 48 uur, feedback op previews binnen 48 uur en na go/no-go binnen 24 uur publiceren."
+      },
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "7.5",
+
+      "title":
+        "Wetgeving & legal",
+
+      "text":
+        "Controleer altijd de juridische afspraken, disclosures en gebruiksrechten.",
+
+      "bullets": [
+        "Geen ongefundeerde claims",
+        "Gebruik gevoelige onderwerpen niet als hoofdboodschap",
+        "Correcte disclosure, bijvoorbeeld #ad of paid partnership",
+        "Controleer muzieklicenties",
+        "Controleer gebruiksrechten",
+        "Controleer afspraken over hergebruik van content"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "7.6",
+
+      "title":
+        "Data noteren en verwerken",
+
+      "text":
+        "Leg creatorcampagnes, resultaten, learnings en tracking centraal vast zodat resultaten later kunnen worden teruggevonden en vergeleken.",
+
+      "infoCards": [
+        {
+          "title":
+            "België",
+
+          "items": [
+            "Campagnedata wordt in het moederbestand bijgehouden",
+            "Trackinglinks worden via het linkbuilding-document beheerd"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // LOKALE SOCIALE MEDIAKANALEN
     // =====================================================
 
     {
-      "id":
-        "organic-lokale-kanalen",
+  "id":
+    "organic-lokale-kanalen",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "Lokale sociale mediakanalen",
+
+  "summary":
+    "Richtlijnen voor lokale socialmediakanalen van winkels.",
+
+  "system":
+    "Lokale Social Media",
+
+  "frequency":
+    "Wanneer nodig",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+
+    {
+      "number":
+        false,
 
       "title":
-        "Lokale sociale mediakanalen",
+        "Employee Generated Content",
 
-      "summary":
-        "Richtlijnen voor lokale socialmediakanalen van winkels.",
+      "text":
+        "Content vanuit lokale winkels is welkom en kan waardevol zijn voor HEMA. Houd zicht op wat lokale winkels publiceren en ondersteun hen waar nodig met richtlijnen.",
 
-      "system":
-        "Lokale Social Media",
-
-      "frequency":
-        "Wanneer nodig",
-
-      "duration":
-        "Naslag",
-
-      "featured": false,
-
-      "steps": [
+      "infoCards": [
         {
           "title":
-            "Lokale content monitoren",
+            "Specifiek voor België",
 
-          "text":
-            "Lokale teams kunnen waardevolle Employee Generated Content maken. Houd zicht op wat lokale winkels publiceren en ondersteun hen met richtlijnen waar nodig.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Controleer releasedatums",
-
-          "text":
-            "Nieuwe producten en collecties mogen niet vóór de afgesproken releasedatum worden gepubliceerd. Neem contact op met het lokale team wanneer content te vroeg online staat.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "Specifiek voor lokale winkels in België",
-
-          "text":
-            "Het Belgische handboek benadrukt dat Employee Generated Content vanuit lokale Belgische winkels welkom is. Wanneer een winkel een collectie vóór de officiële releasedatum publiceert, moet contact worden opgenomen met de winkel met het verzoek de content offline te halen en zich aan de officiële releasedatum te houden.",
-
-          "image": ""
+          "items": [
+            "Employee Generated Content van lokale Belgische winkels is welkom",
+            "Nog niet gelanceerde collecties mogen niet vóór de officiële releasedatum worden geplaatst",
+            "Wanneer dit toch gebeurt, neem contact op met de winkel",
+            "Vraag de winkel de content te verwijderen en de officiële releasedatum te volgen"
+          ]
         }
-      ]
-    },
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 8. BIJLAGEN
