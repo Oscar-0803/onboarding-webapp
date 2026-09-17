@@ -2143,7 +2143,19 @@ window.HANDBOOK_DATA = {
             "Lokale Social Media Coördinator: Amadeo Fleury"
           ]
         },
+{
+  "number":
+    "2.3.6",
 
+  "title":
+    "Overige aanspreekpunten",
+
+  "text":
+    "Voor overige aanspreekpunten en verantwoordelijken kun je het onderstaande organigram gebruiken.",
+
+  "image":
+    "images/organic-social/02-rollen-organigram.png"
+}
         {
           "title":
             "Paid Social",
