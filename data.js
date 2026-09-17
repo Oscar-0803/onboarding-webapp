@@ -2487,7 +2487,7 @@ window.HANDBOOK_DATA = {
       ],
 
       "image":
-        ""
+  "images/organic-social/04-stories-highlights.png"
     }
 
   ]
