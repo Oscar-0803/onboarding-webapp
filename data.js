@@ -1676,185 +1676,238 @@ window.HANDBOOK_DATA = {
     // 1. ORGANISCHE SOCIALE MEDIA
     // =====================================================
 
-    {
-      "id":
-        "organic-organische-social-media",
+   {
+  "id":
+    "organic-organische-social-media",
 
-      "category":
-        "organic-social",
+  "category":
+    "organic-social",
+
+  "title":
+    "1. Organische sociale media binnen HEMA",
+
+  "summary":
+    "Kanalen, postfrequentie, contentkalender, bureaucommunicatie en assets.",
+
+  "system":
+    "Social Media",
+
+  "frequency":
+    "Dagelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+
+    {
+      "number":
+        false,
 
       "title":
-        "1. Organische sociale media binnen HEMA",
+        "Socialmediakanalen",
 
-      "summary":
-        "Kanalen, postfrequentie, contentkalender, bureaucommunicatie en assets.",
+      "text":
+        "Binnen Organic Social wordt gebruikgemaakt van verschillende sociale mediaplatformen. De exacte inzet en frequentie kunnen per land en kanaal verschillen.",
 
-      "system":
-        "Social Media",
+      "bullets": [
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "Pinterest",
+        "YouTube Shorts"
+      ],
 
-      "frequency":
-        "Dagelijks",
-
-      "duration":
-        "Naslag",
-
-      "featured": true,
-
-      "steps": [
-        {
-          "title":
-            "Socialmediakanalen",
-
-          "text":
-            "Binnen Organic Social wordt gebruikgemaakt van verschillende sociale mediaplatformen. De exacte inzet en frequentie kunnen per land en kanaal verschillen.",
-
-          "bullets": [
-            "Instagram",
-            "TikTok",
-            "Facebook",
-            "Pinterest",
-            "YouTube Shorts"
-          ],
-
-          "image": ""
-        },
+      "infoCards": [
         {
           "title":
             "Specifiek voor België",
 
-          "text":
-            "In het Belgische Social Media Handboek staat dat HEMA België voor Organic Social actief is op Instagram, TikTok, Facebook Vlaams, Facebook Waals, Pinterest en YouTube Shorts.",
+          "items": [
+            "Instagram",
+            "TikTok",
+            "Facebook Vlaams",
+            "Facebook Waals",
+            "Pinterest",
+            "YouTube Shorts"
+          ],
 
-          "image": ""
-        },
-        {
-          "title":
-            "1.1 Postfrequentie",
+          "note":
+            "Deze kanaalverdeling komt specifiek uit het Belgische Social Media Handboek."
+        }
+      ],
 
-          "text":
-            "Werk volgens de actuele contentplanning en afgesproken frequentie per kanaal. Kijk hiervoor altijd in de contentkalender.",
+      "image":
+        ""
+    },
 
-          "image": ""
-        },
+    {
+      "number":
+        "1.1",
+
+      "title":
+        "Postfrequentie",
+
+      "text":
+        "Werk volgens de actuele contentplanning en afgesproken frequentie per kanaal. Kijk hiervoor altijd in de contentkalender.",
+
+      "infoCards": [
         {
           "title":
             "Postfrequentie België",
 
-          "text":
-            "Voor België wordt in het huidige handboek gestreefd naar minimaal dagelijks posten op de feed en minimaal zes stories per week. Facebook heeft momenteel een hogere frequentie en Pinterest een lagere frequentie.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "1.2 Contentkalender",
-
-          "text":
-            "De contentkalender is de centrale plek voor de dagelijkse planning van Organic Social. Hierin staat welke content wanneer en via welk kanaal wordt gepubliceerd.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "1.3 Communiceren met bureaus",
-
-          "text":
-            "Voor externe bureaus en contentpartners worden verschillende communicatiekanalen gebruikt.",
-
-          "infoCards": [
-            {
-              "title":
-                "E-mail",
-
-              "items": [
-                "Belangrijke zaken",
-                "Afstemming",
-                "Feedback en overleg"
-              ]
-            },
-            {
-              "title":
-                "Meetings",
-
-              "items": [
-                "Nieuwe concepten",
-                "Uitgewerkte content",
-                "Goedkeuringen",
-                "Planning en check-ins"
-              ]
-            },
-            {
-              "title":
-                "WhatsApp / chat",
-
-              "items": [
-                "Snelle updates",
-                "Korte vragen",
-                "Informele afstemming"
-              ]
-            }
+          "items": [
+            "Streven naar minimaal dagelijks posten op de feed",
+            "Minimaal 6 stories per week",
+            "Facebook heeft een hogere frequentie",
+            "Pinterest heeft een lagere frequentie"
           ],
 
-          "image": ""
+          "note":
+            "Deze frequenties gelden specifiek voor België volgens het huidige handboek."
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "1.2",
+
+      "title":
+        "Contentkalender",
+
+      "text":
+        "De contentkalender is de centrale plek voor de dagelijkse planning van Organic Social. Hierin staat welke content wanneer en via welk kanaal wordt gepubliceerd.",
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "1.3",
+
+      "title":
+        "Communiceren met bureaus",
+
+      "text":
+        "Voor externe bureaus en contentpartners worden verschillende communicatiekanalen gebruikt. Kies het kanaal dat past bij de soort afstemming.",
+
+      "infoCards": [
+        {
+          "title":
+            "E-mail",
+
+          "items": [
+            "Belangrijke zaken",
+            "Afstemming",
+            "Feedback en overleg"
+          ]
         },
+
+        {
+          "title":
+            "Meetings",
+
+          "items": [
+            "Nieuwe concepten",
+            "Uitgewerkte content",
+            "Goedkeuringen",
+            "Planning en check-ins"
+          ]
+        },
+
+        {
+          "title":
+            "WhatsApp / chat",
+
+          "items": [
+            "Snelle updates",
+            "Korte vragen",
+            "Informele afstemming"
+          ]
+        },
+
         {
           "title":
             "Bureaus België",
 
-          "text":
-            "Voor België noemt het huidige handboek specifiek Social Sky, Paloma en UnCool als agencies waarmee wordt samengewerkt.",
-
-          "image": ""
-        },
-        {
-          "title":
-            "1.4 Waar zijn assets te vinden?",
-
-          "text":
-            "Assets kunnen afhankelijk van bureau, campagne en land op verschillende locaties worden aangeleverd.",
-
-          "bullets": [
-            "Notion",
-            "Vimeo",
-            "E-mail",
-            "Interne gedeelde mappen"
+          "items": [
+            "Social Sky",
+            "Paloma",
+            "UnCool"
           ],
 
-          "image": ""
-        },
+          "note":
+            "Deze bureaus worden specifiek genoemd in het Belgische Social Media Handboek."
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number":
+        "1.4",
+
+      "title":
+        "Waar zijn assets te vinden?",
+
+      "text":
+        "Assets kunnen afhankelijk van bureau, campagne en land op verschillende locaties worden aangeleverd.",
+
+      "bullets": [
+        "Notion",
+        "Vimeo",
+        "E-mail",
+        "Interne gedeelde mappen"
+      ],
+
+      "infoCards": [
         {
           "title":
             "Assetlocaties België",
 
-          "text":
-            "Voor het Belgische team worden in het huidige handboek onder andere de Paloma-clientpagina, Social Sky Content Hub, Vimeo via UnCool en de Nederlandse Social Content-map genoemd.",
-
-          "links": [
-            {
-              "label":
-                "Paloma – Notion Client Page",
-
-              "href":
-                "https://www.notion.so/CLIENT-PAGE-HEMA-Social-Content-31364daa31bc80039044e08d77bc22e5"
-            },
-            {
-              "label":
-                "Social Sky – Content Hub",
-
-              "href":
-                "https://www.notion.so/Content-Hub-2026-HEMA-30a27acb3a6180bc8b43d7583bd865ba"
-            }
-          ],
-
-          "bullets": [
-            "UnCool: concepten en assets via Vimeo en e-mail",
-            "Nederlandse reposts: I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\01 SOCIAL CONTENT\\01 CONTENT"
-          ],
-
-          "image": ""
+          "items": [
+            "Paloma: Notion Client Page",
+            "Social Sky: Content Hub",
+            "UnCool: Vimeo en e-mail",
+            "Nederlandse reposts: interne Social Content-map"
+          ]
         }
-      ]
-    },
+      ],
+
+      "links": [
+        {
+          "label":
+            "Paloma – Notion Client Page",
+
+          "href":
+            "https://www.notion.so/CLIENT-PAGE-HEMA-Social-Content-31364daa31bc80039044e08d77bc22e5"
+        },
+
+        {
+          "label":
+            "Social Sky – Content Hub",
+
+          "href":
+            "https://www.notion.so/Content-Hub-2026-HEMA-30a27acb3a6180bc8b43d7583bd865ba"
+        }
+      ],
+
+      "image":
+        ""
+    }
+
+  ]
+},
 
     // =====================================================
     // 2. WORKFLOW
