@@ -1209,12 +1209,32 @@ function renderStep(
   step,
   index
 ) {
-  return `
-    <div class="step">
 
-      <div class="step-number">
-        ${index + 1}
-      </div>
+  const hasNumber =
+    step.number !== false;
+
+  const displayedNumber =
+    step.number !== undefined &&
+    step.number !== false
+      ? step.number
+      : index + 1;
+
+  return `
+    <div class="step ${
+      !hasNumber
+        ? "step-without-number"
+        : ""
+    }">
+
+      ${
+        hasNumber
+          ? `
+            <div class="step-number">
+              ${displayedNumber}
+            </div>
+          `
+          : ""
+      }
 
 
       <div class="step-content">
@@ -1290,7 +1310,6 @@ function renderStep(
     </div>
   `;
 }
-
 
 // =========================================================
 // INTRO BOX
