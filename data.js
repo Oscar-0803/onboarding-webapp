@@ -2669,7 +2669,7 @@ window.HANDBOOK_DATA = {
       ],
 
       "image":
-        ""
+  "images/organic-social/06-tone-of-voice-reacties.png"
     },
 
     {
