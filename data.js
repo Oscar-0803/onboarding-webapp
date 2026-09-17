@@ -2609,7 +2609,7 @@ window.HANDBOOK_DATA = {
       ],
 
       "image":
-        ""
+  "images/organic-social/05-reporting-structuur.png"
     }
 
   ]
