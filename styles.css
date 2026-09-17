@@ -1920,3 +1920,26 @@ padding:
 .organic-introduction p:last-child {
   margin-bottom: 0;
 }
+/* =========================================
+   ORGANIC SOCIAL CUSTOM STEP NUMBERS
+========================================= */
+
+.step-without-number {
+  grid-template-columns:
+    minmax(0, 1fr);
+}
+
+.step-without-number .step-content {
+  width: 100%;
+}
+
+.step-number {
+  width: auto;
+  min-width: 38px;
+
+  padding:
+    0
+    7px;
+
+  white-space: nowrap;
+}
