@@ -1675,7 +1675,339 @@ window.HANDBOOK_DATA = {
         }
       ]
     },
+{
+  "id":
+    "ticketcampagne-designs",
 
+  "category":
+    "ticketcampagnes",
+
+  "title":
+    "Ticketcampagne Designs & Touchpoints",
+
+  "summary":
+    "Overzicht van alle designs, formaten en touchpoints die voor een ticketcampagne kunnen worden ingezet.",
+
+  "system":
+    "Adobe / CMS / Digital Design",
+
+  "frequency":
+    "Bij een ticketcampagne",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "tags": [
+    "tickets",
+    "ticketcampagne",
+    "designs",
+    "touchpoints",
+    "banners",
+    "digitale folder",
+    "nieuwsbrief",
+    "dooh",
+    "whatsapp",
+    "social media"
+  ],
+
+  "caution":
+    "Een ticketcampagne duurt minimaal 4 weken. De laatste 2 weken gelden als 'laatste kans'. Controleer daarom bij relevante uitingen altijd of ook een laatste-kans-versie nodig is.",
+
+  "introBox": {
+    "title":
+      "Belangrijke informatie",
+
+    "text":
+      "Alle touchpoints die voor een ticketcampagne kunnen worden ingezet, worden centraal opgeslagen. In het brondocument is de dikgedrukte naam telkens de naam van het bijbehorende mapje. Touchpoints worden standaard als JPG aangeleverd, tenzij bij het betreffende onderdeel expliciet een ander bestandsformaat staat."
+  },
+
+  "infoSections": [
+    {
+      "title":
+        "Opslaglocatie ticketcampagnes",
+
+      "items": [
+        {
+          "label":
+            "Map",
+
+          "value":
+            "I:\\E-Commerce\\05 FOTO en TICKETS CAT11\\2. TICKETS\\1. HEMA TICKETS\\Acties"
+        }
+      ]
+    }
+  ],
+
+  "steps": [
+    {
+      "title":
+        "1. Digitale folder",
+
+      "text":
+        "De digitale folder heeft binnen de ticketcampagne de meeste urgentie. Zorg dat deze als eerste wordt opgepakt en tijdig wordt aangeleverd.",
+
+      "bullets": [
+        "Aanleveren als PNG",
+        "Formaat: 750 × 1300",
+        "2 versies maken",
+        "Versie 1: reguliere campagne",
+        "Versie 2: laatste kans met label",
+        "De digitale folder wordt beheerd door de afdeling Instore en Folder"
+      ],
+
+      "infoCards": [
+        {
+          "title":
+            "Contact",
+
+          "items": [
+            "Iris.Bertoen@hema.nl"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "2. Tickets.hema.nl website",
+
+      "text":
+        "Voor de Tickets HEMA-website worden zowel een hero banner als een categorie-banner aangeleverd. De website wordt via het CMS beheerd.",
+
+      "infoCards": [
+        {
+          "title":
+            "Hero banner",
+
+          "items": [
+            "Formaat: 1920 × 1080",
+            "Fanny levert de foto aan",
+            "Fanny levert input voor het prijsblok"
+          ]
+        },
+
+        {
+          "title":
+            "Categorie banner",
+
+          "items": [
+            "Formaat: 800 × 800"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "3. Nieuwsbrief Flex designs",
+
+      "text":
+        "Voor de nieuwsbrief worden Flex-designs zonder prijsblok gemaakt. Er zijn drie verschillende formaten.",
+
+      "infoCards": [
+        {
+          "title":
+            "Formaten",
+
+          "items": [
+            "Flex 50: 720 × 620",
+            "Flex 60: 888 × 576",
+            "Flex 100: 1344 × 700"
+          ]
+        }
+      ],
+
+      "bullets": [
+        "Designs worden zonder prijsblok gemaakt",
+        "Maak alle drie de benodigde formaten"
+      ],
+
+      "subsection": {
+        "title":
+          "Opslaglocatie",
+
+        "steps": [
+          "I:\\Digital Design\\17 VP TICKETS\\2026"
+        ]
+      },
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "4. HEMA.nl homepage carrousel",
+
+      "text":
+        "Maak voor de HEMA.nl-homepage een carrouseluitvoering voor het onderdeel 'nog meer HEMA'.",
+
+      "bullets": [
+        "Formaat: 600 × 750"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "5. Digital Out Of Home – PUI schermen",
+
+      "text":
+        "Voor de grote DOOH-pu schermen wordt een verticale video-uiting gemaakt.",
+
+      "bullets": [
+        "Maximale duur: 6 seconden",
+        "Bestandsformaat: MP4",
+        "Maximale bestandsgrootte: 10 MB",
+        "Formaat: 1080 × 1920",
+        "2 versies maken",
+        "Versie 1: reguliere campagne",
+        "Versie 2: laatste kans met label"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "6. Digital Out Of Home – bemande kassaschermen",
+
+      "text":
+        "Voor de bemande kassaschermen wordt een aparte horizontale video-uiting gemaakt.",
+
+      "bullets": [
+        "Maximale duur: 10 seconden",
+        "Bestandsformaat: MP4",
+        "Formaat: 556 × 416",
+        "2 versies maken",
+        "Versie 1: reguliere campagne",
+        "Versie 2: laatste kans met label"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "7. WhatsApp carrousel banner",
+
+      "text":
+        "Maak een banner die geschikt is voor de WhatsApp-carrousel en houd bij het schrijven van de copy rekening met de maximale aantallen tekens.",
+
+      "infoCards": [
+        {
+          "title":
+            "Banner",
+
+          "items": [
+            "Formaat: 951 × 557"
+          ]
+        },
+
+        {
+          "title":
+            "Copy",
+
+          "items": [
+            "Inhoudelijke ondertitel: maximaal 50 tekens",
+            "Call to action: maximaal 20 tekens"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "8. Sociale media story post",
+
+      "text":
+        "Voor de ticketcampagne kan ook een story voor sociale media worden gemaakt. Deze wordt tegelijk met de digitale folder opgepakt.",
+
+      "bullets": [
+        "Story tegelijk met de digitale folder voorbereiden",
+        "Specificaties voor de story nog controleren bij Neal"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "9. Liggende banners",
+
+      "text":
+        "Maak de liggende banners volgens de bestaande banner guidelines. Zorg ook voor een laatste-kans-versie.",
+
+      "infoCards": [
+        {
+          "title":
+            "Liggende bannerformaten",
+
+          "items": [
+            "1240 × 248",
+            "473 × 118",
+            "667 × 167",
+            "720 × 144",
+            "728 × 182",
+            "740 × 148",
+            "806 × 202",
+            "903 × 180",
+            "971 × 194"
+          ]
+        }
+      ],
+
+      "bullets": [
+        "Gebruik de bestaande banner guidelines",
+        "Maak ook een laatste-kans-versie"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "title":
+        "10. App banners",
+
+      "text":
+        "Maak naast de liggende websitebanners ook de drie benodigde app-bannerformaten.",
+
+      "infoCards": [
+        {
+          "title":
+            "App bannerformaten",
+
+          "items": [
+            "600 × 500",
+            "300 × 250",
+            "450 × 375"
+          ]
+        }
+      ],
+
+      "image":
+        ""
+    }
+  ]
+},
     // =====================================================
     // ORGANIC SOCIAL MEDIA
     // =====================================================
