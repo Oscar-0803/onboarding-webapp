@@ -48,6 +48,12 @@ window.HANDBOOK_DATA = {
       "description": "Online banners maken en verwerken"
     },
     {
+  "id": "ticketcampagnes",
+  "label": "Ticketcampagnes",
+  "icon": "🎟",
+  "description": "Designs en touchpoints voor ticketcampagnes"
+},
+    {
       "id": "organic-social",
       "label": "Organic Social Media",
       "icon": "●",
