@@ -8,43 +8,43 @@ window.HANDBOOK_DATA = {
     {
       "id": "dagelijks",
       "label": "Dagelijks",
-      "icon": "☀",
+      "icon": "☀️",
       "description": "Dagelijkse inboxen en terugkerende werkzaamheden"
     },
     {
       "id": "orders",
       "label": "Orders",
-      "icon": "⇄",
+      "icon": "📬",
       "description": "GDL-orders en interne Trade-orders"
     },
     {
       "id": "betalingen",
       "label": "Betalingen",
-      "icon": "€",
+      "icon": "💸",
       "description": "Bankbetalingen verwerken"
     },
     {
       "id": "klantenservice",
       "label": "Klantenservice",
-      "icon": "✉",
+      "icon": "🧑🏼‍💻",
       "description": "HEMA Tickets en herroepingen"
     },
     {
       "id": "uitingen",
       "label": "Uitingen",
-      "icon": "▤",
+      "icon": "📲",
       "description": "Broadsign en rCOS"
     },
     {
       "id": "advertising",
       "label": "Advertising",
-      "icon": "◎",
+      "icon": "📊",
       "description": "Google Ad Manager"
     },
     {
       "id": "banners",
       "label": "Online Banners",
-      "icon": "◇",
+      "icon": "🖼️",
       "description": "Online banners maken en verwerken"
     },
     {
