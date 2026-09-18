@@ -56,7 +56,7 @@ window.HANDBOOK_DATA = {
     {
       "id": "organic-social",
       "label": "Organic Social Media",
-      "icon": "●",
+      "icon": "🌐",
       "description": "Strategisch en praktisch handboek voor het Organic Social Media team",
 
       "introduction": [
