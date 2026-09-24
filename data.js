@@ -8,55 +8,46 @@ window.HANDBOOK_DATA = {
     {
       "id": "dagelijks",
       "label": "Dagelijks",
-      "icon": "☀️",
       "description": "Dagelijkse inboxen en terugkerende werkzaamheden"
     },
     {
       "id": "orders",
       "label": "Orders",
-      "icon": "📬",
       "description": "GDL-orders en interne Trade-orders"
     },
     {
       "id": "betalingen",
       "label": "Betalingen",
-      "icon": "💸",
       "description": "Bankbetalingen verwerken"
     },
     {
       "id": "klantenservice",
       "label": "Klantenservice",
-      "icon": "🧑🏼‍💻",
       "description": "HEMA Tickets en herroepingen"
     },
     {
       "id": "uitingen",
       "label": "Uitingen",
-      "icon": "📲",
       "description": "Broadsign en rCOS"
     },
     {
       "id": "advertising",
       "label": "Advertising",
-      "icon": "📊",
       "description": "Google Ad Manager"
     },
     {
       "id": "banners",
       "label": "Online Banners",
-      "icon": "🖼️",
       "description": "Online banners maken en verwerken"
     },
     {
   "id": "ticketcampagnes",
   "label": "Ticketcampagnes",
-  "icon": "🎟",
   "description": "Designs en touchpoints voor ticketcampagnes"
 },
     {
       "id": "organic-social",
       "label": "Organic Social Media",
-      "icon": "🌐",
       "description": "Strategisch en praktisch handboek voor het Organic Social Media team",
 
       "introduction": [
