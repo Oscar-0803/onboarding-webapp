@@ -933,7 +933,9 @@ function procedureCard(procedure) {
 // CATEGORY CARDS
 // =========================================================
 
-function categoryCard(category) {
+function categoryCard(
+  category
+) {
   return `
     <button
       class="category-card"
@@ -942,7 +944,9 @@ function categoryCard(category) {
     >
 
       <div class="category-icon">
-        ${category.icon}
+        ${categoryIcon(
+          category.id
+        )}
       </div>
 
       <strong>
@@ -983,7 +987,7 @@ function departmentCard(
     >
 
       <div class="category-icon">
-        ${icon}
+        ${departmentIcon(id)}
       </div>
 
       <strong>
