@@ -491,15 +491,20 @@ function departmentIcon(
 // NAVIGATION
 // =========================================================
 
-function categoryButton(category) {
+function categoryButton(
+  category
+) {
   return `
     <button
       class="nav-item category-child"
       data-category="${category.id}"
       type="button"
     >
+
       <span class="nav-icon">
-        ${category.icon}
+        ${categoryIcon(
+          category.id
+        )}
       </span>
 
       <span class="nav-label">
@@ -507,8 +512,11 @@ function categoryButton(category) {
       </span>
 
       <span class="nav-count">
-        ${categoryCount(category.id)}
+        ${categoryCount(
+          category.id
+        )}
       </span>
+
     </button>
   `;
 }
@@ -523,11 +531,14 @@ function organicHandbookButton(
   return `
     <button
       class="nav-item category-child"
-      data-organic-department
+      data-organic-department="organic-social-media"
       type="button"
     >
+
       <span class="nav-icon">
-        ${category.icon}
+        ${hemaIcon(
+          "organic"
+        )}
       </span>
 
       <span class="nav-label">
@@ -535,8 +546,11 @@ function organicHandbookButton(
       </span>
 
       <span class="nav-count">
-        ${categoryCount(category.id)}
+        ${categoryCount(
+          category.id
+        )}
       </span>
+
     </button>
   `;
 }
