@@ -37,12 +37,14 @@ function categoryById(id) {
   );
 }
 
+
 function procedureById(id) {
   return data.procedures.find(
     (procedure) =>
       procedure.id === id
   );
 }
+
 
 function topLevelProcedures() {
   return data.procedures.filter(
@@ -51,12 +53,14 @@ function topLevelProcedures() {
   );
 }
 
+
 function childProcedures(parentId) {
   return data.procedures.filter(
     (procedure) =>
       procedure.parent === parentId
   );
 }
+
 
 function categoryCount(id) {
   return data.procedures.filter(
@@ -66,12 +70,14 @@ function categoryCount(id) {
   ).length;
 }
 
+
 function saveFavorites() {
   localStorage.setItem(
     "handbook-favorites",
     JSON.stringify([...favorites])
   );
 }
+
 
 function toggleFavorite(id) {
   if (favorites.has(id)) {
@@ -86,8 +92,593 @@ function toggleFavorite(id) {
 
 
 // =========================================================
-// DEPARTMENTS
+// HEMA ICON SYSTEM
 // =========================================================
+
+function hemaIcon(name) {
+  const icons = {
+
+    dagelijks: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <rect
+          x="9"
+          y="11"
+          width="30"
+          height="28"
+          rx="4"
+        />
+
+        <path d="M15 7v8" />
+        <path d="M33 7v8" />
+        <path d="M9 19h30" />
+
+        <circle
+          cx="17"
+          cy="26"
+          r="1.5"
+        />
+
+        <circle
+          cx="24"
+          cy="26"
+          r="1.5"
+        />
+
+        <circle
+          cx="31"
+          cy="26"
+          r="1.5"
+        />
+
+        <circle
+          cx="17"
+          cy="33"
+          r="1.5"
+        />
+
+        <circle
+          cx="24"
+          cy="33"
+          r="1.5"
+        />
+      </svg>
+    `,
+
+
+    orders: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M10 18
+            L14 38
+            H34
+            L38 18
+            Z
+          "
+        />
+
+        <path
+          d="
+            M17 18
+            l7-11
+            7 11
+          "
+        />
+
+        <path
+          d="
+            M14 25
+            h20
+          "
+        />
+
+        <circle
+          cx="19"
+          cy="31"
+          r="1.5"
+        />
+
+        <circle
+          cx="29"
+          cy="31"
+          r="1.5"
+        />
+      </svg>
+    `,
+
+
+    betalingen: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <rect
+          x="7"
+          y="12"
+          width="34"
+          height="25"
+          rx="4"
+        />
+
+        <path
+          d="
+            M7 20
+            h34
+          "
+        />
+
+        <path
+          d="
+            M13 30
+            h8
+          "
+        />
+
+        <circle
+          cx="34"
+          cy="29"
+          r="3"
+        />
+      </svg>
+    `,
+
+
+    klantenservice: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M10 27
+            V23
+            C10 15
+            16 9
+            24 9
+            C32 9
+            38 15
+            38 23
+            V28
+          "
+        />
+
+        <rect
+          x="7"
+          y="23"
+          width="7"
+          height="11"
+          rx="3"
+        />
+
+        <rect
+          x="34"
+          y="23"
+          width="7"
+          height="11"
+          rx="3"
+        />
+
+        <path
+          d="
+            M37 34
+            C36 39
+            32 41
+            27 41
+          "
+        />
+
+        <circle
+          cx="24"
+          cy="41"
+          r="2"
+        />
+      </svg>
+    `,
+
+
+    uitingen: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M8 22
+            H16
+            L35 13
+            V35
+            L16 27
+            H8
+            Z
+          "
+        />
+
+        <path
+          d="
+            M16 27
+            l3 12
+          "
+        />
+
+        <path
+          d="
+            M39 19
+            c2 3
+            2 7
+            0 10
+          "
+        />
+      </svg>
+    `,
+
+
+    advertising: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M8 39
+            V28
+            h7
+            v11
+          "
+        />
+
+        <path
+          d="
+            M19 39
+            V21
+            h7
+            v18
+          "
+        />
+
+        <path
+          d="
+            M30 39
+            V11
+            h8
+            v28
+          "
+        />
+
+        <path
+          d="
+            M6 39
+            h35
+          "
+        />
+      </svg>
+    `,
+
+
+    banners: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <rect
+          x="7"
+          y="8"
+          width="34"
+          height="32"
+          rx="3"
+        />
+
+        <circle
+          cx="33"
+          cy="16"
+          r="3"
+        />
+
+        <path
+          d="
+            M10 36
+            l10-11
+            7 7
+            6-6
+            8 10
+          "
+        />
+      </svg>
+    `,
+
+
+    ticketcampagnes: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M8 18
+            L31 7
+            L36 14
+            C33 16
+            33 20
+            36 22
+            L40 28
+            L17 41
+            L12 33
+            C15 31
+            15 27
+            12 25
+            Z
+          "
+        />
+
+        <path
+          d="
+            M22 15
+            l12 19
+          "
+          stroke-dasharray="3 4"
+        />
+      </svg>
+    `,
+
+
+    organic: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <circle
+          cx="24"
+          cy="14"
+          r="6"
+        />
+
+        <circle
+          cx="11"
+          cy="19"
+          r="4"
+        />
+
+        <circle
+          cx="37"
+          cy="19"
+          r="4"
+        />
+
+        <path
+          d="
+            M14 39
+            V32
+            C14 26
+            18 23
+            24 23
+            C30 23
+            34 26
+            34 32
+            V39
+            Z
+          "
+        />
+
+        <path
+          d="
+            M7 36
+            V30
+            C7 26
+            9 24
+            13 24
+          "
+        />
+
+        <path
+          d="
+            M41 36
+            V30
+            C41 26
+            39 24
+            35 24
+          "
+        />
+      </svg>
+    `,
+
+
+    visual: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <rect
+          x="7"
+          y="8"
+          width="34"
+          height="32"
+          rx="3"
+        />
+
+        <circle
+          cx="33"
+          cy="16"
+          r="3"
+        />
+
+        <path
+          d="
+            M10 36
+            l10-11
+            7 7
+            6-6
+            8 10
+          "
+        />
+
+        <path
+          d="
+            M14 12
+            h8
+          "
+        />
+      </svg>
+    `,
+
+
+    retail: `
+      <svg
+        class="hema-icon"
+        viewBox="0 0 48 48"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M8 19
+            L12 8
+            H36
+            L40 19
+          "
+        />
+
+        <path
+          d="
+            M9 19
+            h30
+            v21
+            H9
+            z
+          "
+        />
+
+        <path
+          d="
+            M8 19
+            C8 23
+            14 23
+            14 19
+
+            C14 23
+            20 23
+            20 19
+
+            C20 23
+            26 23
+            26 19
+
+            C26 23
+            32 23
+            32 19
+
+            C32 23
+            40 23
+            40 19
+          "
+        />
+
+        <rect
+          x="19"
+          y="28"
+          width="10"
+          height="12"
+        />
+      </svg>
+    `
+
+  };
+
+  return (
+    icons[name] ||
+    icons.banners
+  );
+}
+
+
+function categoryIcon(
+  categoryId
+) {
+  const iconMap = {
+    "dagelijks":
+      "dagelijks",
+
+    "orders":
+      "orders",
+
+    "betalingen":
+      "betalingen",
+
+    "klantenservice":
+      "klantenservice",
+
+    "uitingen":
+      "uitingen",
+
+    "advertising":
+      "advertising",
+
+    "banners":
+      "banners",
+
+    "ticketcampagnes":
+      "ticketcampagnes",
+
+    "organic-social":
+      "organic",
+
+    "visual-creative":
+      "visual"
+  };
+
+  return hemaIcon(
+    iconMap[categoryId] ||
+    "banners"
+  );
+}
+
+
+function departmentIcon(
+  departmentId
+) {
+  if (
+    departmentId ===
+    "retail-media"
+  ) {
+    return hemaIcon(
+      "retail"
+    );
+  }
+
+  if (
+    departmentId ===
+    "organic-social-media"
+  ) {
+    return hemaIcon(
+      "organic"
+    );
+  }
+
+  if (
+    departmentId ===
+    "visual-creative"
+  ) {
+    return hemaIcon(
+      "visual"
+    );
+  }
+
+  return "";
+}
+
 
 // =========================================================
 // DEPARTMENTS
@@ -96,8 +687,10 @@ function toggleFavorite(id) {
 function retailCategories() {
   return data.categories.filter(
     (category) =>
-      category.id !== "organic-social" &&
-      category.id !== "visual-creative"
+      category.id !==
+        "organic-social" &&
+      category.id !==
+        "visual-creative"
   );
 }
 
@@ -105,7 +698,8 @@ function retailCategories() {
 function organicCategory() {
   return data.categories.find(
     (category) =>
-      category.id === "organic-social"
+      category.id ===
+      "organic-social"
   );
 }
 
@@ -113,7 +707,8 @@ function organicCategory() {
 function visualCreativeCategory() {
   return data.categories.find(
     (category) =>
-      category.id === "visual-creative"
+      category.id ===
+      "visual-creative"
   );
 }
 
@@ -341,10 +936,6 @@ function buildNavigation() {
 
   categoryNav.innerHTML = `
 
-    <!-- ===============================================
-         RETAIL MEDIA
-    ================================================ -->
-
     <div class="nav-folder">
 
       <button
@@ -381,10 +972,6 @@ function buildNavigation() {
     </div>
 
 
-    <!-- ===============================================
-         ORGANIC SOCIAL MEDIA
-    ================================================ -->
-
     <div class="nav-folder">
 
       <button
@@ -418,10 +1005,6 @@ function buildNavigation() {
 
     </div>
 
-
-    <!-- ===============================================
-         VISUAL CREATIVE
-    ================================================ -->
 
     <div class="nav-folder">
 
@@ -458,10 +1041,6 @@ function buildNavigation() {
 
   `;
 
-
-  // =====================================================
-  // OVERZICHT / FAVORIETEN
-  // =====================================================
 
   document
     .querySelectorAll(
@@ -506,10 +1085,6 @@ function buildNavigation() {
     );
 
 
-  // =====================================================
-  // RETAIL MEDIA CATEGORIEËN
-  // =====================================================
-
   document
     .querySelectorAll(
       "[data-category]"
@@ -552,10 +1127,6 @@ function buildNavigation() {
       }
     );
 
-
-  // =====================================================
-  // ORGANIC SOCIAL MEDIA
-  // =====================================================
 
   document
     .querySelectorAll(
@@ -600,10 +1171,6 @@ function buildNavigation() {
     );
 
 
-  // =====================================================
-  // VISUAL CREATIVE
-  // =====================================================
-
   document
     .querySelectorAll(
       "[data-visual-department]"
@@ -647,10 +1214,6 @@ function buildNavigation() {
     );
 
 
-  // =====================================================
-  // UITKLAPBARE FOLDERS
-  // =====================================================
-
   setupNavFolder(
     "retailMediaToggle",
     "retailMediaCategories"
@@ -669,18 +1232,30 @@ function buildNavigation() {
   );
 }
 
+
+// =========================================================
+// UPDATE NAVIGATION
+// =========================================================
+
 function updateNavigation() {
   document
-    .querySelectorAll(".nav-item")
-    .forEach((item) => {
-      item.classList.remove(
-        "active"
-      );
-    });
+    .querySelectorAll(
+      ".nav-item"
+    )
+    .forEach(
+      (item) => {
+
+        item.classList.remove(
+          "active"
+        );
+
+      }
+    );
 
 
   if (
-    state.view === "home"
+    state.view ===
+    "home"
   ) {
     document
       .querySelector(
@@ -693,7 +1268,8 @@ function updateNavigation() {
 
 
   if (
-    state.view === "favorites"
+    state.view ===
+    "favorites"
   ) {
     document
       .querySelector(
@@ -706,11 +1282,44 @@ function updateNavigation() {
 
 
   if (
-    state.view === "category"
+    state.view ===
+    "category"
   ) {
     document
       .querySelector(
         `[data-category="${state.category}"]`
+      )
+      ?.classList.add(
+        "active"
+      );
+  }
+
+
+  if (
+    state.view ===
+      "department" &&
+    state.department ===
+      "organic-social-media"
+  ) {
+    document
+      .querySelector(
+        '[data-organic-department="organic-social-media"]'
+      )
+      ?.classList.add(
+        "active"
+      );
+  }
+
+
+  if (
+    state.view ===
+      "department" &&
+    state.department ===
+      "visual-creative"
+  ) {
+    document
+      .querySelector(
+        '[data-visual-department="visual-creative"]'
       )
       ?.classList.add(
         "active"
@@ -723,14 +1332,17 @@ function updateNavigation() {
 // PROCEDURE CARDS
 // =========================================================
 
-function procedureCard(procedure) {
+function procedureCard(
+  procedure
+) {
   const category =
     categoryById(
       procedure.category
     );
 
   const isFolder =
-    procedure.type === "folder";
+    procedure.type ===
+    "folder";
 
   return `
     <article
@@ -745,7 +1357,6 @@ function procedureCard(procedure) {
       <div class="card-top">
 
         <span class="badge">
-          ${category?.icon || ""}
           ${category?.label || ""}
         </span>
 
@@ -873,7 +1484,9 @@ function departmentCard(
     >
 
       <div class="category-icon">
-        ${departmentIcon(id)}
+        ${departmentIcon(
+          id
+        )}
       </div>
 
       <strong>
@@ -899,102 +1512,211 @@ function departmentCard(
 
 function homeView() {
   const featured =
-    topLevelProcedures().filter(
-      (procedure) =>
-        procedure.featured
-    );
+    topLevelProcedures()
+      .filter(
+        (procedure) =>
+          procedure.featured
+      )
+      .slice(
+        0,
+        6
+      );
 
   content.innerHTML = `
-    <section class="hero hero-banner">
 
-      <div class="hero-banner-content">
+    <div class="dashboard-home">
 
-        <p class="eyebrow">
-          ONBOARDING HANDBOEK
-        </p>
+      <section class="dashboard-hero">
 
-        <h1>
-          Wat wil je vandaag doen?
-        </h1>
+        <div class="dashboard-hero-copy">
 
-        <p class="hero-copy">
-          Vind snel de juiste werkinstructie zonder door lange documenten te zoeken.
-        </p>
-
-      </div>
-
-      <div class="hero-stat">
-        <strong>
-          ${topLevelProcedures().length}
-        </strong>
-        <span>
-          onderdelen in dit concept
-        </span>
-      </div>
-
-    </section>
-
-
-    <div class="section-heading">
-
-      <div>
-        <p class="eyebrow">
-          SNEL STARTEN
-        </p>
-
-        <h2>
-          Veelgebruikte procedures
-        </h2>
-      </div>
-
-    </div>
-
-
-    <div class="procedure-grid">
-      ${featured
-        .map(procedureCard)
-        .join("")}
-    </div>
-
-
-    <section class="departments-banner">
-
-      <div class="section-heading categories-heading categories-heading-invert">
-
-        <div>
           <p class="eyebrow">
-            BLADEREN
+            HEMA ONBOARDING
           </p>
 
-          <h2>
-            Alle afdelingen
-          </h2>
+          <h1>
+            Welkom bij de
+            <br>
+            Stagiair Handleiding
+          </h1>
+
+          <p>
+            Alles wat je nodig hebt voor een goede start bij HEMA.
+            Vind snel werkinstructies, processen en praktische informatie.
+          </p>
+
+          <div class="dashboard-hero-actions">
+
+            <button
+              class="dashboard-primary-button"
+              data-department="retail-media"
+              type="button"
+            >
+              Bekijk Retail Media
+              <span>→</span>
+            </button>
+
+            <button
+              class="dashboard-secondary-button"
+              data-department="organic-social-media"
+              type="button"
+            >
+              Organic Social Media
+            </button>
+
+          </div>
+
         </div>
 
-      </div>
+
+        <div class="dashboard-hero-visual">
+
+          <div
+            class="dashboard-shape dashboard-shape-red"
+          >
+          </div>
+
+          <div
+            class="dashboard-shape dashboard-shape-pink"
+          >
+          </div>
+
+          <div class="dashboard-quote-card">
+
+            <span>
+              HEMA
+            </span>
+
+            <strong>
+              een goede start
+            </strong>
+
+            <small>
+              alles op één plek
+            </small>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
-      <div class="category-grid category-grid-in-banner">
+      <section class="dashboard-section">
 
-        ${departmentCard(
-          "retail-media",
-          "Retail Media",
-          "▦",
-          "Werkinstructies, systemen en processen voor Retail Media.",
-          `${retailCategories().length} categorieën`
-        )}
+        <div class="dashboard-section-heading">
 
-        ${departmentCard(
-          "organic-social-media",
-          "Organic Social Media",
-          "●",
-          "Strategisch en praktisch handboek voor het Organic Social Media team.",
-          `${organicProcedureCount()} procedures`
-        )}
+          <div>
 
-      </div>
+            <p class="eyebrow">
+              KIES EEN AFDELING
+            </p>
 
-    </section>
+            <h2>
+              Waar wil je naartoe?
+            </h2>
+
+          </div>
+
+          <p>
+            Kies eerst je afdeling en vind daarna
+            de juiste handleiding of procedure.
+          </p>
+
+        </div>
+
+
+        <div class="dashboard-departments">
+
+          ${departmentCard(
+            "retail-media",
+            "Retail Media",
+            "",
+            "Processen, systemen en werkwijzen rondom Retail Media.",
+            `${retailProcedureCount()} procedures`
+          )}
+
+          ${departmentCard(
+            "organic-social-media",
+            "Organic Social Media",
+            "",
+            "Strategie, content, community en performance.",
+            `${organicProcedureCount()} procedures`
+          )}
+
+          ${departmentCard(
+            "visual-creative",
+            "Visual Creative",
+            "",
+            "Stagehandleiding, contentcreatie en praktische werkwijzen.",
+            `${visualCreativeProcedureCount()} procedures`
+          )}
+
+        </div>
+
+      </section>
+
+
+      <section class="dashboard-section">
+
+        <div class="dashboard-section-heading">
+
+          <div>
+
+            <p class="eyebrow">
+              SNEL STARTEN
+            </p>
+
+            <h2>
+              Veelgebruikte procedures
+            </h2>
+
+          </div>
+
+          <p>
+            Direct naar een aantal veelgebruikte onderdelen.
+          </p>
+
+        </div>
+
+
+        <div
+          class="procedure-grid dashboard-procedure-grid"
+        >
+
+          ${featured
+            .map(
+              procedureCard
+            )
+            .join("")}
+
+        </div>
+
+      </section>
+
+
+      <section class="dashboard-help">
+
+        <div class="dashboard-help-icon">
+          ?
+        </div>
+
+        <div>
+
+          <strong>
+            Kun je iets niet vinden?
+          </strong>
+
+          <p>
+            Gebruik de zoekbalk bovenaan of blader via
+            de afdelingen in het menu links.
+          </p>
+
+        </div>
+
+      </section>
+
+    </div>
   `;
 }
 
@@ -1013,6 +1735,7 @@ function departmentView(
   ) {
 
     content.innerHTML = `
+
       <div class="breadcrumb">
 
         <button
@@ -1022,7 +1745,9 @@ function departmentView(
           Overzicht
         </button>
 
-        <span>/</span>
+        <span>
+          /
+        </span>
 
         <span>
           Retail Media
@@ -1057,7 +1782,9 @@ function departmentView(
       <div class="category-grid">
 
         ${retailCategories()
-          .map(categoryCard)
+          .map(
+            categoryCard
+          )
           .join("")}
 
       </div>
@@ -1067,103 +1794,187 @@ function departmentView(
   }
 
 
- if (
-  department ===
-  "organic-social-media"
-) {
+  if (
+    department ===
+    "organic-social-media"
+  ) {
 
-  const category =
-    organicCategory();
+    const category =
+      organicCategory();
 
-  if (!category) {
-    homeView();
-    return;
-  }
+    if (!category) {
+      homeView();
+      return;
+    }
 
-  const procedures =
-    data.procedures.filter(
-      (procedure) =>
-        procedure.category ===
-          "organic-social" &&
-        !procedure.parent
-    );
+    const procedures =
+      data.procedures.filter(
+        (procedure) =>
+          procedure.category ===
+            "organic-social" &&
+          !procedure.parent
+      );
 
-  content.innerHTML = `
-    <div class="breadcrumb">
+    content.innerHTML = `
 
-      <button
-        data-home
-        type="button"
-      >
-        Overzicht
-      </button>
+      <div class="breadcrumb">
 
-      <span>/</span>
+        <button
+          data-home
+          type="button"
+        >
+          Overzicht
+        </button>
 
-      <span>
-        Organic Social Media
-      </span>
+        <span>
+          /
+        </span>
 
-    </div>
+        <span>
+          Organic Social Media
+        </span>
 
-
-<div class="page-title-row">
-
-  <div>
-
-    <p class="eyebrow">
-      WERKINSTRUCTIES
-    </p>
-
-    <h1>
-      Organic Social Media
-    </h1>
-
-    <p>
-      ${category.description}
-    </p>
-
-  </div>
-
-</div>
+      </div>
 
 
-${
-  category.introduction?.length
-    ? `
-      <section class="organic-introduction">
+      <div class="page-title-row">
 
-        <h2>
-          Introductie
-        </h2>
+        <div>
 
-        ${category.introduction
+          <p class="eyebrow">
+            WERKINSTRUCTIES
+          </p>
+
+          <h1>
+            Organic Social Media
+          </h1>
+
+          <p>
+            ${category.description}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      ${
+        category.introduction?.length
+          ? `
+            <section class="organic-introduction">
+
+              <h2>
+                Introductie
+              </h2>
+
+              ${category.introduction
+                .map(
+                  (paragraph) => `
+                    <p>
+                      ${paragraph}
+                    </p>
+                  `
+                )
+                .join("")}
+
+            </section>
+          `
+          : ""
+      }
+
+
+      <div class="procedure-grid">
+
+        ${procedures
           .map(
-            (paragraph) => `
-              <p>
-                ${paragraph}
-              </p>
-            `
+            procedureCard
           )
           .join("")}
 
-      </section>
-    `
-    : ""
-}
+      </div>
+    `;
+
+    return;
+  }
 
 
-<div class="procedure-grid">
+  if (
+    department ===
+    "visual-creative"
+  ) {
 
-  ${procedures
-    .map(procedureCard)
-    .join("")}
+    const category =
+      visualCreativeCategory();
 
-</div>
-  `;
+    if (!category) {
+      homeView();
+      return;
+    }
 
-  return;
-}
+    const procedures =
+      data.procedures.filter(
+        (procedure) =>
+          procedure.category ===
+            "visual-creative" &&
+          !procedure.parent
+      );
+
+    content.innerHTML = `
+
+      <div class="breadcrumb">
+
+        <button
+          data-home
+          type="button"
+        >
+          Overzicht
+        </button>
+
+        <span>
+          /
+        </span>
+
+        <span>
+          Visual Creative
+        </span>
+
+      </div>
+
+
+      <div class="page-title-row">
+
+        <div>
+
+          <p class="eyebrow">
+            STAGEHANDLEIDING
+          </p>
+
+          <h1>
+            Visual Creative
+          </h1>
+
+          <p>
+            ${category.description}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="procedure-grid">
+
+        ${procedures
+          .map(
+            procedureCard
+          )
+          .join("")}
+
+      </div>
+    `;
+
+    return;
+  }
 
 
   homeView();
@@ -1180,6 +1991,7 @@ function listView(
   procedures
 ) {
   content.innerHTML = `
+
     <div class="page-title-row">
 
       <div>
@@ -1207,7 +2019,9 @@ function listView(
           <div class="procedure-grid">
 
             ${procedures
-              .map(procedureCard)
+              .map(
+                procedureCard
+              )
               .join("")}
 
           </div>
@@ -1230,13 +2044,16 @@ function listView(
 // FOLDER VIEW
 // =========================================================
 
-function folderView(folder) {
+function folderView(
+  folder
+) {
   const children =
     childProcedures(
       folder.id
     );
 
   content.innerHTML = `
+
     <div class="breadcrumb">
 
       <button
@@ -1246,7 +2063,9 @@ function folderView(folder) {
         Overzicht
       </button>
 
-      <span>/</span>
+      <span>
+        /
+      </span>
 
       <span>
         ${folder.title}
@@ -1279,7 +2098,9 @@ function folderView(folder) {
     <div class="procedure-grid">
 
       ${children
-        .map(procedureCard)
+        .map(
+          procedureCard
+        )
         .join("")}
 
     </div>
@@ -1311,7 +2132,9 @@ function searchView() {
       (procedure) =>
         searchableText(
           procedure
-        ).includes(query)
+        ).includes(
+          query
+        )
     );
 
   listView(
@@ -1330,7 +2153,9 @@ function searchView() {
 // LINKS
 // =========================================================
 
-function renderLinks(links) {
+function renderLinks(
+  links
+) {
   if (!links?.length) {
     return "";
   }
@@ -1348,7 +2173,9 @@ function renderLinks(links) {
               rel="noopener noreferrer"
             >
               ${link.label}
-              <span>↗</span>
+              <span>
+                ↗
+              </span>
             </a>
           `
         )
@@ -1363,7 +2190,9 @@ function renderLinks(links) {
 // INFO CARDS
 // =========================================================
 
-function renderInfoCards(cards) {
+function renderInfoCards(
+  cards
+) {
   if (!cards?.length) {
     return "";
   }
@@ -1396,6 +2225,7 @@ function renderInfoCards(cards) {
                   `
                   : ""
               }
+
 
               ${
                 card.note
@@ -1451,6 +2281,7 @@ function renderStepSubsection(
           `
           : ""
       }
+
 
       ${
         subsection.note
@@ -1577,11 +2408,14 @@ function renderStep(
   `;
 }
 
+
 // =========================================================
 // INTRO BOX
 // =========================================================
 
-function renderIntroBox(box) {
+function renderIntroBox(
+  box
+) {
   if (!box) {
     return "";
   }
@@ -1650,6 +2484,7 @@ function renderInfoSections(
                   : ""
               }
 
+
               ${
                 section.items?.length
                   ? `
@@ -1711,7 +2546,9 @@ function renderInfoSections(
 // INFO BOX
 // =========================================================
 
-function renderInfoBox(box) {
+function renderInfoBox(
+  box
+) {
   if (!box) {
     return "";
   }
@@ -1732,6 +2569,7 @@ function renderInfoBox(box) {
           `
           : ""
       }
+
 
       ${
         box.items?.length
@@ -1816,7 +2654,10 @@ function renderSubsections(
 
                   ${section.steps
                     .map(
-                      (step, index) =>
+                      (
+                        step,
+                        index
+                      ) =>
                         renderStep(
                           step,
                           index
@@ -1855,6 +2696,7 @@ function renderSubsections(
                       `
                       : ""
                   }
+
 
                   ${
                     section.subsection.note
@@ -1935,7 +2777,9 @@ function renderSubsections(
 // DETAIL VIEW
 // =========================================================
 
-function detailView(procedure) {
+function detailView(
+  procedure
+) {
   const category =
     categoryById(
       procedure.category
@@ -1958,9 +2802,13 @@ function detailView(procedure) {
             procedure.category &&
           !item.parent
       )
-      .slice(0, 4);
+      .slice(
+        0,
+        4
+      );
 
   content.innerHTML = `
+
     <div class="breadcrumb">
 
       <button
@@ -1970,7 +2818,9 @@ function detailView(procedure) {
         Overzicht
       </button>
 
-      <span>/</span>
+      <span>
+        /
+      </span>
 
       <span>
         ${procedure.title}
@@ -2012,6 +2862,7 @@ function detailView(procedure) {
               : ""
           }
 
+
           ${
             procedure.frequency
               ? `
@@ -2022,6 +2873,7 @@ function detailView(procedure) {
               : ""
           }
 
+
           ${
             procedure.duration
               ? `
@@ -2031,6 +2883,7 @@ function detailView(procedure) {
               `
               : ""
           }
+
 
           ${
             data.meta?.lastUpdated
@@ -2100,7 +2953,10 @@ function detailView(procedure) {
 
         ${(procedure.steps || [])
           .map(
-            (step, index) =>
+            (
+              step,
+              index
+            ) =>
               renderStep(
                 step,
                 index
@@ -2174,31 +3030,48 @@ function detailView(procedure) {
 // OPEN PROCEDURE
 // =========================================================
 
-function openProcedure(id) {
+function openProcedure(
+  id
+) {
   const procedure =
-    procedureById(id);
+    procedureById(
+      id
+    );
 
   if (!procedure) {
     return;
   }
 
   state = {
-    view: "detail",
-    category: null,
-    department: null,
-    query: "",
-    procedureId: id
+    view:
+      "detail",
+
+    category:
+      null,
+
+    department:
+      null,
+
+    query:
+      "",
+
+    procedureId:
+      id
   };
 
   if (searchInput) {
-    searchInput.value = "";
+    searchInput.value =
+      "";
   }
 
   render();
 
   window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+    top:
+      0,
+
+    behavior:
+      "smooth"
   });
 }
 
@@ -2213,172 +3086,218 @@ function bindContentButtons() {
     .querySelectorAll(
       "[data-open]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        (event) => {
+        button.addEventListener(
+          "click",
+          (event) => {
 
-          event.stopPropagation();
+            event.stopPropagation();
 
-          openProcedure(
-            button.dataset.open
-          );
+            openProcedure(
+              button.dataset.open
+            );
 
-        }
-      );
+          }
+        );
 
-    });
+      }
+    );
 
 
   content
     .querySelectorAll(
       "[data-procedure-card]"
     )
-    .forEach((card) => {
+    .forEach(
+      (card) => {
 
-      card.addEventListener(
-        "click",
-        (event) => {
+        card.addEventListener(
+          "click",
+          (event) => {
 
-          if (
-            event.target.closest(
-              "[data-favorite]"
-            ) ||
-            event.target.closest(
-              "[data-open]"
-            )
-          ) {
-            return;
+            if (
+              event.target.closest(
+                "[data-favorite]"
+              ) ||
+              event.target.closest(
+                "[data-open]"
+              )
+            ) {
+              return;
+            }
+
+            openProcedure(
+              card.dataset
+                .procedureCard
+            );
+
           }
+        );
 
-          openProcedure(
-            card.dataset
-              .procedureCard
-          );
-
-        }
-      );
-
-    });
+      }
+    );
 
 
   content
     .querySelectorAll(
       "[data-favorite]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        (event) => {
+        button.addEventListener(
+          "click",
+          (event) => {
 
-          event.stopPropagation();
+            event.stopPropagation();
 
-          toggleFavorite(
-            button.dataset.favorite
-          );
+            toggleFavorite(
+              button.dataset.favorite
+            );
 
-        }
-      );
+          }
+        );
 
-    });
+      }
+    );
 
 
   content
     .querySelectorAll(
       "[data-open-category]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        () => {
+        button.addEventListener(
+          "click",
+          () => {
 
-          state = {
-            view: "category",
-            category:
-              button.dataset
-                .openCategory,
-            department: null,
-            query: "",
-            procedureId: null
-          };
+            state = {
+              view:
+                "category",
 
-          render();
+              category:
+                button.dataset
+                  .openCategory,
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+              department:
+                null,
 
-        }
-      );
+              query:
+                "",
 
-    });
+              procedureId:
+                null
+            };
+
+            render();
+
+            window.scrollTo({
+              top:
+                0,
+
+              behavior:
+                "smooth"
+            });
+
+          }
+        );
+
+      }
+    );
 
 
   content
     .querySelectorAll(
       "[data-department]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        () => {
+        button.addEventListener(
+          "click",
+          () => {
 
-          state = {
-            view: "department",
-            category: null,
-            department:
-              button.dataset.department,
-            query: "",
-            procedureId: null
-          };
+            state = {
+              view:
+                "department",
 
-          render();
+              category:
+                null,
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+              department:
+                button.dataset.department,
 
-        }
-      );
+              query:
+                "",
 
-    });
+              procedureId:
+                null
+            };
+
+            render();
+
+            window.scrollTo({
+              top:
+                0,
+
+              behavior:
+                "smooth"
+            });
+
+          }
+        );
+
+      }
+    );
 
 
   content
     .querySelectorAll(
       "[data-home]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        () => {
+        button.addEventListener(
+          "click",
+          () => {
 
-          state = {
-            view: "home",
-            category: null,
-            department: null,
-            query: "",
-            procedureId: null
-          };
+            state = {
+              view:
+                "home",
 
-          render();
+              category:
+                null,
 
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+              department:
+                null,
 
-        }
-      );
+              query:
+                "",
 
-    });
+              procedureId:
+                null
+            };
+
+            render();
+
+            window.scrollTo({
+              top:
+                0,
+
+              behavior:
+                "smooth"
+            });
+
+          }
+        );
+
+      }
+    );
 }
 
 
@@ -2401,7 +3320,8 @@ function render() {
 
 
   else if (
-    state.view === "home"
+    state.view ===
+    "home"
   ) {
 
     homeView();
@@ -2410,7 +3330,8 @@ function render() {
 
 
   else if (
-    state.view === "department"
+    state.view ===
+    "department"
   ) {
 
     departmentView(
@@ -2421,7 +3342,8 @@ function render() {
 
 
   else if (
-    state.view === "favorites"
+    state.view ===
+    "favorites"
   ) {
 
     const favoriteProcedures =
@@ -2442,7 +3364,8 @@ function render() {
 
 
   else if (
-    state.view === "category"
+    state.view ===
+    "category"
   ) {
 
     const category =
@@ -2476,7 +3399,8 @@ function render() {
 
 
   else if (
-    state.view === "detail"
+    state.view ===
+    "detail"
   ) {
 
     const procedure =
@@ -2495,13 +3419,17 @@ function render() {
       "folder"
     ) {
 
-      folderView(procedure);
+      folderView(
+        procedure
+      );
 
     }
 
     else {
 
-      detailView(procedure);
+      detailView(
+        procedure
+      );
 
     }
 
@@ -2549,14 +3477,24 @@ if (clearSearch) {
     "click",
     () => {
 
-      searchInput.value = "";
+      searchInput.value =
+        "";
 
       state = {
-        view: "home",
-        category: null,
-        department: null,
-        query: "",
-        procedureId: null
+        view:
+          "home",
+
+        category:
+          null,
+
+        department:
+          null,
+
+        query:
+          "",
+
+        procedureId:
+          null
       };
 
       render();
@@ -2576,7 +3514,8 @@ document.addEventListener(
   (event) => {
 
     if (
-      event.key === "/" &&
+      event.key ===
+        "/" &&
       document.activeElement !==
         searchInput
     ) {
@@ -2589,7 +3528,8 @@ document.addEventListener(
 
 
     if (
-      event.key === "Escape" &&
+      event.key ===
+        "Escape" &&
       document.activeElement ===
         searchInput
     ) {
