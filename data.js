@@ -46,6 +46,11 @@ window.HANDBOOK_DATA = {
   "description": "Designs en touchpoints voor ticketcampagnes"
 },
     {
+  "id": "visual-creative",
+  "label": "Visual Creative",
+  "description": "Stagehandleiding en werkinstructies voor Visual Creative"
+},
+    {
       "id": "organic-social",
       "label": "Organic Social Media",
       "description": "Strategisch en praktisch handboek voor het Organic Social Media team",
