@@ -89,12 +89,18 @@ function toggleFavorite(id) {
 // DEPARTMENTS
 // =========================================================
 
+// =========================================================
+// DEPARTMENTS
+// =========================================================
+
 function retailCategories() {
   return data.categories.filter(
     (category) =>
-      category.id !== "organic-social"
+      category.id !== "organic-social" &&
+      category.id !== "visual-creative"
   );
 }
+
 
 function organicCategory() {
   return data.categories.find(
@@ -103,10 +109,20 @@ function organicCategory() {
   );
 }
 
+
+function visualCreativeCategory() {
+  return data.categories.find(
+    (category) =>
+      category.id === "visual-creative"
+  );
+}
+
+
 function retailProcedureCount() {
   const ids =
     retailCategories().map(
-      (category) => category.id
+      (category) =>
+        category.id
     );
 
   return data.procedures.filter(
@@ -118,377 +134,23 @@ function retailProcedureCount() {
   ).length;
 }
 
+
 function organicProcedureCount() {
   return categoryCount(
     "organic-social"
   );
 }
 
-// =========================================================
-// HEMA ICONEN
-// =========================================================
 
-function hemaIcon(name) {
-  const icons = {
-
-    dagelijks: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <rect
-          x="9"
-          y="11"
-          width="30"
-          height="28"
-          rx="4"
-        />
-        <path d="M15 7v8" />
-        <path d="M33 7v8" />
-        <path d="M9 19h30" />
-
-        <circle cx="17" cy="26" r="1.5" />
-        <circle cx="24" cy="26" r="1.5" />
-        <circle cx="31" cy="26" r="1.5" />
-
-        <circle cx="17" cy="33" r="1.5" />
-        <circle cx="24" cy="33" r="1.5" />
-      </svg>
-    `,
-
-    orders: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <path
-          d="
-            M10 18
-            L14 38
-            H34
-            L38 18
-            Z
-          "
-        />
-        <path d="M17 18l7-11 7 11" />
-        <path d="M14 25h20" />
-        <circle cx="19" cy="31" r="1.5" />
-        <circle cx="29" cy="31" r="1.5" />
-      </svg>
-    `,
-
-    betalingen: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <rect
-          x="7"
-          y="12"
-          width="34"
-          height="25"
-          rx="4"
-        />
-        <path d="M7 20h34" />
-        <path d="M13 30h8" />
-        <circle cx="34" cy="29" r="3" />
-      </svg>
-    `,
-
-    klantenservice: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <path
-          d="
-            M10 27
-            V23
-            C10 15
-            16 9
-            24 9
-            C32 9
-            38 15
-            38 23
-            V28
-          "
-        />
-        <rect
-          x="7"
-          y="23"
-          width="7"
-          height="11"
-          rx="3"
-        />
-        <rect
-          x="34"
-          y="23"
-          width="7"
-          height="11"
-          rx="3"
-        />
-        <path
-          d="
-            M37 34
-            C36 39
-            32 41
-            27 41
-          "
-        />
-        <circle cx="24" cy="41" r="2" />
-      </svg>
-    `,
-
-    uitingen: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <path
-          d="
-            M8 22
-            H16
-            L35 13
-            V35
-            L16 27
-            H8
-            Z
-          "
-        />
-        <path d="M16 27l3 12" />
-        <path d="M39 19c2 3 2 7 0 10" />
-      </svg>
-    `,
-
-    advertising: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <path d="M8 39V28h7v11" />
-        <path d="M19 39V21h7v18" />
-        <path d="M30 39V11h8v28" />
-        <path d="M6 39h35" />
-      </svg>
-    `,
-
-    banners: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <rect
-          x="7"
-          y="8"
-          width="34"
-          height="32"
-          rx="3"
-        />
-        <circle cx="33" cy="16" r="3" />
-        <path d="M10 36l10-11 7 7 6-6 8 10" />
-      </svg>
-    `,
-
-    ticketcampagnes: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <path
-          d="
-            M8 18
-            L31 7
-            L36 14
-            C33 16 33 20 36 22
-            L40 28
-            L17 41
-            L12 33
-            C15 31 15 27 12 25
-            Z
-          "
-        />
-        <path d="M22 15l12 19" stroke-dasharray="3 4" />
-      </svg>
-    `,
-
-    organic: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <circle cx="24" cy="14" r="6" />
-        <circle cx="11" cy="19" r="4" />
-        <circle cx="37" cy="19" r="4" />
-
-        <path
-          d="
-            M14 39
-            V32
-            C14 26
-            18 23
-            24 23
-            C30 23
-            34 26
-            34 32
-            V39
-            Z
-          "
-        />
-
-        <path
-          d="
-            M7 36
-            V30
-            C7 26
-            9 24
-            13 24
-          "
-        />
-
-        <path
-          d="
-            M41 36
-            V30
-            C41 26
-            39 24
-            35 24
-          "
-        />
-      </svg>
-    `,
-
-    retail: `
-      <svg
-        class="hema-icon"
-        viewBox="0 0 48 48"
-        aria-hidden="true"
-      >
-        <path
-          d="
-            M8 19
-            L12 8
-            H36
-            L40 19
-          "
-        />
-
-        <path d="M9 19h30v21H9z" />
-
-        <path
-          d="
-            M8 19
-            C8 23
-            14 23
-            14 19
-
-            C14 23
-            20 23
-            20 19
-
-            C20 23
-            26 23
-            26 19
-
-            C26 23
-            32 23
-            32 19
-
-            C32 23
-            40 23
-            40 19
-          "
-        />
-
-        <rect
-          x="19"
-          y="28"
-          width="10"
-          height="12"
-        />
-      </svg>
-    `
-
-  };
-
-  return (
-    icons[name] ||
-    icons.banners
+function visualCreativeProcedureCount() {
+  return categoryCount(
+    "visual-creative"
   );
 }
 
 
-function categoryIcon(categoryId) {
-  const iconMap = {
-    "dagelijks":
-      "dagelijks",
-
-    "orders":
-      "orders",
-
-    "betalingen":
-      "betalingen",
-
-    "klantenservice":
-      "klantenservice",
-
-    "uitingen":
-      "uitingen",
-
-    "advertising":
-      "advertising",
-
-    "banners":
-      "banners",
-
-    "ticketcampagnes":
-      "ticketcampagnes",
-
-    "organic-social":
-      "organic"
-  };
-
-  return hemaIcon(
-    iconMap[categoryId] ||
-    "banners"
-  );
-}
-
-
-function departmentIcon(
-  departmentId
-) {
-  if (
-    departmentId ===
-    "retail-media"
-  ) {
-    return hemaIcon(
-      "retail"
-    );
-  }
-
-  if (
-    departmentId ===
-    "organic-social-media"
-  ) {
-    return hemaIcon(
-      "organic"
-    );
-  }
-
-  return "";
-}
-
 // =========================================================
-// NAVIGATION
+// NAVIGATION BUTTONS
 // =========================================================
 
 function categoryButton(
@@ -521,6 +183,7 @@ function categoryButton(
   `;
 }
 
+
 function organicHandbookButton(
   category
 ) {
@@ -536,8 +199,8 @@ function organicHandbookButton(
     >
 
       <span class="nav-icon">
-        ${hemaIcon(
-          "organic"
+        ${categoryIcon(
+          "organic-social"
         )}
       </span>
 
@@ -555,6 +218,46 @@ function organicHandbookButton(
   `;
 }
 
+
+function visualCreativeHandbookButton(
+  category
+) {
+  if (!category) {
+    return "";
+  }
+
+  return `
+    <button
+      class="nav-item category-child"
+      data-visual-department="visual-creative"
+      type="button"
+    >
+
+      <span class="nav-icon">
+        ${categoryIcon(
+          "visual-creative"
+        )}
+      </span>
+
+      <span class="nav-label">
+        Handboek
+      </span>
+
+      <span class="nav-count">
+        ${categoryCount(
+          category.id
+        )}
+      </span>
+
+    </button>
+  `;
+}
+
+
+// =========================================================
+// OPEN / CLOSE SIDEBAR FOLDERS
+// =========================================================
+
 function setupNavFolder(
   buttonId,
   contentId
@@ -569,13 +272,17 @@ function setupNavFolder(
       contentId
     );
 
-  if (!button || !folderContent) {
+  if (
+    !button ||
+    !folderContent
+  ) {
     return;
   }
 
   button.addEventListener(
     "click",
     () => {
+
       const isOpen =
         button.classList.toggle(
           "open"
@@ -598,11 +305,18 @@ function setupNavFolder(
 
       if (icon) {
         icon.textContent =
-          isOpen ? "▾" : "▸";
+          isOpen
+            ? "▾"
+            : "▸";
       }
     }
   );
 }
+
+
+// =========================================================
+// BUILD NAVIGATION
+// =========================================================
 
 function buildNavigation() {
   const categoryNav =
@@ -614,13 +328,22 @@ function buildNavigation() {
     return;
   }
 
-  const organic =
-    organicCategory();
 
   const retail =
     retailCategories();
 
+  const organic =
+    organicCategory();
+
+  const visual =
+    visualCreativeCategory();
+
+
   categoryNav.innerHTML = `
+
+    <!-- ===============================================
+         RETAIL MEDIA
+    ================================================ -->
 
     <div class="nav-folder">
 
@@ -630,6 +353,7 @@ function buildNavigation() {
         type="button"
         aria-expanded="true"
       >
+
         <span class="nav-folder-icon">
           ▾
         </span>
@@ -637,151 +361,313 @@ function buildNavigation() {
         <span class="nav-folder-title">
           Retail Media
         </span>
+
       </button>
+
 
       <div
         id="retailMediaCategories"
         class="nav-folder-content"
       >
+
         ${retail
-          .map(categoryButton)
+          .map(
+            categoryButton
+          )
           .join("")}
+
       </div>
 
     </div>
 
+
+    <!-- ===============================================
+         ORGANIC SOCIAL MEDIA
+    ================================================ -->
 
     <div class="nav-folder">
 
       <button
         id="organicSocialToggle"
-        class="nav-folder-button open"
+        class="nav-folder-button"
         type="button"
-        aria-expanded="true"
+        aria-expanded="false"
       >
+
         <span class="nav-folder-icon">
-          ▾
+          ▸
         </span>
 
         <span class="nav-folder-title">
           Organic Social Media
         </span>
+
       </button>
+
 
       <div
         id="organicSocialCategories"
-        class="nav-folder-content"
+        class="nav-folder-content collapsed"
       >
+
         ${organicHandbookButton(
           organic
         )}
+
       </div>
 
     </div>
+
+
+    <!-- ===============================================
+         VISUAL CREATIVE
+    ================================================ -->
+
+    <div class="nav-folder">
+
+      <button
+        id="visualCreativeToggle"
+        class="nav-folder-button"
+        type="button"
+        aria-expanded="false"
+      >
+
+        <span class="nav-folder-icon">
+          ▸
+        </span>
+
+        <span class="nav-folder-title">
+          Visual Creative
+        </span>
+
+      </button>
+
+
+      <div
+        id="visualCreativeCategories"
+        class="nav-folder-content collapsed"
+      >
+
+        ${visualCreativeHandbookButton(
+          visual
+        )}
+
+      </div>
+
+    </div>
+
   `;
 
+
+  // =====================================================
+  // OVERZICHT / FAVORIETEN
+  // =====================================================
 
   document
     .querySelectorAll(
       "[data-view]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        () => {
+        button.addEventListener(
+          "click",
+          () => {
 
-          state = {
-            view:
-              button.dataset.view,
-            category: null,
-            department: null,
-            query: "",
-            procedureId: null
-          };
+            state = {
+              view:
+                button.dataset.view,
 
-          if (searchInput) {
-            searchInput.value = "";
+              category:
+                null,
+
+              department:
+                null,
+
+              query:
+                "",
+
+              procedureId:
+                null
+            };
+
+
+            if (searchInput) {
+              searchInput.value =
+                "";
+            }
+
+
+            render();
           }
+        );
 
-          render();
-        }
-      );
+      }
+    );
 
-    });
 
+  // =====================================================
+  // RETAIL MEDIA CATEGORIEËN
+  // =====================================================
 
   document
     .querySelectorAll(
       "[data-category]"
     )
-    .forEach((button) => {
+    .forEach(
+      (button) => {
 
-      button.addEventListener(
-        "click",
-        () => {
+        button.addEventListener(
+          "click",
+          () => {
 
-          state = {
-            view: "category",
-            category:
-              button.dataset.category,
-            department: null,
-            query: "",
-            procedureId: null
-          };
+            state = {
+              view:
+                "category",
 
-          if (searchInput) {
-            searchInput.value = "";
+              category:
+                button.dataset.category,
+
+              department:
+                null,
+
+              query:
+                "",
+
+              procedureId:
+                null
+            };
+
+
+            if (searchInput) {
+              searchInput.value =
+                "";
+            }
+
+
+            render();
           }
+        );
 
-          render();
-        }
-      );
-
-    });
-const organicDepartmentButton =
-  document.querySelector(
-    "[data-organic-department]"
-  );
-
-if (organicDepartmentButton) {
-  organicDepartmentButton.addEventListener(
-    "click",
-    () => {
-      state = {
-        view: "department",
-        category: null,
-        department:
-          "organic-social-media",
-        query: "",
-        procedureId: null
-      };
-
-      if (searchInput) {
-        searchInput.value = "";
       }
+    );
 
-      render();
 
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  );
-}
+  // =====================================================
+  // ORGANIC SOCIAL MEDIA
+  // =====================================================
+
+  document
+    .querySelectorAll(
+      "[data-organic-department]"
+    )
+    .forEach(
+      (button) => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            state = {
+              view:
+                "department",
+
+              category:
+                null,
+
+              department:
+                "organic-social-media",
+
+              query:
+                "",
+
+              procedureId:
+                null
+            };
+
+
+            if (searchInput) {
+              searchInput.value =
+                "";
+            }
+
+
+            render();
+          }
+        );
+
+      }
+    );
+
+
+  // =====================================================
+  // VISUAL CREATIVE
+  // =====================================================
+
+  document
+    .querySelectorAll(
+      "[data-visual-department]"
+    )
+    .forEach(
+      (button) => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            state = {
+              view:
+                "department",
+
+              category:
+                null,
+
+              department:
+                "visual-creative",
+
+              query:
+                "",
+
+              procedureId:
+                null
+            };
+
+
+            if (searchInput) {
+              searchInput.value =
+                "";
+            }
+
+
+            render();
+          }
+        );
+
+      }
+    );
+
+
+  // =====================================================
+  // UITKLAPBARE FOLDERS
+  // =====================================================
 
   setupNavFolder(
     "retailMediaToggle",
     "retailMediaCategories"
   );
 
+
   setupNavFolder(
     "organicSocialToggle",
     "organicSocialCategories"
   );
-}
 
+
+  setupNavFolder(
+    "visualCreativeToggle",
+    "visualCreativeCategories"
+  );
+}
 
 function updateNavigation() {
   document
