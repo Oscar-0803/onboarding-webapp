@@ -2005,6 +2005,561 @@ window.HANDBOOK_DATA = {
   ]
 },
     // =====================================================
+// VISUAL CREATIVE
+// =====================================================
+
+// =====================================================
+// 1. POST INPLANNEN
+// =====================================================
+
+{
+  "id": "visual-post-inplannen",
+  "category": "visual-creative",
+
+  "title": "1. Post inplannen",
+
+  "summary":
+    "Planning van Instagram Stories, Pinterest en de socialmediacontentkalender.",
+
+  "system":
+    "Social Media Kalender / Pinterest",
+
+  "frequency":
+    "Wekelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "In dit hoofdstuk leer je hoe de planning van social content werkt. De contentkalender vormt de centrale plek voor ideeën, planning, copy en statusupdates. Daarnaast wordt uitgelegd hoe Instagram Stories en Pinterest-content worden ingepland.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 2. EIGEN CONTENT MAKEN
+// =====================================================
+
+{
+  "id": "visual-eigen-content",
+  "category": "visual-creative",
+
+  "title": "2. Eigen content maken",
+
+  "summary":
+    "Huisstijl, Beeldbinkie, Iconosquare, fotografie, video en formaten.",
+
+  "system":
+    "Beeldbinkie / Iconosquare",
+
+  "frequency":
+    "Bij contentcreatie",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Hier vind je de basis voor het zelf maken van HEMA-content. Onderwerpen zijn de huisstijl, Beeldbinkie, Iconosquare, het zoeken en downloaden van afbeeldingen, foto- en videoproductie, geschikte locaties en de formaten per socialmediakanaal.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 3. INSTAGRAM
+// =====================================================
+
+{
+  "id": "visual-instagram",
+  "category": "visual-creative",
+
+  "title": "3. Instagram",
+
+  "summary":
+    "Reels, Stories, fanstories, folderstories, spelletjes en hoogtepunten.",
+
+  "system":
+    "Instagram / Illustrator / Iconosquare",
+
+  "frequency":
+    "Dagelijks / wekelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Dit hoofdstuk bevat de richtlijnen voor Instagram Reels en Stories. Ook komen reel-reposts, fanstories, This or That, folderstories, feitjes, achtergrondjes, spelletjes, Snapchat-doorposts, dilemma's en Instagram-hoogtepunten aan bod.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 4. PINTEREST
+// =====================================================
+
+{
+  "id": "visual-pinterest",
+  "category": "visual-creative",
+
+  "title": "4. Pinterest",
+
+  "summary":
+    "Content zoeken, reels, foto's, achtergronden, SEO en pins plaatsen.",
+
+  "system":
+    "Pinterest / Illustrator",
+
+  "frequency":
+    "Wekelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Pinterest werkt anders dan Instagram en Facebook doordat SEO een belangrijke rol speelt. Dit hoofdstuk behandelt contentselectie, reels, foto's, achtergronden, zoekwoorden, titels, omschrijvingen en het publiceren van een pin.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 5. FACEBOOK
+// =====================================================
+
+{
+  "id": "visual-facebook",
+  "category": "visual-creative",
+
+  "title": "5. Facebook",
+
+  "summary":
+    "Facebookcontent bewerken en geschikt maken voor het juiste formaat.",
+
+  "system":
+    "Facebook / Photoshop / Adobe Express",
+
+  "frequency":
+    "Wanneer nodig",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Voor Facebook wordt veel bestaande content vanuit Instagram en TikTok hergebruikt. Als Visual Creative zorg je onder andere voor de juiste beeldbewerking, het HEMA-logo en het correcte formaat van foto's en video's.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 6. SNAPCHAT
+// =====================================================
+
+{
+  "id": "visual-snapchat",
+  "category": "visual-creative",
+
+  "title": "6. Snapchat",
+
+  "summary":
+    "Wekelijkse Snapchat Stories maken en interactief vormgeven.",
+
+  "system":
+    "Snapchat",
+
+  "frequency":
+    "Iedere woensdag",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Samen met de stagiair Creative Copy wordt Snapchat bijgehouden. Elke woensdag wordt een interactieve Snapchat Story gemaakt rond een bepaald onderwerp of een selectie producten.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 7. MAANDRAPPORTAGES
+// =====================================================
+
+{
+  "id": "visual-maandrapportages",
+  "category": "visual-creative",
+
+  "title": "7. Maandrapportages",
+
+  "summary":
+    "Resultaten verzamelen en verwerken in de maandrapportages.",
+
+  "system":
+    "Iconosquare / Rapportages",
+
+  "frequency":
+    "Maandelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "In de maandrapportages worden de prestaties van social content verzameld en beoordeeld. De handleiding verwijst hiervoor naar de centrale rapportagemap en naar gegevens uit onder andere Iconosquare.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 8. WEBCARE
+// =====================================================
+
+{
+  "id": "visual-webcare",
+  "category": "visual-creative",
+
+  "title": "8. Webcare",
+
+  "summary":
+    "Afstemming met webcare en beheer van internationale content in de Global Drive.",
+
+  "system":
+    "Teams / Google Drive",
+
+  "frequency":
+    "Doorlopend",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": "8.1",
+
+      "title":
+        "Webcare",
+
+      "text":
+        "Binnen Teams is er een chat met het HEMA Social Team en webcare. Webcare beantwoordt dagelijks vragen van klanten. Bij veel voorkomende vragen, klachten of opmerkingen over social media wordt hierover afgestemd met het social team.",
+
+      "bullets": [
+        "Kijk regelmatig in de Teams-chat zodat je niets mist",
+        "Beantwoord vragen zelf als je het antwoord weet",
+        "Vraag het na wanneer je twijfelt",
+        "Ligt een vraag buiten het social team, laat webcare dan doorverwijzen naar Tier 2"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number": "8.2",
+
+      "title":
+        "Content in Global Drive",
+
+      "text":
+        "De Global Drive is een Google Drive-map waarin onder andere België, Frankrijk en Duitsland geplaatste content kunnen vinden die zij op hun eigen kanalen kunnen gebruiken. Het is aan te raden deze map ongeveer iedere twee weken aan te vullen.",
+
+      "bullets": [
+        "Selecteer alleen content die geschikt is voor internationaal gebruik",
+        "Video's met Nederlandse tekst of Nederlandse gesproken tekst zijn meestal niet geschikt",
+        "Gebruik waar mogelijk versies zonder tekst in beeld",
+        "Upload content bij voorkeur pas nadat Nederland deze zelf heeft geplaatst",
+        "Beeldbinkie-bestanden hoeven niet te worden toegevoegd omdat de andere landen daar zelf toegang toe hebben"
+      ],
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 9. SAP
+// =====================================================
+
+{
+  "id": "visual-sap",
+  "category": "visual-creative",
+
+  "title": "9. SAP",
+
+  "summary":
+    "Voorraad van producten controleren voordat content wordt gepubliceerd.",
+
+  "system":
+    "SAP",
+
+  "frequency":
+    "Voor publicatie",
+
+  "duration":
+    "± 2–5 min",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Voor geplande content moet worden gecontroleerd of producten voldoende op voorraad zijn. De handleiding gebruikt hiervoor SAP en noemt als richtlijn minimaal 2.000 stuks voorraad.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 10. OVERIGE MAPLOCATIES
+// =====================================================
+
+{
+  "id": "visual-maplocaties",
+  "category": "visual-creative",
+
+  "title": "10. Overige maplocaties",
+
+  "summary":
+    "Belangrijke interne mappen voor designs, content, rapportages en eigen werk.",
+
+  "system":
+    "Interne schijven",
+
+  "frequency":
+    "Naslag",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "Dit hoofdstuk geeft een overzicht van belangrijke interne maplocaties voor onder andere designbestanden, rapportages, social content, folders, campagnes en je eigen stagiairsmap.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// 11. CPM-DOCUMENT
+// =====================================================
+
+{
+  "id": "visual-cpm",
+  "category": "visual-creative",
+
+  "title": "11. CPM-document",
+
+  "summary":
+    "CPM-prestaties van creators, Truus en GoSpooky wekelijks bijhouden.",
+
+  "system":
+    "CPM-document / Iconosquare",
+
+  "frequency":
+    "Wekelijks",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    false,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Over dit hoofdstuk",
+
+      "text":
+        "In het CPM-document worden de Cost per Mille en prestaties bijgehouden van creators en samenwerkingspartners zoals Truus en GoSpooky. De data wordt gebruikt om verschillende contentstukken met elkaar te vergelijken.",
+
+      "image":
+        ""
+    }
+  ]
+},
+
+// =====================================================
+// TAAKVERDELING
+// =====================================================
+
+{
+  "id": "visual-taakverdeling",
+  "category": "visual-creative",
+
+  "title": "Taakverdeling",
+
+  "summary":
+    "Overzicht van de verantwoordelijkheden van Creative Copy en Visual Creative.",
+
+  "system":
+    "Visual Creative",
+
+  "frequency":
+    "Naslag",
+
+  "duration":
+    "Naslag",
+
+  "featured":
+    true,
+
+  "steps": [
+    {
+      "number": false,
+
+      "title":
+        "Stagiair Visual Creative",
+
+      "bullets": [
+        "Stories visueel opmaken",
+        "Stories posten",
+        "Fanstories verzamelen",
+        "Feed-fanposts verzamelen",
+        "Pinterest in samenwerking met Emma-Sophie",
+        "Contactpersoon voor webcare",
+        "Socialmedianl@hema.nl bijhouden",
+        "Campagne-evaluaties samen met Creative Copy",
+        "Contentcreatie",
+        "Concurrentieanalyse"
+      ],
+
+      "image":
+        ""
+    },
+
+    {
+      "number": false,
+
+      "title":
+        "Stagiair Creative Copy",
+
+      "bullets": [
+        "Posts inplannen voor Facebook, Instagram, TikTok en Snapchat",
+        "Opzetjes voor copy schrijven",
+        "Samples regelen en bijhouden en contact met de postkamer",
+        "SAP",
+        "Creatives briefen",
+        "Contactpersoon voor het buitenland",
+        "Contentcreatie",
+        "CPM",
+        "Campagne-evaluaties samen met Visual Creative"
+      ],
+
+      "image":
+        ""
+    }
+  ]
+},
+    // =====================================================
     // ORGANIC SOCIAL MEDIA
     // =====================================================
 
