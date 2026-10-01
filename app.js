@@ -1934,7 +1934,79 @@ function departmentView(
 
     return;
   }
+if (
+  department ===
+  "visual-creative"
+) {
 
+  const category =
+    visualCreativeCategory();
+
+  if (!category) {
+    homeView();
+    return;
+  }
+
+  const procedures =
+    data.procedures.filter(
+      (procedure) =>
+        procedure.category ===
+          "visual-creative" &&
+        !procedure.parent
+    );
+
+  content.innerHTML = `
+
+    <div class="breadcrumb">
+
+      <button
+        data-home
+        type="button"
+      >
+        Overzicht
+      </button>
+
+      <span>/</span>
+
+      <span>
+        Visual Creative
+      </span>
+
+    </div>
+
+
+    <div class="page-title-row">
+
+      <div>
+
+        <p class="eyebrow">
+          STAGEHANDLEIDING
+        </p>
+
+        <h1>
+          Visual Creative
+        </h1>
+
+        <p>
+          ${category.description}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="procedure-grid">
+
+      ${procedures
+        .map(procedureCard)
+        .join("")}
+
+    </div>
+  `;
+
+  return;
+}
 
   homeView();
 }
