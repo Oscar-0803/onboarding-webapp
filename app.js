@@ -812,7 +812,41 @@ function organicHandbookButton(
     </button>
   `;
 }
+function visualCreativeHandbookButton(
+  category
+) {
+  if (!category) {
+    return "";
+  }
 
+  return `
+    <button
+      class="nav-item category-child"
+      data-visual-department="visual-creative"
+      type="button"
+    >
+
+      <span class="nav-icon">
+        ${categoryIcon
+          ? categoryIcon(
+              "visual-creative"
+            )
+          : ""}
+      </span>
+
+      <span class="nav-label">
+        Handboek
+      </span>
+
+      <span class="nav-count">
+        ${categoryCount(
+          category.id
+        )}
+      </span>
+
+    </button>
+  `;
+}
 
 function visualCreativeHandbookButton(
   category
