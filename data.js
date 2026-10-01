@@ -2016,35 +2016,18 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-post-inplannen",
   "category": "visual-creative",
-
   "title": "1. Post inplannen",
-
-  "summary":
-    "Werkwijze voor de contentkalender, Instagram Stories en het inplannen van Pinterest-content.",
-
-  "system":
-    "Social Media Kalender / Instagram / Pinterest",
-
-  "frequency":
-    "Wekelijks",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
+  "summary": "Werkwijze voor de contentkalender, Instagram Stories en het inplannen van Pinterest-content.",
+  "system": "Social Media Kalender / Instagram / Pinterest",
+  "frequency": "Wekelijks",
+  "duration": "Naslag",
+  "featured": false,
 
   "steps": [
-
     {
       "number": "1.1",
-
-      "title":
-        "Werken met de contentkalender",
-
-      "text":
-        "Wanneer je in het Organic Social Team werkt kom je in aanraking met de contentkalender. De contentkalender ga je opvullen met ideeën en suggesties. De contentkalender staat in Google Drive en heet SOCIALMEDIA 2026 KALENDER.",
-
+      "title": "Werken met de contentkalender",
+      "text": "Wanneer je in het Organic Social Team werkt kom je in aanraking met de contentkalender. De contentkalender ga je opvullen met ideeën en suggesties. De contentkalender staat in Google Drive en heet SOCIALMEDIA 2026 KALENDER.",
       "bullets": [
         "De contentkalender is het algemene document waarin alle Organic Social-medewerkers contentideeën, copy's en de planning plaatsen.",
         "De kalender wordt twee keer per week tijdens de contentcheck doorgenomen.",
@@ -2052,20 +2035,13 @@ window.HANDBOOK_DATA = {
         "Voorzie je categorie tijdig van ideeën, suggesties en een planning.",
         "Geef actuele statusupdates over geplande content waarvoor groen licht is gegeven."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "1.2",
-
-      "title":
-        "Instagram Stories inplannen",
-
-      "text":
-        "Op de Instagram-pagina van HEMA wordt er zes keer per week een story geplaatst. Instagram Stories zijn interactieve stukken content waarbij je interactie uitnodigt bij de kijker.",
-
+      "title": "Instagram Stories inplannen",
+      "text": "Op de Instagram-pagina van HEMA wordt er zes keer per week een story geplaatst. Instagram Stories zijn interactieve stukken content waarbij je interactie uitnodigt bij de kijker.",
       "bullets": [
         "De planning voor de stories staat aan de linkerkant van de contentplanning.",
         "Hier plan je de content voor de komende week in.",
@@ -2074,20 +2050,13 @@ window.HANDBOOK_DATA = {
         "Eén dag per week mag leeg blijven als resetdag.",
         "Na de resetdag beginnen de posttijden weer opnieuw, zodat stories niet steeds later op de dag worden geplaatst."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "1.3",
-
-      "title":
-        "Pinterest inplannen",
-
-      "text":
-        "Op Pinterest wordt er ongeveer zes keer per week iets geplaatst. Bestaande content van andere kanalen wordt vaak doorgeplaatst op Pinterest. Alleen de achtergronden worden vaak zelf gemaakt.",
-
+      "title": "Pinterest inplannen",
+      "text": "Op Pinterest wordt er ongeveer zes keer per week iets geplaatst. Bestaande content van andere kanalen wordt vaak doorgeplaatst op Pinterest. Alleen de achtergronden worden vaak zelf gemaakt.",
       "bullets": [
         "Pins kunnen vooraf worden ingepland.",
         "Je kunt aan het begin van de week in principe de Pinterest-content voor de hele week inplannen.",
@@ -2095,11 +2064,8 @@ window.HANDBOOK_DATA = {
         "De beschrijving, link en inplandatum kunnen na het inplannen nog wel worden aangepast.",
         "Meer informatie over Pinterest staat in hoofdstuk 4."
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -2111,35 +2077,18 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-eigen-content",
   "category": "visual-creative",
-
   "title": "2. Eigen content maken",
-
-  "summary":
-    "Huisstijl, Beeldbinkie, Iconosquare, foto, video, formaten en geschikte locaties.",
-
-  "system":
-    "Beeldbinkie / Iconosquare / Adobe",
-
-  "frequency":
-    "Bij contentcreatie",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    true,
+  "summary": "Huisstijl, Beeldbinkie, Iconosquare, foto, video, formaten en geschikte locaties.",
+  "system": "Beeldbinkie / Iconosquare / Adobe",
+  "frequency": "Bij contentcreatie",
+  "duration": "Naslag",
+  "featured": true,
 
   "steps": [
-
     {
       "number": "2.1",
-
-      "title":
-        "Huisstijl & Beeldbinkie",
-
-      "text":
-        "HEMA hanteert een huisstijl. De richtlijnen van deze huisstijl staan op de beeldbank van HEMA: Beeldbinkie. Beeldbinkie is de algemene beeldbank van HEMA. Hier staan vrijwel alle beelden en visuele richtlijnen die door HEMA worden gebruikt.",
-
+      "title": "Huisstijl & Beeldbinkie",
+      "text": "HEMA hanteert een huisstijl. De richtlijnen van deze huisstijl staan op de beeldbank van HEMA: Beeldbinkie. Beeldbinkie is de algemene beeldbank van HEMA. Hier staan vrijwel alle beelden en visuele richtlijnen die door HEMA worden gebruikt.",
       "bullets": [
         "Afhankelijk van het type content dat je maakt, kan Beeldbinkie een belangrijke bron zijn.",
         "De huisstijl staat in Beeldbinkie onder Brand Identity → 2. Visual Identity.",
@@ -2147,24 +2096,15 @@ window.HANDBOOK_DATA = {
         "Hier vind je de lettertypes.",
         "Hier staan ook visuele elementen die je bijvoorbeeld in stories gebruikt."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.2",
-
-      "title":
-        "Afbeeldingen zoeken op Beeldbinkie",
-
-      "text":
-        "Gebruik onderstaande werkwijze om productbeelden en andere assets in Beeldbinkie te vinden.",
-
+      "title": "Afbeeldingen zoeken op Beeldbinkie",
+      "text": "Gebruik onderstaande werkwijze om productbeelden en andere assets in Beeldbinkie te vinden.",
       "subsection": {
-        "title":
-          "Stappen",
-
+        "title": "Stappen",
         "steps": [
           "Log in op Beeldbinkie en ga vanaf de homepage naar 'Beeldbank'.",
           "Vul het artikelnummer in. Het artikelnummer vind je bij de productinformatie op hema.nl.",
@@ -2173,66 +2113,44 @@ window.HANDBOOK_DATA = {
           "Gebruik de filters in Beeldbinkie om sneller bepaalde soorten afbeeldingen te vinden, bijvoorbeeld beelden die passen bij de folder."
         ]
       },
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.3",
-
-      "title":
-        "Licentiebeelden & bestandstypen",
-
-      "text":
-        "Wanneer bij een afbeelding staat dat het een licentiebeeld is, kun je het beeld gebruiken maar moet je eerst toestemming vragen. Bij het downloaden kun je verschillende bestandstypen kiezen.",
-
+      "title": "Licentiebeelden & bestandstypen",
+      "text": "Wanneer bij een afbeelding staat dat het een licentiebeeld is, kun je het beeld gebruiken maar moet je eerst toestemming vragen. Bij het downloaden kun je verschillende bestandstypen kiezen.",
       "infoCards": [
         {
-          "title":
-            "JPG",
-
+          "title": "JPG",
           "items": [
             "Gebruik wanneer je het beeld zo wilt gebruiken.",
             "Gebruik wanneer je het beeld alleen wilt bijsnijden."
           ]
         },
-
         {
-          "title":
-            "PNG",
-
+          "title": "PNG",
           "items": [
             "Gebruik wanneer je een andere achtergrond wilt gebruiken.",
             "Gebruik wanneer je de positie wilt aanpassen.",
             "Gebruik voor andere minimale aanpassingen."
           ]
         },
-
         {
-          "title":
-            "TIFF",
-
+          "title": "TIFF",
           "items": [
             "Gebruik wanneer je elementen van het beeld wilt loskoppelen.",
             "Gebruik wanneer je het beeld uitgebreider wilt bewerken."
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.4",
-
-      "title":
-        "Iconosquare",
-
-      "text":
-        "HEMA plaatst veel content op verschillende kanalen. Soms is het daardoor lastig om een bepaalde post of story terug te vinden. Hiervoor wordt Iconosquare gebruikt.",
-
+      "title": "Iconosquare",
+      "text": "HEMA plaatst veel content op verschillende kanalen. Soms is het daardoor lastig om een bepaalde post of story terug te vinden. Hiervoor wordt Iconosquare gebruikt.",
       "bullets": [
         "Bekijk geplaatste content van verschillende kanalen.",
         "Bekijk de bijbehorende data.",
@@ -2244,20 +2162,13 @@ window.HANDBOOK_DATA = {
         "Bekijk hoe content heeft gepresteerd.",
         "In Iconosquare vind je ook rapporten die worden gebruikt voor maandrapportages."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.5",
-
-      "title":
-        "Foto's en video's maken",
-
-      "text":
-        "Soms is het gemakkelijker om zelf een foto of video te filmen of fotograferen in plaats van een creative te briefen. Maak bij eigen videoproducties waar mogelijk ook foto's. Deze kunnen bijvoorbeeld voor Facebook worden gebruikt of als blijkt dat een video minder effect heeft.",
-
+      "title": "Foto's en video's maken",
+      "text": "Soms is het gemakkelijker om zelf een foto of video te filmen of fotograferen in plaats van een creative te briefen. Maak bij eigen videoproducties waar mogelijk ook foto's. Deze kunnen bijvoorbeeld voor Facebook worden gebruikt of als blijkt dat een video minder effect heeft.",
       "bullets": [
         "Zorg voor natuurlijk licht. Dit scheelt veel editen.",
         "Let op de achtergrond van de video.",
@@ -2267,85 +2178,56 @@ window.HANDBOOK_DATA = {
         "Gebruik een statief wanneer je een heel stabiele video wilt maken.",
         "Zoek een geschikte locatie voor het soort video dat je wilt maken."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.6",
-
-      "title":
-        "Formaten",
-
-      "text":
-        "Houd bij het maken van content rekening met de formaten die binnen de verschillende kanalen worden gebruikt. Het document vermeldt onderstaande formaten.",
-
+      "title": "Formaten",
+      "text": "Houd bij het maken van content rekening met de formaten die binnen de verschillende kanalen worden gebruikt. Het document vermeldt onderstaande formaten.",
       "infoCards": [
         {
-          "title":
-            "Instagram Story",
-
+          "title": "Instagram Story",
           "items": [
             "1920 × 1080 px",
             "9:16"
           ]
         },
-
         {
-          "title":
-            "Instagram foto",
-
+          "title": "Instagram foto",
           "items": [
             "1080 × 1080 px — 1:1",
             "1080 × 1350 px — 4:5"
           ]
         },
-
         {
-          "title":
-            "Instagram Reel",
-
+          "title": "Instagram Reel",
           "items": [
             "1920 × 1080 px",
             "9:16"
           ]
         },
-
         {
-          "title":
-            "Pinterest foto",
-
+          "title": "Pinterest foto",
           "items": [
             "1000 × 1500 px",
             "2:3"
           ]
         },
-
         {
-          "title":
-            "Facebook",
-
+          "title": "Facebook",
           "items": [
             "1080 × 1350 px",
             "4:5"
           ]
         }
       ],
-
-      "caution":
-        "Bij het maken van een foto is het handig om je telefoon vooraf al in de juiste verhouding te zetten.",
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.7",
-
-      "title":
-        "Locatietips binnen",
-
+      "title": "Locatietips binnen",
       "bullets": [
         "2e verdieping, atrium: veel natuurlijk licht.",
         "2e verdieping, dakterras: bakstenen muur en veel natuurlijk licht.",
@@ -2355,27 +2237,19 @@ window.HANDBOOK_DATA = {
         "4e verdieping: eigen contentstudio.",
         "5e verdieping: bed."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "2.8",
-
-      "title":
-        "Locatietips buiten",
-
+      "title": "Locatietips buiten",
       "bullets": [
         "Ga via de hoofdingang links naar buiten voor bakstenen muren.",
         "Richting de veerpont zijn een aantal mooie grijze buitengevels.",
         "Naast de apotheek staat een egale bakstenen muur die minder grof is dan de andere bakstenen muren."
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -2387,35 +2261,18 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-instagram",
   "category": "visual-creative",
-
   "title": "3. Instagram",
-
-  "summary":
-    "Reels, Stories, reel-reposts, fanstories, folderstories, spelletjes en Instagram-hoogtepunten.",
-
-  "system":
-    "Instagram / Illustrator / Premiere Pro / Iconosquare",
-
-  "frequency":
-    "Dagelijks / wekelijks",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    true,
+  "summary": "Reels, Stories, reel-reposts, fanstories, folderstories, spelletjes en Instagram-hoogtepunten.",
+  "system": "Instagram / Illustrator / Premiere Pro / Iconosquare",
+  "frequency": "Dagelijks / wekelijks",
+  "duration": "Naslag",
+  "featured": true,
 
   "steps": [
-
     {
       "number": "3.1",
-
-      "title":
-        "Instagram Reels",
-
-      "text":
-        "Elke week worden er twaalf posts op Instagram geplaatst en zes dagen per week een story. Als Visual Creative-stagiair houd je je waarschijnlijk vooral bezig met Instagram Stories en het editen van zelfgemaakte Instagram Reels.",
-
+      "title": "Instagram Reels",
+      "text": "Elke week worden er twaalf posts op Instagram geplaatst en zes dagen per week een story. Als Visual Creative-stagiair houd je je waarschijnlijk vooral bezig met Instagram Stories en het editen van zelfgemaakte Instagram Reels.",
       "bullets": [
         "Instagram-content bestaat grotendeels uit Reels.",
         "Veel Reels worden gemaakt door bureaus zoals Truus of GoSpooky.",
@@ -2426,20 +2283,13 @@ window.HANDBOOK_DATA = {
         "Adobe Premiere Pro is hiervoor volgens de handleiding het handigst.",
         "Je kunt Organic Social helpen met het bedenken van ideeën voor nieuwe Reels."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.2",
-
-      "title":
-        "Instagram Stories",
-
-      "text":
-        "Op de Instagram-pagina van HEMA wordt zes keer per week een story geplaatst. Hiervoor zijn verschillende vaste storyconcepten. Sommige concepten komen wekelijks terug, zoals de reel-repost en fanstory. Andere concepten kunnen ter inspiratie worden gebruikt.",
-
+      "title": "Instagram Stories",
+      "text": "Op de Instagram-pagina van HEMA wordt zes keer per week een story geplaatst. Hiervoor zijn verschillende vaste storyconcepten. Sommige concepten komen wekelijks terug, zoals de reel-repost en fanstory. Andere concepten kunnen ter inspiratie worden gebruikt.",
       "bullets": [
         "Stories worden opgemaakt in Adobe Illustrator.",
         "Zorg dat het onderwerp goed in het midden staat.",
@@ -2449,35 +2299,23 @@ window.HANDBOOK_DATA = {
         "Storyreeksen hebben een eindkaart met een call-to-action.",
         "Gebruik de HEMA-huisstijl uit Beeldbinkie."
       ],
-
       "infoCards": [
         {
-          "title":
-            "Map Instagram-templates",
-
+          "title": "Map Instagram-templates",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\06 ADMINISTRATIE\\MEDEWERKERS\\STAGIAIRES\\FEB 2026\\HUISSTIJL\\INSTAGRAM TEMPLATES"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.3",
-
-      "title":
-        "Reels reposten via Stories",
-
-      "text":
-        "Een à twee keer per week is het leuk om oude Reels opnieuw te delen via Stories. Deze Reels kunnen worden teruggevonden via Iconosquare of via de aparte pagina voor oude Reels in de socialmediakalender.",
-
+      "title": "Reels reposten via Stories",
+      "text": "Een à twee keer per week is het leuk om oude Reels opnieuw te delen via Stories. Deze Reels kunnen worden teruggevonden via Iconosquare of via de aparte pagina voor oude Reels in de socialmediakalender.",
       "subsection": {
-        "title":
-          "Werkwijze",
-
+        "title": "Werkwijze",
         "steps": [
           "Zoek de gewenste Reel in Iconosquare.",
           "Open de Reel en klik rechtsboven op het Instagram-logo.",
@@ -2495,55 +2333,35 @@ window.HANDBOOK_DATA = {
           "Is er een aanbieding op het product, voeg deze dan toe op de laatste kaart of vermeld de aanbieding in de naam van de linksticker."
         ]
       },
-
       "links": [
         {
-          "label":
-            "FastDL",
-
-          "href":
-            "https://fastdl.app/en2"
+          "label": "FastDL",
+          "href": "https://fastdl.app/en2"
         },
-
         {
-          "label":
-            "SnapInsta",
-
-          "href":
-            "https://snapinsta.to/en2"
+          "label": "SnapInsta",
+          "href": "https://snapinsta.to/en2"
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.3.1",
-
-      "title":
-        "Oude Reels bijhouden",
-
-      "text":
-        "Naast Iconosquare staat in de socialmediakalender een aparte pagina voor oude Reels. Hierin staat onder andere wanneer een Reel is geplaatst, wat het onderwerp is, hoe de Reel heeft gepresteerd en of deze al is gerepost.",
-
+      "title": "Oude Reels bijhouden",
+      "text": "Naast Iconosquare staat in de socialmediakalender een aparte pagina voor oude Reels. Hierin staat onder andere wanneer een Reel is geplaatst, wat het onderwerp is, hoe de Reel heeft gepresteerd en of deze al is gerepost.",
       "bullets": [
         "Vul in wanneer je een Reel opnieuw hebt geplaatst.",
         "Zo voorkom je dat content dubbel of te snel achter elkaar wordt geplaatst.",
         "Houd deze pagina overzichtelijk voor jezelf en voor volgende stagiairs.",
         "Als de huidige indeling niet praktisch is, mag je deze aanpassen zolang het overzicht behouden blijft."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.3.2",
-
-      "title":
-        "Lijst geposte Reels februari t/m juli 2026",
-
+      "title": "Lijst geposte Reels februari t/m juli 2026",
       "bullets": [
         "Nijntje koffer",
         "Zo versla je jouw winterdip – parfums",
@@ -2580,20 +2398,13 @@ window.HANDBOOK_DATA = {
         "Reel ventilatoren in de aanbieding — meisje waait weg",
         "Reel repost zwembril met Nena"
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.4",
-
-      "title":
-        "Fanstory",
-
-      "text":
-        "Een fanstory is een collectie foto's van HEMA-fans. Bij iedere foto tag je het product en verwijs je naar de maker van de foto. Plaats de story op een leuke achtergrond en voeg de template-eindkaart toe die oproept om HEMA te taggen.",
-
+      "title": "Fanstory",
+      "text": "Een fanstory is een collectie foto's van HEMA-fans. Bij iedere foto tag je het product en verwijs je naar de maker van de foto. Plaats de story op een leuke achtergrond en voeg de template-eindkaart toe die oproept om HEMA te taggen.",
       "bullets": [
         "Er zijn standaardachtergronden beschikbaar.",
         "Je mag ook zelf een achtergrond ontwerpen zodat deze beter bij de fanstory past.",
@@ -2602,41 +2413,27 @@ window.HANDBOOK_DATA = {
         "Download de story via bijvoorbeeld StorySaver, SnapInsta of SaveInsta.",
         "Vraag altijd toestemming wanneer kinderen of gezichten herkenbaar in beeld staan."
       ],
-
       "infoCards": [
         {
-          "title":
-            "Voorbeeld toestemming",
-
+          "title": "Voorbeeld toestemming",
           "items": [
             "Hoi, wat een leuke foto/video! We zouden deze graag willen gebruiken voor een fanstory, uiteraard met benoeming. We horen graag of je hier toestemming voor geeft. Liefs HEMA ❤️"
           ]
         }
       ],
-
       "links": [
         {
-          "label":
-            "StorySaver",
-
-          "href":
-            "https://www.storysaver.net/en"
+          "label": "StorySaver",
+          "href": "https://www.storysaver.net/en"
         }
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-fanstory.png"
     },
 
     {
       "number": "3.5",
-
-      "title":
-        "This or That",
-
-      "text":
-        "This or That is een terugkerend storyconcept waarbij de kijker tussen verschillende opties kiest binnen een centraal thema.",
-
+      "title": "This or That",
+      "text": "This or That is een terugkerend storyconcept waarbij de kijker tussen verschillende opties kiest binnen een centraal thema.",
       "bullets": [
         "De meest gebruikte variant werkt met een pollsticker.",
         "De kijker kiest bijvoorbeeld tussen twee opties, zoals Takkie versus Siepie.",
@@ -2647,138 +2444,90 @@ window.HANDBOOK_DATA = {
         "In de verdere vormgeving ben je vrij.",
         "Voeg op de laatste kaart de actie toe met een relevante link."
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-this-or-that.png"
     },
 
     {
       "number": "3.6",
-
-      "title":
-        "Folderstories",
-
-      "text":
-        "Folderstories worden om de twee weken op zondag geplaatst, de dag voordat er een nieuwe folder verschijnt. De vormgeving van de stories is gebaseerd op de aankomende campagne of folder.",
-
+      "title": "Folderstories",
+      "text": "Folderstories worden om de twee weken op zondag geplaatst, de dag voordat er een nieuwe folder verschijnt. De vormgeving van de stories is gebaseerd op de aankomende campagne of folder.",
       "bullets": [
         "Afbeeldingen uit de folder staan vaak op Beeldbinkie.",
         "Staan de beelden daar niet, dan kun je ze direct uit de folder halen of in de campagnemappen zoeken.",
-        "Voor folderstories kun je kiezen voor 'Raad het product' of 'Raad de korting'.",
+        "Voor folderstories kun je kiezen voor 'Raad het Product' of 'Raad de korting'.",
         "Folderstories lichten acties op een interactieve manier uit.",
         "Gebruik ongeveer drie tot vier producten.",
         "Sluit af met een kaart met een link naar de folder."
       ],
-
       "infoCards": [
         {
-          "title":
-            "Campagnemap",
-
+          "title": "Campagnemap",
           "items": [
             "I:\\Marketing & Communication\\2025\\3. Campagnes\\Formule Promotion\\10) Promotie & Impuls\\3) Campagnes\\2026"
           ]
         },
-
         {
-          "title":
-            "Folder vooraf ontvangen",
-
+          "title": "Folder vooraf ontvangen",
           "items": [
             "Iris Bertoen — Iris.Bertoen@hema.nl",
             "Maruschka Romijn — Maruschka.Romijn@hema.nl"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.6.1",
-
-      "title":
-        "Raad het product",
-
-      "text":
-        "Bij Raad het product maak je een silhouet van een product. De kijker raadt via een poll welk product het is. Op de volgende Story deel je de afbeelding van het product met de actie en eventuele extra informatie die bij de actie hoort.",
-
-      "image":
-        ""
+      "title": "Raad het product",
+      "text": "Bij Raad het product maak je een silhouet van een product. De kijker raadt via een poll welk product het is. Op de volgende Story deel je de afbeelding van het product met de actie en eventuele extra informatie die bij de actie hoort.",
+      "image": "images/visual-creative/03-folderstories-raad-product.png"
     },
 
     {
       "number": "3.6.2",
-
-      "title":
-        "Raad de korting",
-
-      "text":
-        "Raad de korting gebruikt hetzelfde principe als Raad het product, maar dan op basis van kortingen. Gebruik ongeveer drie tot vier producten en sluit af met een kaart met een link naar de folder.",
-
-      "image":
-        ""
+      "title": "Raad de korting",
+      "text": "Raad de korting gebruikt hetzelfde principe als Raad het product, maar dan op basis van kortingen. Gebruik ongeveer drie tot vier producten en sluit af met een kaart met een link naar de folder.",
+      "image": "images/visual-creative/03-folderstories-raad-korting.png"
     },
 
     {
       "number": "3.7",
-
-      "title":
-        "Feitjes",
-
-      "text":
-        "HEMA heeft soms naast de folder ook een magazine. Hierin staat regelmatig een feitjesrubriek. Deze feitjes kunnen als quiz in de Stories worden gebruikt.",
-
+      "title": "Feitjes",
+      "text": "HEMA heeft soms naast de folder ook een magazine. Hierin staat regelmatig een feitjesrubriek. Deze feitjes kunnen als quiz in de Stories worden gebruikt.",
       "bullets": [
         "Gebruik hiervoor de quizsticker.",
         "Verwijs op de laatste kaart naar het magazine.",
         "Probeer qua opmaak zoveel mogelijk de stijl van het magazine aan te houden."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "3.8",
-
-      "title":
-        "Achtergrondjes",
-
-      "text":
-        "Eens in de twee weken kun je een achtergrondjes-Story plaatsen. Deze achtergronden maak je zelf op basis van nieuwe collecties.",
-
+      "title": "Achtergrondjes",
+      "text": "Eens in de twee weken kun je een achtergrondjes-Story plaatsen. Deze achtergronden maak je zelf op basis van nieuwe collecties.",
       "bullets": [
         "Er staan bestaande achtergrondjes in de achtergrondjesmap.",
         "Vraag indien nodig open bestanden van nieuwe collecties op bij de productmanager.",
         "Met de open bestanden kun je zelf nieuwe achtergronden maken.",
         "Voor Pinterest maak je daarnaast twee keer per week een achtergrond."
       ],
-
       "infoCards": [
         {
-          "title":
-            "Achtergrondjesmap",
-
+          "title": "Achtergrondjesmap",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\01 SOCIAL CONTENT\\07 ACHTERGRONDJES\\Alle achtergrondjes"
           ]
         },
-
         {
-          "title":
-            "Wie doet wat",
-
+          "title": "Wie doet wat",
           "items": [
             "\\\\hem599srv002\\Headquarters-NL$\\Supply Chain Services\\04. MDM\\Wie doet wat.lnk"
           ]
         },
-
         {
-          "title":
-            "Voorbeelden productmanagers",
-
+          "title": "Voorbeelden productmanagers",
           "items": [
             "Sikira Arou-Gouya — sokken",
             "Danouck Tansel — seizoen",
@@ -2787,20 +2536,13 @@ window.HANDBOOK_DATA = {
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-achtergrondjes.png"
     },
 
     {
       "number": "3.9",
-
-      "title":
-        "Spelletjes",
-
-      "text":
-        "Er zijn verschillende interactieve spelletjes die gebruikt kunnen worden in Instagram Stories. Kijk in Iconosquare om te zien wat eerder is gedaan. Heb je zelf een leuk idee, bespreek dit dan met je begeleider.",
-
+      "title": "Spelletjes",
+      "text": "Er zijn verschillende interactieve spelletjes die gebruikt kunnen worden in Instagram Stories. Kijk in Iconosquare om te zien wat eerder is gedaan. Heb je zelf een leuk idee, bespreek dit dan met je begeleider.",
       "bullets": [
         "Zoek de verschillen",
         "Woordzoekers",
@@ -2812,104 +2554,93 @@ window.HANDBOOK_DATA = {
         "Zoek ... in de winkel",
         "Raad het nieuwe product"
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-spelletjes.png"
     },
 
     {
       "number": "3.9.1",
-
-      "title":
-        "Zoekspelletje",
-
-      "text":
-        "Bij het zoekspelletje verstop je verschillende items in een HEMA-kamer die de kijker moet vinden. Deze kamers zijn te vinden via Beeldbinkie en in een interne map.",
-
+      "title": "Zoekspelletje",
+      "text": "Bij het zoekspelletje verstop je verschillende items in een HEMA-kamer die de kijker moet vinden. Deze kamers zijn te vinden via Beeldbinkie en in een interne map.",
       "infoCards": [
         {
-          "title":
-            "HEMA-kamers",
-
+          "title": "HEMA-kamers",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\06 ADMINISTRATIE\\MEDEWERKERS\\STAGIAIRES\\SEPT 2025\\Visual creative\\HEMA-kamers"
           ]
         }
       ],
+      "image": "images/visual-creative/03-zoekspel.png"
+    },
 
-      "image":
-        ""
+    {
+      "number": "3.9.1.1",
+      "title": "Woordzoeker",
+      "text": "Een woordzoeker is een van de interactieve spelconcepten die voor Instagram Stories kan worden gebruikt. Gebruik eerdere voorbeelden als inspiratie en pas het onderwerp aan op een relevante collectie, campagne of productgroep.",
+      "image": "images/visual-creative/03-woordzoeker.png"
+    },
+
+    {
+      "number": "3.9.1.2",
+      "title": "Rebus",
+      "text": "Een rebus is een interactief storyconcept waarbij de kijker met behulp van afbeeldingen en tekens een woord of antwoord probeert te raden.",
+      "image": "images/visual-creative/03-rebus.png"
     },
 
     {
       "number": "3.9.2",
-
-      "title":
-        "Quiz",
-
-      "text":
-        "Maak een quiz bij voorkeur over een product dat in de aanbieding is. De weetjes kun je zelf online zoeken of opvragen bij de productmanager.",
-
+      "title": "Quiz",
+      "text": "Maak een quiz bij voorkeur over een product dat in de aanbieding is. De weetjes kun je zelf online zoeken of opvragen bij de productmanager.",
       "bullets": [
         "Gebruik voor ieder weetje minimaal twee bronnen.",
         "Je kunt de productmanager via Teams om leuke weetjes vragen.",
         "Plaats onderaan de kaart altijd een tekst zoals 'tik op de ... om verder te gaan' om interactie te stimuleren."
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-quiz.png"
     },
 
     {
       "number": "3.9.3",
-
-      "title":
-        "Zoek de verschillen",
-
-      "text":
-        "Kies voor Zoek de verschillen bij voorkeur producten die in de aanbieding zijn of extra uitgelicht moeten worden.",
-
+      "title": "Zoek de verschillen",
+      "text": "Kies voor Zoek de verschillen bij voorkeur producten die in de aanbieding zijn of extra uitgelicht moeten worden.",
       "bullets": [
         "Kies drie producten uit dezelfde categorie.",
         "Een voorbeeld is drie dezelfde T-shirts met verschillende prints.",
         "Creëer de verschillen door afbeeldingen in Photoshop te bewerken."
       ],
+      "image": "images/visual-creative/03-zoek-de-verschillen.png"
+    },
 
-      "image":
-        ""
+    {
+      "number": "3.9.3.1",
+      "title": "Raad maar raak",
+      "text": "Raad maar raak is een interactief Story-format waarbij de kijker op basis van visuele aanwijzingen probeert te raden welk product of onderwerp bedoeld wordt.",
+      "image": "images/visual-creative/03-raad-maar-raak.png"
+    },
+
+    {
+      "number": "3.9.3.2",
+      "title": "Geheugenspel",
+      "text": "Het geheugenspel is een interactief Story-format waarbij de kijker producten of afbeeldingen moet onthouden en herkennen.",
+      "image": "images/visual-creative/03-geheugenspel.png"
     },
 
     {
       "number": "3.9.4",
-
-      "title":
-        "Zoek ... in de winkel",
-
-      "text":
-        "Bij dit concept verstop je bijvoorbeeld een Takkie- of Siepie-knuffel in een nieuw verkleedpakje in de schappen van de winkel. De kijker moet het product vervolgens zoeken.",
-
+      "title": "Zoek ... in de winkel",
+      "text": "Bij dit concept verstop je bijvoorbeeld een Takkie- of Siepie-knuffel in een nieuw verkleedpakje in de schappen van de winkel. De kijker moet het product vervolgens zoeken.",
       "bullets": [
         "Je kunt ook andere knuffels of producten gebruiken.",
         "Rond Pasen kan bijvoorbeeld een groot chocolade-ei worden verstopt."
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-zoek-in-winkel.png"
     },
 
     {
       "number": "3.9.5",
-
-      "title":
-        "Raad het nieuwe product",
-
-      "text":
-        "Wanneer er veel leuke nieuwe producten zijn, kun je deze interactief uitlichten met Raad het nieuwe product.",
-
+      "title": "Raad het nieuwe product",
+      "text": "Wanneer er veel leuke nieuwe producten zijn, kun je deze interactief uitlichten met Raad het nieuwe product.",
       "subsection": {
-        "title":
-          "Werkwijze",
-
+        "title": "Werkwijze",
         "steps": [
           "Maak foto's in de winkel van nieuwe producten.",
           "Blur vervolgens het product op de foto.",
@@ -2917,62 +2648,39 @@ window.HANDBOOK_DATA = {
           "De volgende Story is het antwoord met de ongeblurde foto van het product."
         ]
       },
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-raad-nieuwe-product.png"
     },
 
     {
       "number": "3.10",
-
-      "title":
-        "Snapchat doorpost",
-
-      "text":
-        "Samen met de stagiair Creative Copy pak je Snapchat op. Wanneer op Snapchat nieuwe of erg leuke producten worden gedeeld, kan deze content ook naar de Instagram Story worden doorgeplaatst.",
-
+      "title": "Snapchat doorpost",
+      "text": "Samen met de stagiair Creative Copy pak je Snapchat op. Wanneer op Snapchat nieuwe of erg leuke producten worden gedeeld, kan deze content ook naar de Instagram Story worden doorgeplaatst.",
       "bullets": [
         "Begin bijvoorbeeld met een foto en tekst zoals 'check onze nieuwe ... collectie!'.",
         "Plaats daarna de leukste producten uit de Snapchat Story door.",
         "Bij deze productbeelden hoeft niet per se extra tekst te staan.",
         "Je kunt afsluiten met een vraagsticker waarin je vraagt wat de favoriet van de kijker is."
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-snapchat-doorpost.png"
     },
 
     {
       "number": "3.11",
-
-      "title":
-        "Dilemma's",
-
-      "text":
-        "Dilemma's zijn een eenvoudig interactief concept. Bedenk verschillende dilemma's rond een centraal onderwerp en verbind hier een collectie, actie of product aan.",
-
+      "title": "Dilemma's",
+      "text": "Dilemma's zijn een eenvoudig interactief concept. Bedenk verschillende dilemma's rond een centraal onderwerp en verbind hier een collectie, actie of product aan.",
       "bullets": [
         "Bedenk de dilemma's zelf.",
         "Als je even geen inspiratie hebt, kun je AI gebruiken om suggesties te bedenken."
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-dilemmas.png"
     },
 
     {
       "number": "3.12",
-
-      "title":
-        "Kom mee m'n mandje vullen",
-
-      "text":
-        "Dit concept lijkt op This or That, maar bestaat uit losse korte video's die in de winkel zijn opgenomen in plaats van foto's of vormgegeven afbeeldingen.",
-
+      "title": "Kom mee m'n mandje vullen",
+      "text": "Dit concept lijkt op This or That, maar bestaat uit losse korte video's die in de winkel zijn opgenomen in plaats van foto's of vormgegeven afbeeldingen.",
       "subsection": {
-        "title":
-          "Opbouw",
-
+        "title": "Opbouw",
         "steps": [
           "Begin met een shot waarin je de winkel inloopt en een winkelmandje pakt.",
           "De volgende Story-kaarten bestaan uit korte video's van verschillende producten.",
@@ -2980,25 +2688,16 @@ window.HANDBOOK_DATA = {
           "Voeg pollstickers toe zodat de kijker tussen producten kan kiezen."
         ]
       },
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-mandje-vullen.png"
     },
 
     {
       "number": "3.13",
-
-      "title":
-        "Instagram-hoogtepunten",
-
-      "text":
-        "HEMA heeft vijf Instagram-hoogtepunten. Werk deze regelmatig bij zodat de inhoud relevant en actueel blijft. Een Reels-repost wordt nooit in de hoogtepunten geplaatst.",
-
+      "title": "Instagram-hoogtepunten",
+      "text": "HEMA heeft vijf Instagram-hoogtepunten. Werk deze regelmatig bij zodat de inhoud relevant en actueel blijft. Een Reels-repost wordt nooit in de hoogtepunten geplaatst.",
       "infoCards": [
         {
-          "title":
-            "1. Folder",
-
+          "title": "1. Folder",
           "items": [
             "Hier komen de folderstories in.",
             "Werk het hoogtepunt eens per twee weken bij nadat de nieuwe folderstory is geplaatst.",
@@ -3006,51 +2705,36 @@ window.HANDBOOK_DATA = {
             "Bij het bewerken kan de omslag verdwijnen; voeg deze dan opnieuw toe."
           ]
         },
-
         {
-          "title":
-            "2. Wallpapers",
-
+          "title": "2. Wallpapers",
           "items": [
             "Plaats hier alle wallpapers.",
             "Voeg de call-to-action-kaart niet toe."
           ]
         },
-
         {
-          "title":
-            "3. Fun",
-
+          "title": "3. Fun",
           "items": [
             "Plaats hier interactieve stories zoals This or That, Zoek de verschillen en quizzen."
           ]
         },
-
         {
-          "title":
-            "4. Fans",
-
+          "title": "4. Fans",
           "items": [
             "Plaats hier fanstories.",
             "Voeg de call-to-action-eindkaart niet toe."
           ]
         },
-
         {
-          "title":
-            "5. Producten",
-
+          "title": "5. Producten",
           "items": [
             "Plaats hier productinformatie die relevant is voor de klant.",
             "Een voorbeeld is Kies & Mix-productinformatie."
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": "images/visual-creative/03-instagram-highlights.png"
     }
-
   ]
 },
 
@@ -3062,35 +2746,18 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-pinterest",
   "category": "visual-creative",
-
   "title": "4. Pinterest",
-
-  "summary":
-    "Pinterest-content, achtergronden, zoekwoorden, SEO en het plaatsen van pins.",
-
-  "system":
-    "Pinterest / Illustrator / Beeldbinkie",
-
-  "frequency":
-    "Wekelijks",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    true,
+  "summary": "Pinterest-content, achtergronden, zoekwoorden, SEO en het plaatsen van pins.",
+  "system": "Pinterest / Illustrator / Beeldbinkie",
+  "frequency": "Wekelijks",
+  "duration": "Naslag",
+  "featured": true,
 
   "steps": [
-
     {
       "number": "4.1",
-
-      "title":
-        "Pinterest-content",
-
-      "text":
-        "Pinterest is anders dan Instagram en Facebook omdat het kanaal sterk op SEO is gericht. Er worden verschillende soorten content geplaatst.",
-
+      "title": "Pinterest-content",
+      "text": "Pinterest is anders dan Instagram en Facebook omdat het kanaal sterk op SEO is gericht. Er worden verschillende soorten content geplaatst.",
       "bullets": [
         "In veel weken wordt ongeveer twee keer een Reel geplaatst.",
         "Vaak wordt één foto geplaatst.",
@@ -3098,100 +2765,66 @@ window.HANDBOOK_DATA = {
         "De precieze verdeling verschilt per week en hangt af van de beschikbare content.",
         "Eens per drie maanden kijkt ActAgency mee naar de voortgang."
       ],
-
       "infoCards": [
         {
-          "title":
-            "Vorige ActAgency-rapportage",
-
+          "title": "Vorige ActAgency-rapportage",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\06 ADMINISTRATIE\\MEDEWERKERS\\STAGIAIRES\\_OVERDRACHTEN_\\JAN 2025\\Stage Visual Creative\\PINTEREST"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.2",
-
-      "title":
-        "Reels",
-
-      "text":
-        "Reels kunnen rechtstreeks van Instagram worden overgenomen wanneer de content ook relevant is voor Pinterest.",
-
+      "title": "Reels",
+      "text": "Reels kunnen rechtstreeks van Instagram worden overgenomen wanneer de content ook relevant is voor Pinterest.",
       "bullets": [
         "Controleer of de Reel aansluit bij Pinterest.",
         "Voeg bij de omslagfoto bij voorkeur een titel toe zodat duidelijk is waar de video over gaat.",
         "Recepten, DIY's en hacks werken volgens de handleiding vaak goed op Pinterest."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.3",
-
-      "title":
-        "Foto's",
-
-      "text":
-        "Foto's voor Pinterest kunnen zelf worden ontworpen in Illustrator of uit Beeldbinkie worden gehaald.",
-
+      "title": "Foto's",
+      "text": "Foto's voor Pinterest kunnen zelf worden ontworpen in Illustrator of uit Beeldbinkie worden gehaald.",
       "bullets": [
         "Plaats bij een foto altijd linksonder het HEMA-logo.",
         "De verhouding en grootte van het logo hangen af van de foto.",
         "Bij Reels en achtergronden hoeft het logo niet te worden toegevoegd."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.4",
-
-      "title":
-        "Achtergronden",
-
-      "text":
-        "Pinterest-achtergronden ontwerp je op basis van printjes van bestaande HEMA-designs. Deze maak je zelf op in Illustrator.",
-
+      "title": "Achtergronden",
+      "text": "Pinterest-achtergronden ontwerp je op basis van printjes van bestaande HEMA-designs. Deze maak je zelf op in Illustrator.",
       "bullets": [
         "Kies alleen ontwerpen die nog relevant zijn voor HEMA.",
         "Gebruik een design uit het betreffende jaar.",
         "Let extra op bij designs met Takkie en Siepie.",
         "Twijfel je of een print nog gebruikt mag worden, controleer dit dan."
       ],
-
       "infoCards": [
         {
-          "title":
-            "Designprintjes",
-
+          "title": "Designprintjes",
           "items": [
             "I:\\Unit Hardwaren\\18) Design"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.5",
-
-      "title":
-        "Content zoeken",
-
-      "text":
-        "Veel Pinterest-content komt van andere socialmediakanalen. Gebruik bestaande content en actuele trends als inspiratie.",
-
+      "title": "Content zoeken",
+      "text": "Veel Pinterest-content komt van andere socialmediakanalen. Gebruik bestaande content en actuele trends als inspiratie.",
       "bullets": [
         "Bekijk de Reels/Stories-lijst in de Social Media Kalender.",
         "Je kunt daar eventueel bijhouden of een pin al is geplaatst.",
@@ -3199,24 +2832,15 @@ window.HANDBOOK_DATA = {
         "Gebruik de Pinterest Trends-tool om populaire zoekwoorden en groeiende trends te bekijken.",
         "Gebruik deze informatie als inspiratie voor relevante Pinterest-content."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.6",
-
-      "title":
-        "Een pin maken en plaatsen",
-
-      "text":
-        "Bij het plaatsen van een pin is het belangrijk om aandacht te besteden aan SEO.",
-
+      "title": "Een pin maken en plaatsen",
+      "text": "Bij het plaatsen van een pin is het belangrijk om aandacht te besteden aan SEO.",
       "subsection": {
-        "title":
-          "Werkwijze",
-
+        "title": "Werkwijze",
         "steps": [
           "Kies een onderwerp of product waarover je een nieuwe pin wilt maken en ontwerp de pin indien nodig. Controleer ideeën en ontwerpen bij je begeleider.",
           "Bepaal de relevante zoekwoorden. Kies per pin of bord één hoofdzoekwoord en drie tot vier secundaire zoekwoorden.",
@@ -3231,58 +2855,40 @@ window.HANDBOOK_DATA = {
           "Voeg tags toe die omschrijven waar de pin over gaat."
         ]
       },
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.6.1",
-
-      "title":
-        "Waar vind je goede zoekwoorden?",
-
+      "title": "Waar vind je goede zoekwoorden?",
       "infoCards": [
         {
-          "title":
-            "Pinterest-zoekbalk",
-
+          "title": "Pinterest-zoekbalk",
           "items": [
             "Zoek een relevante term.",
             "Bekijk welke gerelateerde zoekwoorden Pinterest bovenaan toont."
           ]
         },
-
         {
-          "title":
-            "Pinterest Trends",
-
+          "title": "Pinterest Trends",
           "items": [
             "Open de trendtool via Statistieken.",
             "Bekijk wat er speelt en welke termen populair zijn."
           ]
         },
-
         {
-          "title":
-            "Zoekmachines",
-
+          "title": "Zoekmachines",
           "items": [
             "Zoek online en bekijk welke zoekresultaten en woorden populair zijn."
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.6.2",
-
-      "title":
-        "Omschrijving van een pin",
-
+      "title": "Omschrijving van een pin",
       "bullets": [
         "Schrijf een lopend verhaal.",
         "Vertel duidelijk waar de pin over gaat.",
@@ -3290,17 +2896,12 @@ window.HANDBOOK_DATA = {
         "Verwerk 'HEMA' in de tekst.",
         "Het document noemt als maximum ongeveer 500/600 woorden."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "4.7",
-
-      "title":
-        "Overige tips en bevindingen",
-
+      "title": "Overige tips en bevindingen",
       "bullets": [
         "Content van nijntje, Takkie en Siepie werkt over het algemeen goed.",
         "Je kunt Pinterest minimaal een maand vooruit plannen. Werk dus vooruit wanneer je tijd over hebt.",
@@ -3312,11 +2913,8 @@ window.HANDBOOK_DATA = {
         "Controleer ook oude content.",
         "Werk bijvoorbeeld oude links bij of verbeter bestaande teksten zodat oudere pins een tweede leven krijgen."
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3328,83 +2926,49 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-facebook",
   "category": "visual-creative",
-
   "title": "5. Facebook",
-
-  "summary":
-    "Bestaande content geschikt maken voor Facebook.",
-
-  "system":
-    "Facebook / Photoshop / Canva / Adobe Express",
-
-  "frequency":
-    "Wanneer nodig",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
+  "summary": "Bestaande content geschikt maken voor Facebook.",
+  "system": "Facebook / Photoshop / Canva / Adobe Express",
+  "frequency": "Wanneer nodig",
+  "duration": "Naslag",
+  "featured": false,
 
   "steps": [
-
     {
       "number": "5.1",
-
-      "title":
-        "Facebook-content",
-
-      "text":
-        "Tijdens je stage ga je ook aan de slag voor Facebook. Je bedenkt en plaatst hier zelf geen content voor, maar je bewerkt bestaande content wel.",
-
+      "title": "Facebook-content",
+      "text": "Tijdens je stage ga je ook aan de slag voor Facebook. Je bedenkt en plaatst hier zelf geen content voor, maar je bewerkt bestaande content wel.",
       "bullets": [
         "De meeste Facebook-content wordt doorgeplaatst vanuit Instagram en/of TikTok.",
         "Jij en andere creatives maken daarnaast losse foto's die ook op Facebook kunnen worden geplaatst."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "5.2",
-
-      "title":
-        "Foto's bewerken",
-
-      "text":
-        "Bij Facebook-foto's voeg je via Adobe Photoshop of een ander programma zoals Canva rechtsonder het HEMA-logo toe.",
-
+      "title": "Foto's bewerken",
+      "text": "Bij Facebook-foto's voeg je via Adobe Photoshop of een ander programma zoals Canva rechtsonder het HEMA-logo toe.",
       "bullets": [
         "Probeer de grootte van het logo te laten overeenkomen met eerdere posts.",
         "Zo blijft de visuele stijl consequent.",
         "Bij sommige foto's kan het nodig zijn het logo iets groter te maken."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "5.3",
-
-      "title":
-        "Video's bewerken",
-
-      "text":
-        "Facebook-video's worden in 4:5-formaat gezet, 1080 × 1350 pixels.",
-
+      "title": "Video's bewerken",
+      "text": "Facebook-video's worden in 4:5-formaat gezet, 1080 × 1350 pixels.",
       "bullets": [
         "In de contentmap van de betreffende week staat bij Facebook een inputmap.",
         "Stem met je medestagiair af dat de betreffende video's daarin worden gezet.",
         "Daarna zet jij de video's om naar het juiste Facebook-formaat.",
         "Adobe Express kan gemakkelijk worden gebruikt om video's naar een ander formaat om te zetten."
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3416,35 +2980,18 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-snapchat",
   "category": "visual-creative",
-
   "title": "6. Snapchat",
-
-  "summary":
-    "Wekelijkse interactieve Snapchat Stories maken.",
-
-  "system":
-    "Snapchat",
-
-  "frequency":
-    "Iedere woensdag om 15:00",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
+  "summary": "Wekelijkse interactieve Snapchat Stories maken.",
+  "system": "Snapchat",
+  "frequency": "Iedere woensdag om 15:00",
+  "duration": "Naslag",
+  "featured": false,
 
   "steps": [
-
     {
       "number": "6.1",
-
-      "title":
-        "Snapchat bijhouden",
-
-      "text":
-        "Tijdens je stage houd je samen met de stagiair Creative Copy Snapchat bij. Iedere woensdag om 15:00 uur moet er een Snapchat Story online komen.",
-
+      "title": "Snapchat bijhouden",
+      "text": "Tijdens je stage houd je samen met de stagiair Creative Copy Snapchat bij. Iedere woensdag om 15:00 uur moet er een Snapchat Story online komen.",
       "bullets": [
         "Een Story bestaat meestal uit ongeveer tien tot vijftien productfoto's.",
         "Kies een centraal onderwerp, bijvoorbeeld reisspullen, verzorgingsproducten, nieuwe producten of paasspullen.",
@@ -3453,11 +3000,8 @@ window.HANDBOOK_DATA = {
         "Maak de Stories zo interactief mogelijk.",
         "Gebruik bijvoorbeeld vraagstickers en pollstickers."
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3469,50 +3013,28 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-maandrapportages",
   "category": "visual-creative",
-
   "title": "7. Maandrapportages",
-
-  "summary":
-    "Locatie van de uitleg en bestanden voor maandrapportages.",
-
-  "system":
-    "Rapportages",
-
-  "frequency":
-    "Maandelijks",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
+  "summary": "Locatie van de uitleg en bestanden voor maandrapportages.",
+  "system": "Rapportages",
+  "frequency": "Maandelijks",
+  "duration": "Naslag",
+  "featured": false,
 
   "steps": [
-
     {
       "number": "7.1",
-
-      "title":
-        "Maandrapportages",
-
-      "text":
-        "In de onderstaande map vind je alle uitleg over de maandrapportages.",
-
+      "title": "Maandrapportages",
+      "text": "In de onderstaande map vind je alle uitleg over de maandrapportages.",
       "infoCards": [
         {
-          "title":
-            "Map",
-
+          "title": "Map",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\06 ADMINISTRATIE\\MEDEWERKERS\\STAGIAIRES\\_OVERDRACHTEN_\\JAN 2025"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3524,35 +3046,18 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-webcare",
   "category": "visual-creative",
-
   "title": "8. Webcare",
-
-  "summary":
-    "Afstemming met webcare en het beheren van content in de Global Drive.",
-
-  "system":
-    "Teams / Google Drive",
-
-  "frequency":
-    "Doorlopend",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
+  "summary": "Afstemming met webcare en het beheren van content in de Global Drive.",
+  "system": "Teams / Google Drive",
+  "frequency": "Doorlopend",
+  "duration": "Naslag",
+  "featured": false,
 
   "steps": [
-
     {
       "number": "8.1",
-
-      "title":
-        "Webcare",
-
-      "text":
-        "In Teams is er een HEMA Social Team-chat samen met de mensen van webcare. Webcare beantwoordt iedere dag vragen van klanten. Als er een veelvoorkomende vraag is, webcare iets niet kan vinden of weet, of wanneer er klachten of opmerkingen zijn over de socials, wordt hierover een bericht in de chat gestuurd.",
-
+      "title": "Webcare",
+      "text": "In Teams is er een HEMA Social Team-chat samen met de mensen van webcare. Webcare beantwoordt iedere dag vragen van klanten. Als er een veelvoorkomende vraag is, webcare iets niet kan vinden of weet, of wanneer er klachten of opmerkingen zijn over de socials, wordt hierover een bericht in de chat gestuurd.",
       "bullets": [
         "Kijk regelmatig in de Teams-chat zodat je niets mist.",
         "Bepaal per vraag of je het antwoord zelf weet.",
@@ -3560,25 +3065,16 @@ window.HANDBOOK_DATA = {
         "Als een probleem of opmerking volledig buiten het Social Team ligt, laat webcare dan doorverwijzen naar Tier 2.",
         "Tier 2 kan de klant vervolgens verder helpen."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "8.2",
-
-      "title":
-        "Content in Global Drive",
-
-      "text":
-        "De Global Drive is een Google Drive-map waarin verschillende landen, waaronder België, Frankrijk en Duitsland, onze geplaatste content kunnen vinden. Via deze drive krijgen zij video's die zij kunnen doorplaatsen op hun eigen kanalen. Het is aan te raden deze drive iedere twee weken aan te vullen.",
-
+      "title": "Content in Global Drive",
+      "text": "De Global Drive is een Google Drive-map waarin verschillende landen, waaronder België, Frankrijk en Duitsland, onze geplaatste content kunnen vinden. Via deze drive krijgen zij video's die zij kunnen doorplaatsen op hun eigen kanalen. Het is aan te raden deze drive iedere twee weken aan te vullen.",
       "infoCards": [
         {
-          "title":
-            "Waar moet je op letten?",
-
+          "title": "Waar moet je op letten?",
           "items": [
             "Video's van Truus en GoSpooky uploaden we niet door als de relevantie voor het buitenland niet hoog is, er tekst in beeld staat of er Nederlands wordt gesproken.",
             "In content voor het buitenland mag geen tekst aanwezig zijn.",
@@ -3589,11 +3085,8 @@ window.HANDBOOK_DATA = {
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3605,42 +3098,22 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-sap",
   "category": "visual-creative",
-
   "title": "9. SAP",
+  "summary": "Voorraad controleren voordat een product in geplande content wordt gebruikt.",
+  "system": "SAP",
+  "frequency": "Voor publicatie",
+  "duration": "± 2–5 min",
+  "featured": false,
 
-  "summary":
-    "Voorraad controleren voordat een product in geplande content wordt gebruikt.",
-
-  "system":
-    "SAP",
-
-  "frequency":
-    "Voor publicatie",
-
-  "duration":
-    "± 2–5 min",
-
-  "featured":
-    false,
-
-  "caution":
-    "Volgens de stagehandleiding moet er minimaal 2.000 stuks voorraad zijn.",
+  "caution": "Volgens de stagehandleiding moet er minimaal 2.000 stuks voorraad zijn.",
 
   "steps": [
-
     {
       "number": "9.1",
-
-      "title":
-        "Voorraad controleren",
-
-      "text":
-        "Bij geplande content is het belangrijk dat de gebruikte producten voldoende op voorraad zijn. Dit controleer je via SAP.",
-
+      "title": "Voorraad controleren",
+      "text": "Bij geplande content is het belangrijk dat de gebruikte producten voldoende op voorraad zijn. Dit controleer je via SAP.",
       "subsection": {
-        "title":
-          "Stappen",
-
+        "title": "Stappen",
         "steps": [
           "Open SAP.",
           "Klik twee keer op HIP.",
@@ -3651,11 +3124,8 @@ window.HANDBOOK_DATA = {
           "Controleer of er minimaal 2.000 stuks voorraad zijn."
         ]
       },
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3667,147 +3137,93 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-maplocaties",
   "category": "visual-creative",
-
   "title": "10. Overige maplocaties",
+  "summary": "Overzicht van belangrijke mappen voor content, rapportages, design, campagnes en eigen werk.",
+  "system": "Interne schijven",
+  "frequency": "Naslag",
+  "duration": "Naslag",
+  "featured": false,
 
-  "summary":
-    "Overzicht van belangrijke mappen voor content, rapportages, design, campagnes en eigen werk.",
-
-  "system":
-    "Interne schijven",
-
-  "frequency":
-    "Naslag",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
-
-  "caution":
-    "Tip uit de handleiding: zet je belangrijkste mappen vast zodat je hier gemakkelijk bij kunt.",
+  "caution": "Tip uit de handleiding: zet je belangrijkste mappen vast zodat je hier gemakkelijk bij kunt.",
 
   "steps": [
-
     {
       "number": "10.1",
-
-      "title":
-        "Contentmap",
-
+      "title": "Contentmap",
       "infoCards": [
         {
-          "title":
-            "Locatie",
-
+          "title": "Locatie",
           "items": [
             "I:\\Marketing & Communications\\PR + SOCIAL\\5. SOCIAL\\01 SOCIAL\\01 SOCIAL CONTENT\\01 CONTENT"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "10.2",
-
-      "title":
-        "Maandrapportages",
-
+      "title": "Maandrapportages",
       "infoCards": [
         {
-          "title":
-            "Locatie",
-
+          "title": "Locatie",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\02 RAPPORTAGES\\2025"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "10.3",
-
-      "title":
-        "Designprintjes map",
-
+      "title": "Designprintjes map",
       "infoCards": [
         {
-          "title":
-            "Locatie",
-
+          "title": "Locatie",
           "items": [
             "I:\\Unit Hardwaren\\18) Design"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "10.4",
-
-      "title":
-        "Uitingen van de Design-afdeling",
-
+      "title": "Uitingen van de Design-afdeling",
       "bullets": [
         "I:\\DigitalDesign",
         "I:\\DigitalDesign\\05 PAID",
         "I:\\DigitalDesign\\10 FOLDER"
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "10.5",
-
-      "title":
-        "Campagne- en foldermappen",
-
+      "title": "Campagne- en foldermappen",
       "bullets": [
         "I:\\Marketing & Communication\\2025\\3. Campagnes",
         "I:\\Formule Promotion\\10) Promotie & Impuls\\3) Campagnes\\2025 (folder)"
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "10.6",
-
-      "title":
-        "Eigen werkmap op de schijf",
-
-      "text":
-        "Zoek in de stagiairsmap je eigen lichting op en maak daar je eigen map aan.",
-
+      "title": "Eigen werkmap op de schijf",
+      "text": "Zoek in de stagiairsmap je eigen lichting op en maak daar je eigen map aan.",
       "infoCards": [
         {
-          "title":
-            "Locatie",
-
+          "title": "Locatie",
           "items": [
             "I:\\Marketing & Communication\\PR + SOCIAL\\5. SOCIAL\\06 ADMINISTRATIE\\MEDEWERKERS\\STAGIAIRES\\"
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     }
-
   ]
 },
 
@@ -3819,132 +3235,76 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-cpm",
   "category": "visual-creative",
-
   "title": "11. CPM-document",
-
-  "summary":
-    "CPM's en prestaties van creators, Truus en GoSpooky bijhouden en vergelijken.",
-
-  "system":
-    "CPM-document / Iconosquare / Google Drive",
-
-  "frequency":
-    "Wekelijks",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    false,
+  "summary": "CPM's en prestaties van creators, Truus en GoSpooky bijhouden en vergelijken.",
+  "system": "CPM-document / Iconosquare / Google Drive",
+  "frequency": "Wekelijks",
+  "duration": "Naslag",
+  "featured": false,
 
   "steps": [
-
     {
       "number": "11.1",
-
-      "title":
-        "Doel van het CPM-document",
-
-      "text":
-        "In het CPM-document houden we de CPM's — Cost per Mille, oftewel kosten per duizend weergaven — bij van de creators waarmee we samenwerken en van de bedrijven Truus en GoSpooky. Het document geeft inzicht in de prestaties van verschillende contentstukken en maakt vergelijking tussen creators en bedrijven mogelijk.",
-
-      "image":
-        ""
+      "title": "Doel van het CPM-document",
+      "text": "In het CPM-document houden we de CPM's — Cost per Mille, oftewel kosten per duizend weergaven — bij van de creators waarmee we samenwerken en van de bedrijven Truus en GoSpooky. Het document geeft inzicht in de prestaties van verschillende contentstukken en maakt vergelijking tussen creators en bedrijven mogelijk.",
+      "image": ""
     },
 
     {
       "number": "11.2",
-
-      "title":
-        "Frequentie",
-
-      "text":
-        "Het CPM-document wordt wekelijks bijgewerkt.",
-
-      "image":
-        ""
+      "title": "Frequentie",
+      "text": "Het CPM-document wordt wekelijks bijgewerkt.",
+      "image": ""
     },
 
     {
       "number": "11.3",
-
-      "title":
-        "Tijdspanne van de content",
-
-      "text":
-        "Neem altijd content op die minimaal één week oud is, zodat de views voldoende tijd hebben gehad om te groeien.",
-
-      "image":
-        ""
+      "title": "Tijdspanne van de content",
+      "text": "Neem altijd content op die minimaal één week oud is, zodat de views voldoende tijd hebben gehad om te groeien.",
+      "image": ""
     },
 
     {
       "number": "11.4",
-
-      "title":
-        "Bronnen",
-
-      "text":
-        "Gebruik de onderstaande bronnen om de juiste performancegegevens en creatorinformatie terug te vinden.",
-
+      "title": "Bronnen",
+      "text": "Gebruik de onderstaande bronnen om de juiste performancegegevens en creatorinformatie terug te vinden.",
       "infoCards": [
         {
-          "title":
-            "Iconosquare",
-
+          "title": "Iconosquare",
           "items": [
             "Via Iconosquare kun je de performance van de content eenvoudig terugvinden."
           ]
         },
-
         {
-          "title":
-            "Google Drive-mappen per creator",
-
+          "title": "Google Drive-mappen per creator",
           "items": [
             "In de Google Drive-map per creator staat aangegeven welke video bij welke creator hoort.",
             "Dit helpt bij het juist toewijzen van de CPM-data."
           ]
         }
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": "11.5",
-
-      "title":
-        "Organische versus betaalde views",
-
-      "text":
-        "Op TikTok worden sommige video's geboost, oftewel betaald gepromoot. Om een zuiver beeld van de organische prestaties te krijgen, moet dit verschil worden meegenomen in het CPM-document.",
-
+      "title": "Organische versus betaalde views",
+      "text": "Op TikTok worden sommige video's geboost, oftewel betaald gepromoot. Om een zuiver beeld van de organische prestaties te krijgen, moet dit verschil worden meegenomen in het CPM-document.",
       "bullets": [
         "Vraag iedere week aan de Paid-stagiair een overzicht van de betaalde views.",
         "Gebruik bij het invullen van het CPM-document alleen de organische views.",
         "Trek de betaalde views af van het totale aantal views.",
         "Zo ontstaat een zuiver beeld van de organische prestaties."
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": false,
-
-      "title":
-        "Waarom dit belangrijk is",
-
-      "text":
-        "Op deze manier blijft het CPM-document een betrouwbare en consistente bron van informatie voor het team.",
-
-      "image":
-        ""
+      "title": "Waarom dit belangrijk is",
+      "text": "Op deze manier blijft het CPM-document een betrouwbare en consistente bron van informatie voor het team.",
+      "image": ""
     }
-
   ]
 },
 
@@ -3956,32 +3316,17 @@ window.HANDBOOK_DATA = {
 {
   "id": "visual-taakverdeling",
   "category": "visual-creative",
-
   "title": "Taakverdeling",
-
-  "summary":
-    "Verdeling van werkzaamheden tussen de stagiair Creative Copy en de stagiair Visual Creative.",
-
-  "system":
-    "Visual Creative",
-
-  "frequency":
-    "Naslag",
-
-  "duration":
-    "Naslag",
-
-  "featured":
-    true,
+  "summary": "Verdeling van werkzaamheden tussen de stagiair Creative Copy en de stagiair Visual Creative.",
+  "system": "Visual Creative",
+  "frequency": "Naslag",
+  "duration": "Naslag",
+  "featured": true,
 
   "steps": [
-
     {
       "number": false,
-
-      "title":
-        "Stagiair Visual Creative",
-
+      "title": "Stagiair Visual Creative",
       "bullets": [
         "Stories: visual opmaken",
         "Stories posten",
@@ -3994,17 +3339,12 @@ window.HANDBOOK_DATA = {
         "Contentcreatie",
         "Concurrentieanalyse"
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": false,
-
-      "title":
-        "Stagiair Creative Copy",
-
+      "title": "Stagiair Creative Copy",
       "bullets": [
         "Posts inplannen voor Facebook, Instagram, TikTok en Snapchat",
         "Opzetjes voor copy schrijven",
@@ -4016,26 +3356,18 @@ window.HANDBOOK_DATA = {
         "CPM",
         "Campagne-evaluaties samen met Visual Creative"
       ],
-
-      "image":
-        ""
+      "image": ""
     },
 
     {
       "number": false,
-
-      "title":
-        "Het team",
-
-      "text":
-        "Op de laatste pagina van de stagehandleiding staat daarnaast een organigram van het team. Deze afbeelding voegen we later toe wanneer we de afbeeldingen uit het document gaan verwerken.",
-
-      "image":
-        ""
+      "title": "Het team",
+      "text": "Op de laatste pagina van de stagehandleiding staat het organigram van het team.",
+      "image": "images/visual-creative/12-team-organigram.png"
     }
-
   ]
 },
+
     // =====================================================
     // ORGANIC SOCIAL MEDIA
     // =====================================================
