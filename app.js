@@ -957,16 +957,14 @@ function buildNavigation() {
     return;
   }
 
-
-  const retail =
-    retailCategories();
-
   const organic =
     organicCategory();
 
   const visual =
     visualCreativeCategory();
 
+  const retail =
+    retailCategories();
 
   categoryNav.innerHTML = `
 
@@ -978,7 +976,6 @@ function buildNavigation() {
         type="button"
         aria-expanded="true"
       >
-
         <span class="nav-folder-icon">
           ▾
         </span>
@@ -986,21 +983,15 @@ function buildNavigation() {
         <span class="nav-folder-title">
           Retail Media
         </span>
-
       </button>
-
 
       <div
         id="retailMediaCategories"
         class="nav-folder-content"
       >
-
         ${retail
-          .map(
-            categoryButton
-          )
+          .map(categoryButton)
           .join("")}
-
       </div>
 
     </div>
@@ -1010,31 +1001,26 @@ function buildNavigation() {
 
       <button
         id="organicSocialToggle"
-        class="nav-folder-button"
+        class="nav-folder-button open"
         type="button"
-        aria-expanded="false"
+        aria-expanded="true"
       >
-
         <span class="nav-folder-icon">
-          ▸
+          ▾
         </span>
 
         <span class="nav-folder-title">
           Organic Social Media
         </span>
-
       </button>
-
 
       <div
         id="organicSocialCategories"
-        class="nav-folder-content collapsed"
+        class="nav-folder-content"
       >
-
         ${organicHandbookButton(
           organic
         )}
-
       </div>
 
     </div>
@@ -1044,35 +1030,29 @@ function buildNavigation() {
 
       <button
         id="visualCreativeToggle"
-        class="nav-folder-button"
+        class="nav-folder-button open"
         type="button"
-        aria-expanded="false"
+        aria-expanded="true"
       >
-
         <span class="nav-folder-icon">
-          ▸
+          ▾
         </span>
 
         <span class="nav-folder-title">
           Visual Creative
         </span>
-
       </button>
-
 
       <div
         id="visualCreativeCategories"
-        class="nav-folder-content collapsed"
+        class="nav-folder-content"
       >
-
         ${visualCreativeHandbookButton(
           visual
         )}
-
       </div>
 
     </div>
-
   `;
 
 
@@ -1080,172 +1060,120 @@ function buildNavigation() {
     .querySelectorAll(
       "[data-view]"
     )
-    .forEach(
-      (button) => {
+    .forEach((button) => {
 
-        button.addEventListener(
-          "click",
-          () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-            state = {
-              view:
-                button.dataset.view,
+          state = {
+            view:
+              button.dataset.view,
+            category: null,
+            department: null,
+            query: "",
+            procedureId: null
+          };
 
-              category:
-                null,
-
-              department:
-                null,
-
-              query:
-                "",
-
-              procedureId:
-                null
-            };
-
-
-            if (searchInput) {
-              searchInput.value =
-                "";
-            }
-
-
-            render();
+          if (searchInput) {
+            searchInput.value = "";
           }
-        );
 
-      }
-    );
+          render();
+        }
+      );
+
+    });
 
 
   document
     .querySelectorAll(
       "[data-category]"
     )
-    .forEach(
-      (button) => {
+    .forEach((button) => {
 
-        button.addEventListener(
-          "click",
-          () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-            state = {
-              view:
-                "category",
+          state = {
+            view: "category",
+            category:
+              button.dataset.category,
+            department: null,
+            query: "",
+            procedureId: null
+          };
 
-              category:
-                button.dataset.category,
-
-              department:
-                null,
-
-              query:
-                "",
-
-              procedureId:
-                null
-            };
-
-
-            if (searchInput) {
-              searchInput.value =
-                "";
-            }
-
-
-            render();
+          if (searchInput) {
+            searchInput.value = "";
           }
-        );
 
-      }
-    );
+          render();
+        }
+      );
+
+    });
 
 
   document
     .querySelectorAll(
       "[data-organic-department]"
     )
-    .forEach(
-      (button) => {
+    .forEach((button) => {
 
-        button.addEventListener(
-          "click",
-          () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-            state = {
-              view:
-                "department",
+          state = {
+            view: "department",
+            category: null,
+            department:
+              "organic-social-media",
+            query: "",
+            procedureId: null
+          };
 
-              category:
-                null,
-
-              department:
-                "organic-social-media",
-
-              query:
-                "",
-
-              procedureId:
-                null
-            };
-
-
-            if (searchInput) {
-              searchInput.value =
-                "";
-            }
-
-
-            render();
+          if (searchInput) {
+            searchInput.value = "";
           }
-        );
 
-      }
-    );
+          render();
+        }
+      );
+
+    });
 
 
   document
     .querySelectorAll(
       "[data-visual-department]"
     )
-    .forEach(
-      (button) => {
+    .forEach((button) => {
 
-        button.addEventListener(
-          "click",
-          () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-            state = {
-              view:
-                "department",
+          state = {
+            view: "department",
+            category: null,
+            department:
+              "visual-creative",
+            query: "",
+            procedureId: null
+          };
 
-              category:
-                null,
-
-              department:
-                "visual-creative",
-
-              query:
-                "",
-
-              procedureId:
-                null
-            };
-
-
-            if (searchInput) {
-              searchInput.value =
-                "";
-            }
-
-
-            render();
+          if (searchInput) {
+            searchInput.value = "";
           }
-        );
 
-      }
-    );
+          render();
+        }
+      );
+
+    });
 
 
   setupNavFolder(
@@ -1253,19 +1181,16 @@ function buildNavigation() {
     "retailMediaCategories"
   );
 
-
   setupNavFolder(
     "organicSocialToggle",
     "organicSocialCategories"
   );
-
 
   setupNavFolder(
     "visualCreativeToggle",
     "visualCreativeCategories"
   );
 }
-
 
 // =========================================================
 // UPDATE NAVIGATION
