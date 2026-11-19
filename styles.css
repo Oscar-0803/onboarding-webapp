@@ -2795,3 +2795,39 @@ padding:
 #seoSeaProcedures .nav-label {
   white-space: normal;
 }
+
+.glossary-panel label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.glossary-panel input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.glossary-entry {
+  margin: 0;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+  overflow-wrap: anywhere;
+}
+
+.glossary-entry summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.glossary-entry dt {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.glossary-entry dd {
+  margin-left: 0;
+  white-space: pre-line;
+}
