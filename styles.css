@@ -2786,3 +2786,12 @@ padding:
 .procedure-document th > :last-child {
   margin-bottom: 0;
 }
+
+#seoSeaProcedures .nav-item {
+  grid-template-columns: minmax(0, 1fr);
+  padding-left: 38px;
+}
+
+#seoSeaProcedures .nav-label {
+  white-space: normal;
+}
