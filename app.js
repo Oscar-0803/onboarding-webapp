@@ -536,6 +536,13 @@ function hemaIcon(name) {
     `,
 
 
+    "seo-sea": `
+      <svg class="hema-icon" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="20" cy="20" r="11" />
+        <path d="M28 28l11 11M15 21l4-4 4 2 3-4" />
+      </svg>
+    `,
+
     retail: `
       <svg
         class="hema-icon"
@@ -636,7 +643,10 @@ function categoryIcon(
       "organic",
 
     "visual-creative":
-      "visual"
+      "visual",
+
+    "seo-sea":
+      "seo-sea"
   };
 
   return hemaIcon(
@@ -676,6 +686,10 @@ function departmentIcon(
     );
   }
 
+  if (departmentId === "seo-sea") {
+    return categoryIcon(departmentId);
+  }
+
   return "";
 }
 
@@ -690,7 +704,8 @@ function retailCategories() {
       category.id !==
         "organic-social" &&
       category.id !==
-        "visual-creative"
+        "visual-creative" &&
+      category.id !== "seo-sea"
   );
 }
 
@@ -1053,6 +1068,10 @@ function buildNavigation() {
       </div>
 
     </div>
+
+    <div class="nav-folder">
+      ${categoryButton(categoryById("seo-sea"))}
+    </div>
   `;
 
 
@@ -1253,6 +1272,10 @@ function updateNavigation() {
       );
   }
 
+
+  if (state.view === "department" && state.department === "seo-sea") {
+    document.querySelector('[data-category="seo-sea"]')?.classList.add("active");
+  }
 
   if (
     state.view ===
@@ -1611,6 +1634,14 @@ function homeView() {
             `${visualCreativeProcedureCount()} procedures`
           )}
 
+          ${departmentCard(
+            "seo-sea",
+            "SEO/SEA",
+            "",
+            categoryById("seo-sea").description,
+            `${categoryCount("seo-sea")} procedures`
+          )}
+
         </div>
 
       </section>
@@ -1687,6 +1718,11 @@ function homeView() {
 function departmentView(
   department
 ) {
+  if (department === "seo-sea") {
+    categoryView(department);
+    return;
+  }
+
 
   if (
     department ===
@@ -2015,6 +2051,36 @@ if (
 // =========================================================
 // LIST VIEW
 // =========================================================
+
+function categoryView(id) {
+  const category =
+    categoryById(
+      id
+    );
+
+  if (!category) {
+
+    homeView();
+
+  } else {
+
+    const procedures =
+      data.procedures.filter(
+        (procedure) =>
+          procedure.category ===
+            category.id &&
+          !procedure.parent
+      );
+
+    listView(
+      category.label,
+      category.description,
+      procedures
+    );
+
+  }
+}
+
 
 function listView(
   title,
@@ -2405,6 +2471,10 @@ function renderStep(
           step.links
         )}
 
+
+        ${step.documentBody
+          ? `<div class="procedure-document">${step.documentBody}</div>`
+          : ""}
 
         ${renderInfoCards(
           step.infoCards
@@ -3399,32 +3469,7 @@ function render() {
     "category"
   ) {
 
-    const category =
-      categoryById(
-        state.category
-      );
-
-    if (!category) {
-
-      homeView();
-
-    } else {
-
-      const procedures =
-        data.procedures.filter(
-          (procedure) =>
-            procedure.category ===
-              category.id &&
-            !procedure.parent
-        );
-
-      listView(
-        category.label,
-        category.description,
-        procedures
-      );
-
-    }
+    categoryView(state.category);
 
   }
 
