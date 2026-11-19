@@ -1070,7 +1070,31 @@ function buildNavigation() {
     </div>
 
     <div class="nav-folder">
-      ${categoryButton(categoryById("seo-sea"))}
+      <button
+        id="seoSeaToggle"
+        class="nav-folder-button"
+        type="button"
+        aria-controls="seoSeaProcedures"
+        aria-expanded="false"
+      >
+        <span class="nav-folder-icon" aria-hidden="true">▸</span>
+        <span class="nav-folder-title">SEO/SEA</span>
+      </button>
+
+      <div id="seoSeaProcedures" class="nav-folder-content collapsed">
+        ${topLevelProcedures()
+          .filter((procedure) => procedure.category === "seo-sea")
+          .map((procedure) => `
+            <button
+              class="nav-item category-child"
+              data-nav-procedure="${procedure.id}"
+              type="button"
+            >
+              <span class="nav-label">${procedure.title}</span>
+            </button>
+          `)
+          .join("")}
+      </div>
     </div>
   `;
 
@@ -1195,6 +1219,16 @@ function buildNavigation() {
     });
 
 
+  categoryNav
+    .querySelectorAll("[data-nav-procedure]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        openProcedure(button.dataset.navProcedure);
+      });
+    });
+
+  setupNavFolder("seoSeaToggle", "seoSeaProcedures");
+
   setupNavFolder(
     "retailMediaToggle",
     "retailMediaCategories"
@@ -1273,8 +1307,10 @@ function updateNavigation() {
   }
 
 
-  if (state.view === "department" && state.department === "seo-sea") {
-    document.querySelector('[data-category="seo-sea"]')?.classList.add("active");
+  if (state.view === "detail") {
+    document
+      .querySelector(`[data-nav-procedure="${state.procedureId}"]`)
+      ?.classList.add("active");
   }
 
   if (
