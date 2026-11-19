@@ -1094,9 +1094,6 @@ function buildNavigation() {
             </button>
           `)
           .join("")}
-        <button class="nav-item category-child" data-view="glossary" type="button">
-          <span class="nav-label">Begrippenlijst</span>
-        </button>
       </div>
     </div>
   `;
@@ -2099,7 +2096,6 @@ function glossaryView() {
   content.innerHTML = `
     <div class="page-title-row">
       <div>
-        <p class="eyebrow">SEO/SEA</p>
         <h1>Begrippenlijst</h1>
         <p>Zoek HEMA-begrippen, afkortingen en hun Nederlandse en Engelse toelichtingen op.</p>
       </div>
