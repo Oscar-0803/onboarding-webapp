@@ -935,6 +935,41 @@ window.HANDBOOK_DATA = {
     },
 
     {
+      "id": "gdl-rapportage",
+      "category": "orders",
+      "title": "GDL rapportage",
+      "summary": "Maak de maandrapportage aan en werk de weekcijfers, openstaande orders en facturatie bij.",
+      "system": "Excel / Intersolve",
+      "frequency": "Maandelijks",
+      "steps": [
+        {
+          "title": "Maak de rapportage voor de nieuwe maand aan",
+          "text": "Open de map I:\\New Services\\1. Cadeaukaarten\\02 budget &amp; CCP\\01 rapportages\\2026\\GDL Rapportage. Kopieer de map van de vorige maand en geef de nieuwe map en het Excel-bestand de naam van de huidige maand."
+        },
+        {
+          "title": "Verwerk de wekelijkse actieoverzichten",
+          "text": "Zoek de e-mail ‘HEMA actie overzicht week’ in *HEM Intersolve Rapporten en open het weekoverzicht.",
+          "bullets": [
+            "Kopieer alleen kolom I, vanaf rij 46 (taartenbon).",
+            "Plak de waarden in het facturatieoverzicht in de eerstvolgende weekkolom. Herhaal dit voor alle weken van de maand."
+          ]
+        },
+        {
+          "title": "Neem resterende en openstaande orders over",
+          "text": "Kopieer de vorige maand voor alle resterende en openstaande orders. Pas in de gekopieerde formule alleen de celverwijzing aan.",
+          "bullets": [
+            "Verplaats de verwijzing uit het voorbeeld (<code>!$AS$36</code>) één kolom opzij en vier of vijf rijen omlaag.",
+            "Controleer in het laatste ordertabblad hoeveel rijen je voor deze maand moet opschuiven."
+          ]
+        },
+        {
+          "title": "Voeg nieuwe orders toe",
+          "text": "Voeg de nieuwe orders uit ‘HEMA actie overzicht week’ toe aan het rapportagebestand en neem ze ook op in het facturatiegedeelte."
+        }
+      ]
+    },
+
+    {
       "id": "trade-order",
       "category": "orders",
 
