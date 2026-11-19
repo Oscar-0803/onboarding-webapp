@@ -1094,6 +1094,9 @@ function buildNavigation() {
             </button>
           `)
           .join("")}
+        <button class="nav-item category-child" data-view="glossary" type="button">
+          <span class="nav-label">Begrippenlijst</span>
+        </button>
       </div>
     </div>
   `;
@@ -1306,6 +1309,10 @@ function updateNavigation() {
       );
   }
 
+
+  if (state.view === "glossary") {
+    document.querySelector('[data-view="glossary"]')?.classList.add("active");
+  }
 
   if (state.view === "detail") {
     document
@@ -2087,6 +2094,90 @@ if (
 // =========================================================
 // LIST VIEW
 // =========================================================
+
+function glossaryView() {
+  content.innerHTML = `
+    <div class="page-title-row">
+      <div>
+        <p class="eyebrow">SEO/SEA</p>
+        <h1>Begrippenlijst</h1>
+        <p>Zoek HEMA-begrippen, afkortingen en hun Nederlandse en Engelse toelichtingen op.</p>
+      </div>
+    </div>
+
+    <section class="steps-panel glossary-panel">
+      <label for="glossarySearch">Zoek een begrip</label>
+      <input id="glossarySearch" type="search" placeholder="Zoek bijvoorbeeld op KPI">
+      <p id="glossaryCount" role="status"></p>
+      <div id="glossaryEntries"></div>
+    </section>
+  `;
+
+  const search = content.querySelector("#glossarySearch");
+  const count = content.querySelector("#glossaryCount");
+  const list = content.querySelector("#glossaryEntries");
+  const entries = window.HEMA_GLOSSARY;
+
+  function updateEntries() {
+    const query = search.value.trim().toLocaleLowerCase("nl");
+    const matches = entries.filter((entry) =>
+      Object.values(entry).some((value) => value.toLocaleLowerCase("nl").includes(query))
+    );
+
+    count.textContent = matches.length === 1 ? "1 begrip" : `${matches.length} begrippen`;
+    list.replaceChildren();
+
+    if (!matches.length) {
+      const message = document.createElement("p");
+      message.textContent = "Geen begrippen gevonden.";
+      list.append(message);
+      return;
+    }
+
+    for (const entry of matches) {
+      const details = document.createElement("details");
+      details.className = "glossary-entry";
+      const title = document.createElement("summary");
+      title.textContent = entry.dutchTerm || entry.englishTerm;
+      if (entry.dutchTerm && entry.englishTerm && entry.dutchTerm !== entry.englishTerm) {
+        title.textContent += ` · ${entry.englishTerm}`;
+      }
+      details.append(title);
+
+      const definitions = document.createElement("dl");
+      for (const [language, lang, translation, explanation] of [
+        ["Nederlands", "nl", entry.dutchTranslation, entry.dutchExplanation],
+        ["Engels", "en", entry.englishTranslation, entry.englishExplanation]
+      ]) {
+        if (!translation && !explanation) continue;
+        const label = document.createElement("dt");
+        label.textContent = language;
+        const definition = document.createElement("dd");
+        definition.lang = lang;
+        for (const text of [translation, explanation].filter(Boolean)) {
+          const paragraph = document.createElement("p");
+          paragraph.textContent = text;
+          definition.append(paragraph);
+        }
+        definitions.append(label, definition);
+      }
+
+      if (definitions.childElementCount) {
+        details.append(definitions);
+        list.append(details);
+      } else {
+        const term = document.createElement("p");
+        term.className = "glossary-entry";
+        term.textContent = title.textContent;
+        list.append(term);
+      }
+    }
+  }
+
+  search.addEventListener("input", updateEntries);
+  updateEntries();
+}
+
 
 function categoryView(id) {
   const category =
@@ -3475,6 +3566,11 @@ function render() {
       state.department
     );
 
+  }
+
+
+  else if (state.view === "glossary") {
+    glossaryView();
   }
 
 
