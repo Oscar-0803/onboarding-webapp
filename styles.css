@@ -2477,7 +2477,7 @@ padding:
 
   grid-template-columns:
     repeat(
-      3,
+      4,
       minmax(0, 1fr)
     );
 
@@ -2758,4 +2758,31 @@ padding:
     text-align: left;
   }
 
+}
+
+.dashboard-departments [data-department="seo-sea"] {
+  background: #e3f1e6;
+}
+
+.procedure-document .procedure-table {
+  overflow-x: auto;
+  margin-block: 1rem;
+}
+
+.procedure-document table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.procedure-document td,
+.procedure-document th {
+  padding: 0.65rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.procedure-document td > :last-child,
+.procedure-document th > :last-child {
+  margin-bottom: 0;
 }
