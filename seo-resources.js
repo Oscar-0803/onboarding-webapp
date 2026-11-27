@@ -46,7 +46,7 @@ window.HANDBOOK_DATA.procedures.unshift(
           "image": "images/seo-sea/seo-welkom-6.png",
           "links": [
             {
-              "label": "●",
+              "label": "Hoxhunt",
               "href": "https://game.hoxhunt.com/"
             }
           ],
@@ -65,11 +65,11 @@ window.HANDBOOK_DATA.procedures.unshift(
           "image": "images/seo-sea/seo-welkom-8.png",
           "links": [
             {
-              "label": "servicedesk",
+              "label": "IT Servicedesk",
               "href": "mailto:servicedesk-it-so@hema.nl"
             },
             {
-              "label": "peopleservices@hema.nl",
+              "label": "People Services",
               "href": "mailto:peopleservices@hema.nl"
             }
           ],
@@ -81,39 +81,39 @@ window.HANDBOOK_DATA.procedures.unshift(
           "image": "images/seo-sea/seo-welkom-9.png",
           "links": [
             {
-              "label": "●",
+              "label": "SEO-tips en tricks",
               "href": "https://docs.google.com/document/d/1R1jAQ4v5p1YxbRtDmaLY0i6TmbYTPX_7sm5FXRtjs68/edit?usp=sharing"
             },
             {
-              "label": "●",
+              "label": "Contentplanning NL",
               "href": "https://docs.google.com/spreadsheets/d/177Esv697S8ObpgLCCVcZTN8KH328dz6uP70woIdEcQk/edit?usp=sharing"
             },
             {
-              "label": "●",
+              "label": "Contentplanning BE",
               "href": "https://docs.google.com/spreadsheets/d/1y3PxwA4EzVMIl-bFGa7pmzUz2wR-FqRLBmUvIAyksHI/edit?usp=sharing"
             },
             {
-              "label": "●",
+              "label": "HEMA Tone of Voice",
               "href": "https://docs.google.com/document/d/1UjK0hn_prCuA0i7CBPrB7TBTn4wE7etG/edit?usp=sharing&amp;ouid=106258287402835169160&amp;rtpof=true&amp;sd=true"
             },
             {
-              "label": "●",
+              "label": "PLP-content schrijven",
               "href": "https://docs.google.com/document/d/15wbjAZkkivHvsBl48t7mn1O1p4s25N8l/edit?usp=sharing&amp;ouid=106258287402835169160&amp;rtpof=true&amp;sd=true"
             },
             {
-              "label": "how-",
+              "label": "PLP-contentbriefing maken",
               "href": "https://docs.google.com/document/d/1UBfncaf8wHLPhOSONA5YTrI503sa98zGIEEDS5NO7mE/edit?usp=sharing"
             },
             {
-              "label": "●",
+              "label": "Checklist SEO-briefings",
               "href": "https://docs.google.com/document/d/1LktpffiYzNNj-KR02Ep-Id-XR6ZMIxXKXy7VzNmHNAA/edit?usp=sharing"
             },
             {
-              "label": "●",
+              "label": "Interne links toevoegen",
               "href": "https://docs.google.com/spreadsheets/d/1vn91suTLBQBma5DqvWxYcehqiiTfiZI2bDvx5mV4b3g/edit?usp=sharing"
             },
             {
-              "label": "●",
+              "label": "SEO-teamdocument",
               "href": "https://hemaoffice-my.sharepoint.com/:x:/r/personal/merel_hopman_hema_nl/Documents/SEO%20team.xlsx?d=w6d60f12e9f4f4631b0ee96b7ad65bc6c&amp;csf=1&amp;web=1&amp;e=TSDL9Q&amp;nav=MTVfe0Q0OTg0QTFDLTlDQzgtNDRBRS1BQkM1LUJFOTQ2Q0NDOENDOX0"
             }
           ],
@@ -125,27 +125,27 @@ window.HANDBOOK_DATA.procedures.unshift(
           "image": "images/seo-sea/seo-welkom-10.png",
           "links": [
             {
-              "label": "●",
+              "label": "ContentKing",
               "href": "https://app.contentkingapp.com/websites/7-4262834/dashboard"
             },
             {
-              "label": "●",
+              "label": "Google Search Console",
               "href": "https://search.google.com/search-console?"
             },
             {
-              "label": "●",
+              "label": "SEO-dashboard · Looker Studio",
               "href": "https://lookerstudio.google.com/u/0/reporting/2a8fbb96-8189-4b23-ac22-c77c6fe09bf9/page/0c8CD"
             },
             {
-              "label": "●",
+              "label": "Ahrefs",
               "href": "https://app.ahrefs.com/user/login"
             },
             {
-              "label": "●",
+              "label": "HEMA SEO-assistent",
               "href": "https://seo-assistant.ui.hema.digital/"
             },
             {
-              "label": "●",
+              "label": "Keeper",
               "href": "https://keepersecurity.eu/vault/"
             }
           ],
