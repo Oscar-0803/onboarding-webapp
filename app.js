@@ -686,6 +686,10 @@ function departmentIcon(
     );
   }
 
+  if (departmentId === "paid") {
+    return hemaIcon("advertising");
+  }
+
   if (departmentId === "seo-sea") {
     return categoryIcon(departmentId);
   }
@@ -698,6 +702,11 @@ function departmentIcon(
 // DEPARTMENTS
 // =========================================================
 
+function paidCategories() {
+  return data.categories.filter((category) => category.department === "paid");
+}
+
+
 function retailCategories() {
   return data.categories.filter(
     (category) =>
@@ -705,7 +714,8 @@ function retailCategories() {
         "organic-social" &&
       category.id !==
         "visual-creative" &&
-      category.id !== "seo-sea"
+      category.id !== "seo-sea" &&
+      category.department !== "paid"
   );
 }
 
@@ -1096,6 +1106,22 @@ function buildNavigation() {
           .join("")}
       </div>
     </div>
+
+    <div class="nav-folder">
+      <button
+        id="paidToggle"
+        class="nav-folder-button"
+        type="button"
+        aria-controls="paidCategories"
+        aria-expanded="false"
+      >
+        <span class="nav-folder-icon" aria-hidden="true">▸</span>
+        <span class="nav-folder-title">Paid</span>
+      </button>
+      <div id="paidCategories" class="nav-folder-content collapsed">
+        ${paidCategories().map(categoryButton).join("")}
+      </div>
+    </div>
   `;
 
 
@@ -1228,6 +1254,7 @@ function buildNavigation() {
     });
 
   setupNavFolder("seoSeaToggle", "seoSeaProcedures");
+  setupNavFolder("paidToggle", "paidCategories");
 
   setupNavFolder(
     "retailMediaToggle",
@@ -1682,6 +1709,14 @@ function homeView() {
             `${categoryCount("seo-sea")} procedures`
           )}
 
+          ${departmentCard(
+            "paid",
+            "Paid",
+            "",
+            "Werkinstructies voor Affiliate, Paid Social en Display.",
+            `${paidCategories().reduce((count, category) => count + categoryCount(category.id), 0)} procedures`
+          )}
+
         </div>
 
       </section>
@@ -1758,6 +1793,27 @@ function homeView() {
 function departmentView(
   department
 ) {
+  if (department === "paid") {
+    content.innerHTML = `
+      <div class="breadcrumb">
+        <button data-home type="button">Overzicht</button>
+        <span>/</span>
+        <span>Paid</span>
+      </div>
+      <div class="page-title-row">
+        <div>
+          <p class="eyebrow">AFDELING</p>
+          <h1>Paid</h1>
+          <p>Kies een categorie om de werkinstructies te bekijken.</p>
+        </div>
+      </div>
+      <div class="category-grid">
+        ${paidCategories().map(categoryCard).join("")}
+      </div>
+    `;
+    return;
+  }
+
   if (department === "seo-sea") {
     categoryView(department);
     return;
